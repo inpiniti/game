@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>타일셋 인덱스 확인</title>
+    <style>
+        body { margin: 0; background: #222; color: #eee; font-family: sans-serif; padding: 12px; }
+        h2 { margin: 18px 0 6px; font-size: 15px; }
+        .scroll { overflow-x: auto; border: 1px solid #444; background: #333; }
+        canvas { display: block; image-rendering: pixelated; }
+    </style>
+</head>
+<body>
+    <p>각 타일 위 숫자 = 인덱스(0부터). "어느 번호가 절벽 윗면/옆면/계단, 물거품인지" 알려주시면 정확히 배치합니다.</p>
+    <div id="root"></div>
+    <script>
+        const U = 'assets/Tiny Swords/Tiny Swords (Update 010)/Terrain';
+        const FP = 'assets/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Terrain';
+        const ZOOM = 2, T = 64;
+        const atlases = [
+            { name: 'Tilemap_Elevation (절벽) — 4열 x 8행', src: `${U}/Ground/Tilemap_Elevation.png`, cols: 4, rows: 8 },
+            { name: 'Tilemap_color3 (Free: 잔디+절벽) — 9 x 6', src: `${FP}/Tileset/Tilemap_color3.png`, cols: 9, rows: 6 },
+            { name: 'Foam (물거품, Update) — 24 x 3', src: `${U}/Water/Foam/Foam.png`, cols: 24, rows: 3 },
+            { name: 'Water Foam (Free) — 48 x 3', src: `${FP}/Tileset/Water Foam.png`, cols: 48, rows: 3 },
+            { name: 'Tilemap_Flat (잔디/모래) — 10 x 4', src: `${U}/Ground/Tilemap_Flat.png`, cols: 10, rows: 4 },
+        ];
+        const root = document.getElementById('root');
+        for (const a of atlases) {
+            const h = document.createElement('h2'); h.textContent = a.name; root.appendChild(h);
+            const wrap = document.createElement('div'); wrap.className = 'scroll'; root.appendChild(wrap);
+            const cv = document.createElement('canvas');
+            cv.width = a.cols * T * ZOOM; cv.height = a.rows * T * ZOOM;
+            wrap.appendChild(cv);
+            const ctx = cv.getContext('2d');
+            const img = new Image();
+            img.onload = () => {
+                ctx.imageSmoothingEnabled = false;
+                ctx.drawImage(img, 0, 0, cv.width, cv.height);
+                ctx.strokeStyle = 'rgba(255,80,80,0.9)'; ctx.lineWidth = 1;
+                ctx.font = 'bold 15px sans-serif'; ctx.textBaseline = 'top';
+                for (let r = 0; r < a.rows; r++) for (let c = 0; c < a.cols; c++) {
+                    const x = c * T * ZOOM, y = r * T * ZOOM;
+                    ctx.strokeRect(x + 0.5, y + 0.5, T * ZOOM, T * ZOOM);
+                    const idx = r * a.cols + c;
+                    ctx.fillStyle = 'rgba(0,0,0,0.7)'; ctx.fillRect(x + 2, y + 2, idx > 9 ? 26 : 18, 17);
+                    ctx.fillStyle = '#ffef7a'; ctx.fillText(idx, x + 4, y + 3);
+                }
+            };
+            img.src = encodeURI(a.src);
+        }
+    </script>
+</body>
+</html>

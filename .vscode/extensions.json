@@ -1,0 +1,6 @@
+{
+    "//": "이 프로젝트에서 권장하는 VS Code 확장 프로그램. VS Code가 자동으로 설치를 추천합니다.",
+    "recommendations": [
+        "ritwickdey.LiveServer"
+    ]
+}
