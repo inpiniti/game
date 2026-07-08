@@ -1,0 +1,60 @@
+import { useMemo, useState } from 'react'
+import { COUNTRIES, findCountry, searchCountries } from '../../config/countries'
+import { BottomSheet } from '../bottom-sheet/BottomSheet'
+import styles from './CountrySelect.module.css'
+
+interface CountrySelectProps {
+  value: string
+  onChange: (code: string) => void
+}
+
+// 읽기 전용 선택 박스 → 탭 → 바텀시트(검색+단일 선택) → 선택 즉시 닫힘. 국기 이모지 대신 코드 텍스트.
+export function CountrySelect({ value, onChange }: CountrySelectProps) {
+  const [open, setOpen] = useState(false)
+  const [query, setQuery] = useState('')
+  const selected = findCountry(value)
+  const results = useMemo(() => searchCountries(query, COUNTRIES), [query])
+
+  const handleSelect = (code: string) => {
+    onChange(code)
+    setOpen(false)
+    setQuery('')
+  }
+
+  return (
+    <>
+      <button type="button" className={styles.trigger} onClick={() => setOpen(true)}>
+        <span>{selected ? `${selected.code} · ${selected.nameKo}` : '국가를 선택해 주세요'}</span>
+        <span className={styles.chevron} aria-hidden>
+          ›
+        </span>
+      </button>
+
+      <BottomSheet open={open} onClose={() => setOpen(false)} title="국가 선택">
+        <input
+          type="text"
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+          placeholder="국가 검색..."
+          className={styles.search}
+          autoFocus
+        />
+        <ul className={styles.list}>
+          {results.map((country) => (
+            <li key={country.code}>
+              <button type="button" className={styles.option} onClick={() => handleSelect(country.code)}>
+                <span>
+                  {country.code} · {country.nameKo}
+                </span>
+                {country.code === value && <span aria-hidden>✓</span>}
+              </button>
+            </li>
+          ))}
+          {results.length === 0 && (
+            <li className={styles.empty}>검색 결과가 없어요. 다른 국가로 찾아볼까요?</li>
+          )}
+        </ul>
+      </BottomSheet>
+    </>
+  )
+}

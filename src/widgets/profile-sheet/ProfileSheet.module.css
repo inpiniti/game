@@ -1,0 +1,94 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rowLabel {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.valueButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  background: none;
+  border: none;
+  padding: 4px 0;
+  color: var(--text);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.valueButton span[aria-hidden] {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.readonlyValue {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.editGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.input {
+  flex: 1;
+  height: 44px;
+  padding: 0 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 15px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.smallButton {
+  height: 44px;
+  padding: 0 16px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.smallButton:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.error {
+  margin: 0;
+  color: var(--danger);
+  font-size: 14px;
+}
+
+.logoutButton {
+  height: 48px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--danger);
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.logoutButton:disabled {
+  opacity: 0.6;
+  cursor: default;
+}

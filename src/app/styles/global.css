@@ -1,0 +1,44 @@
+:root {
+  color-scheme: dark;
+
+  --bg: #12121a;
+  --surface: #1d1d24;
+  --surface-2: #26262f;
+  --border: #33333f;
+  --text: #f2f2f5;
+  --muted: #a0a0ad;
+  --primary: #ff5470; /* 딸기 */
+  --primary-strong: #e63e5c;
+  --success: #2fbf71;
+  --danger: #e5484d;
+
+  --radius: 14px;
+
+  font-family: system-ui, -apple-system, 'Segoe UI', 'Malgun Gothic', sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}

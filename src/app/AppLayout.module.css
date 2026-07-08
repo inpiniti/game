@@ -1,0 +1,16 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
+
+/* 모바일: 하단 탭바(높이 56px + 세이프에어리어)에 콘텐츠가 가려지지 않게 여백 확보 */
+@media (max-width: 767px) {
+  .main {
+    padding-bottom: calc(56px + env(safe-area-inset-bottom));
+  }
+}

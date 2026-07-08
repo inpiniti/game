@@ -1,0 +1,229 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* 로딩 스켈레톤 */
+.skeletonList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skeletonRow {
+  height: 64px;
+  border-radius: 14px;
+  background: linear-gradient(90deg, var(--surface) 25%, var(--surface-2) 37%, var(--surface) 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.errorNotice {
+  margin: 0;
+  padding: 24px;
+  text-align: center;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+/* 빈 상태 */
+.empty {
+  padding: 48px 24px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.emptyEmoji {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.emptyTitle {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.emptyDesc {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* 데스크톱 표 — 768px 이상에서만 노출 */
+.table {
+  display: none;
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table thead tr {
+  background: var(--surface-2);
+}
+
+.table th {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.table tbody tr.row {
+  border-top: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.table tbody tr.row:hover {
+  background: var(--surface-2);
+}
+
+.expandRow td {
+  padding: 0 16px 16px;
+  background: var(--surface);
+}
+
+@media (min-width: 768px) {
+  .table {
+    display: table;
+  }
+}
+
+/* 모바일 카드 리스트 — 768px 미만에서만 노출 */
+.cardList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.cardButton {
+  width: 100%;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.cardSetTitle {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.cardScore {
+  font-weight: 700;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.cardBottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.cardExpand {
+  padding: 0 16px 14px;
+}
+
+@media (min-width: 768px) {
+  .cardList {
+    display: none;
+  }
+}
+
+/* 틀린 단어 펼침 (표/카드 공용) */
+.wrongEmpty {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.wrongList {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wrongRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--surface-2);
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.wrongFront {
+  font-weight: 700;
+}
+
+.wrongGiven {
+  color: var(--danger);
+  text-align: center;
+}
+
+.wrongBack {
+  color: var(--success);
+  text-align: right;
+}

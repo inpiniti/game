@@ -1,0 +1,169 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.72);
+  animation: fade 0.12s ease-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.prompt {
+  margin: 0;
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.35;
+  color: #fff;
+}
+
+.hint {
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.subhint {
+  margin: -8px 0 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* 3지선다 */
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.choice {
+  min-height: 56px;
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.06s ease, background 0.1s ease;
+}
+
+.choice:active {
+  transform: scale(0.98);
+}
+
+.choice:disabled {
+  cursor: default;
+}
+
+.correct {
+  background: #1f6b3a;
+  border-color: var(--success);
+  color: #fff;
+}
+
+.wrong {
+  background: #6b2126;
+  border-color: var(--danger);
+  color: #fff;
+}
+
+.dim {
+  opacity: 0.5;
+}
+
+/* 직접입력 */
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input {
+  flex: 1;
+  min-height: 52px;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 18px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.input:disabled {
+  opacity: 0.9;
+}
+
+.mark {
+  width: 24px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.markOk {
+  color: var(--success);
+}
+
+.markNo {
+  color: var(--danger);
+}
+
+.submit {
+  min-height: 56px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit:active {
+  transform: scale(0.99);
+}
+
+.missed {
+  margin: 0;
+  text-align: center;
+  color: var(--danger);
+  font-size: 15px;
+}
+
+.example {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--muted);
+  font-size: 15px;
+  text-align: center;
+}
