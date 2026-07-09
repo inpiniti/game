@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { AuthCard } from '../../shared/ui/auth-card/AuthCard'
 import { EmailNotConfirmedError, useLogin } from '../../features/auth/model/useLogin'
 import { authErrorMessage } from '../../features/auth/lib/authErrorMessage'
@@ -11,6 +12,7 @@ interface LocationState {
 }
 
 export function LoginPage() {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const location = useLocation()
   const [email, setEmail] = useState('')
@@ -38,13 +40,13 @@ export function LoginPage() {
   return (
     <AuthCard>
       <div className={styles.header}>
-        <h1 className={styles.logo}>🍓 딸기 서바이벌</h1>
-        <p className={styles.tagline}>단어를 잡는 서바이벌</p>
+        <h1 className={styles.logo}>{t('common.gameTitle')}</h1>
+        <p className={styles.tagline}>{t('login.tagline')}</p>
       </div>
 
       <form className={styles.form} onSubmit={handleSubmit}>
         <label className={form.field}>
-          <span className={form.label}>이메일</span>
+          <span className={form.label}>{t('common.email')}</span>
           <input
             type="email"
             value={email}
@@ -56,7 +58,7 @@ export function LoginPage() {
         </label>
 
         <label className={form.field}>
-          <span className={form.label}>비밀번호</span>
+          <span className={form.label}>{t('common.password')}</span>
           <input
             type="password"
             value={password}
@@ -75,14 +77,14 @@ export function LoginPage() {
           disabled={login.isPending}
           aria-busy={login.isPending}
         >
-          {login.isPending ? '로그인하고 있어요…' : '로그인'}
+          {login.isPending ? t('login.submitting') : t('login.submit')}
         </button>
       </form>
 
       <p className={styles.footer}>
-        계정이 없나요?{' '}
+        {t('login.noAccount')}{' '}
         <Link to="/signup" className={form.linkButton}>
-          회원가입 →
+          {t('login.signupLink')}
         </Link>
       </p>
     </AuthCard>

@@ -1,0 +1,345 @@
+{
+  "common": {
+    "loading": "Carregando…",
+    "country": "País",
+    "language": "Idioma",
+    "email": "E-mail",
+    "password": "Senha",
+    "nickname": "Apelido",
+    "scoreLabel": "Pontuação",
+    "scoreValue": "{{value}} pts",
+    "save": "Salvar",
+    "saving": "Salvando…",
+    "saveError": "Não foi possível salvar. Tente novamente em instantes.",
+    "close": "Fechar",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "all": "Todos",
+    "goBack": "Voltar",
+    "noAnswer": "(Sem resposta)",
+    "allCorrectNotice": "😄 Você acertou tudo! Nenhuma palavra errada",
+    "noRecordsTitle": "Ainda não há registros",
+    "gameTitle": "🍓 Sobrevivência de Morangos",
+    "startGame": "Iniciar jogo",
+    "quizSetLoadError": "Não foi possível carregar o conjunto de palavras. Tente novamente em instantes.",
+    "loadingQuizSet": "Carregando o conjunto de palavras…",
+    "wordCount_one": "{{count}} palavra",
+    "wordCount_other": "{{count}} palavras",
+    "loginRequired": "Faça login para continuar."
+  },
+  "login": {
+    "tagline": "Sobreviva capturando palavras",
+    "submitting": "Entrando…",
+    "submit": "Entrar",
+    "noAccount": "Não tem uma conta?",
+    "signupLink": "Cadastre-se →"
+  },
+  "signup": {
+    "title": "Cadastro",
+    "passwordConfirmLabel": "Confirmar senha",
+    "submitting": "Cadastrando…",
+    "submit": "Cadastrar",
+    "errorNicknameRequired": "Digite um apelido.",
+    "errorPasswordTooShort": "A senha deve ter pelo menos {{minLength}} caracteres.",
+    "errorPasswordMismatch": "As senhas não coincidem. Verifique novamente.",
+    "errorAlreadyRegistered": "Este e-mail já está cadastrado. Faça login."
+  },
+  "verifyEmail": {
+    "title": "Verifique sua caixa de entrada",
+    "sentDescSuffix": "é para onde enviamos seu e-mail de verificação.",
+    "sentDescLine2": "Toque no link do e-mail para concluir seu cadastro.",
+    "descNoEmail": "Digite o e-mail que você usou no cadastro e reenviaremos o e-mail de verificação.",
+    "resentNotice": "Reenviamos o e-mail. Verifique sua caixa de entrada.",
+    "resendCountdown": "Reenviar e-mail ({{seconds}}s)",
+    "sending": "Enviando…",
+    "resend": "Reenviar e-mail",
+    "backToLogin": "← Voltar ao login"
+  },
+  "lobby": {
+    "tagline": "Desvie de monstros e responda quizzes para ficar mais forte",
+    "loading": "Carregando…",
+    "noSets": "Não há conjuntos de palavras",
+    "footnote": "Lobby temporário da etapa 3 · Seleção de conjuntos/histórico em uma etapa futura"
+  },
+  "placeholder": {
+    "desc": "Em breve. Estamos trabalhando nisso."
+  },
+  "result": {
+    "title": "Fim de jogo",
+    "killsLabel": "Derrotados",
+    "killsValue": "{{kills}} inimigos",
+    "quizLabel": "Quiz",
+    "savedNotice": "✔ Salvo · Até a próxima!",
+    "wrongTitle": "Palavras erradas",
+    "toLobby": "Para o lobby",
+    "retry": "Tentar novamente",
+    "moreSuffix": " e mais",
+    "answer": "Resposta: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Tipo",
+    "scopeOfficial": "Oficial",
+    "scopeMine": "Meus conjuntos",
+    "uploadButton": "+ Enviar",
+    "emptyTitle": "Ainda não há conjuntos de palavras",
+    "emptyDescMine": "Toque em + Enviar para criar seu primeiro conjunto",
+    "emptyDescOther": "Confira outras abas de idioma ou tipo",
+    "uploadSheetTitle": "Enviar conjunto de palavras"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Voltar",
+    "notFound": "Não foi possível encontrar este conjunto de palavras.",
+    "backToList": "Voltar aos conjuntos de palavras",
+    "learnedProgress": "Aprendidas {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Palavras que você mais erra",
+    "wrongCount_one": "{{count}} resposta errada",
+    "wrongCount_other": "{{count}} respostas erradas",
+    "allWordsTitle": "Todas as palavras",
+    "emptyItems": "Ainda não há palavras adicionadas.",
+    "headerWord": "Palavra",
+    "headerMeaning": "Significado",
+    "headerStatus": "Status",
+    "frontPlaceholder": "Palavra (front)",
+    "backPlaceholder": "Significado (back) · use ';' para vários significados",
+    "examplePlaceholder": "Exemplo (opcional)",
+    "removeItemAria": "Remover esta palavra",
+    "addItemButton": "+ Adicionar palavra",
+    "emptyFieldsError": "Preencha a palavra e o significado para salvar."
+  },
+  "ranking": {
+    "title": "Classificação",
+    "tabsAriaLabel": "Tipo de classificação",
+    "tabBySet": "Por conjunto",
+    "tabOverall": "Geral",
+    "tabByCountry": "Por país",
+    "scopeLabel": "Escopo",
+    "scopeMine": "Meu país",
+    "myRankLabel": "Minha posição",
+    "myRankEmpty": "Ainda não está classificado",
+    "loadError": "Não foi possível carregar a classificação. Tente novamente em instantes.",
+    "byCountryEmptyDesc": "Jogue conjuntos oficiais para acumular a classificação do seu país",
+    "bySetEmptyDesc": "Jogue este conjunto para aparecer na classificação",
+    "overallEmptyDesc": "Jogue conjuntos oficiais para aparecer na classificação",
+    "noOfficialSetsTitle": "Ainda não há conjuntos oficiais",
+    "noOfficialSetsDesc": "Quando conjuntos oficiais forem adicionados, você verá a classificação aqui",
+    "headerRank": "Posição",
+    "headerAvgScore": "Pontuação média",
+    "headerParticipants": "Participantes",
+    "headerSetsPlayed": "Conjuntos jogados",
+    "playersCount_one": "{{count}} jogador",
+    "playersCount_other": "{{count}} jogadores",
+    "playersJoined_one": "{{count}} jogador participou",
+    "playersJoined_other": "{{count}} jogadores participaram",
+    "setsPlayedCount_one": "{{count}} conjunto",
+    "setsPlayedCount_other": "{{count}} conjuntos",
+    "setsPlayedJoined_one": "{{count}} conjunto jogado",
+    "setsPlayedJoined_other": "{{count}} conjuntos jogados",
+    "selectAriaLabel": "Selecionar conjunto de palavras",
+    "myRankByCountry": "Seu país {{country}} #{{rank}} · {{score}} pts",
+    "myRankGeneric": "#{{rank}} · {{score}} pts"
+  },
+  "history": {
+    "title": "Histórico",
+    "loadError": "Não foi possível carregar seu histórico. Tente novamente em instantes.",
+    "emptyDesc": "Jogue um conjunto de palavras e ele aparecerá aqui",
+    "headerDate": "Data",
+    "headerSet": "Conjunto",
+    "headerCorrect": "Corretas",
+    "headerAccuracy": "Precisão",
+    "deletedSet": "Conjunto excluído",
+    "deletedWord": "Palavra excluída",
+    "cardAccuracyLine": "Corretas {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "Gerenciar conjuntos de palavras",
+    "uploadLink": "+ Enviar conjunto oficial",
+    "tabOfficial": "Conjuntos oficiais",
+    "tabPromote": "Promover conjuntos pessoais",
+    "loading": "Carregando…",
+    "loadError": "Não foi possível carregar a lista. Tente novamente em instantes.",
+    "countryCommon": "Comum",
+    "emptyFilteredTitle": "Nenhum conjunto oficial corresponde a este filtro",
+    "emptyFilteredDesc": "Tente outro filtro de país ou idioma",
+    "deleting": "Excluindo…",
+    "deleteConfirm": "Excluir",
+    "emptyPromoteTitle": "Não há conjuntos pessoais para promover",
+    "emptyPromoteDesc": "Quando os usuários enviarem conjuntos pessoais, você poderá vê-los aqui",
+    "personalSetBadge": "Conjunto pessoal",
+    "promoteButton": "Promover",
+    "editSheetTitle": "Editar conjunto oficial",
+    "titleFieldLabel": "Título",
+    "titleRequiredError": "Digite um título para salvar.",
+    "promoteSheetTitle": "Promover a conjunto oficial",
+    "promoteError": "Não foi possível promover. Tente novamente em instantes.",
+    "promoteNoticeSuffix": " se tornará um conjunto oficial que todos os usuários do país selecionado poderão jogar.",
+    "promoting": "Promovendo…",
+    "promoteSubmit": "Promover",
+    "countryCommonOption": "Comum (todos os países)",
+    "countrySpecificOption": "País específico"
+  },
+  "adminUpload": {
+    "backLink": "← Voltar à administração",
+    "title": "Enviar conjunto oficial",
+    "desc": "Se você especificar um país, ele se tornará um conjunto oficial que todos os usuários desse país poderão jogar.",
+    "loadingUser": "Carregando informações do usuário…"
+  },
+  "header": {
+    "appName": "Sobrevivência de Morangos",
+    "mainNav": "Menu principal",
+    "sets": "Conjuntos",
+    "ranking": "Classificação",
+    "history": "Histórico",
+    "admin": "Administração"
+  },
+  "tabbar": {
+    "home": "Início",
+    "sets": "Conjuntos",
+    "ranking": "Classificação",
+    "history": "Histórico",
+    "nav": "Menu inferior"
+  },
+  "profileSheet": {
+    "title": "Perfil",
+    "nicknameLabel": "Apelido",
+    "change": "Alterar",
+    "countryLabel": "País",
+    "emailLabel": "E-mail",
+    "loggingOut": "Saindo…",
+    "logout": "Sair",
+    "nicknameSaveError": "Não foi possível salvar o apelido. Tente novamente.",
+    "countrySaveError": "Não foi possível salvar o país. Tente novamente.",
+    "language": "Idioma"
+  },
+  "pauseMenu": {
+    "pause": "Pausa",
+    "title": "Pausado",
+    "resume": "Continuar",
+    "quit": "Sair",
+    "quitHint": "Sua pontuação atual será salva"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " — qual é o significado?",
+    "inputHint_one": "※ Digite {{count}} significado",
+    "inputHint_other": "※ Digite {{count}} significados",
+    "answerPlaceholder": "Resposta {{index}}",
+    "submit": "Enviar",
+    "missed": "Significados não acertados: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} palavra",
+    "wordCount_other": "{{count}} palavras",
+    "learnProgress": "Aprendidas {{learned}}/{{total}}",
+    "viewSet": "Ver conjunto",
+    "start": "Iniciar",
+    "confirmDelete": "Excluir isto?",
+    "deleting": "Excluindo…",
+    "deleteConfirm": "Excluir",
+    "delete": "Excluir"
+  },
+  "directionSheet": {
+    "title": "Em qual direção?",
+    "startGame": "Iniciar jogo",
+    "frontToBack": {
+      "title": "Ver {{short}} e adivinhar o significado",
+      "hint": "Palavra → Significado"
+    },
+    "backToFront": {
+      "title": "Ver o significado e adivinhar {{short}}",
+      "hint": "Significado → Palavra"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,uma fruta vermelha e redonda,I ate an apple.\nrun,correr;trotar,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"uma fruta vermelha e redonda\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"correr;trotar\" }\n]",
+    "titleLabel": "Título",
+    "titlePlaceholder": "ex.: Vocabulário do 7º ano",
+    "countryLabel": "País",
+    "languageLabel": "Idioma",
+    "wordsInputLabel": "Inserir palavras",
+    "loadFromFile": "Carregar de arquivo",
+    "confirmColumn": "Verificar",
+    "normal": "Válido",
+    "uploading": "Enviando…",
+    "upload": "Enviar",
+    "titleRequired": "Digite um título para enviar.",
+    "fixErrorsRequired": "Corrija todas as linhas com erro para enviar.",
+    "minOneWordRequired": "Insira pelo menos 1 palavra para enviar.",
+    "uploadFailed": "Não foi possível enviar. Tente novamente em instantes.",
+    "previewSummary_one": "Pré-visualização · {{count}} linha válida",
+    "previewSummary_other": "Pré-visualização · {{count}} linhas válidas",
+    "previewError_one": " · {{count}} linha com erro",
+    "previewError_other": " · {{count}} linhas com erro",
+    "missingBoth": "Preencha front (palavra) e back (significado) para adicionar.",
+    "missingFront": "Preencha front (palavra) para adicionar.",
+    "missingBack": "Preencha back (significado) para adicionar.",
+    "jsonSyntaxError": "Verifique o formato JSON. (Erro de sintaxe)",
+    "jsonMustBeArray": "O nível superior deve ser um array para enviar. Ex.: [{\"front\":\"apple\",\"back\":\"uma fruta vermelha e redonda\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Este e-mail já está cadastrado. Faça login.",
+    "weakPassword": "A senha é muito simples. Use pelo menos 6 caracteres com uma combinação diferente.",
+    "invalidCredentials": "O e-mail ou a senha estão incorretos. Verifique novamente.",
+    "invalidEmail": "Verifique o formato do seu e-mail.",
+    "emailRateLimit": "Você solicitou e-mails com muita frequência. Tente novamente em instantes.",
+    "requestRateLimit": "Há muitas solicitações. Tente novamente em instantes.",
+    "signupDisabled": "No momento, não estamos aceitando cadastros. Tente novamente mais tarde.",
+    "genericError": "Estamos com problemas de conexão no momento. Tente novamente daqui a pouco."
+  },
+  "countrySelect": {
+    "placeholder": "Selecione um país",
+    "title": "Selecionar país",
+    "searchPlaceholder": "Buscar país...",
+    "empty": "Nenhum resultado encontrado. Que tal buscar outro país?"
+  },
+  "languages": {
+    "en": {
+      "label": "Palavras em inglês",
+      "short": "Inglês"
+    },
+    "ja": {
+      "label": "Palavras em japonês",
+      "short": "Japonês"
+    },
+    "zh": {
+      "label": "Palavras em chinês",
+      "short": "Chinês"
+    },
+    "general": "Geral"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Não aprendido",
+      "learning": "Aprendendo",
+      "review_one": "Revisão em {{count}} dia",
+      "review_other": "Revisão em {{count}} dias"
+    }
+  },
+  "game": {
+    "instructions": "Mover: Setas / Toque na tela (direção em relação ao personagem)   ·   Sua arma redime inimigos automaticamente",
+    "redeemed": "Redimido",
+    "goldQuiz": "Ouro obtido! Quiz",
+    "blessingGained": "Bênção obtida",
+    "blessingsTitle": "Bênçãos obtidas",
+    "blessingsEmpty": "Você ainda não obteve bênçãos",
+    "close": "Fechar",
+    "hudTime": "Tempo",
+    "hudRedeemed": "Redimidos",
+    "hudNextQuiz": "Próximo quiz",
+    "hudPierce": "Perfuração",
+    "hudQuiz": "Quiz",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Flecha múltipla",
+        "desc": "+1 flecha"
+      },
+      "arrow_rate": {
+        "name": "Mãos rápidas",
+        "desc": "Aumenta a velocidade de disparo de flechas"
+      },
+      "arrow_pierce": {
+        "name": "Perfuração",
+        "desc": "+10% de chance de perfuração"
+      }
+    }
+  }
+}

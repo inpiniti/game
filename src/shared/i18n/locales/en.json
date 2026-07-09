@@ -1,0 +1,345 @@
+{
+  "common": {
+    "loading": "Loading…",
+    "country": "Country",
+    "language": "Language",
+    "email": "Email",
+    "password": "Password",
+    "nickname": "Nickname",
+    "scoreLabel": "Score",
+    "scoreValue": "{{value}} pts",
+    "save": "Save",
+    "saving": "Saving…",
+    "saveError": "Couldn't save. Please try again in a moment.",
+    "close": "Close",
+    "edit": "Edit",
+    "delete": "Delete",
+    "all": "All",
+    "goBack": "Go back",
+    "noAnswer": "(No answer)",
+    "allCorrectNotice": "😄 You got them all right! No wrong words",
+    "noRecordsTitle": "No records yet",
+    "gameTitle": "🍓 Strawberry Survival",
+    "startGame": "Start game",
+    "quizSetLoadError": "Couldn't load the word set. Please try again in a moment.",
+    "loadingQuizSet": "Loading the word set…",
+    "wordCount_one": "{{count}} word",
+    "wordCount_other": "{{count}} words",
+    "loginRequired": "Please log in."
+  },
+  "login": {
+    "tagline": "Survive by catching words",
+    "submitting": "Logging in…",
+    "submit": "Log in",
+    "noAccount": "Don't have an account?",
+    "signupLink": "Sign up →"
+  },
+  "signup": {
+    "title": "Sign up",
+    "passwordConfirmLabel": "Confirm password",
+    "submitting": "Signing up…",
+    "submit": "Sign up",
+    "errorNicknameRequired": "Please enter a nickname.",
+    "errorPasswordTooShort": "Password must be at least {{minLength}} characters.",
+    "errorPasswordMismatch": "Passwords don't match. Please check again.",
+    "errorAlreadyRegistered": "This email is already registered. Please log in."
+  },
+  "verifyEmail": {
+    "title": "Check your inbox",
+    "sentDescSuffix": "is where we sent your verification email.",
+    "sentDescLine2": "Tap the link in the email to finish signing up.",
+    "descNoEmail": "Enter the email you signed up with and we'll resend the verification email.",
+    "resentNotice": "We've resent the email. Please check your inbox.",
+    "resendCountdown": "Resend email ({{seconds}}s)",
+    "sending": "Sending…",
+    "resend": "Resend email",
+    "backToLogin": "← Back to login"
+  },
+  "lobby": {
+    "tagline": "Dodge monsters and answer quizzes to grow stronger",
+    "loading": "Loading…",
+    "noSets": "No word sets",
+    "footnote": "Step 3 placeholder lobby · set selection/history coming in a later step"
+  },
+  "placeholder": {
+    "desc": "Coming soon. We're working on it."
+  },
+  "result": {
+    "title": "Game Over",
+    "killsLabel": "Kills",
+    "killsValue": "{{kills}} enemies",
+    "quizLabel": "Quiz",
+    "savedNotice": "✔ Saved · See you next time",
+    "wrongTitle": "Wrong words",
+    "toLobby": "To lobby",
+    "retry": "Retry",
+    "moreSuffix": " & more",
+    "answer": "Answer: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Type",
+    "scopeOfficial": "Official",
+    "scopeMine": "My sets",
+    "uploadButton": "+ Upload",
+    "emptyTitle": "No word sets yet",
+    "emptyDescMine": "Tap + Upload to create your first set",
+    "emptyDescOther": "Check other language or type tabs",
+    "uploadSheetTitle": "Upload word set"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Back",
+    "notFound": "Couldn't find this word set.",
+    "backToList": "Back to word sets",
+    "learnedProgress": "Learned {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Frequently missed words",
+    "wrongCount_one": "{{count}} wrong answer",
+    "wrongCount_other": "{{count}} wrong answers",
+    "allWordsTitle": "All words",
+    "emptyItems": "No words added yet.",
+    "headerWord": "Word",
+    "headerMeaning": "Meaning",
+    "headerStatus": "Status",
+    "frontPlaceholder": "Word (front)",
+    "backPlaceholder": "Meaning (back) · use ';' for multiple meanings",
+    "examplePlaceholder": "Example (optional)",
+    "removeItemAria": "Remove this word",
+    "addItemButton": "+ Add word",
+    "emptyFieldsError": "Fill in the word and meaning to save."
+  },
+  "ranking": {
+    "title": "Ranking",
+    "tabsAriaLabel": "Ranking type",
+    "tabBySet": "By set",
+    "tabOverall": "Overall",
+    "tabByCountry": "By country",
+    "scopeLabel": "Scope",
+    "scopeMine": "My country",
+    "myRankLabel": "My rank",
+    "myRankEmpty": "Not ranked yet",
+    "loadError": "Couldn't load the ranking. Please try again in a moment.",
+    "byCountryEmptyDesc": "Play official sets to build your country's ranking",
+    "bySetEmptyDesc": "Play this set to make the ranking",
+    "overallEmptyDesc": "Play official sets to make the ranking",
+    "noOfficialSetsTitle": "No official sets yet",
+    "noOfficialSetsDesc": "Once official sets are added, you'll see rankings here",
+    "headerRank": "Rank",
+    "headerAvgScore": "Avg. score",
+    "headerParticipants": "Participants",
+    "headerSetsPlayed": "Sets played",
+    "playersCount_one": "{{count}} player",
+    "playersCount_other": "{{count}} players",
+    "playersJoined_one": "{{count}} player joined",
+    "playersJoined_other": "{{count}} players joined",
+    "setsPlayedCount_one": "{{count}} set",
+    "setsPlayedCount_other": "{{count}} sets",
+    "setsPlayedJoined_one": "{{count}} set played",
+    "setsPlayedJoined_other": "{{count}} sets played",
+    "selectAriaLabel": "Select word set",
+    "myRankByCountry": "Your country {{country}} #{{rank}} · {{score}} pts",
+    "myRankGeneric": "#{{rank}} · {{score}} pts"
+  },
+  "history": {
+    "title": "History",
+    "loadError": "Couldn't load your history. Please try again in a moment.",
+    "emptyDesc": "Play a word set and it'll show up here",
+    "headerDate": "Date",
+    "headerSet": "Set",
+    "headerCorrect": "Correct",
+    "headerAccuracy": "Accuracy",
+    "deletedSet": "Deleted set",
+    "deletedWord": "Deleted word",
+    "cardAccuracyLine": "Correct {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "Manage word sets",
+    "uploadLink": "+ Upload official set",
+    "tabOfficial": "Official sets",
+    "tabPromote": "Promote personal sets",
+    "loading": "Loading…",
+    "loadError": "Couldn't load the list. Please try again in a moment.",
+    "countryCommon": "Common",
+    "emptyFilteredTitle": "No official sets match this filter",
+    "emptyFilteredDesc": "Try a different country or language filter",
+    "deleting": "Deleting…",
+    "deleteConfirm": "Delete",
+    "emptyPromoteTitle": "No personal sets to promote",
+    "emptyPromoteDesc": "When users upload personal sets, you'll see them here",
+    "personalSetBadge": "Personal set",
+    "promoteButton": "Promote",
+    "editSheetTitle": "Edit official set",
+    "titleFieldLabel": "Title",
+    "titleRequiredError": "Enter a title to save.",
+    "promoteSheetTitle": "Promote to official set",
+    "promoteError": "Couldn't promote it. Please try again in a moment.",
+    "promoteNoticeSuffix": " will become an official set that every user in the selected country can play.",
+    "promoting": "Promoting…",
+    "promoteSubmit": "Promote",
+    "countryCommonOption": "Common (all countries)",
+    "countrySpecificOption": "Specific country"
+  },
+  "adminUpload": {
+    "backLink": "← Back to admin",
+    "title": "Upload official set",
+    "desc": "Specify a country to make this an official set every user there can play.",
+    "loadingUser": "Loading user info…"
+  },
+  "header": {
+    "appName": "Strawberry Survival",
+    "mainNav": "Main menu",
+    "sets": "Sets",
+    "ranking": "Ranking",
+    "history": "History",
+    "admin": "Admin"
+  },
+  "tabbar": {
+    "home": "Home",
+    "sets": "Sets",
+    "ranking": "Ranking",
+    "history": "History",
+    "nav": "Bottom menu"
+  },
+  "profileSheet": {
+    "title": "Profile",
+    "nicknameLabel": "Nickname",
+    "change": "Change",
+    "countryLabel": "Country",
+    "emailLabel": "Email",
+    "loggingOut": "Logging out…",
+    "logout": "Log out",
+    "nicknameSaveError": "Couldn't save nickname. Please try again.",
+    "countrySaveError": "Couldn't save country. Please try again.",
+    "language": "Language"
+  },
+  "pauseMenu": {
+    "pause": "Pause",
+    "title": "Paused",
+    "resume": "Resume",
+    "quit": "Quit",
+    "quitHint": "Your current score will be saved"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " — what's the meaning?",
+    "inputHint_one": "※ Enter {{count}} meaning",
+    "inputHint_other": "※ Enter {{count}} meanings",
+    "answerPlaceholder": "Answer {{index}}",
+    "submit": "Submit",
+    "missed": "Missed meanings: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} word",
+    "wordCount_other": "{{count}} words",
+    "learnProgress": "Learned {{learned}}/{{total}}",
+    "viewSet": "View set",
+    "start": "Start",
+    "confirmDelete": "Delete this?",
+    "deleting": "Deleting…",
+    "deleteConfirm": "Delete",
+    "delete": "Delete"
+  },
+  "directionSheet": {
+    "title": "Which direction?",
+    "startGame": "Start game",
+    "frontToBack": {
+      "title": "See {{short}}, guess the meaning",
+      "hint": "Word → Meaning"
+    },
+    "backToFront": {
+      "title": "See the meaning, guess {{short}}",
+      "hint": "Meaning → Word"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,a round red fruit,I ate an apple.\nrun,move fast on foot;jog,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"a round red fruit\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"move fast on foot;jog\" }\n]",
+    "titleLabel": "Title",
+    "titlePlaceholder": "e.g. Grade 7 vocabulary",
+    "countryLabel": "Country",
+    "languageLabel": "Language",
+    "wordsInputLabel": "Enter words",
+    "loadFromFile": "Load from file",
+    "confirmColumn": "Check",
+    "normal": "Valid",
+    "uploading": "Uploading…",
+    "upload": "Upload",
+    "titleRequired": "Enter a title to upload.",
+    "fixErrorsRequired": "Fix all rows with errors to upload.",
+    "minOneWordRequired": "Enter at least 1 word to upload.",
+    "uploadFailed": "Couldn't upload. Please try again in a moment.",
+    "previewSummary_one": "Preview · {{count}} valid row",
+    "previewSummary_other": "Preview · {{count}} valid rows",
+    "previewError_one": " · {{count}} error row",
+    "previewError_other": " · {{count}} error rows",
+    "missingBoth": "Fill in front (word) and back (meaning) to add.",
+    "missingFront": "Fill in front (word) to add.",
+    "missingBack": "Fill in back (meaning) to add.",
+    "jsonSyntaxError": "Please check the JSON format. (Syntax error)",
+    "jsonMustBeArray": "The top level must be an array to upload. e.g. [{\"front\":\"apple\",\"back\":\"a round red fruit\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "This email is already registered. Please log in.",
+    "weakPassword": "This password is too simple. Please use at least 6 characters with a different combination.",
+    "invalidCredentials": "Email or password is incorrect. Please check again.",
+    "invalidEmail": "Please check your email format.",
+    "emailRateLimit": "You've requested emails too often. Please try again in a moment.",
+    "requestRateLimit": "Too many requests. Please try again in a moment.",
+    "signupDisabled": "Sign-ups aren't open right now. Please try again later.",
+    "genericError": "We're having trouble connecting. Please try again shortly."
+  },
+  "countrySelect": {
+    "placeholder": "Please select a country",
+    "title": "Select country",
+    "searchPlaceholder": "Search country...",
+    "empty": "No results found. Try searching a different country?"
+  },
+  "languages": {
+    "en": {
+      "label": "English words",
+      "short": "English"
+    },
+    "ja": {
+      "label": "Japanese words",
+      "short": "Japanese"
+    },
+    "zh": {
+      "label": "Chinese words",
+      "short": "Chinese"
+    },
+    "general": "General"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Not learned",
+      "learning": "Learning",
+      "review_one": "Review in {{count}} day",
+      "review_other": "Review in {{count}} days"
+    }
+  },
+  "game": {
+    "instructions": "Move: Arrow keys / Tap screen (direction relative to character)   ·   Your weapon automatically redeems enemies",
+    "redeemed": "Redeemed",
+    "goldQuiz": "Gold earned! Quiz",
+    "blessingGained": "Blessing gained",
+    "blessingsTitle": "Blessings gained",
+    "blessingsEmpty": "No blessings gained yet",
+    "close": "Close",
+    "hudTime": "Time",
+    "hudRedeemed": "Redeemed",
+    "hudNextQuiz": "Next quiz",
+    "hudPierce": "Pierce",
+    "hudQuiz": "Quiz",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Multi-arrow",
+        "desc": "+1 arrow"
+      },
+      "arrow_rate": {
+        "name": "Quick hands",
+        "desc": "Increases arrow fire rate"
+      },
+      "arrow_pierce": {
+        "name": "Pierce",
+        "desc": "+10% pierce chance"
+      }
+    }
+  }
+}

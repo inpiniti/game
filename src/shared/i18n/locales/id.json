@@ -1,0 +1,334 @@
+{
+  "common": {
+    "loading": "Memuat…",
+    "country": "Negara",
+    "language": "Bahasa",
+    "email": "Email",
+    "password": "Kata sandi",
+    "nickname": "Nama panggilan",
+    "scoreLabel": "Skor",
+    "scoreValue": "{{value}} poin",
+    "save": "Simpan",
+    "saving": "Menyimpan…",
+    "saveError": "Gagal menyimpan. Coba lagi sebentar lagi, ya.",
+    "close": "Tutup",
+    "edit": "Ubah",
+    "delete": "Hapus",
+    "all": "Semua",
+    "goBack": "Kembali",
+    "noAnswer": "(Tidak ada jawaban)",
+    "allCorrectNotice": "😄 Semua jawabanmu benar! Tidak ada kata yang salah",
+    "noRecordsTitle": "Belum ada catatan",
+    "gameTitle": "🍓 Strawberry Survival",
+    "startGame": "Mulai game",
+    "quizSetLoadError": "Gagal memuat set kata. Coba lagi sebentar lagi, ya.",
+    "loadingQuizSet": "Memuat set kata…",
+    "wordCount_other": "{{count}} kata",
+    "loginRequired": "Kamu perlu masuk dulu."
+  },
+  "login": {
+    "tagline": "Bertahan hidup dengan menangkap kata",
+    "submitting": "Sedang masuk…",
+    "submit": "Masuk",
+    "noAccount": "Belum punya akun?",
+    "signupLink": "Daftar →"
+  },
+  "signup": {
+    "title": "Daftar",
+    "passwordConfirmLabel": "Konfirmasi kata sandi",
+    "submitting": "Sedang mendaftar…",
+    "submit": "Daftar",
+    "errorNicknameRequired": "Masukkan nama panggilan, ya.",
+    "errorPasswordTooShort": "Kata sandi harus minimal {{minLength}} karakter.",
+    "errorPasswordMismatch": "Kata sandi tidak cocok. Coba periksa lagi.",
+    "errorAlreadyRegistered": "Email ini sudah terdaftar. Silakan masuk."
+  },
+  "verifyEmail": {
+    "title": "Cek kotak masukmu",
+    "sentDescSuffix": " — email verifikasi sudah kami kirim ke alamat ini.",
+    "sentDescLine2": "Ketuk tautan di email untuk menyelesaikan pendaftaran.",
+    "descNoEmail": "Masukkan email yang kamu pakai saat daftar, nanti kami kirim ulang email verifikasinya.",
+    "resentNotice": "Email sudah dikirim ulang. Silakan cek kotak masukmu.",
+    "resendCountdown": "Kirim ulang email ({{seconds}} dtk)",
+    "sending": "Mengirim…",
+    "resend": "Kirim ulang email",
+    "backToLogin": "← Kembali ke halaman masuk"
+  },
+  "lobby": {
+    "tagline": "Hindari monster dan jawab kuis untuk jadi lebih kuat",
+    "loading": "Memuat…",
+    "noSets": "Tidak ada set kata",
+    "footnote": "Lobi sementara langkah 3 · pemilihan set/riwayat menyusul di langkah berikutnya"
+  },
+  "placeholder": {
+    "desc": "Segera hadir. Kami sedang menyiapkannya."
+  },
+  "result": {
+    "title": "Game Over",
+    "killsLabel": "Dikalahkan",
+    "killsValue": "{{kills}} musuh",
+    "quizLabel": "Kuis",
+    "savedNotice": "✔ Catatan disimpan · Sampai jumpa lagi",
+    "wrongTitle": "Kata yang salah",
+    "toLobby": "Ke lobi",
+    "retry": "Ulangi",
+    "moreSuffix": " lainnya",
+    "answer": "Jawaban: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Jenis",
+    "scopeOfficial": "Resmi",
+    "scopeMine": "Set milikku",
+    "uploadButton": "+ Unggah",
+    "emptyTitle": "Belum ada set kata",
+    "emptyDescMine": "Ketuk + Unggah untuk membuat set pertamamu",
+    "emptyDescOther": "Coba lihat tab bahasa atau jenis lainnya",
+    "uploadSheetTitle": "Unggah set kata"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Kembali",
+    "notFound": "Set kata tidak ditemukan.",
+    "backToList": "Kembali ke daftar set kata",
+    "learnedProgress": "Dipelajari {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Kata yang sering salah",
+    "wrongCount_other": "{{count}} kali salah",
+    "allWordsTitle": "Semua kata",
+    "emptyItems": "Belum ada kata yang ditambahkan.",
+    "headerWord": "Kata",
+    "headerMeaning": "Arti",
+    "headerStatus": "Status",
+    "frontPlaceholder": "Kata (front)",
+    "backPlaceholder": "Arti (back) · gunakan ';' untuk beberapa arti",
+    "examplePlaceholder": "Contoh (opsional)",
+    "removeItemAria": "Hapus kata ini",
+    "addItemButton": "+ Tambah kata",
+    "emptyFieldsError": "Isi kata dan arti dulu untuk menyimpan."
+  },
+  "ranking": {
+    "title": "Peringkat",
+    "tabsAriaLabel": "Jenis peringkat",
+    "tabBySet": "Per set",
+    "tabOverall": "Keseluruhan",
+    "tabByCountry": "Per negara",
+    "scopeLabel": "Cakupan",
+    "scopeMine": "Negaraku",
+    "myRankLabel": "Peringkatku",
+    "myRankEmpty": "Belum masuk peringkat",
+    "loadError": "Gagal memuat peringkat. Coba lagi sebentar lagi, ya.",
+    "byCountryEmptyDesc": "Mainkan set resmi untuk membangun peringkat negaramu",
+    "bySetEmptyDesc": "Mainkan set ini untuk masuk peringkat",
+    "overallEmptyDesc": "Mainkan set resmi untuk masuk peringkat",
+    "noOfficialSetsTitle": "Belum ada set resmi",
+    "noOfficialSetsDesc": "Peringkat akan muncul di sini setelah ada set resmi",
+    "headerRank": "Peringkat",
+    "headerAvgScore": "Skor rata-rata",
+    "headerParticipants": "Peserta",
+    "headerSetsPlayed": "Set dimainkan",
+    "playersCount_other": "{{count}} pemain",
+    "playersJoined_other": "{{count}} pemain bergabung",
+    "setsPlayedCount_other": "{{count}} set",
+    "setsPlayedJoined_other": "{{count}} set dimainkan",
+    "selectAriaLabel": "Pilih set kata",
+    "myRankByCountry": "Negaramu {{country}} · peringkat #{{rank}} · {{score}} poin",
+    "myRankGeneric": "Peringkat #{{rank}} · {{score}} poin"
+  },
+  "history": {
+    "title": "Riwayat",
+    "loadError": "Gagal memuat riwayat. Coba lagi sebentar lagi, ya.",
+    "emptyDesc": "Mainkan set kata dan riwayatnya akan muncul di sini",
+    "headerDate": "Tanggal",
+    "headerSet": "Set",
+    "headerCorrect": "Benar",
+    "headerAccuracy": "Akurasi",
+    "deletedSet": "Set terhapus",
+    "deletedWord": "Kata terhapus",
+    "cardAccuracyLine": "Benar {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "Kelola set kata",
+    "uploadLink": "+ Unggah set resmi",
+    "tabOfficial": "Set resmi",
+    "tabPromote": "Naikkan set pribadi",
+    "loading": "Memuat…",
+    "loadError": "Gagal memuat daftar. Coba lagi sebentar lagi, ya.",
+    "countryCommon": "Umum",
+    "emptyFilteredTitle": "Tidak ada set resmi yang cocok dengan filter ini",
+    "emptyFilteredDesc": "Coba filter negara atau bahasa yang lain",
+    "deleting": "Menghapus…",
+    "deleteConfirm": "Hapus",
+    "emptyPromoteTitle": "Tidak ada set pribadi untuk dinaikkan",
+    "emptyPromoteDesc": "Set pribadi yang diunggah pengguna akan muncul di sini",
+    "personalSetBadge": "Set pribadi",
+    "promoteButton": "Naikkan",
+    "editSheetTitle": "Ubah set resmi",
+    "titleFieldLabel": "Judul",
+    "titleRequiredError": "Masukkan judul dulu untuk menyimpan.",
+    "promoteSheetTitle": "Naikkan jadi set resmi",
+    "promoteError": "Gagal menaikkan. Coba lagi sebentar lagi, ya.",
+    "promoteNoticeSuffix": " akan menjadi set resmi yang bisa dimainkan semua pengguna di negara yang dipilih.",
+    "promoting": "Menaikkan…",
+    "promoteSubmit": "Naikkan",
+    "countryCommonOption": "Umum (semua negara)",
+    "countrySpecificOption": "Negara tertentu"
+  },
+  "adminUpload": {
+    "backLink": "← Kembali ke halaman kelola",
+    "title": "Unggah set resmi",
+    "desc": "Tentukan negara agar set ini bisa dimainkan semua pengguna di negara tersebut.",
+    "loadingUser": "Memuat info pengguna…"
+  },
+  "header": {
+    "appName": "Strawberry Survival",
+    "mainNav": "Menu utama",
+    "sets": "Set",
+    "ranking": "Peringkat",
+    "history": "Riwayat",
+    "admin": "Kelola"
+  },
+  "tabbar": {
+    "home": "Beranda",
+    "sets": "Set",
+    "ranking": "Peringkat",
+    "history": "Riwayat",
+    "nav": "Menu bawah"
+  },
+  "profileSheet": {
+    "title": "Profil",
+    "nicknameLabel": "Nama panggilan",
+    "change": "Ubah",
+    "countryLabel": "Negara",
+    "emailLabel": "Email",
+    "loggingOut": "Sedang keluar…",
+    "logout": "Keluar",
+    "nicknameSaveError": "Gagal menyimpan nama panggilan. Coba lagi, ya.",
+    "countrySaveError": "Gagal menyimpan negara. Coba lagi, ya.",
+    "language": "Bahasa"
+  },
+  "pauseMenu": {
+    "pause": "Jeda",
+    "title": "Dijeda",
+    "resume": "Lanjutkan",
+    "quit": "Keluar",
+    "quitHint": "Skor kamu sejauh ini akan disimpan"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " artinya apa?",
+    "inputHint_other": "※ Masukkan {{count}} arti",
+    "answerPlaceholder": "Jawaban {{index}}",
+    "submit": "Kirim",
+    "missed": "Arti yang terlewat: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_other": "{{count}} kata",
+    "learnProgress": "Dipelajari {{learned}}/{{total}}",
+    "viewSet": "Lihat set",
+    "start": "Mulai",
+    "confirmDelete": "Hapus ini?",
+    "deleting": "Menghapus…",
+    "deleteConfirm": "Hapus",
+    "delete": "Hapus"
+  },
+  "directionSheet": {
+    "title": "Mau arah yang mana?",
+    "startGame": "Mulai game",
+    "frontToBack": {
+      "title": "Lihat {{short}}, tebak artinya",
+      "hint": "Kata → Arti"
+    },
+    "backToFront": {
+      "title": "Lihat arti, tebak {{short}}",
+      "hint": "Arti → Kata"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,buah bulat berwarna merah,I ate an apple.\nrun,berlari;lari,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"buah bulat berwarna merah\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"berlari;lari\" }\n]",
+    "titleLabel": "Judul",
+    "titlePlaceholder": "cth: Kosakata kelas 7",
+    "countryLabel": "Negara",
+    "languageLabel": "Bahasa",
+    "wordsInputLabel": "Masukkan kata",
+    "loadFromFile": "Muat dari file",
+    "confirmColumn": "Cek",
+    "normal": "Valid",
+    "uploading": "Mengunggah…",
+    "upload": "Unggah",
+    "titleRequired": "Masukkan judul dulu untuk mengunggah.",
+    "fixErrorsRequired": "Perbaiki semua baris yang error dulu untuk mengunggah.",
+    "minOneWordRequired": "Masukkan minimal 1 kata untuk mengunggah.",
+    "uploadFailed": "Gagal mengunggah. Coba lagi sebentar lagi, ya.",
+    "previewSummary_other": "Pratinjau · {{count}} baris valid",
+    "previewError_other": " · {{count}} baris error",
+    "missingBoth": "Isi front (kata) dan back (arti) dulu untuk menambahkan.",
+    "missingFront": "Isi front (kata) dulu untuk menambahkan.",
+    "missingBack": "Isi back (arti) dulu untuk menambahkan.",
+    "jsonSyntaxError": "Coba cek format JSON-nya. (Error sintaks)",
+    "jsonMustBeArray": "Level teratas harus berupa array untuk mengunggah. Cth: [{\"front\":\"apple\",\"back\":\"buah bulat berwarna merah\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Email ini sudah terdaftar. Silakan masuk.",
+    "weakPassword": "Kata sandi ini terlalu sederhana. Gunakan minimal 6 karakter dengan kombinasi yang berbeda.",
+    "invalidCredentials": "Email atau kata sandi salah. Coba periksa lagi.",
+    "invalidEmail": "Coba periksa format emailmu.",
+    "emailRateLimit": "Kamu terlalu sering meminta email. Coba lagi sebentar lagi, ya.",
+    "requestRateLimit": "Terlalu banyak permintaan. Coba lagi sebentar lagi, ya.",
+    "signupDisabled": "Pendaftaran sedang ditutup. Coba lagi nanti, ya.",
+    "genericError": "Sedang ada gangguan koneksi. Coba lagi sebentar lagi, ya."
+  },
+  "countrySelect": {
+    "placeholder": "Silakan pilih negara",
+    "title": "Pilih negara",
+    "searchPlaceholder": "Cari negara...",
+    "empty": "Tidak ada hasil. Coba cari negara lain?"
+  },
+  "languages": {
+    "en": {
+      "label": "Kosakata Inggris",
+      "short": "Inggris"
+    },
+    "ja": {
+      "label": "Kosakata Jepang",
+      "short": "Jepang"
+    },
+    "zh": {
+      "label": "Kosakata Mandarin",
+      "short": "Mandarin"
+    },
+    "general": "Umum"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Belum dipelajari",
+      "learning": "Sedang dipelajari",
+      "review_other": "Ulasan dalam {{count}} hari"
+    }
+  },
+  "game": {
+    "instructions": "Gerak: Tombol panah / Sentuh layar (arah relatif terhadap karakter)   ·   Senjatamu otomatis menyelamatkan musuh",
+    "redeemed": "Diselamatkan",
+    "goldQuiz": "Dapat emas! Kuis",
+    "blessingGained": "Mendapat berkat",
+    "blessingsTitle": "Berkat yang didapat",
+    "blessingsEmpty": "Belum ada berkat yang didapat",
+    "close": "Tutup",
+    "hudTime": "Waktu",
+    "hudRedeemed": "Diselamatkan",
+    "hudNextQuiz": "Kuis berikutnya",
+    "hudPierce": "Tembus",
+    "hudQuiz": "Kuis",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Panah ganda",
+        "desc": "+1 panah"
+      },
+      "arrow_rate": {
+        "name": "Tangan cepat",
+        "desc": "Meningkatkan kecepatan tembak panah"
+      },
+      "arrow_pierce": {
+        "name": "Tembus",
+        "desc": "+10% peluang tembus"
+      }
+    }
+  }
+}

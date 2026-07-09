@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useDeleteQuizItem, useUpsertQuizItems, type QuizItem } from '../../entities/quiz-item'
 import styles from './QuizItemsEditor.module.css'
 
@@ -29,6 +30,7 @@ function toDraftRows(items: QuizItem[]): DraftRow[] {
 // 개인 문제집 수정 모드 — 단어 행 추가·편집·삭제. [저장하기] 전까지는 로컬 상태(draft)만 바뀐다.
 // 저장은 upsert(신규는 클라이언트 uuid로 insert 겸용) + 삭제된 기존 행만 delete 하는 방식으로 한 번에 처리한다.
 export function QuizItemsEditor({ setId, items, onDone }: QuizItemsEditorProps) {
+  const { t } = useTranslation()
   const [rows, setRows] = useState<DraftRow[]>(() => toDraftRows(items))
   const [removedIds, setRemovedIds] = useState<string[]>([])
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
@@ -60,7 +62,7 @@ export function QuizItemsEditor({ setId, items, onDone }: QuizItemsEditorProps) 
     }))
 
     if (trimmed.some((row) => !row.front || !row.back)) {
-      setErrorMessage('빈칸(단어·뜻)을 채우면 저장할 수 있어요.')
+      setErrorMessage(t('quizSetDetail.emptyFieldsError'))
       return
     }
 
@@ -82,7 +84,7 @@ export function QuizItemsEditor({ setId, items, onDone }: QuizItemsEditorProps) 
       }
       onDone()
     } catch {
-      setErrorMessage('저장하지 못했어요. 잠시 후 다시 시도해 주세요.')
+      setErrorMessage(t('common.saveError'))
     }
   }
 
@@ -94,26 +96,26 @@ export function QuizItemsEditor({ setId, items, onDone }: QuizItemsEditorProps) 
             <input
               className={styles.input}
               value={row.front}
-              placeholder="단어(front)"
+              placeholder={t('quizSetDetail.frontPlaceholder')}
               onChange={(event) => updateRow(row.id, { front: event.target.value })}
             />
             <input
               className={styles.input}
               value={row.back}
-              placeholder="뜻(back) · ';'로 여러 뜻"
+              placeholder={t('quizSetDetail.backPlaceholder')}
               onChange={(event) => updateRow(row.id, { back: event.target.value })}
             />
             <input
               className={styles.input}
               value={row.example}
-              placeholder="예문(선택)"
+              placeholder={t('quizSetDetail.examplePlaceholder')}
               onChange={(event) => updateRow(row.id, { example: event.target.value })}
             />
             <button
               type="button"
               className={styles.removeButton}
               onClick={() => removeRow(row)}
-              aria-label="이 단어 삭제"
+              aria-label={t('quizSetDetail.removeItemAria')}
             >
               ✕
             </button>
@@ -122,14 +124,14 @@ export function QuizItemsEditor({ setId, items, onDone }: QuizItemsEditorProps) 
       </ul>
 
       <button type="button" className={styles.addButton} onClick={addRow}>
-        + 단어 추가
+        {t('quizSetDetail.addItemButton')}
       </button>
 
       {errorMessage && <p className={styles.error}>{errorMessage}</p>}
 
       <div className={styles.footer}>
         <button type="button" className={styles.cancelButton} onClick={onDone} disabled={isSaving}>
-          닫기
+          {t('common.close')}
         </button>
         <button
           type="button"
@@ -138,7 +140,7 @@ export function QuizItemsEditor({ setId, items, onDone }: QuizItemsEditorProps) 
           disabled={isSaving}
           aria-busy={isSaving}
         >
-          {isSaving ? '저장하고 있어요…' : '저장하기'}
+          {isSaving ? t('common.saving') : t('common.save')}
         </button>
       </div>
     </div>

@@ -1,0 +1,334 @@
+{
+  "common": {
+    "loading": "Đang tải…",
+    "country": "Quốc gia",
+    "language": "Ngôn ngữ",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "nickname": "Biệt danh",
+    "scoreLabel": "Điểm",
+    "scoreValue": "{{value}} điểm",
+    "save": "Lưu",
+    "saving": "Đang lưu…",
+    "saveError": "Không lưu được. Vui lòng thử lại sau.",
+    "close": "Đóng",
+    "edit": "Sửa",
+    "delete": "Xóa",
+    "all": "Tất cả",
+    "goBack": "Quay lại",
+    "noAnswer": "(Không trả lời)",
+    "allCorrectNotice": "😄 Bạn trả lời đúng hết rồi! Không có từ nào sai",
+    "noRecordsTitle": "Chưa có lịch sử",
+    "gameTitle": "🍓 Sinh Tồn Dâu Tây",
+    "startGame": "Bắt đầu chơi",
+    "quizSetLoadError": "Không tải được bộ từ vựng. Vui lòng thử lại sau.",
+    "loadingQuizSet": "Đang tải bộ từ vựng…",
+    "wordCount_other": "{{count}} từ",
+    "loginRequired": "Vui lòng đăng nhập."
+  },
+  "login": {
+    "tagline": "Sinh tồn bằng cách bắt từ vựng",
+    "submitting": "Đang đăng nhập…",
+    "submit": "Đăng nhập",
+    "noAccount": "Bạn chưa có tài khoản?",
+    "signupLink": "Đăng ký →"
+  },
+  "signup": {
+    "title": "Đăng ký",
+    "passwordConfirmLabel": "Xác nhận mật khẩu",
+    "submitting": "Đang đăng ký…",
+    "submit": "Đăng ký",
+    "errorNicknameRequired": "Vui lòng nhập biệt danh.",
+    "errorPasswordTooShort": "Mật khẩu cần ít nhất {{minLength}} ký tự.",
+    "errorPasswordMismatch": "Mật khẩu không khớp. Vui lòng kiểm tra lại.",
+    "errorAlreadyRegistered": "Email này đã được đăng ký. Vui lòng đăng nhập."
+  },
+  "verifyEmail": {
+    "title": "Kiểm tra hộp thư của bạn",
+    "sentDescSuffix": " là nơi chúng tôi đã gửi email xác nhận.",
+    "sentDescLine2": "Nhấn vào liên kết trong email để hoàn tất đăng ký.",
+    "descNoEmail": "Nhập email bạn đã dùng để đăng ký, chúng tôi sẽ gửi lại email xác nhận.",
+    "resentNotice": "Đã gửi lại email. Vui lòng kiểm tra hộp thư.",
+    "resendCountdown": "Gửi lại email ({{seconds}}s)",
+    "sending": "Đang gửi…",
+    "resend": "Gửi lại email",
+    "backToLogin": "← Quay lại đăng nhập"
+  },
+  "lobby": {
+    "tagline": "Né quái vật và trả lời câu đố để mạnh hơn",
+    "loading": "Đang tải…",
+    "noSets": "Không có bộ từ vựng",
+    "footnote": "Sảnh chờ tạm thời bước 3 · Chọn bộ từ vựng/lịch sử sẽ có ở bước sau"
+  },
+  "placeholder": {
+    "desc": "Sắp ra mắt. Chúng tôi đang chuẩn bị."
+  },
+  "result": {
+    "title": "Kết Thúc Game",
+    "killsLabel": "Tiêu diệt",
+    "killsValue": "{{kills}} con",
+    "quizLabel": "Câu đố",
+    "savedNotice": "✔ Đã lưu kết quả · Hẹn gặp lại bạn",
+    "wrongTitle": "Từ trả lời sai",
+    "toLobby": "Về sảnh chờ",
+    "retry": "Chơi lại",
+    "moreSuffix": " và nhiều hơn",
+    "answer": "Đáp án: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Loại",
+    "scopeOfficial": "Chính thức",
+    "scopeMine": "Bộ của tôi",
+    "uploadButton": "+ Tải lên",
+    "emptyTitle": "Chưa có bộ từ vựng nào",
+    "emptyDescMine": "Nhấn + Tải lên để tạo bộ từ vựng đầu tiên của bạn",
+    "emptyDescOther": "Thử xem các tab ngôn ngữ hoặc loại khác",
+    "uploadSheetTitle": "Tải lên bộ từ vựng"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Quay lại",
+    "notFound": "Không tìm thấy bộ từ vựng này.",
+    "backToList": "Về danh sách bộ từ vựng",
+    "learnedProgress": "Đã học {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Từ hay sai",
+    "wrongCount_other": "Sai {{count}} lần",
+    "allWordsTitle": "Tất cả từ vựng",
+    "emptyItems": "Chưa có từ nào được thêm.",
+    "headerWord": "Từ",
+    "headerMeaning": "Nghĩa",
+    "headerStatus": "Trạng thái",
+    "frontPlaceholder": "Từ (front)",
+    "backPlaceholder": "Nghĩa (back) · dùng ';' cho nhiều nghĩa",
+    "examplePlaceholder": "Câu ví dụ (không bắt buộc)",
+    "removeItemAria": "Xóa từ này",
+    "addItemButton": "+ Thêm từ",
+    "emptyFieldsError": "Điền đủ từ và nghĩa để lưu."
+  },
+  "ranking": {
+    "title": "Bảng Xếp Hạng",
+    "tabsAriaLabel": "Loại xếp hạng",
+    "tabBySet": "Theo bộ từ vựng",
+    "tabOverall": "Tổng thể",
+    "tabByCountry": "Theo quốc gia",
+    "scopeLabel": "Phạm vi",
+    "scopeMine": "Quốc gia của tôi",
+    "myRankLabel": "Hạng của tôi",
+    "myRankEmpty": "Chưa có hạng",
+    "loadError": "Không tải được bảng xếp hạng. Vui lòng thử lại sau.",
+    "byCountryEmptyDesc": "Chơi bộ từ vựng chính thức để tích lũy hạng cho quốc gia của bạn",
+    "bySetEmptyDesc": "Chơi bộ từ vựng này để lên bảng xếp hạng",
+    "overallEmptyDesc": "Chơi bộ từ vựng chính thức để lên bảng xếp hạng",
+    "noOfficialSetsTitle": "Chưa có bộ từ vựng chính thức",
+    "noOfficialSetsDesc": "Khi có bộ từ vựng chính thức, bạn sẽ thấy bảng xếp hạng ở đây",
+    "headerRank": "Hạng",
+    "headerAvgScore": "Điểm TB",
+    "headerParticipants": "Người tham gia",
+    "headerSetsPlayed": "Bộ đã chơi",
+    "playersCount_other": "{{count}} người",
+    "playersJoined_other": "{{count}} người tham gia",
+    "setsPlayedCount_other": "{{count}} bộ",
+    "setsPlayedJoined_other": "{{count}} bộ đã chơi",
+    "selectAriaLabel": "Chọn bộ từ vựng",
+    "myRankByCountry": "Quốc gia của bạn {{country}} hạng {{rank}} · {{score}} điểm",
+    "myRankGeneric": "Hạng {{rank}} · {{score}} điểm"
+  },
+  "history": {
+    "title": "Lịch Sử",
+    "loadError": "Không tải được lịch sử. Vui lòng thử lại sau.",
+    "emptyDesc": "Chơi một bộ từ vựng và nó sẽ hiện ở đây",
+    "headerDate": "Ngày",
+    "headerSet": "Bộ từ vựng",
+    "headerCorrect": "Đúng",
+    "headerAccuracy": "Tỷ lệ đúng",
+    "deletedSet": "Bộ từ vựng đã xóa",
+    "deletedWord": "Từ đã xóa",
+    "cardAccuracyLine": "Đúng {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "Quản Lý Bộ Từ Vựng",
+    "uploadLink": "+ Tải lên bộ chính thức",
+    "tabOfficial": "Bộ chính thức",
+    "tabPromote": "Nâng cấp bộ cá nhân",
+    "loading": "Đang tải…",
+    "loadError": "Không tải được danh sách. Vui lòng thử lại sau.",
+    "countryCommon": "Chung",
+    "emptyFilteredTitle": "Không có bộ chính thức phù hợp với điều kiện",
+    "emptyFilteredDesc": "Thử đổi bộ lọc quốc gia hoặc ngôn ngữ khác xem",
+    "deleting": "Đang xóa…",
+    "deleteConfirm": "Xóa",
+    "emptyPromoteTitle": "Không có bộ cá nhân nào để nâng cấp",
+    "emptyPromoteDesc": "Khi người dùng tải lên bộ cá nhân, bạn sẽ thấy ở đây",
+    "personalSetBadge": "Bộ cá nhân",
+    "promoteButton": "Nâng cấp",
+    "editSheetTitle": "Sửa bộ chính thức",
+    "titleFieldLabel": "Tiêu đề",
+    "titleRequiredError": "Nhập tiêu đề để lưu.",
+    "promoteSheetTitle": "Nâng cấp thành bộ chính thức",
+    "promoteError": "Không nâng cấp được. Vui lòng thử lại sau.",
+    "promoteNoticeSuffix": " sẽ trở thành bộ chính thức mà mọi người dùng ở quốc gia đã chọn có thể chơi.",
+    "promoting": "Đang nâng cấp…",
+    "promoteSubmit": "Nâng cấp",
+    "countryCommonOption": "Chung (tất cả quốc gia)",
+    "countrySpecificOption": "Chỉ định quốc gia"
+  },
+  "adminUpload": {
+    "backLink": "← Về trang quản lý",
+    "title": "Tải lên bộ chính thức",
+    "desc": "Chỉ định quốc gia để mọi người dùng ở đó có thể chơi bộ chính thức này.",
+    "loadingUser": "Đang tải thông tin người dùng…"
+  },
+  "header": {
+    "appName": "Sinh Tồn Dâu Tây",
+    "mainNav": "Menu chính",
+    "sets": "Bộ từ vựng",
+    "ranking": "Xếp hạng",
+    "history": "Lịch sử",
+    "admin": "Quản lý"
+  },
+  "tabbar": {
+    "home": "Trang chủ",
+    "sets": "Bộ từ",
+    "ranking": "Xếp hạng",
+    "history": "Lịch sử",
+    "nav": "Menu dưới"
+  },
+  "profileSheet": {
+    "title": "Hồ Sơ",
+    "nicknameLabel": "Biệt danh",
+    "change": "Đổi",
+    "countryLabel": "Quốc gia",
+    "emailLabel": "Email",
+    "loggingOut": "Đang đăng xuất…",
+    "logout": "Đăng xuất",
+    "nicknameSaveError": "Không lưu được biệt danh. Vui lòng thử lại.",
+    "countrySaveError": "Không lưu được quốc gia. Vui lòng thử lại.",
+    "language": "Ngôn ngữ"
+  },
+  "pauseMenu": {
+    "pause": "Tạm dừng",
+    "title": "Đã Tạm Dừng",
+    "resume": "Tiếp tục",
+    "quit": "Thoát",
+    "quitHint": "Điểm hiện tại của bạn sẽ được lưu lại"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " nghĩa là gì?",
+    "inputHint_other": "※ Nhập {{count}} nghĩa",
+    "answerPlaceholder": "Đáp án {{index}}",
+    "submit": "Nộp",
+    "missed": "Nghĩa bạn bỏ sót: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_other": "{{count}} từ",
+    "learnProgress": "Đã học {{learned}}/{{total}}",
+    "viewSet": "Xem bộ từ vựng",
+    "start": "Bắt đầu",
+    "confirmDelete": "Xóa chứ?",
+    "deleting": "Đang xóa…",
+    "deleteConfirm": "Xóa",
+    "delete": "Xóa"
+  },
+  "directionSheet": {
+    "title": "Bạn muốn chơi theo chiều nào?",
+    "startGame": "Bắt đầu chơi",
+    "frontToBack": {
+      "title": "Xem {{short}}, đoán nghĩa",
+      "hint": "Từ → Nghĩa"
+    },
+    "backToFront": {
+      "title": "Xem nghĩa, đoán {{short}}",
+      "hint": "Nghĩa → Từ"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,quả táo,I ate an apple.\nrun,chạy;chạy bộ,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"quả táo\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"chạy;chạy bộ\" }\n]",
+    "titleLabel": "Tiêu đề",
+    "titlePlaceholder": "Ví dụ: Từ vựng lớp 7",
+    "countryLabel": "Quốc gia",
+    "languageLabel": "Ngôn ngữ",
+    "wordsInputLabel": "Nhập từ vựng",
+    "loadFromFile": "Tải từ tệp",
+    "confirmColumn": "Kiểm tra",
+    "normal": "Hợp lệ",
+    "uploading": "Đang tải lên…",
+    "upload": "Tải lên",
+    "titleRequired": "Nhập tiêu đề để tải lên.",
+    "fixErrorsRequired": "Sửa hết các dòng lỗi để tải lên.",
+    "minOneWordRequired": "Nhập ít nhất 1 từ để tải lên.",
+    "uploadFailed": "Tải lên không thành công. Vui lòng thử lại sau.",
+    "previewSummary_other": "Xem trước · {{count}} dòng hợp lệ",
+    "previewError_other": " · {{count}} dòng lỗi",
+    "missingBoth": "Điền front (từ) và back (nghĩa) để thêm.",
+    "missingFront": "Điền front (từ) để thêm.",
+    "missingBack": "Điền back (nghĩa) để thêm.",
+    "jsonSyntaxError": "Vui lòng kiểm tra định dạng JSON. (Lỗi cú pháp)",
+    "jsonMustBeArray": "Cấp cao nhất phải là mảng để tải lên. Ví dụ: [{\"front\":\"apple\",\"back\":\"quả táo\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Email này đã được đăng ký. Vui lòng đăng nhập.",
+    "weakPassword": "Mật khẩu này quá đơn giản. Vui lòng dùng ít nhất 6 ký tự với tổ hợp khác.",
+    "invalidCredentials": "Email hoặc mật khẩu không đúng. Vui lòng kiểm tra lại.",
+    "invalidEmail": "Vui lòng kiểm tra lại định dạng email.",
+    "emailRateLimit": "Bạn đã yêu cầu gửi email quá nhiều lần. Vui lòng thử lại sau.",
+    "requestRateLimit": "Có quá nhiều yêu cầu. Vui lòng thử lại sau.",
+    "signupDisabled": "Hiện chưa mở đăng ký. Vui lòng thử lại sau.",
+    "genericError": "Kết nối đang gặp trục trặc. Vui lòng thử lại sau ít phút."
+  },
+  "countrySelect": {
+    "placeholder": "Vui lòng chọn quốc gia",
+    "title": "Chọn quốc gia",
+    "searchPlaceholder": "Tìm quốc gia...",
+    "empty": "Không tìm thấy kết quả. Thử tìm quốc gia khác nhé?"
+  },
+  "languages": {
+    "en": {
+      "label": "Từ vựng tiếng Anh",
+      "short": "Tiếng Anh"
+    },
+    "ja": {
+      "label": "Từ vựng tiếng Nhật",
+      "short": "Tiếng Nhật"
+    },
+    "zh": {
+      "label": "Từ vựng tiếng Trung",
+      "short": "Tiếng Trung"
+    },
+    "general": "Chung"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Chưa học",
+      "learning": "Đang học",
+      "review_other": "Ôn lại sau {{count}} ngày"
+    }
+  },
+  "game": {
+    "instructions": "Di chuyển: Phím mũi tên / Chạm màn hình (hướng theo nhân vật)   ·   Vũ khí sẽ tự động cứu chuộc kẻ địch",
+    "redeemed": "Đã cứu chuộc",
+    "goldQuiz": "Nhận vàng! Câu đố",
+    "blessingGained": "Nhận được phước lành",
+    "blessingsTitle": "Phước lành đã nhận",
+    "blessingsEmpty": "Chưa nhận được phước lành nào",
+    "close": "Đóng",
+    "hudTime": "Thời gian",
+    "hudRedeemed": "Cứu chuộc",
+    "hudNextQuiz": "Câu đố tiếp theo",
+    "hudPierce": "Xuyên",
+    "hudQuiz": "Câu đố",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Đa mũi tên",
+        "desc": "+1 mũi tên"
+      },
+      "arrow_rate": {
+        "name": "Tay nhanh",
+        "desc": "Tăng tốc độ bắn mũi tên"
+      },
+      "arrow_pierce": {
+        "name": "Xuyên",
+        "desc": "+10% tỉ lệ xuyên"
+      }
+    }
+  }
+}

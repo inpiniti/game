@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import type { Direction } from '../../features/play-quiz'
 import { learnLangShort } from '../../shared/config/languages'
 import { BottomSheet } from '../../shared/ui/bottom-sheet/BottomSheet'
@@ -22,15 +23,24 @@ export function DirectionSheet({
   onChangeDirection,
   onStart,
 }: DirectionSheetProps) {
+  const { t } = useTranslation()
   const short = learnLangShort(learnLang)
 
   const options: { value: Direction; title: string; hint: string }[] = [
-    { value: 'front-back', title: `${short} 보고 뜻 맞히기`, hint: '단어 → 뜻' },
-    { value: 'back-front', title: `뜻 보고 ${short} 맞히기`, hint: '뜻 → 단어' },
+    {
+      value: 'front-back',
+      title: t('directionSheet.frontToBack.title', { short }),
+      hint: t('directionSheet.frontToBack.hint'),
+    },
+    {
+      value: 'back-front',
+      title: t('directionSheet.backToFront.title', { short }),
+      hint: t('directionSheet.backToFront.hint'),
+    },
   ]
 
   return (
-    <BottomSheet open={open} onClose={onClose} title="어느 방향으로 할까요?">
+    <BottomSheet open={open} onClose={onClose} title={t('directionSheet.title')}>
       <div className={styles.options}>
         {options.map((option) => (
           <button
@@ -49,7 +59,7 @@ export function DirectionSheet({
       </div>
 
       <button type="button" className={styles.startButton} onClick={onStart}>
-        게임 시작
+        {t('directionSheet.startGame')}
       </button>
     </BottomSheet>
   )

@@ -1,0 +1,367 @@
+{
+  "common": {
+    "loading": "טוען…",
+    "country": "מדינה",
+    "language": "שפה",
+    "email": "אימייל",
+    "password": "סיסמה",
+    "nickname": "כינוי",
+    "scoreLabel": "ניקוד",
+    "scoreValue": "{{value}} נק׳",
+    "save": "שמירה",
+    "saving": "שומר…",
+    "saveError": "השמירה נכשלה. נסה שוב בעוד רגע.",
+    "close": "סגירה",
+    "edit": "עריכה",
+    "delete": "מחיקה",
+    "all": "הכול",
+    "goBack": "חזרה",
+    "noAnswer": "(אין תשובה)",
+    "allCorrectNotice": "😄 ענית נכון על הכול! אין מילים שגויות",
+    "noRecordsTitle": "אין עדיין רשומות",
+    "gameTitle": "🍓 הישרדות תות",
+    "startGame": "התחלת משחק",
+    "quizSetLoadError": "טעינת ערכת המילים נכשלה. נסה שוב בעוד רגע.",
+    "loadingQuizSet": "טוען את ערכת המילים…",
+    "wordCount_one": "מילה אחת",
+    "wordCount_two": "שתי מילים",
+    "wordCount_many": "{{count}} מילים",
+    "wordCount_other": "{{count}} מילים",
+    "loginRequired": "יש להתחבר."
+  },
+  "login": {
+    "tagline": "תפסו מילים כדי לשרוד",
+    "submitting": "מתחבר…",
+    "submit": "התחברות",
+    "noAccount": "אין לך חשבון?",
+    "signupLink": "הרשמה ←"
+  },
+  "signup": {
+    "title": "הרשמה",
+    "passwordConfirmLabel": "אימות סיסמה",
+    "submitting": "נרשם…",
+    "submit": "הרשמה",
+    "errorNicknameRequired": "נא להזין כינוי.",
+    "errorPasswordTooShort": "הסיסמה חייבת לכלול {{minLength}} תווים לפחות.",
+    "errorPasswordMismatch": "הסיסמאות אינן תואמות. בדוק שוב.",
+    "errorAlreadyRegistered": "האימייל הזה כבר רשום. נא להתחבר."
+  },
+  "verifyEmail": {
+    "title": "בדוק את תיבת הדואר שלך",
+    "sentDescSuffix": "הוא הכתובת שאליה שלחנו את מייל האימות.",
+    "sentDescLine2": "לחץ על הקישור במייל כדי להשלים את ההרשמה.",
+    "descNoEmail": "הזן את האימייל שבו נרשמת ונשלח שוב את מייל האימות.",
+    "resentNotice": "שלחנו שוב את המייל. בדוק את תיבת הדואר שלך.",
+    "resendCountdown": "שליחה חוזרת ({{seconds}} שניות)",
+    "sending": "שולח…",
+    "resend": "שליחה חוזרת של המייל",
+    "backToLogin": "→ חזרה להתחברות"
+  },
+  "lobby": {
+    "tagline": "התחמק מהמפלצות וענה נכון על השאלות כדי להתחזק",
+    "loading": "טוען…",
+    "noSets": "אין ערכות מילים",
+    "footnote": "שלב 3 · לובי זמני — בחירת ערכות והיסטוריה יגיעו בשלב מאוחר יותר"
+  },
+  "placeholder": {
+    "desc": "בקרוב. אנחנו עובדים על זה."
+  },
+  "result": {
+    "title": "המשחק נגמר",
+    "killsLabel": "חיסולים",
+    "killsValue": "{{kills}} אויבים",
+    "quizLabel": "חידון",
+    "savedNotice": "✔ נשמר · נתראה בפעם הבאה",
+    "wrongTitle": "מילים שגויות",
+    "toLobby": "ללובי",
+    "retry": "ניסיון חוזר",
+    "moreSuffix": " ועוד",
+    "answer": "התשובה: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "סוג",
+    "scopeOfficial": "רשמי",
+    "scopeMine": "הערכות שלי",
+    "uploadButton": "+ העלאה",
+    "emptyTitle": "אין עדיין ערכות מילים",
+    "emptyDescMine": "לחץ על + העלאה כדי ליצור את הערכה הראשונה שלך",
+    "emptyDescOther": "נסה לבדוק כרטיסיות של שפות או סוגים אחרים",
+    "uploadSheetTitle": "העלאת ערכת מילים"
+  },
+  "quizSetDetail": {
+    "backLinkText": "→ חזרה",
+    "notFound": "לא ניתן למצוא את ערכת המילים הזו.",
+    "backToList": "חזרה לרשימת הערכות",
+    "learnedProgress": "נלמדו {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ מילים שטועים בהן הרבה",
+    "wrongCount_one": "תשובה שגויה אחת",
+    "wrongCount_two": "שתי תשובות שגויות",
+    "wrongCount_many": "{{count}} תשובות שגויות",
+    "wrongCount_other": "{{count}} תשובות שגויות",
+    "allWordsTitle": "כל המילים",
+    "emptyItems": "עדיין לא נוספו מילים.",
+    "headerWord": "מילה",
+    "headerMeaning": "משמעות",
+    "headerStatus": "מצב",
+    "frontPlaceholder": "מילה (front)",
+    "backPlaceholder": "משמעות (back) · השתמש ב-';' למספר משמעויות",
+    "examplePlaceholder": "משפט לדוגמה (אופציונלי)",
+    "removeItemAria": "הסרת המילה הזו",
+    "addItemButton": "+ הוספת מילה",
+    "emptyFieldsError": "מלא את השדות הריקים (מילה ומשמעות) כדי לשמור."
+  },
+  "ranking": {
+    "title": "דירוג",
+    "tabsAriaLabel": "סוג הדירוג",
+    "tabBySet": "לפי ערכה",
+    "tabOverall": "כללי",
+    "tabByCountry": "לפי מדינה",
+    "scopeLabel": "טווח",
+    "scopeMine": "המדינה שלי",
+    "myRankLabel": "הדירוג שלי",
+    "myRankEmpty": "עדיין לא מדורג",
+    "loadError": "טעינת הדירוג נכשלה. נסה שוב בעוד רגע.",
+    "byCountryEmptyDesc": "שחק בערכות רשמיות כדי לבנות את דירוג המדינה שלך",
+    "bySetEmptyDesc": "שחק בערכה הזו כדי להופיע בדירוג",
+    "overallEmptyDesc": "שחק בערכות רשמיות כדי להופיע בדירוג",
+    "noOfficialSetsTitle": "אין עדיין ערכות רשמיות",
+    "noOfficialSetsDesc": "לאחר שיתווספו ערכות רשמיות, הדירוגים יופיעו כאן",
+    "headerRank": "דירוג",
+    "headerAvgScore": "ניקוד ממוצע",
+    "headerParticipants": "משתתפים",
+    "headerSetsPlayed": "ערכות ששוחקו",
+    "playersCount_one": "שחקן אחד",
+    "playersCount_two": "שני שחקנים",
+    "playersCount_many": "{{count}} שחקנים",
+    "playersCount_other": "{{count}} שחקנים",
+    "playersJoined_one": "שחקן אחד הצטרף",
+    "playersJoined_two": "שני שחקנים הצטרפו",
+    "playersJoined_many": "{{count}} שחקנים הצטרפו",
+    "playersJoined_other": "{{count}} שחקנים הצטרפו",
+    "setsPlayedCount_one": "ערכה אחת",
+    "setsPlayedCount_two": "שתי ערכות",
+    "setsPlayedCount_many": "{{count}} ערכות",
+    "setsPlayedCount_other": "{{count}} ערכות",
+    "setsPlayedJoined_one": "שוחקה ערכה אחת",
+    "setsPlayedJoined_two": "שוחקו שתי ערכות",
+    "setsPlayedJoined_many": "שוחקו {{count}} ערכות",
+    "setsPlayedJoined_other": "שוחקו {{count}} ערכות",
+    "selectAriaLabel": "בחירת ערכת מילים",
+    "myRankByCountry": "המדינה שלי {{country}} מקום {{rank}} · {{score}} נק׳",
+    "myRankGeneric": "מקום {{rank}} · {{score}} נק׳"
+  },
+  "history": {
+    "title": "היסטוריה",
+    "loadError": "טעינת ההיסטוריה נכשלה. נסה שוב בעוד רגע.",
+    "emptyDesc": "שחק בערכת מילים והיא תופיע כאן",
+    "headerDate": "תאריך",
+    "headerSet": "ערכה",
+    "headerCorrect": "נכון",
+    "headerAccuracy": "דיוק",
+    "deletedSet": "ערכה שנמחקה",
+    "deletedWord": "מילה שנמחקה",
+    "cardAccuracyLine": "נכון {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "ניהול ערכות מילים",
+    "uploadLink": "+ העלאת ערכה רשמית",
+    "tabOfficial": "ערכות רשמיות",
+    "tabPromote": "קידום ערכות אישיות",
+    "loading": "טוען…",
+    "loadError": "טעינת הרשימה נכשלה. נסה שוב בעוד רגע.",
+    "countryCommon": "משותף",
+    "emptyFilteredTitle": "אין ערכות רשמיות התואמות לסינון הזה",
+    "emptyFilteredDesc": "נסה סינון של מדינה או שפה אחרת",
+    "deleting": "מוחק…",
+    "deleteConfirm": "מחיקה",
+    "emptyPromoteTitle": "אין ערכות אישיות לקידום",
+    "emptyPromoteDesc": "כאשר משתמשים מעלים ערכות אישיות, הן יופיעו כאן",
+    "personalSetBadge": "ערכה אישית",
+    "promoteButton": "קידום",
+    "editSheetTitle": "עריכת ערכה רשמית",
+    "titleFieldLabel": "כותרת",
+    "titleRequiredError": "הזן כותרת כדי לשמור.",
+    "promoteSheetTitle": "קידום לערכה רשמית",
+    "promoteError": "הקידום נכשל. נסה שוב בעוד רגע.",
+    "promoteNoticeSuffix": " תהפוך לערכה רשמית שכל המשתמשים במדינה שנבחרה יוכלו לשחק בה.",
+    "promoting": "מקדם…",
+    "promoteSubmit": "קידום",
+    "countryCommonOption": "משותף (כל המדינות)",
+    "countrySpecificOption": "מדינה ספציפית"
+  },
+  "adminUpload": {
+    "backLink": "→ חזרה לניהול",
+    "title": "העלאת ערכה רשמית",
+    "desc": "בחר מדינה כדי שזו תהפוך לערכה רשמית שכל המשתמשים שם יוכלו לשחק בה.",
+    "loadingUser": "טוען מידע משתמש…"
+  },
+  "header": {
+    "appName": "הישרדות תות",
+    "mainNav": "תפריט ראשי",
+    "sets": "ערכות",
+    "ranking": "דירוג",
+    "history": "היסטוריה",
+    "admin": "ניהול"
+  },
+  "tabbar": {
+    "home": "בית",
+    "sets": "ערכות",
+    "ranking": "דירוג",
+    "history": "היסטוריה",
+    "nav": "תפריט תחתון"
+  },
+  "profileSheet": {
+    "title": "פרופיל",
+    "nicknameLabel": "כינוי",
+    "change": "שינוי",
+    "countryLabel": "מדינה",
+    "emailLabel": "אימייל",
+    "loggingOut": "מתנתק…",
+    "logout": "התנתקות",
+    "nicknameSaveError": "שמירת הכינוי נכשלה. נסה שוב.",
+    "countrySaveError": "שמירת המדינה נכשלה. נסה שוב.",
+    "language": "שפה"
+  },
+  "pauseMenu": {
+    "pause": "השהיה",
+    "title": "מושהה",
+    "resume": "המשך",
+    "quit": "יציאה",
+    "quitHint": "הניקוד הנוכחי שלך יישמר"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " מה המשמעות?",
+    "inputHint_one": "※ הזן משמעות אחת",
+    "inputHint_two": "※ הזן שתי משמעויות",
+    "inputHint_many": "※ הזן {{count}} משמעויות",
+    "inputHint_other": "※ הזן {{count}} משמעויות",
+    "answerPlaceholder": "תשובה {{index}}",
+    "submit": "שליחה",
+    "missed": "משמעויות שהוחמצו: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "מילה אחת",
+    "wordCount_two": "שתי מילים",
+    "wordCount_many": "{{count}} מילים",
+    "wordCount_other": "{{count}} מילים",
+    "learnProgress": "נלמדו {{learned}}/{{total}}",
+    "viewSet": "צפייה בערכה",
+    "start": "התחלה",
+    "confirmDelete": "למחוק?",
+    "deleting": "מוחק…",
+    "deleteConfirm": "מחיקה",
+    "delete": "מחיקה"
+  },
+  "directionSheet": {
+    "title": "באיזה כיוון לשחק?",
+    "startGame": "התחלת משחק",
+    "frontToBack": {
+      "title": "ראה את {{short}} ונחש את המשמעות",
+      "hint": "מילה ← משמעות"
+    },
+    "backToFront": {
+      "title": "ראה את המשמעות ונחש את {{short}}",
+      "hint": "משמעות ← מילה"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,תפוח,I ate an apple.\nrun,לרוץ;רץ,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"תפוח\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"לרוץ;רץ\" }\n]",
+    "titleLabel": "כותרת",
+    "titlePlaceholder": "לדוגמה: אוצר מילים באנגלית לכיתה ז׳",
+    "countryLabel": "מדינה",
+    "languageLabel": "שפה",
+    "wordsInputLabel": "הזנת מילים",
+    "loadFromFile": "טעינה מקובץ",
+    "confirmColumn": "בדיקה",
+    "normal": "תקין",
+    "uploading": "מעלה…",
+    "upload": "העלאה",
+    "titleRequired": "הזן כותרת כדי להעלות.",
+    "fixErrorsRequired": "תקן את כל השורות עם השגיאות כדי להעלות.",
+    "minOneWordRequired": "הזן מילה אחת לפחות כדי להעלות.",
+    "uploadFailed": "ההעלאה נכשלה. נסה שוב בעוד רגע.",
+    "previewSummary_one": "תצוגה מקדימה · שורה תקינה אחת",
+    "previewSummary_two": "תצוגה מקדימה · שתי שורות תקינות",
+    "previewSummary_many": "תצוגה מקדימה · {{count}} שורות תקינות",
+    "previewSummary_other": "תצוגה מקדימה · {{count}} שורות תקינות",
+    "previewError_one": " · שורה אחת שגויה",
+    "previewError_two": " · שתי שורות שגויות",
+    "previewError_many": " · {{count}} שורות שגויות",
+    "previewError_other": " · {{count}} שורות שגויות",
+    "missingBoth": "מלא את front (מילה) ו-back (משמעות) כדי להוסיף.",
+    "missingFront": "מלא את front (מילה) כדי להוסיף.",
+    "missingBack": "מלא את back (משמעות) כדי להוסיף.",
+    "jsonSyntaxError": "בדוק את פורמט ה-JSON. (שגיאת תחביר)",
+    "jsonMustBeArray": "הרמה העליונה חייבת להיות מערך כדי להעלות. לדוגמה: [{\"front\":\"apple\",\"back\":\"תפוח\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "האימייל הזה כבר רשום. נא להתחבר.",
+    "weakPassword": "הסיסמה פשוטה מדי. הזן לפחות 6 תווים בשילוב שונה.",
+    "invalidCredentials": "האימייל או הסיסמה שגויים. בדוק שוב.",
+    "invalidEmail": "בדוק את פורמט האימייל.",
+    "emailRateLimit": "ביקשת מיילים לעיתים קרובות מדי. נסה שוב בעוד רגע.",
+    "requestRateLimit": "יותר מדי בקשות. נסה שוב בעוד רגע.",
+    "signupDisabled": "ההרשמה אינה פתוחה כרגע. נסה שוב מאוחר יותר.",
+    "genericError": "יש לנו קושי בהתחברות כרגע. נסה שוב בעוד רגע."
+  },
+  "countrySelect": {
+    "placeholder": "נא לבחור מדינה",
+    "title": "בחירת מדינה",
+    "searchPlaceholder": "חיפוש מדינה...",
+    "empty": "לא נמצאו תוצאות. לנסות לחפש מדינה אחרת?"
+  },
+  "languages": {
+    "en": {
+      "label": "מילים באנגלית",
+      "short": "אנגלית"
+    },
+    "ja": {
+      "label": "מילים ביפנית",
+      "short": "יפנית"
+    },
+    "zh": {
+      "label": "מילים בסינית",
+      "short": "סינית"
+    },
+    "general": "כללי"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "טרם נלמד",
+      "learning": "בלמידה",
+      "review_one": "חזרה בעוד יום אחד",
+      "review_two": "חזרה בעוד יומיים",
+      "review_many": "חזרה בעוד {{count}} ימים",
+      "review_other": "חזרה בעוד {{count}} ימים"
+    }
+  },
+  "game": {
+    "instructions": "תנועה: מקשי חצים / הקשה על המסך (כיוון יחסית לדמות)   ·   הנשק שלך גואל אויבים באופן אוטומטי",
+    "redeemed": "נגאל",
+    "goldQuiz": "קיבלת זהב! חידון",
+    "blessingGained": "קיבלת ברכה",
+    "blessingsTitle": "ברכות שהתקבלו",
+    "blessingsEmpty": "עדיין לא התקבלו ברכות",
+    "close": "סגירה",
+    "hudTime": "זמן",
+    "hudRedeemed": "נגאל",
+    "hudNextQuiz": "החידון הבא",
+    "hudPierce": "חדירה",
+    "hudQuiz": "חידון",
+    "upgrades": {
+      "arrow_count": {
+        "name": "חצים מרובים",
+        "desc": "+1 חץ"
+      },
+      "arrow_rate": {
+        "name": "ידיים זריזות",
+        "desc": "מגביר את קצב ירי החצים"
+      },
+      "arrow_pierce": {
+        "name": "חדירה",
+        "desc": "+10% סיכוי לחדירה"
+      }
+    }
+  }
+}

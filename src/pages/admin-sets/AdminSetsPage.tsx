@@ -1,7 +1,9 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import type { TFunction } from 'i18next'
 import { useAdminQuizSets, useDeleteQuizSet, type QuizSetWithCount } from '../../entities/quiz-set'
-import { findCountry } from '../../shared/config/countries'
+import { countryName } from '../../shared/config/countries'
 import { learnLangLabel } from '../../shared/config/languages'
 import { EditSetSheet } from './EditSetSheet'
 import { PromoteSetSheet } from './PromoteSetSheet'
@@ -20,14 +22,15 @@ function sortLangs(langs: (string | null)[]): (string | null)[] {
   })
 }
 
-function countryLabel(code: string | null): string {
-  if (code === null) return '공통'
-  return `${code} · ${findCountry(code)?.nameKo ?? ''}`
+function countryLabel(code: string | null, t: TFunction, lang: string): string {
+  if (code === null) return t('adminSets.countryCommon')
+  return `${code} · ${countryName(code, lang)}`
 }
 
 // 관리 · 문제집 `/admin/sets` (screens-v3 §13) — [공식 문제집] 탭(국가·언어 필터 + 수정·삭제) +
 // [개인 문제집 승격] 탭. RequireAdmin 가드 안에서만 렌더되지만, useAdminQuizSets 자체도 isAdmin일 때만 요청한다.
 export function AdminSetsPage() {
+  const { t, i18n } = useTranslation()
   const { data: sets, isLoading, isError } = useAdminQuizSets()
   const deleteSet = useDeleteQuizSet()
 
@@ -75,9 +78,9 @@ export function AdminSetsPage() {
   return (
     <div className={styles.page}>
       <header className={styles.header}>
-        <h1 className={styles.title}>문제집 관리</h1>
+        <h1 className={styles.title}>{t('adminSets.title')}</h1>
         <Link to="/admin/upload" className={styles.uploadLink}>
-          + 공식 문제집 업로드
+          {t('adminSets.uploadLink')}
         </Link>
       </header>
 
@@ -87,34 +90,34 @@ export function AdminSetsPage() {
           className={tab === 'official' ? `${styles.tab} ${styles.tabActive}` : styles.tab}
           onClick={() => setTab('official')}
         >
-          공식 문제집
+          {t('adminSets.tabOfficial')}
         </button>
         <button
           type="button"
           className={tab === 'promote' ? `${styles.tab} ${styles.tabActive}` : styles.tab}
           onClick={() => setTab('promote')}
         >
-          개인 문제집 승격
+          {t('adminSets.tabPromote')}
         </button>
       </div>
 
-      {isLoading && <p className={styles.notice}>불러오는 중이에요…</p>}
+      {isLoading && <p className={styles.notice}>{t('adminSets.loading')}</p>}
       {!isLoading && isError && (
-        <p className={styles.notice}>목록을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.</p>
+        <p className={styles.notice}>{t('adminSets.loadError')}</p>
       )}
 
       {!isLoading && !isError && tab === 'official' && (
         <>
           <div className={styles.filterBar}>
             <div className={styles.filterRow}>
-              <span className={styles.filterLabel}>국가</span>
+              <span className={styles.filterLabel}>{t('common.country')}</span>
               <div className={styles.chipRow}>
                 <button
                   type="button"
                   className={countryFilter === 'ALL' ? `${styles.chip} ${styles.chipActive}` : styles.chip}
                   onClick={() => setCountryFilter('ALL')}
                 >
-                  전체
+                  {t('common.all')}
                 </button>
                 {countryOptions.map((code) => (
                   <button
@@ -123,21 +126,21 @@ export function AdminSetsPage() {
                     className={countryFilter === code ? `${styles.chip} ${styles.chipActive}` : styles.chip}
                     onClick={() => setCountryFilter(code)}
                   >
-                    {countryLabel(code)}
+                    {countryLabel(code, t, i18n.language)}
                   </button>
                 ))}
               </div>
             </div>
 
             <div className={styles.filterRow}>
-              <span className={styles.filterLabel}>언어</span>
+              <span className={styles.filterLabel}>{t('common.language')}</span>
               <div className={styles.chipRow}>
                 <button
                   type="button"
                   className={langFilter === 'ALL' ? `${styles.chip} ${styles.chipActive}` : styles.chip}
                   onClick={() => setLangFilter('ALL')}
                 >
-                  전체
+                  {t('common.all')}
                 </button>
                 {langOptions.map((code) => (
                   <button
@@ -156,8 +159,8 @@ export function AdminSetsPage() {
           {filteredOfficial.length === 0 ? (
             <div className={styles.empty}>
               <p className={styles.emptyEmoji}>📭</p>
-              <p className={styles.emptyTitle}>조건에 맞는 공식 문제집이 없어요</p>
-              <p className={styles.emptyDesc}>다른 국가·언어 필터를 확인해 보세요</p>
+              <p className={styles.emptyTitle}>{t('adminSets.emptyFilteredTitle')}</p>
+              <p className={styles.emptyDesc}>{t('adminSets.emptyFilteredDesc')}</p>
             </div>
           ) : (
             <ul className={styles.list}>
@@ -166,12 +169,13 @@ export function AdminSetsPage() {
                   <div className={styles.rowMain}>
                     <span className={styles.rowTitle}>{set.title}</span>
                     <span className={styles.rowMeta}>
-                      {countryLabel(set.country)} · {learnLangLabel(set.learn_lang)} · 단어 {set.itemCount}개
+                      {countryLabel(set.country, t, i18n.language)} · {learnLangLabel(set.learn_lang)} ·{' '}
+                      {t('common.wordCount', { count: set.itemCount })}
                     </span>
                   </div>
                   <div className={styles.rowActions}>
                     <button type="button" className={styles.editButton} onClick={() => setEditingSet(set)}>
-                      수정
+                      {t('common.edit')}
                     </button>
                     {confirmDeleteId === set.id ? (
                       <>
@@ -182,14 +186,14 @@ export function AdminSetsPage() {
                           disabled={deleteSet.isPending}
                           aria-busy={deleteSet.isPending}
                         >
-                          {deleteSet.isPending ? '삭제하고 있어요…' : '삭제하기'}
+                          {deleteSet.isPending ? t('adminSets.deleting') : t('adminSets.deleteConfirm')}
                         </button>
                         <button
                           type="button"
                           className={styles.ghostButton}
                           onClick={() => setConfirmDeleteId(null)}
                         >
-                          닫기
+                          {t('common.close')}
                         </button>
                       </>
                     ) : (
@@ -198,7 +202,7 @@ export function AdminSetsPage() {
                         className={styles.deleteButton}
                         onClick={() => setConfirmDeleteId(set.id)}
                       >
-                        삭제
+                        {t('common.delete')}
                       </button>
                     )}
                   </div>
@@ -214,8 +218,8 @@ export function AdminSetsPage() {
           {personalSets.length === 0 ? (
             <div className={styles.empty}>
               <p className={styles.emptyEmoji}>📭</p>
-              <p className={styles.emptyTitle}>승격할 개인 문제집이 없어요</p>
-              <p className={styles.emptyDesc}>유저가 개인 문제집을 올리면 여기서 확인할 수 있어요</p>
+              <p className={styles.emptyTitle}>{t('adminSets.emptyPromoteTitle')}</p>
+              <p className={styles.emptyDesc}>{t('adminSets.emptyPromoteDesc')}</p>
             </div>
           ) : (
             <ul className={styles.list}>
@@ -224,11 +228,12 @@ export function AdminSetsPage() {
                   <div className={styles.rowMain}>
                     <span className={styles.rowTitle}>{set.title}</span>
                     <span className={styles.rowMeta}>
-                      {learnLangLabel(set.learn_lang)} · 단어 {set.itemCount}개 · 개인 문제집
+                      {learnLangLabel(set.learn_lang)} · {t('common.wordCount', { count: set.itemCount })} ·{' '}
+                      {t('adminSets.personalSetBadge')}
                     </span>
                   </div>
                   <button type="button" className={styles.promoteButton} onClick={() => setPromotingSet(set)}>
-                    승격
+                    {t('adminSets.promoteButton')}
                   </button>
                 </li>
               ))}

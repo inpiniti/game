@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { useCurrentUser } from '../../entities/user'
 import { ProfileSheet } from '../profile-sheet/ProfileSheet'
 import styles from './Header.module.css'
@@ -9,6 +10,7 @@ const navLinkClassName = ({ isActive }: { isActive: boolean }) =>
 
 // 데스크톱/태블릿: 상단 헤더에 전체 네비게이션. 모바일: 로고+닉네임만(탭바가 나머지를 담당).
 export function Header() {
+  const { t } = useTranslation()
   const { profile } = useCurrentUser()
   const [sheetOpen, setSheetOpen] = useState(false)
 
@@ -16,22 +18,22 @@ export function Header() {
     <>
       <header className={styles.header}>
         <Link to="/" className={styles.logo}>
-          🍓 딸기 서바이벌
+          🍓 {t('header.appName')}
         </Link>
 
-        <nav className={styles.nav} aria-label="주 메뉴">
+        <nav className={styles.nav} aria-label={t('header.mainNav')}>
           <NavLink to="/sets" className={navLinkClassName}>
-            문제집
+            {t('header.sets')}
           </NavLink>
           <NavLink to="/ranking" className={navLinkClassName}>
-            랭킹
+            {t('header.ranking')}
           </NavLink>
           <NavLink to="/history" className={navLinkClassName}>
-            기록
+            {t('header.history')}
           </NavLink>
           {profile?.role === 'admin' && (
             <NavLink to="/admin/sets" className={navLinkClassName}>
-              관리
+              {t('header.admin')}
             </NavLink>
           )}
         </nav>

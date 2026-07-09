@@ -1,0 +1,345 @@
+{
+  "common": {
+    "loading": "Laster…",
+    "country": "Land",
+    "language": "Språk",
+    "email": "E-post",
+    "password": "Passord",
+    "nickname": "Kallenavn",
+    "scoreLabel": "Poeng",
+    "scoreValue": "{{value}} poeng",
+    "save": "Lagre",
+    "saving": "Lagrer…",
+    "saveError": "Kunne ikke lagre. Prøv igjen om litt.",
+    "close": "Lukk",
+    "edit": "Rediger",
+    "delete": "Slett",
+    "all": "Alle",
+    "goBack": "Tilbake",
+    "noAnswer": "(Ingen svar)",
+    "allCorrectNotice": "😄 Du fikk alt riktig! Ingen feil ord",
+    "noRecordsTitle": "Ingen historikk ennå",
+    "gameTitle": "🍓 Jordbæroverlevelse",
+    "startGame": "Start spillet",
+    "quizSetLoadError": "Kunne ikke laste inn ordsettet. Prøv igjen om litt.",
+    "loadingQuizSet": "Laster inn ordsettet…",
+    "wordCount_one": "{{count}} ord",
+    "wordCount_other": "{{count}} ord",
+    "loginRequired": "Logg inn for å fortsette."
+  },
+  "login": {
+    "tagline": "Overlev ved å fange ord",
+    "submitting": "Logger inn…",
+    "submit": "Logg inn",
+    "noAccount": "Har du ikke en konto?",
+    "signupLink": "Registrer deg →"
+  },
+  "signup": {
+    "title": "Registrer deg",
+    "passwordConfirmLabel": "Bekreft passord",
+    "submitting": "Registrerer…",
+    "submit": "Registrer",
+    "errorNicknameRequired": "Skriv inn et kallenavn.",
+    "errorPasswordTooShort": "Passordet må være minst {{minLength}} tegn.",
+    "errorPasswordMismatch": "Passordene stemmer ikke overens. Sjekk igjen.",
+    "errorAlreadyRegistered": "Denne e-postadressen er allerede registrert. Logg inn."
+  },
+  "verifyEmail": {
+    "title": "Sjekk innboksen din",
+    "sentDescSuffix": "er hvor vi sendte bekreftelses-e-posten din.",
+    "sentDescLine2": "Trykk på lenken i e-posten for å fullføre registreringen.",
+    "descNoEmail": "Skriv inn e-posten du brukte ved registrering, så sender vi bekreftelsesmailen på nytt.",
+    "resentNotice": "Vi har sendt e-posten på nytt. Sjekk innboksen din.",
+    "resendCountdown": "Send e-posten på nytt ({{seconds}} s)",
+    "sending": "Sender…",
+    "resend": "Send e-posten på nytt",
+    "backToLogin": "← Tilbake til innlogging"
+  },
+  "lobby": {
+    "tagline": "Unngå monstre og svar på quiz for å bli sterkere",
+    "loading": "Laster…",
+    "noSets": "Ingen ordsett",
+    "footnote": "Midlertidig lobby for steg 3 · Valg av ordsett/historikk kommer i et senere steg"
+  },
+  "placeholder": {
+    "desc": "Kommer snart. Vi jobber med det."
+  },
+  "result": {
+    "title": "Game Over",
+    "killsLabel": "Beseiret",
+    "killsValue": "{{kills}} fiender",
+    "quizLabel": "Quiz",
+    "savedNotice": "✔ Lagret · Vi sees neste gang!",
+    "wrongTitle": "Feil ord",
+    "toLobby": "Til lobbyen",
+    "retry": "Prøv igjen",
+    "moreSuffix": " og flere",
+    "answer": "Svar: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Type",
+    "scopeOfficial": "Offisiell",
+    "scopeMine": "Mine sett",
+    "uploadButton": "+ Last opp",
+    "emptyTitle": "Ingen ordsett ennå",
+    "emptyDescMine": "Trykk på + Last opp for å lage ditt første ordsett",
+    "emptyDescOther": "Sjekk andre faner for språk eller type",
+    "uploadSheetTitle": "Last opp ordsett"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Tilbake",
+    "notFound": "Fant ikke dette ordsettet.",
+    "backToList": "Tilbake til ordsett",
+    "learnedProgress": "Lært {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Ord du ofte har feil på",
+    "wrongCount_one": "{{count}} feil svar",
+    "wrongCount_other": "{{count}} feil svar",
+    "allWordsTitle": "Alle ord",
+    "emptyItems": "Ingen ord lagt til ennå.",
+    "headerWord": "Ord",
+    "headerMeaning": "Betydning",
+    "headerStatus": "Status",
+    "frontPlaceholder": "Ord (front)",
+    "backPlaceholder": "Betydning (back) · bruk ';' for flere betydninger",
+    "examplePlaceholder": "Eksempel (valgfritt)",
+    "removeItemAria": "Fjern dette ordet",
+    "addItemButton": "+ Legg til ord",
+    "emptyFieldsError": "Fyll inn ord og betydning for å lagre."
+  },
+  "ranking": {
+    "title": "Rangering",
+    "tabsAriaLabel": "Type rangering",
+    "tabBySet": "Per ordsett",
+    "tabOverall": "Totalt",
+    "tabByCountry": "Per land",
+    "scopeLabel": "Omfang",
+    "scopeMine": "Mitt land",
+    "myRankLabel": "Min plassering",
+    "myRankEmpty": "Ikke rangert ennå",
+    "loadError": "Kunne ikke laste inn rangeringen. Prøv igjen om litt.",
+    "byCountryEmptyDesc": "Spill offisielle ordsett for å bygge opp landets rangering",
+    "bySetEmptyDesc": "Spill dette ordsettet for å komme på rangeringen",
+    "overallEmptyDesc": "Spill offisielle ordsett for å komme på rangeringen",
+    "noOfficialSetsTitle": "Ingen offisielle ordsett ennå",
+    "noOfficialSetsDesc": "Når offisielle ordsett legges til, ser du rangeringen her",
+    "headerRank": "Plassering",
+    "headerAvgScore": "Snittpoeng",
+    "headerParticipants": "Deltakere",
+    "headerSetsPlayed": "Spilte ordsett",
+    "playersCount_one": "{{count}} spiller",
+    "playersCount_other": "{{count}} spillere",
+    "playersJoined_one": "{{count}} spiller deltok",
+    "playersJoined_other": "{{count}} spillere deltok",
+    "setsPlayedCount_one": "{{count}} sett",
+    "setsPlayedCount_other": "{{count}} sett",
+    "setsPlayedJoined_one": "{{count}} sett spilt",
+    "setsPlayedJoined_other": "{{count}} sett spilte",
+    "selectAriaLabel": "Velg ordsett",
+    "myRankByCountry": "Ditt land {{country}} #{{rank}} · {{score}} poeng",
+    "myRankGeneric": "#{{rank}} · {{score}} poeng"
+  },
+  "history": {
+    "title": "Historikk",
+    "loadError": "Kunne ikke laste inn historikken din. Prøv igjen om litt.",
+    "emptyDesc": "Spill et ordsett, så vises det her",
+    "headerDate": "Dato",
+    "headerSet": "Ordsett",
+    "headerCorrect": "Riktig",
+    "headerAccuracy": "Treffsikkerhet",
+    "deletedSet": "Slettet ordsett",
+    "deletedWord": "Slettet ord",
+    "cardAccuracyLine": "Riktig {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "Administrer ordsett",
+    "uploadLink": "+ Last opp offisielt ordsett",
+    "tabOfficial": "Offisielle ordsett",
+    "tabPromote": "Forfremme personlige ordsett",
+    "loading": "Laster…",
+    "loadError": "Kunne ikke laste inn listen. Prøv igjen om litt.",
+    "countryCommon": "Felles",
+    "emptyFilteredTitle": "Ingen offisielle ordsett samsvarer med dette filteret",
+    "emptyFilteredDesc": "Prøv et annet land- eller språkfilter",
+    "deleting": "Sletter…",
+    "deleteConfirm": "Slett",
+    "emptyPromoteTitle": "Ingen personlige ordsett å forfremme",
+    "emptyPromoteDesc": "Når brukere laster opp personlige ordsett, kan du se dem her",
+    "personalSetBadge": "Personlig ordsett",
+    "promoteButton": "Forfremme",
+    "editSheetTitle": "Rediger offisielt ordsett",
+    "titleFieldLabel": "Tittel",
+    "titleRequiredError": "Skriv inn en tittel for å lagre.",
+    "promoteSheetTitle": "Forfrem til offisielt ordsett",
+    "promoteError": "Kunne ikke forfremme. Prøv igjen om litt.",
+    "promoteNoticeSuffix": " blir et offisielt ordsett som alle brukere i det valgte landet kan spille.",
+    "promoting": "Forfremmer…",
+    "promoteSubmit": "Forfrem",
+    "countryCommonOption": "Felles (alle land)",
+    "countrySpecificOption": "Spesifikt land"
+  },
+  "adminUpload": {
+    "backLink": "← Tilbake til administrasjon",
+    "title": "Last opp offisielt ordsett",
+    "desc": "Hvis du angir et land, blir dette et offisielt ordsett som alle brukere i det landet kan spille.",
+    "loadingUser": "Laster inn brukerinformasjon…"
+  },
+  "header": {
+    "appName": "Jordbæroverlevelse",
+    "mainNav": "Hovedmeny",
+    "sets": "Ordsett",
+    "ranking": "Rangering",
+    "history": "Historikk",
+    "admin": "Administrasjon"
+  },
+  "tabbar": {
+    "home": "Hjem",
+    "sets": "Ordsett",
+    "ranking": "Rangering",
+    "history": "Historikk",
+    "nav": "Nedre meny"
+  },
+  "profileSheet": {
+    "title": "Profil",
+    "nicknameLabel": "Kallenavn",
+    "change": "Endre",
+    "countryLabel": "Land",
+    "emailLabel": "E-post",
+    "loggingOut": "Logger ut…",
+    "logout": "Logg ut",
+    "nicknameSaveError": "Kunne ikke lagre kallenavnet. Prøv igjen.",
+    "countrySaveError": "Kunne ikke lagre landet. Prøv igjen.",
+    "language": "Språk"
+  },
+  "pauseMenu": {
+    "pause": "Pause",
+    "title": "Pauset",
+    "resume": "Fortsett",
+    "quit": "Avslutt",
+    "quitHint": "Din nåværende poengsum blir lagret"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " — hva betyr det?",
+    "inputHint_one": "※ Skriv inn {{count}} betydning",
+    "inputHint_other": "※ Skriv inn {{count}} betydninger",
+    "answerPlaceholder": "Svar {{index}}",
+    "submit": "Send inn",
+    "missed": "Ubesvarte betydninger: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} ord",
+    "wordCount_other": "{{count}} ord",
+    "learnProgress": "Lært {{learned}}/{{total}}",
+    "viewSet": "Vis ordsett",
+    "start": "Start",
+    "confirmDelete": "Slette dette?",
+    "deleting": "Sletter…",
+    "deleteConfirm": "Slett",
+    "delete": "Slett"
+  },
+  "directionSheet": {
+    "title": "Hvilken retning?",
+    "startGame": "Start spillet",
+    "frontToBack": {
+      "title": "Se {{short}} og gjett betydningen",
+      "hint": "Ord → Betydning"
+    },
+    "backToFront": {
+      "title": "Se betydningen og gjett {{short}}",
+      "hint": "Betydning → Ord"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,en rund rød frukt,I ate an apple.\nrun,løpe;jogge,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"en rund rød frukt\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"løpe;jogge\" }\n]",
+    "titleLabel": "Tittel",
+    "titlePlaceholder": "f.eks. Ordforråd 7. trinn",
+    "countryLabel": "Land",
+    "languageLabel": "Språk",
+    "wordsInputLabel": "Skriv inn ord",
+    "loadFromFile": "Last inn fra fil",
+    "confirmColumn": "Kontroller",
+    "normal": "Gyldig",
+    "uploading": "Laster opp…",
+    "upload": "Last opp",
+    "titleRequired": "Skriv inn en tittel for å laste opp.",
+    "fixErrorsRequired": "Rett alle rader med feil for å laste opp.",
+    "minOneWordRequired": "Skriv inn minst 1 ord for å laste opp.",
+    "uploadFailed": "Kunne ikke laste opp. Prøv igjen om litt.",
+    "previewSummary_one": "Forhåndsvisning · {{count}} gyldig rad",
+    "previewSummary_other": "Forhåndsvisning · {{count}} gyldige rader",
+    "previewError_one": " · {{count}} rad med feil",
+    "previewError_other": " · {{count}} rader med feil",
+    "missingBoth": "Fyll inn front (ord) og back (betydning) for å legge til.",
+    "missingFront": "Fyll inn front (ord) for å legge til.",
+    "missingBack": "Fyll inn back (betydning) for å legge til.",
+    "jsonSyntaxError": "Sjekk JSON-formatet. (Syntaksfeil)",
+    "jsonMustBeArray": "Toppnivået må være en array for å laste opp. F.eks.: [{\"front\":\"apple\",\"back\":\"en rund rød frukt\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Denne e-postadressen er allerede registrert. Logg inn.",
+    "weakPassword": "Passordet er for enkelt. Bruk minst 6 tegn med en annen kombinasjon.",
+    "invalidCredentials": "E-postadressen eller passordet er feil. Sjekk igjen.",
+    "invalidEmail": "Sjekk formatet på e-postadressen din.",
+    "emailRateLimit": "Du har bedt om e-post for ofte. Prøv igjen om litt.",
+    "requestRateLimit": "Det er for mange forespørsler. Prøv igjen om litt.",
+    "signupDisabled": "Registrering er ikke åpen akkurat nå. Prøv igjen senere.",
+    "genericError": "Vi har tilkoblingsproblemer akkurat nå. Prøv igjen om litt."
+  },
+  "countrySelect": {
+    "placeholder": "Velg et land",
+    "title": "Velg land",
+    "searchPlaceholder": "Søk land...",
+    "empty": "Ingen resultater funnet. Vil du søke etter et annet land?"
+  },
+  "languages": {
+    "en": {
+      "label": "Engelske ord",
+      "short": "Engelsk"
+    },
+    "ja": {
+      "label": "Japanske ord",
+      "short": "Japansk"
+    },
+    "zh": {
+      "label": "Kinesiske ord",
+      "short": "Kinesisk"
+    },
+    "general": "Generelt"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Ikke lært",
+      "learning": "Lærer",
+      "review_one": "Repetisjon om {{count}} dag",
+      "review_other": "Repetisjon om {{count}} dager"
+    }
+  },
+  "game": {
+    "instructions": "Beveg: Piltaster / Trykk på skjermen (retning i forhold til karakteren)   ·   Våpenet ditt frelser fiender automatisk",
+    "redeemed": "Frelst",
+    "goldQuiz": "Gull opptjent! Quiz",
+    "blessingGained": "Velsignelse oppnådd",
+    "blessingsTitle": "Oppnådde velsignelser",
+    "blessingsEmpty": "Ingen velsignelser oppnådd ennå",
+    "close": "Lukk",
+    "hudTime": "Tid",
+    "hudRedeemed": "Frelste",
+    "hudNextQuiz": "Neste quiz",
+    "hudPierce": "Gjennomboring",
+    "hudQuiz": "Quiz",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Flerpil",
+        "desc": "+1 pil"
+      },
+      "arrow_rate": {
+        "name": "Raske hender",
+        "desc": "Øker skuddhastigheten til piler"
+      },
+      "arrow_pierce": {
+        "name": "Gjennomboring",
+        "desc": "+10% sjanse for gjennomboring"
+      }
+    }
+  }
+}

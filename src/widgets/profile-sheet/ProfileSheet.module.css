@@ -33,6 +33,24 @@
   font-size: 15px;
 }
 
+.languageSelect {
+  width: fit-content;
+  min-width: 120px;
+  height: 44px;
+  padding: 0 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.languageSelect:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
 .editGroup {
   display: flex;
   gap: 8px;

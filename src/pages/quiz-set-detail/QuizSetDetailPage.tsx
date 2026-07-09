@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { useCurrentUser } from '../../entities/user'
 import { useQuizSet } from '../../entities/quiz-set'
 import { useQuizItems, type QuizItem } from '../../entities/quiz-item'
@@ -16,6 +17,7 @@ import styles from './QuizSetDetailPage.module.css'
 
 // 문제집 상세 `/sets/:setId` (screens-v3 §7) — 단어 목록 + 내 학습 상태 + (본인 개인 문제집이면) 수정 진입.
 export function QuizSetDetailPage() {
+  const { t } = useTranslation()
   const { setId } = useParams()
   const { session } = useCurrentUser()
   const { data: set, isLoading: setLoading, isError: setError } = useQuizSet(setId)
@@ -46,15 +48,15 @@ export function QuizSetDetailPage() {
   )
 
   if (setLoading || itemsLoading) {
-    return <p className={styles.notice}>문제집을 불러오는 중이에요…</p>
+    return <p className={styles.notice}>{t('common.loadingQuizSet')}</p>
   }
 
   if (setError || !set || !setId) {
     return (
       <div className={styles.notFound}>
-        <p className={styles.notice}>문제집을 찾을 수 없어요.</p>
+        <p className={styles.notice}>{t('quizSetDetail.notFound')}</p>
         <Link to="/sets" className={styles.backLink}>
-          문제집 목록으로
+          {t('quizSetDetail.backToList')}
         </Link>
       </div>
     )
@@ -67,18 +69,19 @@ export function QuizSetDetailPage() {
     <div className={styles.page}>
       <header className={styles.header}>
         <div className={styles.headerTop}>
-          <Link to="/sets" className={styles.backLink} aria-label="뒤로 가기">
-            ← 뒤로
+          <Link to="/sets" className={styles.backLink} aria-label={t('common.goBack')}>
+            {t('quizSetDetail.backLinkText')}
           </Link>
           {isOwner && !editing && (
             <button type="button" className={styles.editButton} onClick={() => setEditing(true)}>
-              수정
+              {t('common.edit')}
             </button>
           )}
         </div>
         <h1 className={styles.title}>{set.title}</h1>
         <p className={styles.subtitle}>
-          {learnLangLabel(set.learn_lang)} · 단어 {totalCount}개 · 학습 {learnedCount}/{totalCount}
+          {learnLangLabel(set.learn_lang)} · {t('common.wordCount', { count: totalCount })} ·{' '}
+          {t('quizSetDetail.learnedProgress', { learned: learnedCount, total: totalCount })}
         </p>
       </header>
 
@@ -92,13 +95,13 @@ export function QuizSetDetailPage() {
         <>
           {weakItems.length > 0 && (
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>⚠ 자주 틀리는 단어</h2>
+              <h2 className={styles.sectionTitle}>{t('quizSetDetail.weakSectionTitle')}</h2>
               <ul className={styles.weakList}>
                 {weakItems.map(({ item, progress: p }) => (
                   <li key={item.id} className={styles.weakRow}>
                     <span className={styles.weakFront}>{item.front}</span>
                     <span className={styles.weakBack}>{item.back}</span>
-                    <span className={styles.weakLapses}>오답 {p.lapses}회</span>
+                    <span className={styles.weakLapses}>{t('quizSetDetail.wrongCount', { count: p.lapses })}</span>
                   </li>
                 ))}
               </ul>
@@ -106,15 +109,15 @@ export function QuizSetDetailPage() {
           )}
 
           <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>전체 단어</h2>
+            <h2 className={styles.sectionTitle}>{t('quizSetDetail.allWordsTitle')}</h2>
             {totalCount === 0 ? (
-              <p className={styles.emptyNotice}>아직 등록된 단어가 없어요.</p>
+              <p className={styles.emptyNotice}>{t('quizSetDetail.emptyItems')}</p>
             ) : (
               <ul className={styles.itemList}>
                 <li className={styles.itemHeaderRow}>
-                  <span>단어</span>
-                  <span>뜻</span>
-                  <span>상태</span>
+                  <span>{t('quizSetDetail.headerWord')}</span>
+                  <span>{t('quizSetDetail.headerMeaning')}</span>
+                  <span>{t('quizSetDetail.headerStatus')}</span>
                 </li>
                 {(items ?? []).map((item) => {
                   const status = deriveLearnStatus(progressByItem.get(item.id))
@@ -143,7 +146,7 @@ export function QuizSetDetailPage() {
 
           <div className={styles.ctaBar}>
             <button type="button" className={styles.ctaButton} onClick={requestStart} disabled={totalCount === 0}>
-              게임 시작
+              {t('common.startGame')}
             </button>
           </div>
 

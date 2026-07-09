@@ -7,6 +7,12 @@
       "skillPath": "skills/frontend-design/SKILL.md",
       "computedHash": "93f53fd1c0352d3d7ec17b8f73d7351bf76f4821e55d123c9d2abc2c53ba48e4"
     },
+    "i18n-expert": {
+      "source": "daymade/claude-code-skills",
+      "sourceType": "github",
+      "skillPath": "i18n-expert/SKILL.md",
+      "computedHash": "f0a6684e0187a98c1e16f3d6481349fd4f57fce2d8f56cd7624b0e5200adf8c3"
+    },
     "phaser-best-practices": {
       "source": "onmax/nuxt-skills",
       "sourceType": "github",

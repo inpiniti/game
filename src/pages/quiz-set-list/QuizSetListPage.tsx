@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { useCurrentUser } from '../../entities/user'
 import { useDeleteQuizSet, useQuizSets, type QuizSetWithCount } from '../../entities/quiz-set'
 import { learnLangLabel } from '../../shared/config/languages'
@@ -22,6 +23,7 @@ function sortLangs(langs: (string | null)[]): (string | null)[] {
 
 // 문제집 선택 `/sets` (screens-v3 §6) — 언어 탭 × 구분 탭([공식]/[내 문제집]) + 업로드.
 export function QuizSetListPage() {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const { session } = useCurrentUser()
   const userId = session?.user.id
@@ -61,7 +63,7 @@ export function QuizSetListPage() {
       <div className={styles.filterBar}>
         {availableLangs.length > 0 && (
           <div className={styles.tabRow}>
-            <span className={styles.tabRowLabel}>언어</span>
+            <span className={styles.tabRowLabel}>{t('common.language')}</span>
             <div className={styles.tabs}>
               {availableLangs.map((code) => (
                 <button
@@ -78,25 +80,25 @@ export function QuizSetListPage() {
         )}
 
         <div className={styles.tabRow}>
-          <span className={styles.tabRowLabel}>구분</span>
+          <span className={styles.tabRowLabel}>{t('quizSetList.scopeLabel')}</span>
           <div className={styles.tabs}>
             <button
               type="button"
               className={scope === 'official' ? `${styles.tab} ${styles.tabActive}` : styles.tab}
               onClick={() => setScope('official')}
             >
-              공식
+              {t('quizSetList.scopeOfficial')}
             </button>
             <button
               type="button"
               className={scope === 'mine' ? `${styles.tab} ${styles.tabActive}` : styles.tab}
               onClick={() => setScope('mine')}
             >
-              내 문제집
+              {t('quizSetList.scopeMine')}
             </button>
           </div>
           <button type="button" className={styles.uploadButton} onClick={() => setUploadOpen(true)}>
-            + 업로드
+            {t('quizSetList.uploadButton')}
           </button>
         </div>
       </div>
@@ -110,7 +112,7 @@ export function QuizSetListPage() {
       )}
 
       {!isLoading && isError && (
-        <p className={styles.errorNotice}>문제집을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.</p>
+        <p className={styles.errorNotice}>{t('common.quizSetLoadError')}</p>
       )}
 
       {!isLoading && !isError && (
@@ -119,14 +121,14 @@ export function QuizSetListPage() {
           showDelete={scope === 'mine'}
           onDelete={handleDelete}
           deletingId={deleteSet.isPending ? deleteSet.variables : undefined}
-          emptyTitle="아직 문제집이 없어요"
+          emptyTitle={t('quizSetList.emptyTitle')}
           emptyDescription={
-            scope === 'mine' ? '+ 업로드로 첫 문제집을 만들어 보세요' : '다른 언어·구분 탭도 확인해 보세요'
+            scope === 'mine' ? t('quizSetList.emptyDescMine') : t('quizSetList.emptyDescOther')
           }
         />
       )}
 
-      <BottomSheet open={uploadOpen} onClose={() => setUploadOpen(false)} title="문제집 업로드">
+      <BottomSheet open={uploadOpen} onClose={() => setUploadOpen(false)} title={t('quizSetList.uploadSheetTitle')}>
         {userId && <UploadQuizSetForm userId={userId} onSuccess={handleUploadSuccess} />}
       </BottomSheet>
     </div>

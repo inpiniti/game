@@ -1,0 +1,345 @@
+{
+  "common": {
+    "loading": "लोड हो रहा है…",
+    "country": "देश",
+    "language": "भाषा",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "nickname": "उपनाम",
+    "scoreLabel": "स्कोर",
+    "scoreValue": "{{value}} अंक",
+    "save": "सेव करें",
+    "saving": "सेव हो रहा है…",
+    "saveError": "सेव नहीं हो पाया। कृपया थोड़ी देर बाद फिर से कोशिश करें।",
+    "close": "बंद करें",
+    "edit": "बदलें",
+    "delete": "हटाएं",
+    "all": "सभी",
+    "goBack": "वापस जाएं",
+    "noAnswer": "(कोई उत्तर नहीं)",
+    "allCorrectNotice": "😄 आपने सभी सही किए! कोई गलत शब्द नहीं",
+    "noRecordsTitle": "अभी तक कोई रिकॉर्ड नहीं",
+    "gameTitle": "🍓 Strawberry Survival",
+    "startGame": "गेम शुरू करें",
+    "quizSetLoadError": "शब्द सेट लोड नहीं हो पाया। कृपया थोड़ी देर बाद फिर से कोशिश करें।",
+    "loadingQuizSet": "शब्द सेट लोड हो रहा है…",
+    "wordCount_one": "{{count}} शब्द",
+    "wordCount_other": "{{count}} शब्द",
+    "loginRequired": "लॉग इन करना ज़रूरी है।"
+  },
+  "login": {
+    "tagline": "शब्द पकड़कर बचे रहें",
+    "submitting": "लॉग इन हो रहा है…",
+    "submit": "लॉग इन करें",
+    "noAccount": "खाता नहीं है?",
+    "signupLink": "साइन अप करें →"
+  },
+  "signup": {
+    "title": "साइन अप करें",
+    "passwordConfirmLabel": "पासवर्ड की पुष्टि करें",
+    "submitting": "साइन अप हो रहा है…",
+    "submit": "साइन अप करें",
+    "errorNicknameRequired": "कृपया एक उपनाम डालें।",
+    "errorPasswordTooShort": "पासवर्ड कम से कम {{minLength}} अक्षरों का होना चाहिए।",
+    "errorPasswordMismatch": "पासवर्ड मेल नहीं खाते। कृपया फिर से जांचें।",
+    "errorAlreadyRegistered": "यह ईमेल पहले से रजिस्टर्ड है। कृपया लॉग इन करें।"
+  },
+  "verifyEmail": {
+    "title": "अपना इनबॉक्स देखें",
+    "sentDescSuffix": " पर हमने पुष्टिकरण ईमेल भेजा है।",
+    "sentDescLine2": "साइन अप पूरा करने के लिए ईमेल में दिए लिंक पर टैप करें।",
+    "descNoEmail": "साइन अप करते समय इस्तेमाल किया ईमेल डालें, हम पुष्टिकरण ईमेल फिर से भेज देंगे।",
+    "resentNotice": "हमने ईमेल दोबारा भेज दिया है। कृपया अपना इनबॉक्स देखें।",
+    "resendCountdown": "ईमेल फिर से भेजें ({{seconds}} सेकंड)",
+    "sending": "भेजा जा रहा है…",
+    "resend": "ईमेल फिर से भेजें",
+    "backToLogin": "← लॉग इन पर वापस जाएं"
+  },
+  "lobby": {
+    "tagline": "राक्षसों से बचें और क्विज़ हल करके मज़बूत बनें",
+    "loading": "लोड हो रहा है…",
+    "noSets": "कोई शब्द सेट नहीं है",
+    "footnote": "चरण 3 का अस्थायी लॉबी · सेट चुनना/रिकॉर्ड बाद के चरण में आएगा"
+  },
+  "placeholder": {
+    "desc": "जल्द ही आ रहा है। हम इस पर काम कर रहे हैं।"
+  },
+  "result": {
+    "title": "गेम ओवर",
+    "killsLabel": "मारे गए",
+    "killsValue": "{{kills}} दुश्मन",
+    "quizLabel": "क्विज़",
+    "savedNotice": "✔ रिकॉर्ड सेव हो गया · फिर मिलेंगे",
+    "wrongTitle": "गलत शब्द",
+    "toLobby": "लॉबी में जाएं",
+    "retry": "फिर से कोशिश करें",
+    "moreSuffix": " और भी",
+    "answer": "उत्तर: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "प्रकार",
+    "scopeOfficial": "आधिकारिक",
+    "scopeMine": "मेरे सेट",
+    "uploadButton": "+ अपलोड करें",
+    "emptyTitle": "अभी तक कोई शब्द सेट नहीं है",
+    "emptyDescMine": "अपना पहला सेट बनाने के लिए + अपलोड करें पर टैप करें",
+    "emptyDescOther": "दूसरी भाषा या प्रकार के टैब भी देखें",
+    "uploadSheetTitle": "शब्द सेट अपलोड करें"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← वापस",
+    "notFound": "यह शब्द सेट नहीं मिला।",
+    "backToList": "शब्द सेट सूची पर वापस जाएं",
+    "learnedProgress": "सीखे गए {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ अक्सर गलत होने वाले शब्द",
+    "wrongCount_one": "{{count}} गलत उत्तर",
+    "wrongCount_other": "{{count}} गलत उत्तर",
+    "allWordsTitle": "सभी शब्द",
+    "emptyItems": "अभी तक कोई शब्द नहीं जोड़ा गया है।",
+    "headerWord": "शब्द",
+    "headerMeaning": "अर्थ",
+    "headerStatus": "स्थिति",
+    "frontPlaceholder": "शब्द (front)",
+    "backPlaceholder": "अर्थ (back) · कई अर्थों के लिए ';' का इस्तेमाल करें",
+    "examplePlaceholder": "उदाहरण (वैकल्पिक)",
+    "removeItemAria": "यह शब्द हटाएं",
+    "addItemButton": "+ शब्द जोड़ें",
+    "emptyFieldsError": "सेव करने के लिए शब्द और अर्थ भरें।"
+  },
+  "ranking": {
+    "title": "रैंकिंग",
+    "tabsAriaLabel": "रैंकिंग प्रकार",
+    "tabBySet": "सेट अनुसार",
+    "tabOverall": "कुल मिलाकर",
+    "tabByCountry": "देश अनुसार",
+    "scopeLabel": "दायरा",
+    "scopeMine": "मेरा देश",
+    "myRankLabel": "मेरी रैंक",
+    "myRankEmpty": "अभी तक रैंक में नहीं हैं",
+    "loadError": "रैंकिंग लोड नहीं हो पाई। कृपया थोड़ी देर बाद फिर से कोशिश करें।",
+    "byCountryEmptyDesc": "आधिकारिक सेट खेलकर अपने देश की रैंकिंग बढ़ाएं",
+    "bySetEmptyDesc": "यह सेट खेलकर रैंकिंग में आएं",
+    "overallEmptyDesc": "आधिकारिक सेट खेलकर रैंकिंग में आएं",
+    "noOfficialSetsTitle": "अभी तक कोई आधिकारिक सेट नहीं है",
+    "noOfficialSetsDesc": "आधिकारिक सेट जुड़ते ही यहां रैंकिंग दिखेगी",
+    "headerRank": "रैंक",
+    "headerAvgScore": "औसत स्कोर",
+    "headerParticipants": "प्रतिभागी",
+    "headerSetsPlayed": "खेले गए सेट",
+    "playersCount_one": "{{count}} खिलाड़ी",
+    "playersCount_other": "{{count}} खिलाड़ी",
+    "playersJoined_one": "{{count}} खिलाड़ी शामिल हुए",
+    "playersJoined_other": "{{count}} खिलाड़ी शामिल हुए",
+    "setsPlayedCount_one": "{{count}} सेट",
+    "setsPlayedCount_other": "{{count}} सेट",
+    "setsPlayedJoined_one": "{{count}} सेट खेले गए",
+    "setsPlayedJoined_other": "{{count}} सेट खेले गए",
+    "selectAriaLabel": "शब्द सेट चुनें",
+    "myRankByCountry": "आपका देश {{country}} · रैंक #{{rank}} · {{score}} अंक",
+    "myRankGeneric": "रैंक #{{rank}} · {{score}} अंक"
+  },
+  "history": {
+    "title": "इतिहास",
+    "loadError": "इतिहास लोड नहीं हो पाया। कृपया थोड़ी देर बाद फिर से कोशिश करें।",
+    "emptyDesc": "कोई शब्द सेट खेलें, यह यहां जुड़ जाएगा",
+    "headerDate": "तारीख",
+    "headerSet": "सेट",
+    "headerCorrect": "सही",
+    "headerAccuracy": "सटीकता",
+    "deletedSet": "हटाया गया सेट",
+    "deletedWord": "हटाया गया शब्द",
+    "cardAccuracyLine": "सही {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "शब्द सेट प्रबंधित करें",
+    "uploadLink": "+ आधिकारिक सेट अपलोड करें",
+    "tabOfficial": "आधिकारिक सेट",
+    "tabPromote": "व्यक्तिगत सेट को प्रमोट करें",
+    "loading": "लोड हो रहा है…",
+    "loadError": "सूची लोड नहीं हो पाई। कृपया थोड़ी देर बाद फिर से कोशिश करें।",
+    "countryCommon": "सामान्य",
+    "emptyFilteredTitle": "इन शर्तों से मेल खाने वाला कोई आधिकारिक सेट नहीं है",
+    "emptyFilteredDesc": "किसी दूसरे देश या भाषा फ़िल्टर को आज़माएं",
+    "deleting": "हटाया जा रहा है…",
+    "deleteConfirm": "हटाएं",
+    "emptyPromoteTitle": "प्रमोट करने के लिए कोई व्यक्तिगत सेट नहीं है",
+    "emptyPromoteDesc": "जब उपयोगकर्ता व्यक्तिगत सेट अपलोड करेंगे, तो वे यहां दिखेंगे",
+    "personalSetBadge": "व्यक्तिगत सेट",
+    "promoteButton": "प्रमोट करें",
+    "editSheetTitle": "आधिकारिक सेट बदलें",
+    "titleFieldLabel": "शीर्षक",
+    "titleRequiredError": "सेव करने के लिए एक शीर्षक डालें।",
+    "promoteSheetTitle": "आधिकारिक सेट में प्रमोट करें",
+    "promoteError": "प्रमोट नहीं हो पाया। कृपया थोड़ी देर बाद फिर से कोशिश करें।",
+    "promoteNoticeSuffix": " चुने गए देश के सभी उपयोगकर्ताओं के लिए खेलने योग्य एक आधिकारिक सेट बन जाएगा।",
+    "promoting": "प्रमोट हो रहा है…",
+    "promoteSubmit": "प्रमोट करें",
+    "countryCommonOption": "सामान्य (सभी देश)",
+    "countrySpecificOption": "विशेष देश"
+  },
+  "adminUpload": {
+    "backLink": "← प्रबंधन पर वापस जाएं",
+    "title": "आधिकारिक सेट अपलोड करें",
+    "desc": "कोई देश चुनने पर यह उस देश के सभी उपयोगकर्ताओं के लिए खेलने योग्य आधिकारिक सेट बन जाएगा।",
+    "loadingUser": "उपयोगकर्ता जानकारी लोड हो रही है…"
+  },
+  "header": {
+    "appName": "Strawberry Survival",
+    "mainNav": "मुख्य मेनू",
+    "sets": "सेट",
+    "ranking": "रैंकिंग",
+    "history": "इतिहास",
+    "admin": "प्रबंधन"
+  },
+  "tabbar": {
+    "home": "होम",
+    "sets": "सेट",
+    "ranking": "रैंकिंग",
+    "history": "इतिहास",
+    "nav": "निचला मेनू"
+  },
+  "profileSheet": {
+    "title": "प्रोफ़ाइल",
+    "nicknameLabel": "उपनाम",
+    "change": "बदलें",
+    "countryLabel": "देश",
+    "emailLabel": "ईमेल",
+    "loggingOut": "लॉग आउट हो रहा है…",
+    "logout": "लॉग आउट करें",
+    "nicknameSaveError": "उपनाम सेव नहीं हो पाया। कृपया फिर से कोशिश करें।",
+    "countrySaveError": "देश सेव नहीं हो पाया। कृपया फिर से कोशिश करें।",
+    "language": "भाषा"
+  },
+  "pauseMenu": {
+    "pause": "रोकें",
+    "title": "रुका हुआ",
+    "resume": "फिर से शुरू करें",
+    "quit": "छोड़ें",
+    "quitHint": "अब तक का स्कोर सेव हो जाएगा"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " का अर्थ क्या है?",
+    "inputHint_one": "※ {{count}} अर्थ डालें",
+    "inputHint_other": "※ {{count}} अर्थ डालें",
+    "answerPlaceholder": "उत्तर {{index}}",
+    "submit": "जमा करें",
+    "missed": "छूटे हुए अर्थ: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} शब्द",
+    "wordCount_other": "{{count}} शब्द",
+    "learnProgress": "सीखे गए {{learned}}/{{total}}",
+    "viewSet": "सेट देखें",
+    "start": "शुरू करें",
+    "confirmDelete": "इसे हटाएं?",
+    "deleting": "हटाया जा रहा है…",
+    "deleteConfirm": "हटाएं",
+    "delete": "हटाएं"
+  },
+  "directionSheet": {
+    "title": "किस दिशा में?",
+    "startGame": "गेम शुरू करें",
+    "frontToBack": {
+      "title": "{{short}} देखकर अर्थ बताएं",
+      "hint": "शब्द → अर्थ"
+    },
+    "backToFront": {
+      "title": "अर्थ देखकर {{short}} बताएं",
+      "hint": "अर्थ → शब्द"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,एक लाल गोल फल,I ate an apple.\nrun,दौड़ना;दौड़,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"एक लाल गोल फल\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"दौड़ना;दौड़\" }\n]",
+    "titleLabel": "शीर्षक",
+    "titlePlaceholder": "जैसे: कक्षा 7 के शब्द",
+    "countryLabel": "देश",
+    "languageLabel": "भाषा",
+    "wordsInputLabel": "शब्द डालें",
+    "loadFromFile": "फ़ाइल से लोड करें",
+    "confirmColumn": "जांचें",
+    "normal": "सही",
+    "uploading": "अपलोड हो रहा है…",
+    "upload": "अपलोड करें",
+    "titleRequired": "अपलोड करने के लिए एक शीर्षक डालें।",
+    "fixErrorsRequired": "अपलोड करने के लिए गलती वाली सभी पंक्तियां ठीक करें।",
+    "minOneWordRequired": "अपलोड करने के लिए कम से कम 1 शब्द डालें।",
+    "uploadFailed": "अपलोड नहीं हो पाया। कृपया थोड़ी देर बाद फिर से कोशिश करें।",
+    "previewSummary_one": "पूर्वावलोकन · {{count}} सही पंक्ति",
+    "previewSummary_other": "पूर्वावलोकन · {{count}} सही पंक्तियां",
+    "previewError_one": " · {{count}} गलत पंक्ति",
+    "previewError_other": " · {{count}} गलत पंक्तियां",
+    "missingBoth": "जोड़ने के लिए front (शब्द) और back (अर्थ) भरें।",
+    "missingFront": "जोड़ने के लिए front (शब्द) भरें।",
+    "missingBack": "जोड़ने के लिए back (अर्थ) भरें।",
+    "jsonSyntaxError": "कृपया JSON फ़ॉर्मेट जांचें। (सिंटैक्स त्रुटि)",
+    "jsonMustBeArray": "अपलोड करने के लिए सबसे ऊपर एक ऐरे होना चाहिए। जैसे: [{\"front\":\"apple\",\"back\":\"एक लाल गोल फल\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "यह ईमेल पहले से रजिस्टर्ड है। कृपया लॉग इन करें।",
+    "weakPassword": "यह पासवर्ड बहुत आसान है। कृपया कम से कम 6 अक्षरों का अलग संयोजन इस्तेमाल करें।",
+    "invalidCredentials": "ईमेल या पासवर्ड गलत है। कृपया फिर से जांचें।",
+    "invalidEmail": "कृपया अपना ईमेल फ़ॉर्मेट जांचें।",
+    "emailRateLimit": "आपने बहुत बार ईमेल का अनुरोध किया है। कृपया थोड़ी देर बाद फिर से कोशिश करें।",
+    "requestRateLimit": "बहुत ज़्यादा अनुरोध हो गए हैं। कृपया थोड़ी देर बाद फिर से कोशिश करें।",
+    "signupDisabled": "अभी साइन अप बंद है। कृपया बाद में फिर से कोशिश करें।",
+    "genericError": "अभी कनेक्ट करने में दिक्कत हो रही है। कृपया थोड़ी देर बाद फिर से कोशिश करें।"
+  },
+  "countrySelect": {
+    "placeholder": "कृपया एक देश चुनें",
+    "title": "देश चुनें",
+    "searchPlaceholder": "देश खोजें...",
+    "empty": "कोई नतीजा नहीं मिला। किसी और देश से खोजकर देखें?"
+  },
+  "languages": {
+    "en": {
+      "label": "अंग्रेज़ी शब्द",
+      "short": "अंग्रेज़ी"
+    },
+    "ja": {
+      "label": "जापानी शब्द",
+      "short": "जापानी"
+    },
+    "zh": {
+      "label": "चीनी शब्द",
+      "short": "चीनी"
+    },
+    "general": "सामान्य"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "अभी नहीं सीखा",
+      "learning": "सीख रहे हैं",
+      "review_one": "{{count}} दिन बाद फिर से देखें",
+      "review_other": "{{count}} दिन बाद फिर से देखें"
+    }
+  },
+  "game": {
+    "instructions": "चलें: ऐरो कीज़ / स्क्रीन टैप करें (किरदार के हिसाब से दिशा)   ·   आपका हथियार अपने आप दुश्मनों का उद्धार करता है",
+    "redeemed": "उद्धार हुआ",
+    "goldQuiz": "सोना मिला! क्विज़",
+    "blessingGained": "आशीर्वाद मिला",
+    "blessingsTitle": "मिले आशीर्वाद",
+    "blessingsEmpty": "अभी तक कोई आशीर्वाद नहीं मिला",
+    "close": "बंद करें",
+    "hudTime": "समय",
+    "hudRedeemed": "उद्धार",
+    "hudNextQuiz": "अगला क्विज़",
+    "hudPierce": "भेदन",
+    "hudQuiz": "क्विज़",
+    "upgrades": {
+      "arrow_count": {
+        "name": "मल्टी एरो",
+        "desc": "+1 तीर"
+      },
+      "arrow_rate": {
+        "name": "तेज़ हाथ",
+        "desc": "तीर चलाने की गति बढ़ाता है"
+      },
+      "arrow_pierce": {
+        "name": "भेदन",
+        "desc": "+10% भेदन संभावना"
+      }
+    }
+  }
+}

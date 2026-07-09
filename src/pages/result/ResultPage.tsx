@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Navigate, useLocation, useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { splitVariants } from '../../shared/lib/answer'
 import styles from './ResultPage.module.css'
 
@@ -33,6 +34,7 @@ function isResultState(state: unknown): state is ResultState {
 
 // 게임오버 결과 화면 `/result`. 직전 세션 state 기반 — 새로고침·직접 진입 시 state가 없으므로 로비로 되돌린다.
 export function ResultPage() {
+  const { t, i18n } = useTranslation()
   const location = useLocation()
   const navigate = useNavigate()
   const state = location.state
@@ -46,33 +48,33 @@ export function ResultPage() {
   return (
     <div className={styles.wrap}>
       <div className={styles.summary}>
-        <h1 className={styles.title}>게임 오버</h1>
+        <h1 className={styles.title}>{t('result.title')}</h1>
         {state.setTitle && <p className={styles.subtitle}>{state.setTitle}</p>}
 
         <dl className={styles.stats}>
           <div className={styles.stat}>
-            <dt>점수</dt>
-            <dd>{state.score.toLocaleString()}</dd>
+            <dt>{t('common.scoreLabel')}</dt>
+            <dd>{state.score.toLocaleString(i18n.language)}</dd>
           </div>
           <div className={styles.stat}>
-            <dt>처치</dt>
-            <dd>{state.kills.toLocaleString()}마리</dd>
+            <dt>{t('result.killsLabel')}</dt>
+            <dd>{t('result.killsValue', { kills: state.kills.toLocaleString(i18n.language) })}</dd>
           </div>
           <div className={styles.stat}>
-            <dt>퀴즈</dt>
+            <dt>{t('result.quizLabel')}</dt>
             <dd>
               {state.correct} / {state.total} ({accuracy}%)
             </dd>
           </div>
         </dl>
 
-        <p className={styles.savedNotice}>✔ 기록 저장 · 다음에 또 나와요</p>
+        <p className={styles.savedNotice}>{t('result.savedNotice')}</p>
       </div>
 
       <section className={styles.wrongSection}>
-        <h2 className={styles.sectionTitle}>틀린 단어</h2>
+        <h2 className={styles.sectionTitle}>{t('result.wrongTitle')}</h2>
         {state.wrongWords.length === 0 ? (
-          <p className={styles.emptyNotice}>😄 전부 맞혔어요! 틀린 단어가 없어요</p>
+          <p className={styles.emptyNotice}>{t('common.allCorrectNotice')}</p>
         ) : (
           <ul className={styles.wrongList}>
             {state.wrongWords.map((word, i) => (
@@ -84,14 +86,14 @@ export function ResultPage() {
 
       <div className={styles.ctaRow}>
         <button type="button" className={styles.secondaryButton} onClick={() => navigate('/')}>
-          로비로
+          {t('result.toLobby')}
         </button>
         <button
           type="button"
           className={styles.primaryButton}
           onClick={() => navigate(`/play/${state.setId}`)}
         >
-          다시하기
+          {t('result.retry')}
         </button>
       </div>
     </div>
@@ -99,6 +101,7 @@ export function ResultPage() {
 }
 
 function WrongWordRow({ word }: { word: WrongWord }) {
+  const { t } = useTranslation()
   const [expanded, setExpanded] = useState(false)
   const variants = splitVariants(word.back)
   const [firstVariant, ...restVariants] = variants.length > 0 ? variants : [word.back]
@@ -113,13 +116,13 @@ function WrongWordRow({ word }: { word: WrongWord }) {
         aria-expanded={expanded}
       >
         <span className={styles.wrongFront}>{word.front}</span>
-        <span className={styles.wrongGiven}>{word.given || '(무응답)'}</span>
+        <span className={styles.wrongGiven}>{word.given || t('common.noAnswer')}</span>
         <span className={styles.wrongBack}>
           {firstVariant}
-          {hasMore && !expanded ? ' 외' : ''}
+          {hasMore && !expanded ? t('result.moreSuffix') : ''}
         </span>
       </button>
-      {expanded && hasMore && <p className={styles.wrongMore}>정답: {variants.join(', ')}</p>}
+      {expanded && hasMore && <p className={styles.wrongMore}>{t('result.answer', { list: variants.join(', ') })}</p>}
     </li>
   )
 }

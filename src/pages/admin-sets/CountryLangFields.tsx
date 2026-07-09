@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { LEARN_LANGS, GENERAL_LABEL } from '../../shared/config/languages'
 import { CountrySelect } from '../../shared/ui/country-select/CountrySelect'
 import form from '../../shared/ui/form.module.css'
@@ -25,24 +26,25 @@ export function CountryLangFields({
   learnLang,
   onLearnLangChange,
 }: CountryLangFieldsProps) {
+  const { t } = useTranslation()
   return (
     <>
       <div className={form.field}>
-        <span className={form.label}>국가</span>
+        <span className={form.label}>{t('common.country')}</span>
         <div className={styles.chipRow}>
           <button
             type="button"
             className={countryMode === 'common' ? `${styles.chip} ${styles.chipActive}` : styles.chip}
             onClick={() => onCountryModeChange('common')}
           >
-            공통(전체 국가)
+            {t('adminSets.countryCommonOption')}
           </button>
           <button
             type="button"
             className={countryMode === 'specific' ? `${styles.chip} ${styles.chipActive}` : styles.chip}
             onClick={() => onCountryModeChange('specific')}
           >
-            국가 지정
+            {t('adminSets.countrySpecificOption')}
           </button>
         </div>
         {countryMode === 'specific' && (
@@ -53,7 +55,7 @@ export function CountryLangFields({
       </div>
 
       <div className={form.field}>
-        <span className={form.label}>언어</span>
+        <span className={form.label}>{t('common.language')}</span>
         <div className={styles.chipRow}>
           {LEARN_LANGS.map((lang) => (
             <button

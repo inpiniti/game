@@ -1,0 +1,334 @@
+{
+  "common": {
+    "loading": "불러오고 있어요…",
+    "country": "국가",
+    "language": "언어",
+    "email": "이메일",
+    "password": "비밀번호",
+    "nickname": "닉네임",
+    "scoreLabel": "점수",
+    "scoreValue": "{{value}}점",
+    "save": "저장하기",
+    "saving": "저장하고 있어요…",
+    "saveError": "저장하지 못했어요. 잠시 후 다시 시도해 주세요.",
+    "close": "닫기",
+    "edit": "수정",
+    "delete": "삭제",
+    "all": "전체",
+    "goBack": "뒤로 가기",
+    "noAnswer": "(무응답)",
+    "allCorrectNotice": "😄 전부 맞혔어요! 틀린 단어가 없어요",
+    "noRecordsTitle": "아직 기록이 없어요",
+    "gameTitle": "🍓 딸기 서바이벌",
+    "startGame": "게임 시작",
+    "quizSetLoadError": "문제집을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.",
+    "loadingQuizSet": "문제집을 불러오는 중이에요…",
+    "wordCount_other": "단어 {{count}}개",
+    "loginRequired": "로그인이 필요해요."
+  },
+  "login": {
+    "tagline": "단어를 잡는 서바이벌",
+    "submitting": "로그인하고 있어요…",
+    "submit": "로그인",
+    "noAccount": "계정이 없나요?",
+    "signupLink": "회원가입 →"
+  },
+  "signup": {
+    "title": "회원가입",
+    "passwordConfirmLabel": "비밀번호 확인",
+    "submitting": "가입하고 있어요…",
+    "submit": "가입하기",
+    "errorNicknameRequired": "닉네임을 입력해 주세요.",
+    "errorPasswordTooShort": "비밀번호는 {{minLength}}자 이상 입력해 주세요.",
+    "errorPasswordMismatch": "비밀번호가 서로 달라요. 다시 확인해 주세요.",
+    "errorAlreadyRegistered": "이미 가입된 이메일이에요. 로그인해 주세요."
+  },
+  "verifyEmail": {
+    "title": "메일함을 확인해 주세요",
+    "sentDescSuffix": "으로 인증 메일을 보냈어요.",
+    "sentDescLine2": "메일의 링크를 누르면 가입이 완료돼요.",
+    "descNoEmail": "가입할 때 사용한 이메일을 입력하면 인증 메일을 다시 보내드려요.",
+    "resentNotice": "메일을 다시 보냈어요. 메일함을 확인해 주세요.",
+    "resendCountdown": "메일 다시 보내기 ({{seconds}}초)",
+    "sending": "보내고 있어요…",
+    "resend": "메일 다시 보내기",
+    "backToLogin": "← 로그인으로 돌아가기"
+  },
+  "lobby": {
+    "tagline": "몬스터를 피하고 퀴즈를 맞혀 강해지세요",
+    "loading": "불러오는 중…",
+    "noSets": "문제집이 없어요",
+    "footnote": "단계 3 임시 로비 · 문제집 선택/기록은 이후 단계에서"
+  },
+  "placeholder": {
+    "desc": "곧 만나볼 수 있어요. 준비하고 있어요."
+  },
+  "result": {
+    "title": "게임 오버",
+    "killsLabel": "처치",
+    "killsValue": "{{kills}}마리",
+    "quizLabel": "퀴즈",
+    "savedNotice": "✔ 기록 저장 · 다음에 또 나와요",
+    "wrongTitle": "틀린 단어",
+    "toLobby": "로비로",
+    "retry": "다시하기",
+    "moreSuffix": " 외",
+    "answer": "정답: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "구분",
+    "scopeOfficial": "공식",
+    "scopeMine": "내 문제집",
+    "uploadButton": "+ 업로드",
+    "emptyTitle": "아직 문제집이 없어요",
+    "emptyDescMine": "+ 업로드로 첫 문제집을 만들어 보세요",
+    "emptyDescOther": "다른 언어·구분 탭도 확인해 보세요",
+    "uploadSheetTitle": "문제집 업로드"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← 뒤로",
+    "notFound": "문제집을 찾을 수 없어요.",
+    "backToList": "문제집 목록으로",
+    "learnedProgress": "학습 {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ 자주 틀리는 단어",
+    "wrongCount_other": "오답 {{count}}회",
+    "allWordsTitle": "전체 단어",
+    "emptyItems": "아직 등록된 단어가 없어요.",
+    "headerWord": "단어",
+    "headerMeaning": "뜻",
+    "headerStatus": "상태",
+    "frontPlaceholder": "단어(front)",
+    "backPlaceholder": "뜻(back) · ';'로 여러 뜻",
+    "examplePlaceholder": "예문(선택)",
+    "removeItemAria": "이 단어 삭제",
+    "addItemButton": "+ 단어 추가",
+    "emptyFieldsError": "빈칸(단어·뜻)을 채우면 저장할 수 있어요."
+  },
+  "ranking": {
+    "title": "랭킹",
+    "tabsAriaLabel": "랭킹 종류",
+    "tabBySet": "문제집별",
+    "tabOverall": "전체",
+    "tabByCountry": "국가 대항",
+    "scopeLabel": "범위",
+    "scopeMine": "내 국가",
+    "myRankLabel": "내 순위",
+    "myRankEmpty": "아직 순위에 없어요",
+    "loadError": "순위를 불러오지 못했어요. 잠시 후 다시 시도해 주세요.",
+    "byCountryEmptyDesc": "공식 문제집을 플레이하면 국가 순위가 쌓여요",
+    "bySetEmptyDesc": "이 문제집을 플레이하면 순위에 오를 수 있어요",
+    "overallEmptyDesc": "공식 문제집을 플레이하면 순위에 오를 수 있어요",
+    "noOfficialSetsTitle": "아직 공식 문제집이 없어요",
+    "noOfficialSetsDesc": "공식 문제집이 등록되면 여기서 순위를 볼 수 있어요",
+    "headerRank": "순위",
+    "headerAvgScore": "평균점",
+    "headerParticipants": "참여 인원",
+    "headerSetsPlayed": "참여 문제집",
+    "playersCount_other": "{{count}}명",
+    "playersJoined_other": "{{count}}명 참여",
+    "setsPlayedCount_other": "{{count}}개",
+    "setsPlayedJoined_other": "{{count}}개 참여",
+    "selectAriaLabel": "문제집 선택",
+    "myRankByCountry": "내 국가 {{country}} {{rank}}위 · {{score}}점",
+    "myRankGeneric": "{{rank}}위 · {{score}}점"
+  },
+  "history": {
+    "title": "기록",
+    "loadError": "기록을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.",
+    "emptyDesc": "문제집으로 플레이하면 여기에 쌓여요",
+    "headerDate": "날짜",
+    "headerSet": "문제집",
+    "headerCorrect": "정답",
+    "headerAccuracy": "정답률",
+    "deletedSet": "삭제된 문제집",
+    "deletedWord": "삭제된 단어",
+    "cardAccuracyLine": "정답 {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "문제집 관리",
+    "uploadLink": "+ 공식 문제집 업로드",
+    "tabOfficial": "공식 문제집",
+    "tabPromote": "개인 문제집 승격",
+    "loading": "불러오는 중이에요…",
+    "loadError": "목록을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.",
+    "countryCommon": "공통",
+    "emptyFilteredTitle": "조건에 맞는 공식 문제집이 없어요",
+    "emptyFilteredDesc": "다른 국가·언어 필터를 확인해 보세요",
+    "deleting": "삭제하고 있어요…",
+    "deleteConfirm": "삭제하기",
+    "emptyPromoteTitle": "승격할 개인 문제집이 없어요",
+    "emptyPromoteDesc": "유저가 개인 문제집을 올리면 여기서 확인할 수 있어요",
+    "personalSetBadge": "개인 문제집",
+    "promoteButton": "승격",
+    "editSheetTitle": "공식 문제집 수정",
+    "titleFieldLabel": "제목",
+    "titleRequiredError": "제목을 입력하면 저장할 수 있어요.",
+    "promoteSheetTitle": "공식 문제집으로 승격",
+    "promoteError": "승격하지 못했어요. 잠시 후 다시 시도해 주세요.",
+    "promoteNoticeSuffix": "을(를) 지정한 국가의 모든 유저가 플레이할 수 있는 공식 문제집으로 만들어요.",
+    "promoting": "승격하고 있어요…",
+    "promoteSubmit": "승격하기",
+    "countryCommonOption": "공통(전체 국가)",
+    "countrySpecificOption": "국가 지정"
+  },
+  "adminUpload": {
+    "backLink": "← 관리로 돌아가기",
+    "title": "공식 문제집 업로드",
+    "desc": "국가를 지정하면 그 국가의 모든 유저가 플레이할 수 있는 공식 문제집이 돼요.",
+    "loadingUser": "사용자 정보를 불러오는 중이에요…"
+  },
+  "header": {
+    "appName": "딸기 서바이벌",
+    "mainNav": "주 메뉴",
+    "sets": "문제집",
+    "ranking": "랭킹",
+    "history": "기록",
+    "admin": "관리"
+  },
+  "tabbar": {
+    "home": "홈",
+    "sets": "문제집",
+    "ranking": "랭킹",
+    "history": "기록",
+    "nav": "하단 메뉴"
+  },
+  "profileSheet": {
+    "title": "프로필",
+    "nicknameLabel": "닉네임",
+    "change": "변경",
+    "countryLabel": "국가",
+    "emailLabel": "이메일",
+    "loggingOut": "로그아웃하고 있어요…",
+    "logout": "로그아웃",
+    "nicknameSaveError": "닉네임을 저장하지 못했어요. 다시 시도해 주세요.",
+    "countrySaveError": "국가를 저장하지 못했어요. 다시 시도해 주세요.",
+    "language": "언어"
+  },
+  "pauseMenu": {
+    "pause": "일시정지",
+    "title": "일시정지",
+    "resume": "계속하기",
+    "quit": "그만하기",
+    "quitHint": "지금까지 점수로 기록돼요"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " 의 뜻은?",
+    "inputHint_other": "※ 뜻 {{count}}개를 입력해요",
+    "answerPlaceholder": "답 {{index}}",
+    "submit": "제출",
+    "missed": "못 맞힌 뜻: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_other": "단어 {{count}}개",
+    "learnProgress": "학습 {{learned}}/{{total}}",
+    "viewSet": "문제집 보기",
+    "start": "시작",
+    "confirmDelete": "삭제할까요?",
+    "deleting": "삭제하고 있어요…",
+    "deleteConfirm": "삭제하기",
+    "delete": "삭제"
+  },
+  "directionSheet": {
+    "title": "어느 방향으로 할까요?",
+    "startGame": "게임 시작",
+    "frontToBack": {
+      "title": "{{short}} 보고 뜻 맞히기",
+      "hint": "단어 → 뜻"
+    },
+    "backToFront": {
+      "title": "뜻 보고 {{short}} 맞히기",
+      "hint": "뜻 → 단어"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,사과,I ate an apple.\nrun,달리다;뛰다,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"사과\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"달리다;뛰다\" }\n]",
+    "titleLabel": "제목",
+    "titlePlaceholder": "예: 중1 영단어",
+    "countryLabel": "국가",
+    "languageLabel": "언어",
+    "wordsInputLabel": "단어 입력",
+    "loadFromFile": "파일에서 불러오기",
+    "confirmColumn": "확인",
+    "normal": "정상",
+    "uploading": "업로드하고 있어요…",
+    "upload": "업로드하기",
+    "titleRequired": "제목을 입력하면 업로드할 수 있어요.",
+    "fixErrorsRequired": "오류가 있는 행을 모두 고치면 업로드할 수 있어요.",
+    "minOneWordRequired": "단어를 1개 이상 입력하면 업로드할 수 있어요.",
+    "uploadFailed": "업로드하지 못했어요. 잠시 후 다시 시도해 주세요.",
+    "previewSummary_other": "미리보기 · 정상 {{count}}행",
+    "previewError_other": " · 오류 {{count}}행",
+    "missingBoth": "front(단어)와 back(뜻)을 채우면 추가할 수 있어요.",
+    "missingFront": "front(단어)를 채우면 추가할 수 있어요.",
+    "missingBack": "back(뜻)을 채우면 추가할 수 있어요.",
+    "jsonSyntaxError": "JSON 형식을 확인해 주세요. (문법 오류)",
+    "jsonMustBeArray": "최상위가 배열이면 업로드할 수 있어요. 예: [{\"front\":\"apple\",\"back\":\"사과\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "이미 가입된 이메일이에요. 로그인해 주세요.",
+    "weakPassword": "비밀번호가 너무 간단해요. 6자 이상, 다른 조합으로 입력해 주세요.",
+    "invalidCredentials": "이메일 또는 비밀번호가 달라요. 다시 확인해 주세요.",
+    "invalidEmail": "이메일 형식을 다시 확인해 주세요.",
+    "emailRateLimit": "메일을 너무 자주 요청했어요. 잠시 후 다시 시도해 주세요.",
+    "requestRateLimit": "요청이 많아요. 잠시 후 다시 시도해 주세요.",
+    "signupDisabled": "지금은 가입을 받지 않아요. 나중에 다시 시도해 주세요.",
+    "genericError": "잠시 연결이 어려워요. 조금 뒤에 다시 시도해 주세요."
+  },
+  "countrySelect": {
+    "placeholder": "국가를 선택해 주세요",
+    "title": "국가 선택",
+    "searchPlaceholder": "국가 검색...",
+    "empty": "검색 결과가 없어요. 다른 국가로 찾아볼까요?"
+  },
+  "languages": {
+    "en": {
+      "label": "영어단어",
+      "short": "영어"
+    },
+    "ja": {
+      "label": "일본어단어",
+      "short": "일본어"
+    },
+    "zh": {
+      "label": "중국어단어",
+      "short": "중국어"
+    },
+    "general": "일반"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "미학습",
+      "learning": "학습 중",
+      "review_other": "{{count}}일 뒤 복습"
+    }
+  },
+  "game": {
+    "instructions": "이동: 화살표 / 화면 터치(캐릭터 기준 누른 방향)   ·   무기가 자동으로 적을 구원합니다",
+    "redeemed": "구원됨",
+    "goldQuiz": "골드 획득! 퀴즈",
+    "blessingGained": "축복 획득",
+    "blessingsTitle": "획득한 축복",
+    "blessingsEmpty": "아직 획득한 축복이 없습니다",
+    "close": "닫기",
+    "hudTime": "시간",
+    "hudRedeemed": "구원",
+    "hudNextQuiz": "다음 퀴즈까지",
+    "hudPierce": "관통",
+    "hudQuiz": "퀴즈",
+    "upgrades": {
+      "arrow_count": {
+        "name": "다중 화살",
+        "desc": "화살 개수 +1"
+      },
+      "arrow_rate": {
+        "name": "빠른 손놀림",
+        "desc": "화살 발사 속도 증가"
+      },
+      "arrow_pierce": {
+        "name": "관통",
+        "desc": "관통 확률 +10%"
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useUpdateQuizSet, type QuizSetWithCount } from '../../entities/quiz-set'
 import { DEFAULT_COUNTRY_CODE } from '../../shared/config/countries'
 import { BottomSheet } from '../../shared/ui/bottom-sheet/BottomSheet'
@@ -13,6 +14,7 @@ interface EditSetSheetProps {
 
 // admin/sets §(b) [수정] — 공식 문제집의 제목·국가·언어를 편집한다. RLS "admin manages sets"가 근거.
 export function EditSetSheet({ set, onClose }: EditSetSheetProps) {
+  const { t } = useTranslation()
   const updateSet = useUpdateQuizSet()
   const [title, setTitle] = useState('')
   const [countryMode, setCountryMode] = useState<CountryMode>('common')
@@ -33,7 +35,7 @@ export function EditSetSheet({ set, onClose }: EditSetSheetProps) {
     if (!set) return
     const trimmedTitle = title.trim()
     if (!trimmedTitle) {
-      setErrorMessage('제목을 입력하면 저장할 수 있어요.')
+      setErrorMessage(t('adminSets.titleRequiredError'))
       return
     }
     try {
@@ -45,14 +47,14 @@ export function EditSetSheet({ set, onClose }: EditSetSheetProps) {
       })
       onClose()
     } catch {
-      setErrorMessage('저장하지 못했어요. 잠시 후 다시 시도해 주세요.')
+      setErrorMessage(t('common.saveError'))
     }
   }
 
   return (
-    <BottomSheet open={!!set} onClose={onClose} title="공식 문제집 수정">
+    <BottomSheet open={!!set} onClose={onClose} title={t('adminSets.editSheetTitle')}>
       <label className={form.field}>
-        <span className={form.label}>제목</span>
+        <span className={form.label}>{t('adminSets.titleFieldLabel')}</span>
         <input
           type="text"
           className={form.input}
@@ -80,7 +82,7 @@ export function EditSetSheet({ set, onClose }: EditSetSheetProps) {
         disabled={updateSet.isPending}
         aria-busy={updateSet.isPending}
       >
-        {updateSet.isPending ? '저장하고 있어요…' : '저장하기'}
+        {updateSet.isPending ? t('common.saving') : t('common.save')}
       </button>
     </BottomSheet>
   )

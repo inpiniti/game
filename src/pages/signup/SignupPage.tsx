@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { AuthCard } from '../../shared/ui/auth-card/AuthCard'
 import { CountrySelect } from '../../shared/ui/country-select/CountrySelect'
 import { DEFAULT_COUNTRY_CODE } from '../../shared/config/countries'
@@ -11,6 +12,7 @@ import styles from './SignupPage.module.css'
 const MIN_PASSWORD_LENGTH = 6
 
 export function SignupPage() {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -25,15 +27,15 @@ export function SignupPage() {
     setErrorMessage(null)
 
     if (!nickname.trim()) {
-      setErrorMessage('닉네임을 입력해 주세요.')
+      setErrorMessage(t('signup.errorNicknameRequired'))
       return
     }
     if (password.length < MIN_PASSWORD_LENGTH) {
-      setErrorMessage(`비밀번호는 ${MIN_PASSWORD_LENGTH}자 이상 입력해 주세요.`)
+      setErrorMessage(t('signup.errorPasswordTooShort', { minLength: MIN_PASSWORD_LENGTH }))
       return
     }
     if (password !== passwordConfirm) {
-      setErrorMessage('비밀번호가 서로 달라요. 다시 확인해 주세요.')
+      setErrorMessage(t('signup.errorPasswordMismatch'))
       return
     }
 
@@ -42,7 +44,7 @@ export function SignupPage() {
       navigate('/verify-email', { state: { email }, replace: true })
     } catch (error) {
       if (error instanceof AlreadyRegisteredError) {
-        setErrorMessage('이미 가입된 이메일이에요. 로그인해 주세요.')
+        setErrorMessage(t('signup.errorAlreadyRegistered'))
         return
       }
       setErrorMessage(authErrorMessage(error))
@@ -52,15 +54,15 @@ export function SignupPage() {
   return (
     <AuthCard>
       <div className={styles.header}>
-        <Link to="/login" className={styles.back} aria-label="뒤로 가기">
+        <Link to="/login" className={styles.back} aria-label={t('common.goBack')}>
           ←
         </Link>
-        <h1 className={styles.title}>회원가입</h1>
+        <h1 className={styles.title}>{t('signup.title')}</h1>
       </div>
 
       <form className={styles.form} onSubmit={handleSubmit}>
         <label className={form.field}>
-          <span className={form.label}>이메일</span>
+          <span className={form.label}>{t('common.email')}</span>
           <input
             type="email"
             value={email}
@@ -72,7 +74,7 @@ export function SignupPage() {
         </label>
 
         <label className={form.field}>
-          <span className={form.label}>비밀번호</span>
+          <span className={form.label}>{t('common.password')}</span>
           <input
             type="password"
             value={password}
@@ -85,7 +87,7 @@ export function SignupPage() {
         </label>
 
         <label className={form.field}>
-          <span className={form.label}>비밀번호 확인</span>
+          <span className={form.label}>{t('signup.passwordConfirmLabel')}</span>
           <input
             type="password"
             value={passwordConfirm}
@@ -97,7 +99,7 @@ export function SignupPage() {
         </label>
 
         <label className={form.field}>
-          <span className={form.label}>닉네임</span>
+          <span className={form.label}>{t('common.nickname')}</span>
           <input
             type="text"
             value={nickname}
@@ -110,7 +112,7 @@ export function SignupPage() {
         </label>
 
         <div className={form.field}>
-          <span className={form.label}>국가</span>
+          <span className={form.label}>{t('common.country')}</span>
           <CountrySelect value={country} onChange={setCountry} />
         </div>
 
@@ -122,7 +124,7 @@ export function SignupPage() {
           disabled={signUp.isPending}
           aria-busy={signUp.isPending}
         >
-          {signUp.isPending ? '가입하고 있어요…' : '가입하기'}
+          {signUp.isPending ? t('signup.submitting') : t('signup.submit')}
         </button>
       </form>
     </AuthCard>

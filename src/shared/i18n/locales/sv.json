@@ -1,0 +1,345 @@
+{
+  "common": {
+    "loading": "Laddar…",
+    "country": "Land",
+    "language": "Språk",
+    "email": "E-post",
+    "password": "Lösenord",
+    "nickname": "Smeknamn",
+    "scoreLabel": "Poäng",
+    "scoreValue": "{{value}} poäng",
+    "save": "Spara",
+    "saving": "Sparar…",
+    "saveError": "Det gick inte att spara. Försök igen om en stund.",
+    "close": "Stäng",
+    "edit": "Redigera",
+    "delete": "Ta bort",
+    "all": "Alla",
+    "goBack": "Tillbaka",
+    "noAnswer": "(Inget svar)",
+    "allCorrectNotice": "😄 Du hade rätt på allt! Inga fel ord",
+    "noRecordsTitle": "Inga resultat än",
+    "gameTitle": "🍓 Jordgubbsöverlevnad",
+    "startGame": "Starta spelet",
+    "quizSetLoadError": "Det gick inte att läsa in ordsamlingen. Försök igen om en stund.",
+    "loadingQuizSet": "Läser in ordsamlingen…",
+    "wordCount_one": "{{count}} ord",
+    "wordCount_other": "{{count}} ord",
+    "loginRequired": "Logga in för att fortsätta."
+  },
+  "login": {
+    "tagline": "Överlev genom att fånga ord",
+    "submitting": "Loggar in…",
+    "submit": "Logga in",
+    "noAccount": "Har du inget konto?",
+    "signupLink": "Registrera dig →"
+  },
+  "signup": {
+    "title": "Registrera dig",
+    "passwordConfirmLabel": "Bekräfta lösenord",
+    "submitting": "Registrerar…",
+    "submit": "Registrera",
+    "errorNicknameRequired": "Ange ett smeknamn.",
+    "errorPasswordTooShort": "Lösenordet måste vara minst {{minLength}} tecken.",
+    "errorPasswordMismatch": "Lösenorden matchar inte. Kontrollera igen.",
+    "errorAlreadyRegistered": "Den här e-postadressen är redan registrerad. Logga in."
+  },
+  "verifyEmail": {
+    "title": "Kolla din inkorg",
+    "sentDescSuffix": "är dit vi skickade ditt verifieringsmejl.",
+    "sentDescLine2": "Tryck på länken i e-postmeddelandet för att slutföra registreringen.",
+    "descNoEmail": "Ange e-postadressen du använde vid registreringen, så skickar vi verifieringsmejlet igen.",
+    "resentNotice": "Vi har skickat mejlet igen. Kolla din inkorg.",
+    "resendCountdown": "Skicka mejlet igen ({{seconds}} s)",
+    "sending": "Skickar…",
+    "resend": "Skicka mejlet igen",
+    "backToLogin": "← Tillbaka till inloggning"
+  },
+  "lobby": {
+    "tagline": "Undvik monster och svara på quiz för att bli starkare",
+    "loading": "Laddar…",
+    "noSets": "Inga ordsamlingar",
+    "footnote": "Tillfällig lobby för steg 3 · Val av ordsamling/historik kommer i ett senare steg"
+  },
+  "placeholder": {
+    "desc": "Kommer snart. Vi jobbar på det."
+  },
+  "result": {
+    "title": "Game Over",
+    "killsLabel": "Besegrade",
+    "killsValue": "{{kills}} fiender",
+    "quizLabel": "Quiz",
+    "savedNotice": "✔ Sparat · Vi ses nästa gång!",
+    "wrongTitle": "Fel ord",
+    "toLobby": "Till lobbyn",
+    "retry": "Försök igen",
+    "moreSuffix": " och fler",
+    "answer": "Svar: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Typ",
+    "scopeOfficial": "Officiell",
+    "scopeMine": "Mina set",
+    "uploadButton": "+ Ladda upp",
+    "emptyTitle": "Inga ordsamlingar än",
+    "emptyDescMine": "Tryck på + Ladda upp för att skapa din första ordsamling",
+    "emptyDescOther": "Kolla andra flikar för språk eller typ",
+    "uploadSheetTitle": "Ladda upp ordsamling"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Tillbaka",
+    "notFound": "Kunde inte hitta den här ordsamlingen.",
+    "backToList": "Tillbaka till ordsamlingar",
+    "learnedProgress": "Inlärda {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Ord du ofta har fel på",
+    "wrongCount_one": "{{count}} felaktigt svar",
+    "wrongCount_other": "{{count}} felaktiga svar",
+    "allWordsTitle": "Alla ord",
+    "emptyItems": "Inga ord tillagda än.",
+    "headerWord": "Ord",
+    "headerMeaning": "Betydelse",
+    "headerStatus": "Status",
+    "frontPlaceholder": "Ord (front)",
+    "backPlaceholder": "Betydelse (back) · använd ';' för flera betydelser",
+    "examplePlaceholder": "Exempel (valfritt)",
+    "removeItemAria": "Ta bort det här ordet",
+    "addItemButton": "+ Lägg till ord",
+    "emptyFieldsError": "Fyll i ord och betydelse för att spara."
+  },
+  "ranking": {
+    "title": "Rankning",
+    "tabsAriaLabel": "Typ av rankning",
+    "tabBySet": "Per ordsamling",
+    "tabOverall": "Totalt",
+    "tabByCountry": "Per land",
+    "scopeLabel": "Omfattning",
+    "scopeMine": "Mitt land",
+    "myRankLabel": "Min placering",
+    "myRankEmpty": "Inte rankad än",
+    "loadError": "Det gick inte att läsa in rankningen. Försök igen om en stund.",
+    "byCountryEmptyDesc": "Spela officiella ordsamlingar för att bygga upp ditt lands rankning",
+    "bySetEmptyDesc": "Spela den här ordsamlingen för att komma med på rankningen",
+    "overallEmptyDesc": "Spela officiella ordsamlingar för att komma med på rankningen",
+    "noOfficialSetsTitle": "Inga officiella ordsamlingar än",
+    "noOfficialSetsDesc": "När officiella ordsamlingar läggs till kan du se rankningen här",
+    "headerRank": "Placering",
+    "headerAvgScore": "Snittpoäng",
+    "headerParticipants": "Deltagare",
+    "headerSetsPlayed": "Spelade ordsamlingar",
+    "playersCount_one": "{{count}} spelare",
+    "playersCount_other": "{{count}} spelare",
+    "playersJoined_one": "{{count}} spelare deltog",
+    "playersJoined_other": "{{count}} spelare deltog",
+    "setsPlayedCount_one": "{{count}} set",
+    "setsPlayedCount_other": "{{count}} set",
+    "setsPlayedJoined_one": "{{count}} set spelat",
+    "setsPlayedJoined_other": "{{count}} set spelade",
+    "selectAriaLabel": "Välj ordsamling",
+    "myRankByCountry": "Ditt land {{country}} #{{rank}} · {{score}} poäng",
+    "myRankGeneric": "#{{rank}} · {{score}} poäng"
+  },
+  "history": {
+    "title": "Historik",
+    "loadError": "Det gick inte att läsa in din historik. Försök igen om en stund.",
+    "emptyDesc": "Spela en ordsamling så visas det här",
+    "headerDate": "Datum",
+    "headerSet": "Ordsamling",
+    "headerCorrect": "Rätt",
+    "headerAccuracy": "Träffsäkerhet",
+    "deletedSet": "Borttagen ordsamling",
+    "deletedWord": "Borttaget ord",
+    "cardAccuracyLine": "Rätt {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "Hantera ordsamlingar",
+    "uploadLink": "+ Ladda upp officiell ordsamling",
+    "tabOfficial": "Officiella ordsamlingar",
+    "tabPromote": "Befordra personliga ordsamlingar",
+    "loading": "Laddar…",
+    "loadError": "Det gick inte att läsa in listan. Försök igen om en stund.",
+    "countryCommon": "Gemensam",
+    "emptyFilteredTitle": "Inga officiella ordsamlingar matchar det här filtret",
+    "emptyFilteredDesc": "Prova ett annat land- eller språkfilter",
+    "deleting": "Tar bort…",
+    "deleteConfirm": "Ta bort",
+    "emptyPromoteTitle": "Inga personliga ordsamlingar att befordra",
+    "emptyPromoteDesc": "När användare laddar upp personliga ordsamlingar kan du se dem här",
+    "personalSetBadge": "Personlig ordsamling",
+    "promoteButton": "Befordra",
+    "editSheetTitle": "Redigera officiell ordsamling",
+    "titleFieldLabel": "Titel",
+    "titleRequiredError": "Ange en titel för att spara.",
+    "promoteSheetTitle": "Befordra till officiell ordsamling",
+    "promoteError": "Det gick inte att befordra. Försök igen om en stund.",
+    "promoteNoticeSuffix": " blir en officiell ordsamling som alla användare i det valda landet kan spela.",
+    "promoting": "Befordrar…",
+    "promoteSubmit": "Befordra",
+    "countryCommonOption": "Gemensam (alla länder)",
+    "countrySpecificOption": "Specifikt land"
+  },
+  "adminUpload": {
+    "backLink": "← Tillbaka till administration",
+    "title": "Ladda upp officiell ordsamling",
+    "desc": "Om du anger ett land blir detta en officiell ordsamling som alla användare i det landet kan spela.",
+    "loadingUser": "Läser in användarinformation…"
+  },
+  "header": {
+    "appName": "Jordgubbsöverlevnad",
+    "mainNav": "Huvudmeny",
+    "sets": "Ordsamlingar",
+    "ranking": "Rankning",
+    "history": "Historik",
+    "admin": "Administration"
+  },
+  "tabbar": {
+    "home": "Hem",
+    "sets": "Ordsamlingar",
+    "ranking": "Rankning",
+    "history": "Historik",
+    "nav": "Nedre meny"
+  },
+  "profileSheet": {
+    "title": "Profil",
+    "nicknameLabel": "Smeknamn",
+    "change": "Ändra",
+    "countryLabel": "Land",
+    "emailLabel": "E-post",
+    "loggingOut": "Loggar ut…",
+    "logout": "Logga ut",
+    "nicknameSaveError": "Det gick inte att spara smeknamnet. Försök igen.",
+    "countrySaveError": "Det gick inte att spara landet. Försök igen.",
+    "language": "Språk"
+  },
+  "pauseMenu": {
+    "pause": "Paus",
+    "title": "Pausad",
+    "resume": "Fortsätt",
+    "quit": "Avsluta",
+    "quitHint": "Din nuvarande poäng sparas"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " — vad betyder det?",
+    "inputHint_one": "※ Ange {{count}} betydelse",
+    "inputHint_other": "※ Ange {{count}} betydelser",
+    "answerPlaceholder": "Svar {{index}}",
+    "submit": "Skicka",
+    "missed": "Missade betydelser: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} ord",
+    "wordCount_other": "{{count}} ord",
+    "learnProgress": "Inlärda {{learned}}/{{total}}",
+    "viewSet": "Visa ordsamling",
+    "start": "Starta",
+    "confirmDelete": "Ta bort detta?",
+    "deleting": "Tar bort…",
+    "deleteConfirm": "Ta bort",
+    "delete": "Ta bort"
+  },
+  "directionSheet": {
+    "title": "Vilken riktning?",
+    "startGame": "Starta spelet",
+    "frontToBack": {
+      "title": "Se {{short}} och gissa betydelsen",
+      "hint": "Ord → Betydelse"
+    },
+    "backToFront": {
+      "title": "Se betydelsen och gissa {{short}}",
+      "hint": "Betydelse → Ord"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,en rund röd frukt,I ate an apple.\nrun,springa;jogga,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"en rund röd frukt\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"springa;jogga\" }\n]",
+    "titleLabel": "Titel",
+    "titlePlaceholder": "t.ex. Ordförråd årskurs 7",
+    "countryLabel": "Land",
+    "languageLabel": "Språk",
+    "wordsInputLabel": "Ange ord",
+    "loadFromFile": "Läs in från fil",
+    "confirmColumn": "Kontrollera",
+    "normal": "Giltig",
+    "uploading": "Laddar upp…",
+    "upload": "Ladda upp",
+    "titleRequired": "Ange en titel för att ladda upp.",
+    "fixErrorsRequired": "Rätta alla rader med fel för att ladda upp.",
+    "minOneWordRequired": "Ange minst 1 ord för att ladda upp.",
+    "uploadFailed": "Det gick inte att ladda upp. Försök igen om en stund.",
+    "previewSummary_one": "Förhandsvisning · {{count}} giltig rad",
+    "previewSummary_other": "Förhandsvisning · {{count}} giltiga rader",
+    "previewError_one": " · {{count}} rad med fel",
+    "previewError_other": " · {{count}} rader med fel",
+    "missingBoth": "Fyll i front (ord) och back (betydelse) för att lägga till.",
+    "missingFront": "Fyll i front (ord) för att lägga till.",
+    "missingBack": "Fyll i back (betydelse) för att lägga till.",
+    "jsonSyntaxError": "Kontrollera JSON-formatet. (Syntaxfel)",
+    "jsonMustBeArray": "Toppnivån måste vara en array för att ladda upp. T.ex.: [{\"front\":\"apple\",\"back\":\"en rund röd frukt\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Den här e-postadressen är redan registrerad. Logga in.",
+    "weakPassword": "Lösenordet är för enkelt. Använd minst 6 tecken med en annan kombination.",
+    "invalidCredentials": "E-postadressen eller lösenordet är felaktigt. Kontrollera igen.",
+    "invalidEmail": "Kontrollera formatet på din e-postadress.",
+    "emailRateLimit": "Du har begärt mejl för ofta. Försök igen om en stund.",
+    "requestRateLimit": "Det är för många förfrågningar. Försök igen om en stund.",
+    "signupDisabled": "Registrering är inte öppen just nu. Försök igen senare.",
+    "genericError": "Vi har anslutningsproblem just nu. Försök igen om en liten stund."
+  },
+  "countrySelect": {
+    "placeholder": "Välj ett land",
+    "title": "Välj land",
+    "searchPlaceholder": "Sök land...",
+    "empty": "Inga resultat hittades. Vill du söka efter ett annat land?"
+  },
+  "languages": {
+    "en": {
+      "label": "Engelska ord",
+      "short": "Engelska"
+    },
+    "ja": {
+      "label": "Japanska ord",
+      "short": "Japanska"
+    },
+    "zh": {
+      "label": "Kinesiska ord",
+      "short": "Kinesiska"
+    },
+    "general": "Allmänt"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Inte inlärt",
+      "learning": "Lär in",
+      "review_one": "Repetition om {{count}} dag",
+      "review_other": "Repetition om {{count}} dagar"
+    }
+  },
+  "game": {
+    "instructions": "Flytta: Piltangenter / Tryck på skärmen (riktning i förhållande till karaktären)   ·   Ditt vapen frälser fiender automatiskt",
+    "redeemed": "Frälst",
+    "goldQuiz": "Guld intjänat! Quiz",
+    "blessingGained": "Välsignelse erhållen",
+    "blessingsTitle": "Erhållna välsignelser",
+    "blessingsEmpty": "Inga välsignelser erhållna än",
+    "close": "Stäng",
+    "hudTime": "Tid",
+    "hudRedeemed": "Frälsta",
+    "hudNextQuiz": "Nästa quiz",
+    "hudPierce": "Genomborrning",
+    "hudQuiz": "Quiz",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Flerpil",
+        "desc": "+1 pil"
+      },
+      "arrow_rate": {
+        "name": "Snabba händer",
+        "desc": "Ökar pilarnas avfyringshastighet"
+      },
+      "arrow_pierce": {
+        "name": "Genomborrning",
+        "desc": "+10% chans att genomborra"
+      }
+    }
+  }
+}

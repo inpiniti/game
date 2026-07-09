@@ -1,0 +1,345 @@
+{
+  "common": {
+    "loading": "Φόρτωση…",
+    "country": "Χώρα",
+    "language": "Γλώσσα",
+    "email": "Email",
+    "password": "Κωδικός πρόσβασης",
+    "nickname": "Ψευδώνυμο",
+    "scoreLabel": "Σκορ",
+    "scoreValue": "{{value}} πόντοι",
+    "save": "Αποθήκευση",
+    "saving": "Αποθήκευση…",
+    "saveError": "Δεν ήταν δυνατή η αποθήκευση. Δοκίμασε ξανά σε λίγο.",
+    "close": "Κλείσιμο",
+    "edit": "Επεξεργασία",
+    "delete": "Διαγραφή",
+    "all": "Όλα",
+    "goBack": "Πίσω",
+    "noAnswer": "(Χωρίς απάντηση)",
+    "allCorrectNotice": "😄 Τα βρήκες όλα σωστά! Δεν υπάρχουν λάθος λέξεις",
+    "noRecordsTitle": "Δεν υπάρχουν ακόμη αποτελέσματα",
+    "gameTitle": "🍓 Strawberry Survival",
+    "startGame": "Έναρξη παιχνιδιού",
+    "quizSetLoadError": "Δεν ήταν δυνατή η φόρτωση του σετ λέξεων. Δοκίμασε ξανά σε λίγο.",
+    "loadingQuizSet": "Φόρτωση σετ λέξεων…",
+    "wordCount_one": "{{count}} λέξη",
+    "wordCount_other": "{{count}} λέξεις",
+    "loginRequired": "Χρειάζεται σύνδεση."
+  },
+  "login": {
+    "tagline": "Επιβίωσε πιάνοντας λέξεις",
+    "submitting": "Σύνδεση…",
+    "submit": "Σύνδεση",
+    "noAccount": "Δεν έχεις λογαριασμό;",
+    "signupLink": "Εγγραφή →"
+  },
+  "signup": {
+    "title": "Εγγραφή",
+    "passwordConfirmLabel": "Επιβεβαίωση κωδικού",
+    "submitting": "Εγγραφή σε εξέλιξη…",
+    "submit": "Εγγραφή",
+    "errorNicknameRequired": "Συμπλήρωσε ένα ψευδώνυμο.",
+    "errorPasswordTooShort": "Ο κωδικός πρέπει να έχει τουλάχιστον {{minLength}} χαρακτήρες.",
+    "errorPasswordMismatch": "Οι κωδικοί δεν ταιριάζουν. Έλεγξέ τους ξανά.",
+    "errorAlreadyRegistered": "Αυτό το email είναι ήδη εγγεγραμμένο. Συνδέσου."
+  },
+  "verifyEmail": {
+    "title": "Έλεγξε τα εισερχόμενά σου",
+    "sentDescSuffix": " είναι το email όπου στείλαμε το email επιβεβαίωσης.",
+    "sentDescLine2": "Πάτησε τον σύνδεσμο στο email για να ολοκληρώσεις την εγγραφή.",
+    "descNoEmail": "Συμπλήρωσε το email που χρησιμοποίησες στην εγγραφή και θα σου ξαναστείλουμε το email επιβεβαίωσης.",
+    "resentNotice": "Στείλαμε ξανά το email. Έλεγξε τα εισερχόμενά σου.",
+    "resendCountdown": "Επανάληψη αποστολής ({{seconds}} δευτ.)",
+    "sending": "Αποστολή…",
+    "resend": "Επανάληψη αποστολής",
+    "backToLogin": "← Πίσω στη σύνδεση"
+  },
+  "lobby": {
+    "tagline": "Απόφυγε τα τέρατα και απάντα σε κουίζ για να γίνεις πιο δυνατός",
+    "loading": "Φόρτωση…",
+    "noSets": "Δεν υπάρχουν σετ λέξεων",
+    "footnote": "Προσωρινό λόμπι βήματος 3 · η επιλογή σετ/ιστορικό έρχονται σε επόμενο βήμα"
+  },
+  "placeholder": {
+    "desc": "Έρχεται σύντομα. Το δουλεύουμε."
+  },
+  "result": {
+    "title": "Τέλος παιχνιδιού",
+    "killsLabel": "Εξοντώσεις",
+    "killsValue": "{{kills}} εχθροί",
+    "quizLabel": "Κουίζ",
+    "savedNotice": "✔ Αποθηκεύτηκε · Τα λέμε την επόμενη φορά",
+    "wrongTitle": "Λάθος λέξεις",
+    "toLobby": "Στο λόμπι",
+    "retry": "Ξαναπροσπάθησε",
+    "moreSuffix": " κι άλλα",
+    "answer": "Απάντηση: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Τύπος",
+    "scopeOfficial": "Επίσημα",
+    "scopeMine": "Τα σετ μου",
+    "uploadButton": "+ Μεταφόρτωση",
+    "emptyTitle": "Δεν υπάρχουν ακόμη σετ λέξεων",
+    "emptyDescMine": "Πάτησε + Μεταφόρτωση για να φτιάξεις το πρώτο σου σετ",
+    "emptyDescOther": "Δες κι άλλες καρτέλες γλώσσας ή τύπου",
+    "uploadSheetTitle": "Μεταφόρτωση σετ λέξεων"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Πίσω",
+    "notFound": "Δεν βρέθηκε αυτό το σετ λέξεων.",
+    "backToList": "Πίσω στα σετ λέξεων",
+    "learnedProgress": "Έμαθες {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Λέξεις που μπερδεύεις συχνά",
+    "wrongCount_one": "{{count}} λάθος απάντηση",
+    "wrongCount_other": "{{count}} λάθος απαντήσεις",
+    "allWordsTitle": "Όλες οι λέξεις",
+    "emptyItems": "Δεν έχουν προστεθεί λέξεις ακόμη.",
+    "headerWord": "Λέξη",
+    "headerMeaning": "Σημασία",
+    "headerStatus": "Κατάσταση",
+    "frontPlaceholder": "Λέξη (front)",
+    "backPlaceholder": "Σημασία (back) · χρησιμοποίησε ';' για πολλές σημασίες",
+    "examplePlaceholder": "Παράδειγμα (προαιρετικό)",
+    "removeItemAria": "Αφαίρεση αυτής της λέξης",
+    "addItemButton": "+ Προσθήκη λέξης",
+    "emptyFieldsError": "Συμπλήρωσε τη λέξη και τη σημασία για να αποθηκεύσεις."
+  },
+  "ranking": {
+    "title": "Κατάταξη",
+    "tabsAriaLabel": "Τύπος κατάταξης",
+    "tabBySet": "Ανά σετ",
+    "tabOverall": "Συνολική",
+    "tabByCountry": "Ανά χώρα",
+    "scopeLabel": "Εύρος",
+    "scopeMine": "Η χώρα μου",
+    "myRankLabel": "Η θέση μου",
+    "myRankEmpty": "Δεν έχεις μπει ακόμη στην κατάταξη",
+    "loadError": "Δεν ήταν δυνατή η φόρτωση της κατάταξης. Δοκίμασε ξανά σε λίγο.",
+    "byCountryEmptyDesc": "Παίξε επίσημα σετ για να χτίσεις την κατάταξη της χώρας σου",
+    "bySetEmptyDesc": "Παίξε αυτό το σετ για να μπεις στην κατάταξη",
+    "overallEmptyDesc": "Παίξε επίσημα σετ για να μπεις στην κατάταξη",
+    "noOfficialSetsTitle": "Δεν υπάρχουν ακόμη επίσημα σετ",
+    "noOfficialSetsDesc": "Μόλις προστεθούν επίσημα σετ, θα δεις εδώ κατατάξεις",
+    "headerRank": "Θέση",
+    "headerAvgScore": "Μέσο σκορ",
+    "headerParticipants": "Συμμετέχοντες",
+    "headerSetsPlayed": "Σετ που παίχτηκαν",
+    "playersCount_one": "{{count}} παίκτης",
+    "playersCount_other": "{{count}} παίκτες",
+    "playersJoined_one": "{{count}} παίκτης συμμετείχε",
+    "playersJoined_other": "{{count}} παίκτες συμμετείχαν",
+    "setsPlayedCount_one": "{{count}} σετ",
+    "setsPlayedCount_other": "{{count}} σετ",
+    "setsPlayedJoined_one": "{{count}} σετ παίχτηκε",
+    "setsPlayedJoined_other": "{{count}} σετ παίχτηκαν",
+    "selectAriaLabel": "Επιλογή σετ λέξεων",
+    "myRankByCountry": "Η χώρα σου {{country}} #{{rank}} · {{score}} πόντοι",
+    "myRankGeneric": "#{{rank}} · {{score}} πόντοι"
+  },
+  "history": {
+    "title": "Ιστορικό",
+    "loadError": "Δεν ήταν δυνατή η φόρτωση του ιστορικού. Δοκίμασε ξανά σε λίγο.",
+    "emptyDesc": "Παίξε ένα σετ λέξεων και θα εμφανιστεί εδώ",
+    "headerDate": "Ημερομηνία",
+    "headerSet": "Σετ",
+    "headerCorrect": "Σωστές",
+    "headerAccuracy": "Ακρίβεια",
+    "deletedSet": "Διαγραμμένο σετ",
+    "deletedWord": "Διαγραμμένη λέξη",
+    "cardAccuracyLine": "Σωστές {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "Διαχείριση σετ",
+    "uploadLink": "+ Μεταφόρτωση επίσημου σετ",
+    "tabOfficial": "Επίσημα σετ",
+    "tabPromote": "Προαγωγή προσωπικών σετ",
+    "loading": "Φόρτωση…",
+    "loadError": "Δεν ήταν δυνατή η φόρτωση της λίστας. Δοκίμασε ξανά σε λίγο.",
+    "countryCommon": "Κοινό",
+    "emptyFilteredTitle": "Κανένα επίσημο σετ δεν ταιριάζει σε αυτό το φίλτρο",
+    "emptyFilteredDesc": "Δοκίμασε άλλο φίλτρο χώρας ή γλώσσας",
+    "deleting": "Διαγραφή…",
+    "deleteConfirm": "Διαγραφή",
+    "emptyPromoteTitle": "Δεν υπάρχουν προσωπικά σετ για προαγωγή",
+    "emptyPromoteDesc": "Όταν οι χρήστες ανεβάζουν προσωπικά σετ, θα τα βλέπεις εδώ",
+    "personalSetBadge": "Προσωπικό σετ",
+    "promoteButton": "Προαγωγή",
+    "editSheetTitle": "Επεξεργασία επίσημου σετ",
+    "titleFieldLabel": "Τίτλος",
+    "titleRequiredError": "Συμπλήρωσε έναν τίτλο για να αποθηκεύσεις.",
+    "promoteSheetTitle": "Προαγωγή σε επίσημο σετ",
+    "promoteError": "Δεν ήταν δυνατή η προαγωγή. Δοκίμασε ξανά σε λίγο.",
+    "promoteNoticeSuffix": " θα γίνει επίσημο σετ που θα μπορούν να παίξουν όλοι οι χρήστες της επιλεγμένης χώρας.",
+    "promoting": "Προαγωγή σε εξέλιξη…",
+    "promoteSubmit": "Προαγωγή",
+    "countryCommonOption": "Κοινό (όλες οι χώρες)",
+    "countrySpecificOption": "Συγκεκριμένη χώρα"
+  },
+  "adminUpload": {
+    "backLink": "← Πίσω στη διαχείριση",
+    "title": "Μεταφόρτωση επίσημου σετ",
+    "desc": "Όρισε μια χώρα ώστε αυτό να γίνει επίσημο σετ που θα μπορούν να παίξουν όλοι οι χρήστες εκεί.",
+    "loadingUser": "Φόρτωση στοιχείων χρήστη…"
+  },
+  "header": {
+    "appName": "Strawberry Survival",
+    "mainNav": "Κύριο μενού",
+    "sets": "Σετ",
+    "ranking": "Κατάταξη",
+    "history": "Ιστορικό",
+    "admin": "Διαχείριση"
+  },
+  "tabbar": {
+    "home": "Αρχική",
+    "sets": "Σετ",
+    "ranking": "Κατάταξη",
+    "history": "Ιστορικό",
+    "nav": "Κάτω μενού"
+  },
+  "profileSheet": {
+    "title": "Προφίλ",
+    "nicknameLabel": "Ψευδώνυμο",
+    "change": "Αλλαγή",
+    "countryLabel": "Χώρα",
+    "emailLabel": "Email",
+    "loggingOut": "Αποσύνδεση…",
+    "logout": "Αποσύνδεση",
+    "nicknameSaveError": "Δεν ήταν δυνατή η αποθήκευση του ψευδωνύμου. Δοκίμασε ξανά.",
+    "countrySaveError": "Δεν ήταν δυνατή η αποθήκευση της χώρας. Δοκίμασε ξανά.",
+    "language": "Γλώσσα"
+  },
+  "pauseMenu": {
+    "pause": "Παύση",
+    "title": "Σε παύση",
+    "resume": "Συνέχεια",
+    "quit": "Έξοδος",
+    "quitHint": "Το τρέχον σκορ σου θα αποθηκευτεί"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " — ποια είναι η σημασία;",
+    "inputHint_one": "※ Συμπλήρωσε {{count}} σημασία",
+    "inputHint_other": "※ Συμπλήρωσε {{count}} σημασίες",
+    "answerPlaceholder": "Απάντηση {{index}}",
+    "submit": "Υποβολή",
+    "missed": "Σημασίες που δεν βρήκες: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} λέξη",
+    "wordCount_other": "{{count}} λέξεις",
+    "learnProgress": "Έμαθες {{learned}}/{{total}}",
+    "viewSet": "Προβολή σετ",
+    "start": "Έναρξη",
+    "confirmDelete": "Διαγραφή αυτού;",
+    "deleting": "Διαγραφή…",
+    "deleteConfirm": "Διαγραφή",
+    "delete": "Διαγραφή"
+  },
+  "directionSheet": {
+    "title": "Ποια κατεύθυνση;",
+    "startGame": "Έναρξη παιχνιδιού",
+    "frontToBack": {
+      "title": "Δες {{short}}, μάντεψε τη σημασία",
+      "hint": "Λέξη → Σημασία"
+    },
+    "backToFront": {
+      "title": "Δες τη σημασία, μάντεψε {{short}}",
+      "hint": "Σημασία → Λέξη"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,ένα στρογγυλό κόκκινο φρούτο,I ate an apple.\nrun,τρέχω;κάνω τζόγκινγκ,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"ένα στρογγυλό κόκκινο φρούτο\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"τρέχω;κάνω τζόγκινγκ\" }\n]",
+    "titleLabel": "Τίτλος",
+    "titlePlaceholder": "π.χ. Λεξιλόγιο Β' Γυμνασίου",
+    "countryLabel": "Χώρα",
+    "languageLabel": "Γλώσσα",
+    "wordsInputLabel": "Εισαγωγή λέξεων",
+    "loadFromFile": "Φόρτωση από αρχείο",
+    "confirmColumn": "Έλεγχος",
+    "normal": "Έγκυρο",
+    "uploading": "Μεταφόρτωση…",
+    "upload": "Μεταφόρτωση",
+    "titleRequired": "Συμπλήρωσε έναν τίτλο για να ανεβάσεις.",
+    "fixErrorsRequired": "Διόρθωσε όλες τις γραμμές με σφάλματα για να ανεβάσεις.",
+    "minOneWordRequired": "Συμπλήρωσε τουλάχιστον 1 λέξη για να ανεβάσεις.",
+    "uploadFailed": "Δεν ήταν δυνατή η μεταφόρτωση. Δοκίμασε ξανά σε λίγο.",
+    "previewSummary_one": "Προεπισκόπηση · {{count}} έγκυρη γραμμή",
+    "previewSummary_other": "Προεπισκόπηση · {{count}} έγκυρες γραμμές",
+    "previewError_one": " · {{count}} γραμμή με σφάλμα",
+    "previewError_other": " · {{count}} γραμμές με σφάλμα",
+    "missingBoth": "Συμπλήρωσε το front (λέξη) και το back (σημασία) για να προσθέσεις.",
+    "missingFront": "Συμπλήρωσε το front (λέξη) για να προσθέσεις.",
+    "missingBack": "Συμπλήρωσε το back (σημασία) για να προσθέσεις.",
+    "jsonSyntaxError": "Έλεγξε τη μορφή JSON. (Συντακτικό σφάλμα)",
+    "jsonMustBeArray": "Το ανώτερο επίπεδο πρέπει να είναι πίνακας για να ανεβάσεις. Π.χ.: [{\"front\":\"apple\",\"back\":\"ένα στρογγυλό κόκκινο φρούτο\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Αυτό το email είναι ήδη εγγεγραμμένο. Συνδέσου.",
+    "weakPassword": "Αυτός ο κωδικός είναι πολύ απλός. Χρησιμοποίησε τουλάχιστον 6 χαρακτήρες με διαφορετικό συνδυασμό.",
+    "invalidCredentials": "Το email ή ο κωδικός είναι λάθος. Έλεγξέ τα ξανά.",
+    "invalidEmail": "Έλεγξε τη μορφή του email σου.",
+    "emailRateLimit": "Ζήτησες emails πολύ συχνά. Δοκίμασε ξανά σε λίγο.",
+    "requestRateLimit": "Πάρα πολλά αιτήματα. Δοκίμασε ξανά σε λίγο.",
+    "signupDisabled": "Οι εγγραφές δεν είναι διαθέσιμες αυτή τη στιγμή. Δοκίμασε ξανά αργότερα.",
+    "genericError": "Έχουμε πρόβλημα σύνδεσης αυτή τη στιγμή. Δοκίμασε ξανά σε λίγο."
+  },
+  "countrySelect": {
+    "placeholder": "Επίλεξε χώρα",
+    "title": "Επιλογή χώρας",
+    "searchPlaceholder": "Αναζήτηση χώρας...",
+    "empty": "Δεν βρέθηκαν αποτελέσματα. Δοκίμασε άλλη χώρα;"
+  },
+  "languages": {
+    "en": {
+      "label": "Αγγλικές λέξεις",
+      "short": "Αγγλικά"
+    },
+    "ja": {
+      "label": "Ιαπωνικές λέξεις",
+      "short": "Ιαπωνικά"
+    },
+    "zh": {
+      "label": "Κινεζικές λέξεις",
+      "short": "Κινεζικά"
+    },
+    "general": "Γενικά"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Δεν έχει μάθει",
+      "learning": "Σε εκμάθηση",
+      "review_one": "Επανάληψη σε {{count}} μέρα",
+      "review_other": "Επανάληψη σε {{count}} μέρες"
+    }
+  },
+  "game": {
+    "instructions": "Κίνηση: Βελάκια / Πάτημα οθόνης (κατεύθυνση σε σχέση με τον χαρακτήρα)   ·   Το όπλο σου λυτρώνει αυτόματα τους εχθρούς",
+    "redeemed": "Λυτρώθηκε",
+    "goldQuiz": "Κέρδισες χρυσό! Κουίζ",
+    "blessingGained": "Απέκτησες ευλογία",
+    "blessingsTitle": "Ευλογίες που απέκτησες",
+    "blessingsEmpty": "Δεν έχεις αποκτήσει ευλογίες ακόμη",
+    "close": "Κλείσιμο",
+    "hudTime": "Χρόνος",
+    "hudRedeemed": "Λυτρώθηκαν",
+    "hudNextQuiz": "Επόμενο κουίζ",
+    "hudPierce": "Διείσδυση",
+    "hudQuiz": "Κουίζ",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Πολλαπλό βέλος",
+        "desc": "+1 βέλος"
+      },
+      "arrow_rate": {
+        "name": "Γρήγορα χέρια",
+        "desc": "Αυξάνει τον ρυθμό βολής"
+      },
+      "arrow_pierce": {
+        "name": "Διείσδυση",
+        "desc": "+10% πιθανότητα διείσδυσης"
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { supabase } from '../../../shared/api/supabase'
+import { i18n } from '../../../shared/i18n'
 import { authQueryKeys, useCurrentUser } from './useCurrentUser'
 
 // RLS grant가 nickname/country 컬럼만 허용한다 (docs/sql/01-init.sql) — role은 여기서 변경 불가.
@@ -15,7 +16,7 @@ export function useUpdateProfile() {
 
   return useMutation({
     mutationFn: async (input: UpdateProfileInput) => {
-      if (!userId) throw new Error('로그인이 필요해요.')
+      if (!userId) throw new Error(i18n.t('common.loginRequired'))
       const { error } = await supabase.from('profiles').update(input).eq('id', userId)
       if (error) throw error
     },

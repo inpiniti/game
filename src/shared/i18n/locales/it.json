@@ -1,0 +1,345 @@
+{
+  "common": {
+    "loading": "Caricamento…",
+    "country": "Paese",
+    "language": "Lingua",
+    "email": "Email",
+    "password": "Password",
+    "nickname": "Nickname",
+    "scoreLabel": "Punteggio",
+    "scoreValue": "{{value}} punti",
+    "save": "Salva",
+    "saving": "Salvataggio…",
+    "saveError": "Impossibile salvare. Riprova tra poco.",
+    "close": "Chiudi",
+    "edit": "Modifica",
+    "delete": "Elimina",
+    "all": "Tutti",
+    "goBack": "Indietro",
+    "noAnswer": "(Nessuna risposta)",
+    "allCorrectNotice": "😄 Tutto giusto! Nessuna parola sbagliata",
+    "noRecordsTitle": "Ancora nessuno storico",
+    "gameTitle": "🍓 Strawberry Survival",
+    "startGame": "Inizia partita",
+    "quizSetLoadError": "Impossibile caricare l'elenco di parole. Riprova tra poco.",
+    "loadingQuizSet": "Caricamento dell'elenco di parole…",
+    "wordCount_one": "{{count}} parola",
+    "wordCount_other": "{{count}} parole",
+    "loginRequired": "Effettua l'accesso per continuare."
+  },
+  "login": {
+    "tagline": "Sopravvivi catturando parole",
+    "submitting": "Accesso in corso…",
+    "submit": "Accedi",
+    "noAccount": "Non hai un account?",
+    "signupLink": "Registrati →"
+  },
+  "signup": {
+    "title": "Registrazione",
+    "passwordConfirmLabel": "Conferma password",
+    "submitting": "Registrazione in corso…",
+    "submit": "Registrati",
+    "errorNicknameRequired": "Inserisci un nickname.",
+    "errorPasswordTooShort": "La password deve contenere almeno {{minLength}} caratteri.",
+    "errorPasswordMismatch": "Le password non coincidono. Controlla di nuovo.",
+    "errorAlreadyRegistered": "Questa email è già registrata. Effettua l'accesso."
+  },
+  "verifyEmail": {
+    "title": "Controlla la tua casella email",
+    "sentDescSuffix": ": è qui che abbiamo inviato l'email di verifica.",
+    "sentDescLine2": "Tocca il link nell'email per completare la registrazione.",
+    "descNoEmail": "Inserisci l'email usata in fase di registrazione e ti invieremo di nuovo l'email di verifica.",
+    "resentNotice": "Abbiamo inviato di nuovo l'email. Controlla la tua casella.",
+    "resendCountdown": "Invia di nuovo l'email ({{seconds}} s)",
+    "sending": "Invio in corso…",
+    "resend": "Invia di nuovo l'email",
+    "backToLogin": "← Torna al login"
+  },
+  "lobby": {
+    "tagline": "Schiva i mostri e rispondi ai quiz per diventare più forte",
+    "loading": "Caricamento…",
+    "noSets": "Nessun elenco di parole",
+    "footnote": "Lobby temporanea (passo 3) · selezione elenco/storico in arrivo"
+  },
+  "placeholder": {
+    "desc": "Presto disponibile. Ci stiamo lavorando."
+  },
+  "result": {
+    "title": "Game Over",
+    "killsLabel": "Sconfitti",
+    "killsValue": "{{kills}} nemici",
+    "quizLabel": "Quiz",
+    "savedNotice": "✔ Salvato · Alla prossima",
+    "wrongTitle": "Parole sbagliate",
+    "toLobby": "Alla lobby",
+    "retry": "Riprova",
+    "moreSuffix": " e altri",
+    "answer": "Risposta: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Tipo",
+    "scopeOfficial": "Ufficiali",
+    "scopeMine": "I miei elenchi",
+    "uploadButton": "+ Carica",
+    "emptyTitle": "Ancora nessun elenco di parole",
+    "emptyDescMine": "Tocca + Carica per creare il tuo primo elenco",
+    "emptyDescOther": "Dai un'occhiata anche alle altre schede di lingua o tipo",
+    "uploadSheetTitle": "Carica elenco di parole"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Indietro",
+    "notFound": "Elenco di parole non trovato.",
+    "backToList": "Torna agli elenchi di parole",
+    "learnedProgress": "Imparate {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Parole sbagliate spesso",
+    "wrongCount_one": "{{count}} risposta sbagliata",
+    "wrongCount_other": "{{count}} risposte sbagliate",
+    "allWordsTitle": "Tutte le parole",
+    "emptyItems": "Ancora nessuna parola aggiunta.",
+    "headerWord": "Parola",
+    "headerMeaning": "Significato",
+    "headerStatus": "Stato",
+    "frontPlaceholder": "Parola (front)",
+    "backPlaceholder": "Significato (back) · usa ';' per più significati",
+    "examplePlaceholder": "Esempio (facoltativo)",
+    "removeItemAria": "Rimuovi questa parola",
+    "addItemButton": "+ Aggiungi parola",
+    "emptyFieldsError": "Compila parola e significato per salvare."
+  },
+  "ranking": {
+    "title": "Classifica",
+    "tabsAriaLabel": "Tipo di classifica",
+    "tabBySet": "Per elenco",
+    "tabOverall": "Generale",
+    "tabByCountry": "Tra paesi",
+    "scopeLabel": "Ambito",
+    "scopeMine": "Il mio paese",
+    "myRankLabel": "La mia posizione",
+    "myRankEmpty": "Non ancora in classifica",
+    "loadError": "Impossibile caricare la classifica. Riprova tra poco.",
+    "byCountryEmptyDesc": "Gioca agli elenchi ufficiali per costruire la classifica del tuo paese",
+    "bySetEmptyDesc": "Gioca a questo elenco per entrare in classifica",
+    "overallEmptyDesc": "Gioca agli elenchi ufficiali per entrare in classifica",
+    "noOfficialSetsTitle": "Ancora nessun elenco ufficiale",
+    "noOfficialSetsDesc": "Quando saranno aggiunti elenchi ufficiali, vedrai qui la classifica",
+    "headerRank": "Posizione",
+    "headerAvgScore": "Punteggio medio",
+    "headerParticipants": "Partecipanti",
+    "headerSetsPlayed": "Elenchi giocati",
+    "playersCount_one": "{{count}} giocatore",
+    "playersCount_other": "{{count}} giocatori",
+    "playersJoined_one": "{{count}} giocatore iscritto",
+    "playersJoined_other": "{{count}} giocatori iscritti",
+    "setsPlayedCount_one": "{{count}} elenco",
+    "setsPlayedCount_other": "{{count}} elenchi",
+    "setsPlayedJoined_one": "{{count}} elenco giocato",
+    "setsPlayedJoined_other": "{{count}} elenchi giocati",
+    "selectAriaLabel": "Seleziona elenco di parole",
+    "myRankByCountry": "Il tuo paese {{country}} #{{rank}} · {{score}} punti",
+    "myRankGeneric": "#{{rank}} · {{score}} punti"
+  },
+  "history": {
+    "title": "Storico",
+    "loadError": "Impossibile caricare lo storico. Riprova tra poco.",
+    "emptyDesc": "Gioca a un elenco di parole e comparirà qui",
+    "headerDate": "Data",
+    "headerSet": "Elenco",
+    "headerCorrect": "Corrette",
+    "headerAccuracy": "Precisione",
+    "deletedSet": "Elenco eliminato",
+    "deletedWord": "Parola eliminata",
+    "cardAccuracyLine": "Corrette {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "Gestisci elenchi di parole",
+    "uploadLink": "+ Carica elenco ufficiale",
+    "tabOfficial": "Elenchi ufficiali",
+    "tabPromote": "Promuovi elenchi personali",
+    "loading": "Caricamento…",
+    "loadError": "Impossibile caricare l'elenco. Riprova tra poco.",
+    "countryCommon": "Comune",
+    "emptyFilteredTitle": "Nessun elenco ufficiale corrisponde ai filtri",
+    "emptyFilteredDesc": "Prova un altro filtro di paese o lingua",
+    "deleting": "Eliminazione…",
+    "deleteConfirm": "Elimina",
+    "emptyPromoteTitle": "Nessun elenco personale da promuovere",
+    "emptyPromoteDesc": "Quando gli utenti caricano elenchi personali, li vedrai qui",
+    "personalSetBadge": "Elenco personale",
+    "promoteButton": "Promuovi",
+    "editSheetTitle": "Modifica elenco ufficiale",
+    "titleFieldLabel": "Titolo",
+    "titleRequiredError": "Inserisci un titolo per salvare.",
+    "promoteSheetTitle": "Promuovi a elenco ufficiale",
+    "promoteError": "Impossibile promuovere l'elenco. Riprova tra poco.",
+    "promoteNoticeSuffix": " diventerà un elenco ufficiale che tutti gli utenti del paese selezionato potranno giocare.",
+    "promoting": "Promozione in corso…",
+    "promoteSubmit": "Promuovi",
+    "countryCommonOption": "Comune (tutti i paesi)",
+    "countrySpecificOption": "Paese specifico"
+  },
+  "adminUpload": {
+    "backLink": "← Torna all'amministrazione",
+    "title": "Carica elenco ufficiale",
+    "desc": "Specifica un paese perché tutti i suoi utenti possano giocare a questo elenco ufficiale.",
+    "loadingUser": "Caricamento informazioni utente…"
+  },
+  "header": {
+    "appName": "Strawberry Survival",
+    "mainNav": "Menu principale",
+    "sets": "Elenchi",
+    "ranking": "Classifica",
+    "history": "Storico",
+    "admin": "Amministrazione"
+  },
+  "tabbar": {
+    "home": "Home",
+    "sets": "Elenchi",
+    "ranking": "Classifica",
+    "history": "Storico",
+    "nav": "Menu inferiore"
+  },
+  "profileSheet": {
+    "title": "Profilo",
+    "nicknameLabel": "Nickname",
+    "change": "Cambia",
+    "countryLabel": "Paese",
+    "emailLabel": "Email",
+    "loggingOut": "Disconnessione…",
+    "logout": "Esci",
+    "nicknameSaveError": "Impossibile salvare il nickname. Riprova.",
+    "countrySaveError": "Impossibile salvare il paese. Riprova.",
+    "language": "Lingua"
+  },
+  "pauseMenu": {
+    "pause": "Pausa",
+    "title": "In pausa",
+    "resume": "Riprendi",
+    "quit": "Esci",
+    "quitHint": "Il tuo punteggio attuale verrà salvato"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " — qual è il significato?",
+    "inputHint_one": "※ Inserisci {{count}} significato",
+    "inputHint_other": "※ Inserisci {{count}} significati",
+    "answerPlaceholder": "Risposta {{index}}",
+    "submit": "Invia",
+    "missed": "Significati mancati: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} parola",
+    "wordCount_other": "{{count}} parole",
+    "learnProgress": "Imparate {{learned}}/{{total}}",
+    "viewSet": "Vedi elenco",
+    "start": "Inizia",
+    "confirmDelete": "Eliminare?",
+    "deleting": "Eliminazione…",
+    "deleteConfirm": "Elimina",
+    "delete": "Elimina"
+  },
+  "directionSheet": {
+    "title": "In che direzione vuoi giocare?",
+    "startGame": "Inizia partita",
+    "frontToBack": {
+      "title": "Vedi {{short}}, indovina il significato",
+      "hint": "Parola → Significato"
+    },
+    "backToFront": {
+      "title": "Vedi il significato, indovina {{short}}",
+      "hint": "Significato → Parola"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,mela,I ate an apple.\nrun,correre;scattare,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"mela\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"correre;scattare\" }\n]",
+    "titleLabel": "Titolo",
+    "titlePlaceholder": "es. Vocabolario prima media",
+    "countryLabel": "Paese",
+    "languageLabel": "Lingua",
+    "wordsInputLabel": "Inserisci parole",
+    "loadFromFile": "Carica da file",
+    "confirmColumn": "Verifica",
+    "normal": "Valida",
+    "uploading": "Caricamento…",
+    "upload": "Carica",
+    "titleRequired": "Inserisci un titolo per caricare.",
+    "fixErrorsRequired": "Correggi tutte le righe con errori per caricare.",
+    "minOneWordRequired": "Inserisci almeno 1 parola per caricare.",
+    "uploadFailed": "Impossibile caricare. Riprova tra poco.",
+    "previewSummary_one": "Anteprima · {{count}} riga valida",
+    "previewSummary_other": "Anteprima · {{count}} righe valide",
+    "previewError_one": " · {{count}} riga con errori",
+    "previewError_other": " · {{count}} righe con errori",
+    "missingBoth": "Compila front (parola) e back (significato) per aggiungere.",
+    "missingFront": "Compila front (parola) per aggiungere.",
+    "missingBack": "Compila back (significato) per aggiungere.",
+    "jsonSyntaxError": "Controlla il formato JSON. (errore di sintassi)",
+    "jsonMustBeArray": "Il livello superiore deve essere un array per caricare. Es.: [{\"front\":\"apple\",\"back\":\"mela\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Questa email è già registrata. Effettua l'accesso.",
+    "weakPassword": "Questa password è troppo semplice. Usa almeno 6 caratteri con una combinazione diversa.",
+    "invalidCredentials": "Email o password errati. Controlla di nuovo.",
+    "invalidEmail": "Controlla il formato della tua email.",
+    "emailRateLimit": "Hai richiesto troppe email. Riprova tra poco.",
+    "requestRateLimit": "Troppe richieste. Riprova tra poco.",
+    "signupDisabled": "Le registrazioni non sono aperte al momento. Riprova più tardi.",
+    "genericError": "Al momento la connessione è instabile. Riprova a breve."
+  },
+  "countrySelect": {
+    "placeholder": "Seleziona un paese",
+    "title": "Seleziona paese",
+    "searchPlaceholder": "Cerca paese…",
+    "empty": "Nessun risultato. Provi con un altro paese?"
+  },
+  "languages": {
+    "en": {
+      "label": "Parole inglesi",
+      "short": "Inglese"
+    },
+    "ja": {
+      "label": "Parole giapponesi",
+      "short": "Giapponese"
+    },
+    "zh": {
+      "label": "Parole cinesi",
+      "short": "Cinese"
+    },
+    "general": "Generale"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Non imparata",
+      "learning": "In apprendimento",
+      "review_one": "Ripasso tra {{count}} giorno",
+      "review_other": "Ripasso tra {{count}} giorni"
+    }
+  },
+  "game": {
+    "instructions": "Movimento: frecce / tocca lo schermo (direzione relativa al personaggio)   ·   La tua arma redime automaticamente i nemici",
+    "redeemed": "Redento",
+    "goldQuiz": "Oro ottenuto! Quiz",
+    "blessingGained": "Benedizione ottenuta",
+    "blessingsTitle": "Benedizioni ottenute",
+    "blessingsEmpty": "Ancora nessuna benedizione ottenuta",
+    "close": "Chiudi",
+    "hudTime": "Tempo",
+    "hudRedeemed": "Redenti",
+    "hudNextQuiz": "Prossimo quiz",
+    "hudPierce": "Perforazione",
+    "hudQuiz": "Quiz",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Frecce multiple",
+        "desc": "+1 freccia"
+      },
+      "arrow_rate": {
+        "name": "Mani veloci",
+        "desc": "Aumenta la velocità di tiro delle frecce"
+      },
+      "arrow_pierce": {
+        "name": "Perforazione",
+        "desc": "+10% probabilità di perforazione"
+      }
+    }
+  }
+}

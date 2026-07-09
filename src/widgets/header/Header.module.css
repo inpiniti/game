@@ -18,6 +18,10 @@
   text-decoration: none;
   color: var(--text);
   white-space: nowrap;
+  /* en 앱명("Strawberry Survival")이 ko보다 길다 — 공간 부족 시 넘치는 대신 말줄임 */
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .nav {

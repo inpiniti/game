@@ -182,6 +182,10 @@
   font-weight: 700;
   white-space: nowrap;
   justify-self: end;
+  /* en 상태 문구("Review in n days")가 길어도 단어/뜻 열(1fr 1fr)을 과도하게 압박하지 않게 */
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .status_new {

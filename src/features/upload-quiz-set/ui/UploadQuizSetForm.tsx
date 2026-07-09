@@ -1,4 +1,5 @@
 import { useMemo, useRef, useState, type ChangeEvent } from 'react'
+import { useTranslation } from 'react-i18next'
 import { LEARN_LANGS, GENERAL_LABEL } from '../../../shared/config/languages'
 import { DEFAULT_COUNTRY_CODE } from '../../../shared/config/countries'
 import { CountrySelect } from '../../../shared/ui/country-select/CountrySelect'
@@ -19,19 +20,13 @@ interface UploadQuizSetFormProps {
   official?: boolean
 }
 
-const CSV_PLACEHOLDER = `front,back,example
-apple,사과,I ate an apple.
-run,달리다;뛰다,`
-
-const JSON_PLACEHOLDER = `[
-  { "front": "apple", "back": "사과", "example": "I ate an apple." },
-  { "front": "run", "back": "달리다;뛰다" }
-]`
-
 // 문제집 업로드 폼 — 제목 + (official 모드면 국가) + 언어 + CSV/JSON 붙여넣기(또는 파일) +
 // 실시간 미리보기·행 단위 오류. 오류가 하나라도 있으면 제출을 막는다(부분 저장으로 인한 혼란 방지).
 // 개인 업로드(QuizSetListPage)와 관리자 공식 업로드(admin-upload/AdminUploadPage)가 이 폼 하나를 공유한다.
 export function UploadQuizSetForm({ userId, onSuccess, official = false }: UploadQuizSetFormProps) {
+  const { t } = useTranslation()
+  const CSV_PLACEHOLDER = t('uploadForm.csvPlaceholder')
+  const JSON_PLACEHOLDER = t('uploadForm.jsonPlaceholder')
   const [title, setTitle] = useState('')
   const [country, setCountry] = useState(DEFAULT_COUNTRY_CODE)
   const [learnLang, setLearnLang] = useState<string | null>(LEARN_LANGS[0]?.code ?? null)
@@ -61,15 +56,15 @@ export function UploadQuizSetForm({ userId, onSuccess, official = false }: Uploa
   const handleSubmit = async () => {
     setErrorMessage(null)
     if (!title.trim()) {
-      setErrorMessage('제목을 입력하면 업로드할 수 있어요.')
+      setErrorMessage(t('uploadForm.titleRequired'))
       return
     }
     if (parsed.errorCount > 0) {
-      setErrorMessage('오류가 있는 행을 모두 고치면 업로드할 수 있어요.')
+      setErrorMessage(t('uploadForm.fixErrorsRequired'))
       return
     }
     if (parsed.validCount === 0) {
-      setErrorMessage('단어를 1개 이상 입력하면 업로드할 수 있어요.')
+      setErrorMessage(t('uploadForm.minOneWordRequired'))
       return
     }
     try {
@@ -82,33 +77,33 @@ export function UploadQuizSetForm({ userId, onSuccess, official = false }: Uploa
       })
       onSuccess(newSetId)
     } catch {
-      setErrorMessage('업로드하지 못했어요. 잠시 후 다시 시도해 주세요.')
+      setErrorMessage(t('uploadForm.uploadFailed'))
     }
   }
 
   return (
     <div className={styles.form}>
       <label className={form.field}>
-        <span className={form.label}>제목</span>
+        <span className={form.label}>{t('uploadForm.titleLabel')}</span>
         <input
           type="text"
           className={form.input}
           value={title}
           onChange={(event) => setTitle(event.target.value)}
-          placeholder="예: 중1 영단어"
+          placeholder={t('uploadForm.titlePlaceholder')}
           maxLength={60}
         />
       </label>
 
       {official && (
         <div className={form.field}>
-          <span className={form.label}>국가</span>
+          <span className={form.label}>{t('uploadForm.countryLabel')}</span>
           <CountrySelect value={country} onChange={setCountry} />
         </div>
       )}
 
       <div className={form.field}>
-        <span className={form.label}>언어</span>
+        <span className={form.label}>{t('uploadForm.languageLabel')}</span>
         <div className={styles.chipRow}>
           {LEARN_LANGS.map((lang) => (
             <button
@@ -132,7 +127,7 @@ export function UploadQuizSetForm({ userId, onSuccess, official = false }: Uploa
 
       <div className={form.field}>
         <div className={styles.formatRow}>
-          <span className={form.label}>단어 입력</span>
+          <span className={form.label}>{t('uploadForm.wordsInputLabel')}</span>
           <div className={styles.formatToggle}>
             <button
               type="button"
@@ -170,7 +165,7 @@ export function UploadQuizSetForm({ userId, onSuccess, official = false }: Uploa
             id="quiz-upload-file"
           />
           <label htmlFor="quiz-upload-file" className={styles.fileLabel}>
-            파일에서 불러오기
+            {t('uploadForm.loadFromFile')}
           </label>
         </div>
       </div>
@@ -178,8 +173,10 @@ export function UploadQuizSetForm({ userId, onSuccess, official = false }: Uploa
       {text.trim().length > 0 && (
         <div className={styles.preview}>
           <p className={styles.previewSummary}>
-            미리보기 · 정상 {parsed.validCount}행
-            {parsed.errorCount > 0 && <span className={styles.previewError}> · 오류 {parsed.errorCount}행</span>}
+            {t('uploadForm.previewSummary', { count: parsed.validCount })}
+            {parsed.errorCount > 0 && (
+              <span className={styles.previewError}>{t('uploadForm.previewError', { count: parsed.errorCount })}</span>
+            )}
           </p>
           <div className={styles.previewTableWrap}>
             <table className={styles.previewTable}>
@@ -189,7 +186,7 @@ export function UploadQuizSetForm({ userId, onSuccess, official = false }: Uploa
                   <th>front</th>
                   <th>back</th>
                   <th>example</th>
-                  <th>확인</th>
+                  <th>{t('uploadForm.confirmColumn')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -200,7 +197,7 @@ export function UploadQuizSetForm({ userId, onSuccess, official = false }: Uploa
                     <td>{row.back || '—'}</td>
                     <td>{row.example ?? ''}</td>
                     <td className={row.error ? styles.previewErrorCell : styles.previewOkCell}>
-                      {row.error ?? '정상'}
+                      {row.error ?? t('uploadForm.normal')}
                     </td>
                   </tr>
                 ))}
@@ -219,7 +216,7 @@ export function UploadQuizSetForm({ userId, onSuccess, official = false }: Uploa
         aria-busy={upload.isPending}
         onClick={handleSubmit}
       >
-        {upload.isPending ? '업로드하고 있어요…' : '업로드하기'}
+        {upload.isPending ? t('uploadForm.uploading') : t('uploadForm.upload')}
       </button>
     </div>
   )

@@ -1,0 +1,367 @@
+{
+  "common": {
+    "loading": "Завантаження…",
+    "country": "Країна",
+    "language": "Мова",
+    "email": "Ел. пошта",
+    "password": "Пароль",
+    "nickname": "Нікнейм",
+    "scoreLabel": "Очки",
+    "scoreValue": "{{value}} очок",
+    "save": "Зберегти",
+    "saving": "Зберігаємо…",
+    "saveError": "Не вдалося зберегти. Спробуй ще раз трохи пізніше.",
+    "close": "Закрити",
+    "edit": "Змінити",
+    "delete": "Видалити",
+    "all": "Усі",
+    "goBack": "Назад",
+    "noAnswer": "(Немає відповіді)",
+    "allCorrectNotice": "😄 Усі слова відгадано! Помилок немає",
+    "noRecordsTitle": "Поки немає записів",
+    "gameTitle": "🍓 Strawberry Survival",
+    "startGame": "Почати гру",
+    "quizSetLoadError": "Не вдалося завантажити набір слів. Спробуй ще раз трохи пізніше.",
+    "loadingQuizSet": "Завантажуємо набір слів…",
+    "wordCount_one": "{{count}} слово",
+    "wordCount_few": "{{count}} слова",
+    "wordCount_many": "{{count}} слів",
+    "wordCount_other": "{{count}} слова",
+    "loginRequired": "Потрібно увійти в акаунт."
+  },
+  "login": {
+    "tagline": "Виживай, ловлячи слова",
+    "submitting": "Виконуємо вхід…",
+    "submit": "Увійти",
+    "noAccount": "Немає акаунта?",
+    "signupLink": "Зареєструватися →"
+  },
+  "signup": {
+    "title": "Реєстрація",
+    "passwordConfirmLabel": "Підтвердження пароля",
+    "submitting": "Реєструємо…",
+    "submit": "Зареєструватися",
+    "errorNicknameRequired": "Введи нікнейм.",
+    "errorPasswordTooShort": "Пароль має містити щонайменше {{minLength}} символів.",
+    "errorPasswordMismatch": "Паролі не збігаються. Перевір ще раз.",
+    "errorAlreadyRegistered": "Ця пошта вже зареєстрована. Увійди в акаунт."
+  },
+  "verifyEmail": {
+    "title": "Перевір пошту",
+    "sentDescSuffix": " — на цю адресу надіслано лист для підтвердження.",
+    "sentDescLine2": "Перейди за посиланням у листі, щоб завершити реєстрацію.",
+    "descNoEmail": "Введи пошту, вказану під час реєстрації, і ми надішлемо лист ще раз.",
+    "resentNotice": "Лист надіслано повторно. Перевір пошту.",
+    "resendCountdown": "Надіслати лист ще раз ({{seconds}} с)",
+    "sending": "Надсилаємо…",
+    "resend": "Надіслати лист ще раз",
+    "backToLogin": "← Назад до входу"
+  },
+  "lobby": {
+    "tagline": "Уникай монстрів і відповідай на питання, щоб стати сильнішим",
+    "loading": "Завантаження…",
+    "noSets": "Немає наборів слів",
+    "footnote": "Тимчасове лобі кроку 3 · вибір наборів/історія з'являться пізніше"
+  },
+  "placeholder": {
+    "desc": "Скоро з'явиться. Ми вже працюємо над цим."
+  },
+  "result": {
+    "title": "Гру завершено",
+    "killsLabel": "Переможено",
+    "killsValue": "{{kills}} ворогів",
+    "quizLabel": "Вікторина",
+    "savedNotice": "✔ Результат збережено · Побачимось наступного разу",
+    "wrongTitle": "Слова з помилками",
+    "toLobby": "До лобі",
+    "retry": "Знову",
+    "moreSuffix": " і ще",
+    "answer": "Відповідь: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Тип",
+    "scopeOfficial": "Офіційні",
+    "scopeMine": "Мої набори",
+    "uploadButton": "+ Завантажити",
+    "emptyTitle": "Поки немає наборів слів",
+    "emptyDescMine": "Натисни «+ Завантажити», щоб створити перший набір",
+    "emptyDescOther": "Загляни на інші вкладки мови чи типу",
+    "uploadSheetTitle": "Завантаження набору слів"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Назад",
+    "notFound": "Набір слів не знайдено.",
+    "backToList": "До списку наборів",
+    "learnedProgress": "Вивчено {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Слова, у яких часто помиляєшся",
+    "wrongCount_one": "{{count}} помилка",
+    "wrongCount_few": "{{count}} помилки",
+    "wrongCount_many": "{{count}} помилок",
+    "wrongCount_other": "{{count}} помилки",
+    "allWordsTitle": "Усі слова",
+    "emptyItems": "Поки немає доданих слів.",
+    "headerWord": "Слово",
+    "headerMeaning": "Значення",
+    "headerStatus": "Статус",
+    "frontPlaceholder": "Слово (front)",
+    "backPlaceholder": "Значення (back) · кілька значень через ';'",
+    "examplePlaceholder": "Приклад (необов'язково)",
+    "removeItemAria": "Видалити це слово",
+    "addItemButton": "+ Додати слово",
+    "emptyFieldsError": "Заповни слово і значення, щоб зберегти."
+  },
+  "ranking": {
+    "title": "Рейтинг",
+    "tabsAriaLabel": "Тип рейтингу",
+    "tabBySet": "За наборами",
+    "tabOverall": "Загальний",
+    "tabByCountry": "За країнами",
+    "scopeLabel": "Область",
+    "scopeMine": "Моя країна",
+    "myRankLabel": "Моє місце",
+    "myRankEmpty": "Поки немає в рейтингу",
+    "loadError": "Не вдалося завантажити рейтинг. Спробуй ще раз трохи пізніше.",
+    "byCountryEmptyDesc": "Грай в офіційні набори, щоб поповнити рейтинг країни",
+    "bySetEmptyDesc": "Зіграй у цей набір, щоб потрапити в рейтинг",
+    "overallEmptyDesc": "Грай в офіційні набори, щоб потрапити в рейтинг",
+    "noOfficialSetsTitle": "Поки немає офіційних наборів",
+    "noOfficialSetsDesc": "Коли з'являться офіційні набори, тут буде рейтинг",
+    "headerRank": "Місце",
+    "headerAvgScore": "Середній бал",
+    "headerParticipants": "Учасників",
+    "headerSetsPlayed": "Зіграно наборів",
+    "playersCount_one": "{{count}} гравець",
+    "playersCount_few": "{{count}} гравці",
+    "playersCount_many": "{{count}} гравців",
+    "playersCount_other": "{{count}} гравця",
+    "playersJoined_one": "{{count}} гравець приєднався",
+    "playersJoined_few": "{{count}} гравці приєдналися",
+    "playersJoined_many": "{{count}} гравців приєдналося",
+    "playersJoined_other": "{{count}} гравця приєдналося",
+    "setsPlayedCount_one": "{{count}} набір",
+    "setsPlayedCount_few": "{{count}} набори",
+    "setsPlayedCount_many": "{{count}} наборів",
+    "setsPlayedCount_other": "{{count}} набору",
+    "setsPlayedJoined_one": "{{count}} набір зіграно",
+    "setsPlayedJoined_few": "{{count}} набори зіграно",
+    "setsPlayedJoined_many": "{{count}} наборів зіграно",
+    "setsPlayedJoined_other": "{{count}} набору зіграно",
+    "selectAriaLabel": "Вибір набору слів",
+    "myRankByCountry": "Твоя країна {{country}} · {{rank}} місце · {{score}} очок",
+    "myRankGeneric": "{{rank}} місце · {{score}} очок"
+  },
+  "history": {
+    "title": "Історія",
+    "loadError": "Не вдалося завантажити історію. Спробуй ще раз трохи пізніше.",
+    "emptyDesc": "Зіграй у набір слів, і тут з'явиться історія",
+    "headerDate": "Дата",
+    "headerSet": "Набір",
+    "headerCorrect": "Правильно",
+    "headerAccuracy": "Точність",
+    "deletedSet": "Видалений набір",
+    "deletedWord": "Видалене слово",
+    "cardAccuracyLine": "Правильно {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "Керування наборами",
+    "uploadLink": "+ Завантажити офіційний набір",
+    "tabOfficial": "Офіційні набори",
+    "tabPromote": "Підвищення особистих наборів",
+    "loading": "Завантаження…",
+    "loadError": "Не вдалося завантажити список. Спробуй ще раз трохи пізніше.",
+    "countryCommon": "Загальний",
+    "emptyFilteredTitle": "Немає офіційних наборів за цими умовами",
+    "emptyFilteredDesc": "Спробуй інший фільтр країни чи мови",
+    "deleting": "Видаляємо…",
+    "deleteConfirm": "Видалити",
+    "emptyPromoteTitle": "Немає особистих наборів для підвищення",
+    "emptyPromoteDesc": "Коли користувачі завантажать особисті набори, вони з'являться тут",
+    "personalSetBadge": "Особистий набір",
+    "promoteButton": "Підвищити",
+    "editSheetTitle": "Змінити офіційний набір",
+    "titleFieldLabel": "Назва",
+    "titleRequiredError": "Введи назву, щоб зберегти.",
+    "promoteSheetTitle": "Підвищення до офіційного набору",
+    "promoteError": "Не вдалося підвищити. Спробуй ще раз трохи пізніше.",
+    "promoteNoticeSuffix": " стане офіційним набором, доступним усім користувачам обраної країни.",
+    "promoting": "Підвищуємо…",
+    "promoteSubmit": "Підвищити",
+    "countryCommonOption": "Загальний (усі країни)",
+    "countrySpecificOption": "Певна країна"
+  },
+  "adminUpload": {
+    "backLink": "← Назад до керування",
+    "title": "Завантаження офіційного набору",
+    "desc": "Вкажи країну, щоб набір став доступним усім користувачам цієї країни.",
+    "loadingUser": "Завантажуємо дані користувача…"
+  },
+  "header": {
+    "appName": "Strawberry Survival",
+    "mainNav": "Головне меню",
+    "sets": "Набори",
+    "ranking": "Рейтинг",
+    "history": "Історія",
+    "admin": "Керування"
+  },
+  "tabbar": {
+    "home": "Головна",
+    "sets": "Набори",
+    "ranking": "Рейтинг",
+    "history": "Історія",
+    "nav": "Нижнє меню"
+  },
+  "profileSheet": {
+    "title": "Профіль",
+    "nicknameLabel": "Нікнейм",
+    "change": "Змінити",
+    "countryLabel": "Країна",
+    "emailLabel": "Ел. пошта",
+    "loggingOut": "Виходимо…",
+    "logout": "Вийти",
+    "nicknameSaveError": "Не вдалося зберегти нікнейм. Спробуй ще раз.",
+    "countrySaveError": "Не вдалося зберегти країну. Спробуй ще раз.",
+    "language": "Мова"
+  },
+  "pauseMenu": {
+    "pause": "Пауза",
+    "title": "Пауза",
+    "resume": "Продовжити",
+    "quit": "Завершити",
+    "quitHint": "Поточний рахунок буде збережено"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " — що це означає?",
+    "inputHint_one": "※ Введи {{count}} значення",
+    "inputHint_few": "※ Введи {{count}} значення",
+    "inputHint_many": "※ Введи {{count}} значень",
+    "inputHint_other": "※ Введи {{count}} значення",
+    "answerPlaceholder": "Відповідь {{index}}",
+    "submit": "Надіслати",
+    "missed": "Пропущені значення: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} слово",
+    "wordCount_few": "{{count}} слова",
+    "wordCount_many": "{{count}} слів",
+    "wordCount_other": "{{count}} слова",
+    "learnProgress": "Вивчено {{learned}}/{{total}}",
+    "viewSet": "Переглянути набір",
+    "start": "Почати",
+    "confirmDelete": "Видалити це?",
+    "deleting": "Видаляємо…",
+    "deleteConfirm": "Видалити",
+    "delete": "Видалити"
+  },
+  "directionSheet": {
+    "title": "У якому напрямку?",
+    "startGame": "Почати гру",
+    "frontToBack": {
+      "title": "Дивись на {{short}}, вгадуй значення",
+      "hint": "Слово → Значення"
+    },
+    "backToFront": {
+      "title": "Дивись на значення, вгадуй {{short}}",
+      "hint": "Значення → Слово"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,червоний круглий фрукт,I ate an apple.\nrun,бігти;біг,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"червоний круглий фрукт\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"бігти;біг\" }\n]",
+    "titleLabel": "Назва",
+    "titlePlaceholder": "напр.: Англійські слова 7 клас",
+    "countryLabel": "Країна",
+    "languageLabel": "Мова",
+    "wordsInputLabel": "Введення слів",
+    "loadFromFile": "Завантажити з файлу",
+    "confirmColumn": "Перевірка",
+    "normal": "Коректно",
+    "uploading": "Завантажуємо…",
+    "upload": "Завантажити",
+    "titleRequired": "Введи назву, щоб завантажити.",
+    "fixErrorsRequired": "Виправ усі рядки з помилками, щоб завантажити.",
+    "minOneWordRequired": "Введи щонайменше 1 слово, щоб завантажити.",
+    "uploadFailed": "Не вдалося завантажити. Спробуй ще раз трохи пізніше.",
+    "previewSummary_one": "Попередній перегляд · {{count}} коректний рядок",
+    "previewSummary_few": "Попередній перегляд · {{count}} коректні рядки",
+    "previewSummary_many": "Попередній перегляд · {{count}} коректних рядків",
+    "previewSummary_other": "Попередній перегляд · {{count}} коректного рядка",
+    "previewError_one": " · {{count}} рядок з помилкою",
+    "previewError_few": " · {{count}} рядки з помилкою",
+    "previewError_many": " · {{count}} рядків з помилкою",
+    "previewError_other": " · {{count}} рядка з помилкою",
+    "missingBoth": "Заповни front (слово) і back (значення), щоб додати.",
+    "missingFront": "Заповни front (слово), щоб додати.",
+    "missingBack": "Заповни back (значення), щоб додати.",
+    "jsonSyntaxError": "Перевір формат JSON. (Синтаксична помилка)",
+    "jsonMustBeArray": "Щоб завантажити, верхній рівень має бути масивом. Напр.: [{\"front\":\"apple\",\"back\":\"червоний круглий фрукт\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Ця пошта вже зареєстрована. Увійди в акаунт.",
+    "weakPassword": "Пароль надто простий. Використай щонайменше 6 символів в іншій комбінації.",
+    "invalidCredentials": "Пошта або пароль неправильні. Перевір ще раз.",
+    "invalidEmail": "Перевір формат пошти.",
+    "emailRateLimit": "Забагато запитів листів. Спробуй ще раз трохи пізніше.",
+    "requestRateLimit": "Забагато запитів. Спробуй ще раз трохи пізніше.",
+    "signupDisabled": "Зараз реєстрація закрита. Спробуй пізніше.",
+    "genericError": "Зараз проблеми зі з'єднанням. Спробуй трохи пізніше."
+  },
+  "countrySelect": {
+    "placeholder": "Обери країну",
+    "title": "Вибір країни",
+    "searchPlaceholder": "Пошук країни...",
+    "empty": "Нічого не знайдено. Спробуй іншу країну?"
+  },
+  "languages": {
+    "en": {
+      "label": "Англійські слова",
+      "short": "Англійська"
+    },
+    "ja": {
+      "label": "Японські слова",
+      "short": "Японська"
+    },
+    "zh": {
+      "label": "Китайські слова",
+      "short": "Китайська"
+    },
+    "general": "Загальне"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Не вивчено",
+      "learning": "Вивчається",
+      "review_one": "Повторення через {{count}} день",
+      "review_few": "Повторення через {{count}} дні",
+      "review_many": "Повторення через {{count}} днів",
+      "review_other": "Повторення через {{count}} дня"
+    }
+  },
+  "game": {
+    "instructions": "Рух: стрілки / дотик до екрана (напрямок відносно персонажа)   ·   Зброя автоматично рятує ворогів",
+    "redeemed": "Врятовано",
+    "goldQuiz": "Отримано золото! Вікторина",
+    "blessingGained": "Отримано благословення",
+    "blessingsTitle": "Отримані благословення",
+    "blessingsEmpty": "Поки немає отриманих благословень",
+    "close": "Закрити",
+    "hudTime": "Час",
+    "hudRedeemed": "Врятовано",
+    "hudNextQuiz": "До наступної вікторини",
+    "hudPierce": "Пробиття",
+    "hudQuiz": "Вікторина",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Множинні стріли",
+        "desc": "+1 стріла"
+      },
+      "arrow_rate": {
+        "name": "Швидкі руки",
+        "desc": "Збільшує швидкострільність"
+      },
+      "arrow_pierce": {
+        "name": "Пробиття",
+        "desc": "+10% шанс пробиття"
+      }
+    }
+  }
+}

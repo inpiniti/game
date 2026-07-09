@@ -1,0 +1,345 @@
+{
+  "common": {
+    "loading": "Lädt…",
+    "country": "Land",
+    "language": "Sprache",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "nickname": "Nickname",
+    "scoreLabel": "Punkte",
+    "scoreValue": "{{value}} Punkte",
+    "save": "Speichern",
+    "saving": "Wird gespeichert…",
+    "saveError": "Konnte nicht gespeichert werden. Bitte versuche es gleich noch einmal.",
+    "close": "Schließen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "all": "Alle",
+    "goBack": "Zurück",
+    "noAnswer": "(Keine Antwort)",
+    "allCorrectNotice": "😄 Alles richtig! Keine falschen Wörter",
+    "noRecordsTitle": "Noch keine Einträge",
+    "gameTitle": "🍓 Erdbeer-Survival",
+    "startGame": "Spiel starten",
+    "quizSetLoadError": "Die Wortliste konnte nicht geladen werden. Bitte versuche es gleich noch einmal.",
+    "loadingQuizSet": "Wortliste wird geladen…",
+    "wordCount_one": "{{count}} Wort",
+    "wordCount_other": "{{count}} Wörter",
+    "loginRequired": "Bitte melde dich an."
+  },
+  "login": {
+    "tagline": "Überlebe, indem du Wörter fängst",
+    "submitting": "Anmeldung läuft…",
+    "submit": "Anmelden",
+    "noAccount": "Noch kein Konto?",
+    "signupLink": "Registrieren →"
+  },
+  "signup": {
+    "title": "Registrieren",
+    "passwordConfirmLabel": "Passwort bestätigen",
+    "submitting": "Registrierung läuft…",
+    "submit": "Registrieren",
+    "errorNicknameRequired": "Bitte gib einen Nickname ein.",
+    "errorPasswordTooShort": "Das Passwort muss mindestens {{minLength}} Zeichen lang sein.",
+    "errorPasswordMismatch": "Die Passwörter stimmen nicht überein. Bitte prüfe sie noch einmal.",
+    "errorAlreadyRegistered": "Diese E-Mail-Adresse ist bereits registriert. Bitte melde dich an."
+  },
+  "verifyEmail": {
+    "title": "Schau in dein Postfach",
+    "sentDescSuffix": " – dorthin haben wir die Bestätigungs-E-Mail geschickt.",
+    "sentDescLine2": "Tippe auf den Link in der E-Mail, um die Registrierung abzuschließen.",
+    "descNoEmail": "Gib die E-Mail-Adresse ein, mit der du dich registriert hast, und wir schicken dir die Bestätigungs-E-Mail erneut.",
+    "resentNotice": "Die E-Mail wurde erneut gesendet. Bitte schau in dein Postfach.",
+    "resendCountdown": "E-Mail erneut senden ({{seconds}} s)",
+    "sending": "Wird gesendet…",
+    "resend": "E-Mail erneut senden",
+    "backToLogin": "← Zurück zur Anmeldung"
+  },
+  "lobby": {
+    "tagline": "Weiche Monstern aus und beantworte Quizfragen, um stärker zu werden",
+    "loading": "Wird geladen…",
+    "noSets": "Keine Wortlisten",
+    "footnote": "Schritt 3 – Platzhalter-Lobby · Auswahl der Wortliste/Verlauf folgt in einem späteren Schritt"
+  },
+  "placeholder": {
+    "desc": "Kommt bald. Wir arbeiten daran."
+  },
+  "result": {
+    "title": "Game Over",
+    "killsLabel": "Besiegt",
+    "killsValue": "{{kills}} Gegner",
+    "quizLabel": "Quiz",
+    "savedNotice": "✔ Gespeichert · Bis zum nächsten Mal",
+    "wrongTitle": "Falsche Wörter",
+    "toLobby": "Zur Lobby",
+    "retry": "Erneut versuchen",
+    "moreSuffix": " weitere",
+    "answer": "Antwort: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Typ",
+    "scopeOfficial": "Offiziell",
+    "scopeMine": "Meine Listen",
+    "uploadButton": "+ Hochladen",
+    "emptyTitle": "Noch keine Wortlisten",
+    "emptyDescMine": "Tippe auf + Hochladen, um deine erste Wortliste zu erstellen",
+    "emptyDescOther": "Schau auch in andere Sprach- oder Typ-Tabs",
+    "uploadSheetTitle": "Wortliste hochladen"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Zurück",
+    "notFound": "Diese Wortliste wurde nicht gefunden.",
+    "backToList": "Zurück zu den Wortlisten",
+    "learnedProgress": "Gelernt {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Häufig falsch beantwortete Wörter",
+    "wrongCount_one": "{{count}} falsche Antwort",
+    "wrongCount_other": "{{count}} falsche Antworten",
+    "allWordsTitle": "Alle Wörter",
+    "emptyItems": "Noch keine Wörter hinzugefügt.",
+    "headerWord": "Wort",
+    "headerMeaning": "Bedeutung",
+    "headerStatus": "Status",
+    "frontPlaceholder": "Wort (front)",
+    "backPlaceholder": "Bedeutung (back) · mehrere Bedeutungen mit ';' trennen",
+    "examplePlaceholder": "Beispiel (optional)",
+    "removeItemAria": "Dieses Wort entfernen",
+    "addItemButton": "+ Wort hinzufügen",
+    "emptyFieldsError": "Fülle Wort und Bedeutung aus, um zu speichern."
+  },
+  "ranking": {
+    "title": "Rangliste",
+    "tabsAriaLabel": "Art der Rangliste",
+    "tabBySet": "Nach Liste",
+    "tabOverall": "Gesamt",
+    "tabByCountry": "Länder-Wettkampf",
+    "scopeLabel": "Bereich",
+    "scopeMine": "Mein Land",
+    "myRankLabel": "Mein Rang",
+    "myRankEmpty": "Noch nicht platziert",
+    "loadError": "Die Rangliste konnte nicht geladen werden. Bitte versuche es gleich noch einmal.",
+    "byCountryEmptyDesc": "Spiele offizielle Wortlisten, um die Länderrangliste aufzubauen",
+    "bySetEmptyDesc": "Spiele diese Wortliste, um in die Rangliste zu kommen",
+    "overallEmptyDesc": "Spiele offizielle Wortlisten, um in die Rangliste zu kommen",
+    "noOfficialSetsTitle": "Noch keine offiziellen Wortlisten",
+    "noOfficialSetsDesc": "Sobald offizielle Wortlisten hinzugefügt werden, siehst du hier die Rangliste",
+    "headerRank": "Rang",
+    "headerAvgScore": "Ø Punkte",
+    "headerParticipants": "Teilnehmer",
+    "headerSetsPlayed": "Gespielte Listen",
+    "playersCount_one": "{{count}} Spieler",
+    "playersCount_other": "{{count}} Spieler",
+    "playersJoined_one": "{{count}} Spieler beigetreten",
+    "playersJoined_other": "{{count}} Spieler beigetreten",
+    "setsPlayedCount_one": "{{count}} Liste",
+    "setsPlayedCount_other": "{{count}} Listen",
+    "setsPlayedJoined_one": "{{count}} Liste gespielt",
+    "setsPlayedJoined_other": "{{count}} Listen gespielt",
+    "selectAriaLabel": "Wortliste auswählen",
+    "myRankByCountry": "Dein Land {{country}} Platz {{rank}} · {{score}} Punkte",
+    "myRankGeneric": "Platz {{rank}} · {{score}} Punkte"
+  },
+  "history": {
+    "title": "Verlauf",
+    "loadError": "Der Verlauf konnte nicht geladen werden. Bitte versuche es gleich noch einmal.",
+    "emptyDesc": "Spiele eine Wortliste, dann erscheint sie hier",
+    "headerDate": "Datum",
+    "headerSet": "Liste",
+    "headerCorrect": "Richtig",
+    "headerAccuracy": "Trefferquote",
+    "deletedSet": "Gelöschte Liste",
+    "deletedWord": "Gelöschtes Wort",
+    "cardAccuracyLine": "Richtig {{correct}}/{{total}} ({{accuracy}} %)"
+  },
+  "adminSets": {
+    "title": "Wortlisten verwalten",
+    "uploadLink": "+ Offizielle Liste hochladen",
+    "tabOfficial": "Offizielle Listen",
+    "tabPromote": "Persönliche Listen befördern",
+    "loading": "Wird geladen…",
+    "loadError": "Die Liste konnte nicht geladen werden. Bitte versuche es gleich noch einmal.",
+    "countryCommon": "Allgemein",
+    "emptyFilteredTitle": "Keine offiziellen Listen für diesen Filter",
+    "emptyFilteredDesc": "Probiere einen anderen Land- oder Sprachfilter",
+    "deleting": "Wird gelöscht…",
+    "deleteConfirm": "Löschen",
+    "emptyPromoteTitle": "Keine persönlichen Listen zum Befördern",
+    "emptyPromoteDesc": "Sobald Nutzer persönliche Listen hochladen, siehst du sie hier",
+    "personalSetBadge": "Persönliche Liste",
+    "promoteButton": "Befördern",
+    "editSheetTitle": "Offizielle Liste bearbeiten",
+    "titleFieldLabel": "Titel",
+    "titleRequiredError": "Gib einen Titel ein, um zu speichern.",
+    "promoteSheetTitle": "Zur offiziellen Liste befördern",
+    "promoteError": "Konnte nicht befördert werden. Bitte versuche es gleich noch einmal.",
+    "promoteNoticeSuffix": " wird zu einer offiziellen Liste, die alle Nutzer im gewählten Land spielen können.",
+    "promoting": "Wird befördert…",
+    "promoteSubmit": "Befördern",
+    "countryCommonOption": "Allgemein (alle Länder)",
+    "countrySpecificOption": "Bestimmtes Land"
+  },
+  "adminUpload": {
+    "backLink": "← Zurück zur Verwaltung",
+    "title": "Offizielle Liste hochladen",
+    "desc": "Gib ein Land an, damit alle Nutzer dort diese offizielle Liste spielen können.",
+    "loadingUser": "Nutzerinfo wird geladen…"
+  },
+  "header": {
+    "appName": "Erdbeer-Survival",
+    "mainNav": "Hauptmenü",
+    "sets": "Listen",
+    "ranking": "Rangliste",
+    "history": "Verlauf",
+    "admin": "Verwaltung"
+  },
+  "tabbar": {
+    "home": "Start",
+    "sets": "Listen",
+    "ranking": "Rangliste",
+    "history": "Verlauf",
+    "nav": "Unteres Menü"
+  },
+  "profileSheet": {
+    "title": "Profil",
+    "nicknameLabel": "Nickname",
+    "change": "Ändern",
+    "countryLabel": "Land",
+    "emailLabel": "E-Mail",
+    "loggingOut": "Wird abgemeldet…",
+    "logout": "Abmelden",
+    "nicknameSaveError": "Nickname konnte nicht gespeichert werden. Bitte versuche es erneut.",
+    "countrySaveError": "Land konnte nicht gespeichert werden. Bitte versuche es erneut.",
+    "language": "Sprache"
+  },
+  "pauseMenu": {
+    "pause": "Pause",
+    "title": "Pausiert",
+    "resume": "Fortsetzen",
+    "quit": "Beenden",
+    "quitHint": "Dein aktueller Punktestand wird gespeichert"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " – was bedeutet das?",
+    "inputHint_one": "※ Gib {{count}} Bedeutung ein",
+    "inputHint_other": "※ Gib {{count}} Bedeutungen ein",
+    "answerPlaceholder": "Antwort {{index}}",
+    "submit": "Absenden",
+    "missed": "Verpasste Bedeutungen: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} Wort",
+    "wordCount_other": "{{count}} Wörter",
+    "learnProgress": "Gelernt {{learned}}/{{total}}",
+    "viewSet": "Liste ansehen",
+    "start": "Start",
+    "confirmDelete": "Wirklich löschen?",
+    "deleting": "Wird gelöscht…",
+    "deleteConfirm": "Löschen",
+    "delete": "Löschen"
+  },
+  "directionSheet": {
+    "title": "Welche Richtung möchtest du üben?",
+    "startGame": "Spiel starten",
+    "frontToBack": {
+      "title": "{{short}} sehen, Bedeutung erraten",
+      "hint": "Wort → Bedeutung"
+    },
+    "backToFront": {
+      "title": "Bedeutung sehen, {{short}} erraten",
+      "hint": "Bedeutung → Wort"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,Apfel,I ate an apple.\nrun,rennen;laufen,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"Apfel\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"rennen;laufen\" }\n]",
+    "titleLabel": "Titel",
+    "titlePlaceholder": "z. B. Englisch Klasse 7",
+    "countryLabel": "Land",
+    "languageLabel": "Sprache",
+    "wordsInputLabel": "Wörter eingeben",
+    "loadFromFile": "Aus Datei laden",
+    "confirmColumn": "Prüfen",
+    "normal": "Gültig",
+    "uploading": "Wird hochgeladen…",
+    "upload": "Hochladen",
+    "titleRequired": "Gib einen Titel ein, um hochzuladen.",
+    "fixErrorsRequired": "Behebe alle fehlerhaften Zeilen, um hochzuladen.",
+    "minOneWordRequired": "Gib mindestens 1 Wort ein, um hochzuladen.",
+    "uploadFailed": "Konnte nicht hochgeladen werden. Bitte versuche es gleich noch einmal.",
+    "previewSummary_one": "Vorschau · {{count}} gültige Zeile",
+    "previewSummary_other": "Vorschau · {{count}} gültige Zeilen",
+    "previewError_one": " · {{count}} fehlerhafte Zeile",
+    "previewError_other": " · {{count}} fehlerhafte Zeilen",
+    "missingBoth": "Fülle front (Wort) und back (Bedeutung) aus, um hinzuzufügen.",
+    "missingFront": "Fülle front (Wort) aus, um hinzuzufügen.",
+    "missingBack": "Fülle back (Bedeutung) aus, um hinzuzufügen.",
+    "jsonSyntaxError": "Bitte überprüfe das JSON-Format. (Syntaxfehler)",
+    "jsonMustBeArray": "Die oberste Ebene muss ein Array sein, um hochzuladen. Z. B.: [{\"front\":\"apple\",\"back\":\"Apfel\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Diese E-Mail-Adresse ist bereits registriert. Bitte melde dich an.",
+    "weakPassword": "Dieses Passwort ist zu einfach. Bitte verwende mindestens 6 Zeichen mit einer anderen Kombination.",
+    "invalidCredentials": "E-Mail-Adresse oder Passwort ist falsch. Bitte prüfe es noch einmal.",
+    "invalidEmail": "Bitte überprüfe das Format deiner E-Mail-Adresse.",
+    "emailRateLimit": "Du hast zu oft E-Mails angefordert. Bitte versuche es gleich noch einmal.",
+    "requestRateLimit": "Zu viele Anfragen. Bitte versuche es gleich noch einmal.",
+    "signupDisabled": "Registrierungen sind aktuell nicht möglich. Bitte versuche es später noch einmal.",
+    "genericError": "Die Verbindung ist gerade instabil. Bitte versuche es in Kürze noch einmal."
+  },
+  "countrySelect": {
+    "placeholder": "Bitte wähle ein Land",
+    "title": "Land auswählen",
+    "searchPlaceholder": "Land suchen…",
+    "empty": "Keine Ergebnisse gefunden. Versuche es mit einem anderen Land?"
+  },
+  "languages": {
+    "en": {
+      "label": "Englische Wörter",
+      "short": "Englisch"
+    },
+    "ja": {
+      "label": "Japanische Wörter",
+      "short": "Japanisch"
+    },
+    "zh": {
+      "label": "Chinesische Wörter",
+      "short": "Chinesisch"
+    },
+    "general": "Allgemein"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Nicht gelernt",
+      "learning": "Wird gelernt",
+      "review_one": "Wiederholung in {{count}} Tag",
+      "review_other": "Wiederholung in {{count}} Tagen"
+    }
+  },
+  "game": {
+    "instructions": "Bewegen: Pfeiltasten / Bildschirm berühren (Richtung relativ zur Figur)   ·   Deine Waffe erlöst Gegner automatisch",
+    "redeemed": "Erlöst",
+    "goldQuiz": "Gold erhalten! Quiz",
+    "blessingGained": "Segen erhalten",
+    "blessingsTitle": "Erhaltene Segen",
+    "blessingsEmpty": "Noch keine Segen erhalten",
+    "close": "Schließen",
+    "hudTime": "Zeit",
+    "hudRedeemed": "Erlöst",
+    "hudNextQuiz": "Nächstes Quiz",
+    "hudPierce": "Durchschlag",
+    "hudQuiz": "Quiz",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Mehrfachpfeil",
+        "desc": "+1 Pfeil"
+      },
+      "arrow_rate": {
+        "name": "Schnelle Hände",
+        "desc": "Erhöht die Schussrate der Pfeile"
+      },
+      "arrow_pierce": {
+        "name": "Durchschlag",
+        "desc": "+10 % Durchschlagchance"
+      }
+    }
+  }
+}

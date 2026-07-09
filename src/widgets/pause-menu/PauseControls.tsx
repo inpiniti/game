@@ -1,5 +1,6 @@
 import { useState, type RefObject } from 'react'
 import type Phaser from 'phaser'
+import { useTranslation } from 'react-i18next'
 import { BottomSheet } from '../../shared/ui/bottom-sheet/BottomSheet'
 import styles from './PauseControls.module.css'
 
@@ -15,6 +16,7 @@ interface PauseControlsProps {
 // 그만하기는 게임오버로 이어지므로(씬이 내부적으로 onGameOver({reason:'quit'})를 호출) 여기서는
 // 이벤트 emit만 하고 화면 전환은 PlayPage의 onGameOver 핸들러에 맡긴다.
 export function PauseControls({ gameRef, hidden }: PauseControlsProps) {
+  const { t } = useTranslation()
   const [open, setOpen] = useState(false)
 
   function handlePauseClick() {
@@ -40,22 +42,22 @@ export function PauseControls({ gameRef, hidden }: PauseControlsProps) {
           type="button"
           className={styles.pauseButton}
           onClick={handlePauseClick}
-          aria-label="일시정지"
+          aria-label={t('pauseMenu.pause')}
         >
           ⏸
         </button>
       )}
 
-      <BottomSheet open={open} onClose={handleResume} title="일시정지">
+      <BottomSheet open={open} onClose={handleResume} title={t('pauseMenu.title')}>
         <div className={styles.menu}>
           <button type="button" className={styles.resumeButton} onClick={handleResume}>
-            계속하기
+            {t('pauseMenu.resume')}
           </button>
           <div className={styles.quitGroup}>
             <button type="button" className={styles.quitButton} onClick={handleQuit}>
-              그만하기
+              {t('pauseMenu.quit')}
             </button>
-            <p className={styles.quitHint}>지금까지 점수로 기록돼요</p>
+            <p className={styles.quitHint}>{t('pauseMenu.quitHint')}</p>
           </div>
         </div>
       </BottomSheet>

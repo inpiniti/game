@@ -1,0 +1,334 @@
+{
+  "common": {
+    "loading": "Sedang memuatkan…",
+    "country": "Negara",
+    "language": "Bahasa",
+    "email": "E-mel",
+    "password": "Kata laluan",
+    "nickname": "Nama panggilan",
+    "scoreLabel": "Skor",
+    "scoreValue": "{{value}} mata",
+    "save": "Simpan",
+    "saving": "Sedang menyimpan…",
+    "saveError": "Gagal menyimpan. Sila cuba lagi sebentar lagi.",
+    "close": "Tutup",
+    "edit": "Edit",
+    "delete": "Padam",
+    "all": "Semua",
+    "goBack": "Kembali",
+    "noAnswer": "(Tiada jawapan)",
+    "allCorrectNotice": "😄 Semua betul! Tiada perkataan yang salah",
+    "noRecordsTitle": "Belum ada rekod",
+    "gameTitle": "🍓 Strawberry Survival",
+    "startGame": "Mula permainan",
+    "quizSetLoadError": "Gagal memuatkan set perkataan. Sila cuba lagi sebentar lagi.",
+    "loadingQuizSet": "Sedang memuatkan set perkataan…",
+    "wordCount_other": "{{count}} perkataan",
+    "loginRequired": "Sila log masuk."
+  },
+  "login": {
+    "tagline": "Terus hidup dengan menangkap perkataan",
+    "submitting": "Sedang log masuk…",
+    "submit": "Log masuk",
+    "noAccount": "Belum ada akaun?",
+    "signupLink": "Daftar →"
+  },
+  "signup": {
+    "title": "Daftar",
+    "passwordConfirmLabel": "Sahkan kata laluan",
+    "submitting": "Sedang mendaftar…",
+    "submit": "Daftar",
+    "errorNicknameRequired": "Sila masukkan nama panggilan.",
+    "errorPasswordTooShort": "Kata laluan mesti sekurang-kurangnya {{minLength}} aksara.",
+    "errorPasswordMismatch": "Kata laluan tidak sepadan. Sila semak semula.",
+    "errorAlreadyRegistered": "E-mel ini sudah didaftarkan. Sila log masuk."
+  },
+  "verifyEmail": {
+    "title": "Sila semak peti mel anda",
+    "sentDescSuffix": " ialah alamat yang kami hantar e-mel pengesahan.",
+    "sentDescLine2": "Ketik pautan dalam e-mel untuk selesaikan pendaftaran.",
+    "descNoEmail": "Masukkan e-mel yang anda gunakan semasa mendaftar, kami akan hantar semula e-mel pengesahan.",
+    "resentNotice": "E-mel telah dihantar semula. Sila semak peti mel anda.",
+    "resendCountdown": "Hantar semula e-mel ({{seconds}}s)",
+    "sending": "Sedang menghantar…",
+    "resend": "Hantar semula e-mel",
+    "backToLogin": "← Kembali ke log masuk"
+  },
+  "lobby": {
+    "tagline": "Elakkan raksasa dan jawab kuiz untuk jadi lebih kuat",
+    "loading": "Sedang memuatkan…",
+    "noSets": "Tiada set perkataan",
+    "footnote": "Lobi sementara langkah 3 · Pemilihan set/rekod akan hadir pada langkah seterusnya"
+  },
+  "placeholder": {
+    "desc": "Akan hadir tidak lama lagi. Kami sedang menyediakannya."
+  },
+  "result": {
+    "title": "Permainan Tamat",
+    "killsLabel": "Dibunuh",
+    "killsValue": "{{kills}} ekor",
+    "quizLabel": "Kuiz",
+    "savedNotice": "✔ Rekod disimpan · Jumpa lagi lain kali",
+    "wrongTitle": "Perkataan yang salah",
+    "toLobby": "Ke lobi",
+    "retry": "Cuba lagi",
+    "moreSuffix": " & lagi",
+    "answer": "Jawapan: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Jenis",
+    "scopeOfficial": "Rasmi",
+    "scopeMine": "Set saya",
+    "uploadButton": "+ Muat naik",
+    "emptyTitle": "Belum ada set perkataan",
+    "emptyDescMine": "Ketik + Muat naik untuk cipta set pertama anda",
+    "emptyDescOther": "Cuba semak tab bahasa atau jenis lain",
+    "uploadSheetTitle": "Muat naik set perkataan"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Kembali",
+    "notFound": "Set perkataan ini tidak ditemui.",
+    "backToList": "Kembali ke senarai set perkataan",
+    "learnedProgress": "Dipelajari {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Perkataan yang kerap salah",
+    "wrongCount_other": "Salah {{count}} kali",
+    "allWordsTitle": "Semua perkataan",
+    "emptyItems": "Belum ada perkataan ditambah.",
+    "headerWord": "Perkataan",
+    "headerMeaning": "Maksud",
+    "headerStatus": "Status",
+    "frontPlaceholder": "Perkataan (front)",
+    "backPlaceholder": "Maksud (back) · guna ';' untuk beberapa maksud",
+    "examplePlaceholder": "Contoh ayat (pilihan)",
+    "removeItemAria": "Buang perkataan ini",
+    "addItemButton": "+ Tambah perkataan",
+    "emptyFieldsError": "Isi perkataan dan maksud untuk simpan."
+  },
+  "ranking": {
+    "title": "Kedudukan",
+    "tabsAriaLabel": "Jenis kedudukan",
+    "tabBySet": "Ikut set",
+    "tabOverall": "Keseluruhan",
+    "tabByCountry": "Ikut negara",
+    "scopeLabel": "Skop",
+    "scopeMine": "Negara saya",
+    "myRankLabel": "Kedudukan saya",
+    "myRankEmpty": "Belum dalam kedudukan",
+    "loadError": "Gagal memuatkan kedudukan. Sila cuba lagi sebentar lagi.",
+    "byCountryEmptyDesc": "Main set rasmi untuk kumpul kedudukan negara anda",
+    "bySetEmptyDesc": "Main set ini untuk masuk kedudukan",
+    "overallEmptyDesc": "Main set rasmi untuk masuk kedudukan",
+    "noOfficialSetsTitle": "Belum ada set rasmi",
+    "noOfficialSetsDesc": "Apabila set rasmi ditambah, kedudukan akan dipaparkan di sini",
+    "headerRank": "Kedudukan",
+    "headerAvgScore": "Skor purata",
+    "headerParticipants": "Peserta",
+    "headerSetsPlayed": "Set dimainkan",
+    "playersCount_other": "{{count}} pemain",
+    "playersJoined_other": "{{count}} pemain menyertai",
+    "setsPlayedCount_other": "{{count}} set",
+    "setsPlayedJoined_other": "{{count}} set dimainkan",
+    "selectAriaLabel": "Pilih set perkataan",
+    "myRankByCountry": "Negara anda {{country}} kedudukan #{{rank}} · {{score}} mata",
+    "myRankGeneric": "#{{rank}} · {{score}} mata"
+  },
+  "history": {
+    "title": "Rekod",
+    "loadError": "Gagal memuatkan rekod anda. Sila cuba lagi sebentar lagi.",
+    "emptyDesc": "Main set perkataan dan ia akan dipaparkan di sini",
+    "headerDate": "Tarikh",
+    "headerSet": "Set",
+    "headerCorrect": "Betul",
+    "headerAccuracy": "Ketepatan",
+    "deletedSet": "Set yang dipadam",
+    "deletedWord": "Perkataan yang dipadam",
+    "cardAccuracyLine": "Betul {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "Urus Set Perkataan",
+    "uploadLink": "+ Muat naik set rasmi",
+    "tabOfficial": "Set rasmi",
+    "tabPromote": "Naik taraf set peribadi",
+    "loading": "Sedang memuatkan…",
+    "loadError": "Gagal memuatkan senarai. Sila cuba lagi sebentar lagi.",
+    "countryCommon": "Umum",
+    "emptyFilteredTitle": "Tiada set rasmi sepadan dengan penapis ini",
+    "emptyFilteredDesc": "Cuba tukar penapis negara atau bahasa",
+    "deleting": "Sedang memadam…",
+    "deleteConfirm": "Padam",
+    "emptyPromoteTitle": "Tiada set peribadi untuk dinaik taraf",
+    "emptyPromoteDesc": "Apabila pengguna memuat naik set peribadi, ia akan dipaparkan di sini",
+    "personalSetBadge": "Set peribadi",
+    "promoteButton": "Naik taraf",
+    "editSheetTitle": "Edit set rasmi",
+    "titleFieldLabel": "Tajuk",
+    "titleRequiredError": "Masukkan tajuk untuk simpan.",
+    "promoteSheetTitle": "Naik taraf ke set rasmi",
+    "promoteError": "Gagal menaik taraf. Sila cuba lagi sebentar lagi.",
+    "promoteNoticeSuffix": " akan menjadi set rasmi yang boleh dimainkan oleh semua pengguna di negara yang dipilih.",
+    "promoting": "Sedang menaik taraf…",
+    "promoteSubmit": "Naik taraf",
+    "countryCommonOption": "Umum (semua negara)",
+    "countrySpecificOption": "Negara tertentu"
+  },
+  "adminUpload": {
+    "backLink": "← Kembali ke pengurusan",
+    "title": "Muat naik set rasmi",
+    "desc": "Nyatakan negara supaya set rasmi ini boleh dimainkan oleh semua pengguna di sana.",
+    "loadingUser": "Sedang memuatkan maklumat pengguna…"
+  },
+  "header": {
+    "appName": "Strawberry Survival",
+    "mainNav": "Menu utama",
+    "sets": "Set",
+    "ranking": "Kedudukan",
+    "history": "Rekod",
+    "admin": "Admin"
+  },
+  "tabbar": {
+    "home": "Utama",
+    "sets": "Set",
+    "ranking": "Kedudukan",
+    "history": "Rekod",
+    "nav": "Menu bawah"
+  },
+  "profileSheet": {
+    "title": "Profil",
+    "nicknameLabel": "Nama panggilan",
+    "change": "Tukar",
+    "countryLabel": "Negara",
+    "emailLabel": "E-mel",
+    "loggingOut": "Sedang log keluar…",
+    "logout": "Log keluar",
+    "nicknameSaveError": "Gagal menyimpan nama panggilan. Sila cuba lagi.",
+    "countrySaveError": "Gagal menyimpan negara. Sila cuba lagi.",
+    "language": "Bahasa"
+  },
+  "pauseMenu": {
+    "pause": "Jeda",
+    "title": "Dijeda",
+    "resume": "Sambung",
+    "quit": "Keluar",
+    "quitHint": "Skor semasa anda akan disimpan"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " — apa maksudnya?",
+    "inputHint_other": "※ Masukkan {{count}} maksud",
+    "answerPlaceholder": "Jawapan {{index}}",
+    "submit": "Hantar",
+    "missed": "Maksud yang tersasar: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_other": "{{count}} perkataan",
+    "learnProgress": "Dipelajari {{learned}}/{{total}}",
+    "viewSet": "Lihat set",
+    "start": "Mula",
+    "confirmDelete": "Padam ini?",
+    "deleting": "Sedang memadam…",
+    "deleteConfirm": "Padam",
+    "delete": "Padam"
+  },
+  "directionSheet": {
+    "title": "Arah mana yang anda mahu?",
+    "startGame": "Mula permainan",
+    "frontToBack": {
+      "title": "Lihat {{short}}, teka maksudnya",
+      "hint": "Perkataan → Maksud"
+    },
+    "backToFront": {
+      "title": "Lihat maksud, teka {{short}}",
+      "hint": "Maksud → Perkataan"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,epal,I ate an apple.\nrun,berlari;lari,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"epal\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"berlari;lari\" }\n]",
+    "titleLabel": "Tajuk",
+    "titlePlaceholder": "cth: Kosa kata Tingkatan 1",
+    "countryLabel": "Negara",
+    "languageLabel": "Bahasa",
+    "wordsInputLabel": "Masukkan perkataan",
+    "loadFromFile": "Muat daripada fail",
+    "confirmColumn": "Semak",
+    "normal": "Sah",
+    "uploading": "Sedang memuat naik…",
+    "upload": "Muat naik",
+    "titleRequired": "Masukkan tajuk untuk muat naik.",
+    "fixErrorsRequired": "Betulkan semua baris yang bermasalah untuk muat naik.",
+    "minOneWordRequired": "Masukkan sekurang-kurangnya 1 perkataan untuk muat naik.",
+    "uploadFailed": "Gagal memuat naik. Sila cuba lagi sebentar lagi.",
+    "previewSummary_other": "Pratonton · {{count}} baris sah",
+    "previewError_other": " · {{count}} baris bermasalah",
+    "missingBoth": "Isi front (perkataan) dan back (maksud) untuk tambah.",
+    "missingFront": "Isi front (perkataan) untuk tambah.",
+    "missingBack": "Isi back (maksud) untuk tambah.",
+    "jsonSyntaxError": "Sila semak format JSON. (Ralat sintaks)",
+    "jsonMustBeArray": "Tahap atas mesti berupa array untuk muat naik. cth: [{\"front\":\"apple\",\"back\":\"epal\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "E-mel ini sudah didaftarkan. Sila log masuk.",
+    "weakPassword": "Kata laluan ini terlalu mudah. Sila gunakan sekurang-kurangnya 6 aksara dengan gabungan berbeza.",
+    "invalidCredentials": "E-mel atau kata laluan salah. Sila semak semula.",
+    "invalidEmail": "Sila semak format e-mel anda.",
+    "emailRateLimit": "Anda terlalu kerap meminta e-mel. Sila cuba lagi sebentar lagi.",
+    "requestRateLimit": "Terlalu banyak permintaan. Sila cuba lagi sebentar lagi.",
+    "signupDisabled": "Pendaftaran belum dibuka buat masa ini. Sila cuba lagi kemudian.",
+    "genericError": "Sambungan bermasalah buat masa ini. Sila cuba lagi sebentar lagi."
+  },
+  "countrySelect": {
+    "placeholder": "Sila pilih negara",
+    "title": "Pilih negara",
+    "searchPlaceholder": "Cari negara...",
+    "empty": "Tiada hasil ditemui. Cuba cari negara lain?"
+  },
+  "languages": {
+    "en": {
+      "label": "Perkataan Bahasa Inggeris",
+      "short": "Bahasa Inggeris"
+    },
+    "ja": {
+      "label": "Perkataan Bahasa Jepun",
+      "short": "Bahasa Jepun"
+    },
+    "zh": {
+      "label": "Perkataan Bahasa Cina",
+      "short": "Bahasa Cina"
+    },
+    "general": "Umum"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Belum dipelajari",
+      "learning": "Sedang belajar",
+      "review_other": "Ulang kaji {{count}} hari lagi"
+    }
+  },
+  "game": {
+    "instructions": "Gerak: Kekunci anak panah / Ketik skrin (arah relatif kepada watak)   ·   Senjata anda akan menebus musuh secara automatik",
+    "redeemed": "Ditebus",
+    "goldQuiz": "Emas diperoleh! Kuiz",
+    "blessingGained": "Berkat diterima",
+    "blessingsTitle": "Berkat diperoleh",
+    "blessingsEmpty": "Belum ada berkat diperoleh",
+    "close": "Tutup",
+    "hudTime": "Masa",
+    "hudRedeemed": "Ditebus",
+    "hudNextQuiz": "Kuiz seterusnya",
+    "hudPierce": "Tembus",
+    "hudQuiz": "Kuiz",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Pelbagai Anak Panah",
+        "desc": "+1 anak panah"
+      },
+      "arrow_rate": {
+        "name": "Tangan Pantas",
+        "desc": "Tingkatkan kadar tembakan anak panah"
+      },
+      "arrow_pierce": {
+        "name": "Tembus",
+        "desc": "+10% peluang tembus"
+      }
+    }
+  }
+}

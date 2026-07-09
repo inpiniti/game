@@ -1,3 +1,4 @@
+import { i18n } from '../../../shared/i18n'
 import type { SrsProgress } from './types'
 
 const DAY_MS = 24 * 60 * 60 * 1000
@@ -21,15 +22,19 @@ export interface LearnStatus {
  * - repetition >= 2 이고 due_at이 미래 → n일 뒤 복습(review): 다음 노출까지 남은 일수를 올림 표시.
  */
 export function deriveLearnStatus(progress: SrsProgress | undefined, now: Date = new Date()): LearnStatus {
-  if (!progress) return { kind: 'new', label: '미학습', lapses: 0 }
+  if (!progress) return { kind: 'new', label: i18n.t('srsProgress.status.new'), lapses: 0 }
 
   const dueInDays = Math.ceil((new Date(progress.due_at).getTime() - now.getTime()) / DAY_MS)
 
   if (progress.repetition < 2 || dueInDays <= 0) {
-    return { kind: 'learning', label: '학습 중', lapses: progress.lapses }
+    return { kind: 'learning', label: i18n.t('srsProgress.status.learning'), lapses: progress.lapses }
   }
 
-  return { kind: 'review', label: `${dueInDays}일 뒤 복습`, lapses: progress.lapses }
+  return {
+    kind: 'review',
+    label: i18n.t('srsProgress.status.review', { count: dueInDays }),
+    lapses: progress.lapses,
+  }
 }
 
 /** "⚠ 자주 틀리는 단어" 상위 N개 — lapses > 0인 항목을 내림차순으로 정렬한다. */

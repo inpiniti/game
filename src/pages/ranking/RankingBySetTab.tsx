@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import type { Profile } from '../../entities/user'
 import { useQuizSets } from '../../entities/quiz-set'
 import { useRankingBySet } from '../../entities/ranking'
@@ -13,6 +14,7 @@ interface RankingBySetTabProps {
 
 // 문제집별 탭 — 공식 문제집 선택 드롭다운 + 유저별 최고 점수 순위표(01-init.sql ranking_by_set).
 export function RankingBySetTab({ country, profile }: RankingBySetTabProps) {
+  const { t, i18n } = useTranslation()
   const { data: sets, isLoading: setsLoading } = useQuizSets()
   const [setId, setSetId] = useState<string | undefined>(undefined)
 
@@ -48,8 +50,8 @@ export function RankingBySetTab({ country, profile }: RankingBySetTabProps) {
     return (
       <div className={styles.empty}>
         <p className={styles.emptyEmoji}>📭</p>
-        <p className={styles.emptyTitle}>아직 공식 문제집이 없어요</p>
-        <p className={styles.emptyDesc}>공식 문제집이 등록되면 여기서 순위를 볼 수 있어요</p>
+        <p className={styles.emptyTitle}>{t('ranking.noOfficialSetsTitle')}</p>
+        <p className={styles.emptyDesc}>{t('ranking.noOfficialSetsDesc')}</p>
       </div>
     )
   }
@@ -60,7 +62,7 @@ export function RankingBySetTab({ country, profile }: RankingBySetTabProps) {
         className={styles.select}
         value={setId ?? ''}
         onChange={(e) => setSetId(e.target.value)}
-        aria-label="문제집 선택"
+        aria-label={t('ranking.selectAriaLabel')}
       >
         {officialSets.map((s) => (
           <option key={s.id} value={s.id}>
@@ -78,14 +80,14 @@ export function RankingBySetTab({ country, profile }: RankingBySetTabProps) {
       )}
 
       {!isLoading && isError && (
-        <p className={styles.errorNotice}>순위를 불러오지 못했어요. 잠시 후 다시 시도해 주세요.</p>
+        <p className={styles.errorNotice}>{t('ranking.loadError')}</p>
       )}
 
       {!isLoading && !isError && (rows?.length ?? 0) === 0 && (
         <div className={styles.empty}>
           <p className={styles.emptyEmoji}>📭</p>
-          <p className={styles.emptyTitle}>아직 기록이 없어요</p>
-          <p className={styles.emptyDesc}>이 문제집을 플레이하면 순위에 오를 수 있어요</p>
+          <p className={styles.emptyTitle}>{t('common.noRecordsTitle')}</p>
+          <p className={styles.emptyDesc}>{t('ranking.bySetEmptyDesc')}</p>
         </div>
       )}
 
@@ -94,10 +96,10 @@ export function RankingBySetTab({ country, profile }: RankingBySetTabProps) {
           <table className={styles.table}>
             <thead>
               <tr>
-                <th>순위</th>
-                <th>닉네임</th>
-                <th>국가</th>
-                <th>점수</th>
+                <th>{t('ranking.headerRank')}</th>
+                <th>{t('common.nickname')}</th>
+                <th>{t('common.country')}</th>
+                <th>{t('common.scoreLabel')}</th>
               </tr>
             </thead>
             <tbody>
@@ -106,7 +108,7 @@ export function RankingBySetTab({ country, profile }: RankingBySetTabProps) {
                   <td className={styles.rankCell}>{r.rank}</td>
                   <td>{r.nickname}</td>
                   <td className={styles.countryBadge}>{r.country}</td>
-                  <td>{r.best_score.toLocaleString()}</td>
+                  <td>{r.best_score.toLocaleString(i18n.language)}</td>
                 </tr>
               ))}
             </tbody>
@@ -121,7 +123,7 @@ export function RankingBySetTab({ country, profile }: RankingBySetTabProps) {
                   <span className={styles.cardCountry}>{r.country}</span>
                 </div>
                 <div className={styles.cardRight}>
-                  <div className={styles.cardScore}>{r.best_score.toLocaleString()}점</div>
+                  <div className={styles.cardScore}>{t('common.scoreValue', { value: r.best_score.toLocaleString(i18n.language) })}</div>
                 </div>
               </li>
             ))}
@@ -133,7 +135,7 @@ export function RankingBySetTab({ country, profile }: RankingBySetTabProps) {
         loading={isLoading}
         hasError={isError}
         myRow={myRow}
-        render={(row) => `${row.rank}위 · ${row.best_score.toLocaleString()}점`}
+        render={(row) => t('ranking.myRankGeneric', { rank: row.rank, score: row.best_score.toLocaleString(i18n.language) })}
       />
     </div>
   )

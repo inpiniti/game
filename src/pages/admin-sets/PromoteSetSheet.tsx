@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useUpdateQuizSet, type QuizSetWithCount } from '../../entities/quiz-set'
 import { DEFAULT_COUNTRY_CODE } from '../../shared/config/countries'
 import { BottomSheet } from '../../shared/ui/bottom-sheet/BottomSheet'
@@ -15,6 +16,7 @@ interface PromoteSetSheetProps {
 // admin/sets §(b) [개인 문제집 승격] 탭 — [승격] → 국가·언어 지정 → quiz_sets update
 // { is_official:true, country, learn_lang }. RLS "admin manages sets"가 개인 소유 행에도 이 조합을 허용한다.
 export function PromoteSetSheet({ set, onClose }: PromoteSetSheetProps) {
+  const { t } = useTranslation()
   const updateSet = useUpdateQuizSet()
   const [countryMode, setCountryMode] = useState<CountryMode>('specific')
   const [country, setCountry] = useState(DEFAULT_COUNTRY_CODE)
@@ -40,15 +42,15 @@ export function PromoteSetSheet({ set, onClose }: PromoteSetSheetProps) {
       })
       onClose()
     } catch {
-      setErrorMessage('승격하지 못했어요. 잠시 후 다시 시도해 주세요.')
+      setErrorMessage(t('adminSets.promoteError'))
     }
   }
 
   return (
-    <BottomSheet open={!!set} onClose={onClose} title="공식 문제집으로 승격">
+    <BottomSheet open={!!set} onClose={onClose} title={t('adminSets.promoteSheetTitle')}>
       {set && (
         <p className={styles.promoteNotice}>
-          <strong>{set.title}</strong>을(를) 지정한 국가의 모든 유저가 플레이할 수 있는 공식 문제집으로 만들어요.
+          <strong>{set.title}</strong>{t('adminSets.promoteNoticeSuffix')}
         </p>
       )}
 
@@ -70,7 +72,7 @@ export function PromoteSetSheet({ set, onClose }: PromoteSetSheetProps) {
         disabled={updateSet.isPending}
         aria-busy={updateSet.isPending}
       >
-        {updateSet.isPending ? '승격하고 있어요…' : '승격하기'}
+        {updateSet.isPending ? t('adminSets.promoting') : t('adminSets.promoteSubmit')}
       </button>
     </BottomSheet>
   )

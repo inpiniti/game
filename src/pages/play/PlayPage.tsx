@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useRef } from 'react'
 import type Phaser from 'phaser'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { createSurvivalGame } from '../../game/survival'
-import type { SurvivalGameOver } from '../../game/survival'
+import type { SurvivalGameOver, SurvivalTexts } from '../../game/survival'
+import { i18n } from '../../shared/i18n'
 import { useQuizItems } from '../../entities/quiz-item'
 import type { QuizItem } from '../../entities/quiz-item'
 import { useCurrentUser } from '../../entities/user'
@@ -62,10 +64,39 @@ function PlayMessage({ children }: { children: React.ReactNode }) {
   )
 }
 
+// 게임에 주입할 번역 사전(설계 v9 13-3) — 씬은 i18n을 모르므로 여기서 t()로 완성해 넘긴다.
+// 게임 생성 시점에 1회 캡처되므로 판 도중 언어 변경은 다음 판부터 적용된다(의도된 동작).
+function buildSurvivalTexts(t: typeof i18n.t): SurvivalTexts {
+  const upgrade = (id: string) => ({
+    name: t(`game.upgrades.${id}.name`),
+    desc: t(`game.upgrades.${id}.desc`),
+  })
+  return {
+    instructions: t('game.instructions'),
+    redeemed: t('game.redeemed'),
+    goldQuiz: t('game.goldQuiz'),
+    blessingGained: t('game.blessingGained'),
+    blessingsTitle: t('game.blessingsTitle'),
+    blessingsEmpty: t('game.blessingsEmpty'),
+    close: t('game.close'),
+    hudTime: t('game.hudTime'),
+    hudRedeemed: t('game.hudRedeemed'),
+    hudNextQuiz: t('game.hudNextQuiz'),
+    hudPierce: t('game.hudPierce'),
+    hudQuiz: t('game.hudQuiz'),
+    upgrades: {
+      arrow_count: upgrade('arrow_count'),
+      arrow_rate: upgrade('arrow_rate'),
+      arrow_pierce: upgrade('arrow_pierce'),
+    },
+  }
+}
+
 // 서바이벌 플레이 페이지 — Phaser 마운트 + DOM 퀴즈 오버레이 + 일시정지 컨트롤.
 // 문항을 DB에서 로드해 QuizSource를 만들고, 게임과 브리지로 잇는다.
 // 게임오버(죽음/그만하기 모두 씬이 onGameOver 1회 호출) 시 세션을 저장하고 결과 화면으로 이동한다.
 export function PlayPage() {
+  const { t } = useTranslation()
   const { setId } = useParams()
   const navigate = useNavigate()
   const location = useLocation()
@@ -160,10 +191,16 @@ export function PlayPage() {
     if (!host) return
 
     gameOverHandledRef.current = false
-    const game = createSurvivalGame(host, {
-      requestQuiz: () => requestRef.current(),
-      onGameOver: (result) => handleGameOverRef.current(result),
-    })
+    // i18n 인스턴스의 t를 직접 사용 — useTranslation의 t를 effect 의존성에 넣으면
+    // 언어 변경 시 게임이 재생성되므로 피한다(판 도중 언어 전환 미지원, 설계 v9 13-3).
+    const game = createSurvivalGame(
+      host,
+      {
+        requestQuiz: () => requestRef.current(),
+        onGameOver: (result) => handleGameOverRef.current(result),
+      },
+      buildSurvivalTexts(i18n.t),
+    )
     gameRef.current = game
     return () => {
       gameRef.current = null
@@ -171,9 +208,9 @@ export function PlayPage() {
     }
   }, [source])
 
-  if (isLoading || srsLoading) return <PlayMessage>문제집을 불러오는 중이에요…</PlayMessage>
+  if (isLoading || srsLoading) return <PlayMessage>{t('common.loadingQuizSet')}</PlayMessage>
   if (isError || !items || items.length === 0)
-    return <PlayMessage>문제집을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.</PlayMessage>
+    return <PlayMessage>{t('common.quizSetLoadError')}</PlayMessage>
 
   return (
     <>

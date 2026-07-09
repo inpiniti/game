@@ -1,0 +1,345 @@
+{
+  "common": {
+    "loading": "Bezig met laden…",
+    "country": "Land",
+    "language": "Taal",
+    "email": "E-mail",
+    "password": "Wachtwoord",
+    "nickname": "Bijnaam",
+    "scoreLabel": "Score",
+    "scoreValue": "{{value}} punten",
+    "save": "Opslaan",
+    "saving": "Bezig met opslaan…",
+    "saveError": "Opslaan is niet gelukt. Probeer het over een moment opnieuw.",
+    "close": "Sluiten",
+    "edit": "Bewerken",
+    "delete": "Verwijderen",
+    "all": "Alle",
+    "goBack": "Terug",
+    "noAnswer": "(Geen antwoord)",
+    "allCorrectNotice": "😄 Je had alles goed! Geen foute woorden",
+    "noRecordsTitle": "Nog geen records",
+    "gameTitle": "🍓 Aardbeioverleving",
+    "startGame": "Spel starten",
+    "quizSetLoadError": "Kon de woordenset niet laden. Probeer het over een moment opnieuw.",
+    "loadingQuizSet": "Woordenset wordt geladen…",
+    "wordCount_one": "{{count}} woord",
+    "wordCount_other": "{{count}} woorden",
+    "loginRequired": "Log in om door te gaan."
+  },
+  "login": {
+    "tagline": "Overleef door woorden te vangen",
+    "submitting": "Bezig met inloggen…",
+    "submit": "Inloggen",
+    "noAccount": "Heb je nog geen account?",
+    "signupLink": "Registreren →"
+  },
+  "signup": {
+    "title": "Registreren",
+    "passwordConfirmLabel": "Bevestig wachtwoord",
+    "submitting": "Bezig met registreren…",
+    "submit": "Registreren",
+    "errorNicknameRequired": "Voer een bijnaam in.",
+    "errorPasswordTooShort": "Het wachtwoord moet minstens {{minLength}} tekens bevatten.",
+    "errorPasswordMismatch": "De wachtwoorden komen niet overeen. Controleer opnieuw.",
+    "errorAlreadyRegistered": "Dit e-mailadres is al geregistreerd. Log in."
+  },
+  "verifyEmail": {
+    "title": "Controleer je inbox",
+    "sentDescSuffix": "is waar we je verificatiemail naartoe hebben gestuurd.",
+    "sentDescLine2": "Tik op de link in de e-mail om je registratie te voltooien.",
+    "descNoEmail": "Voer het e-mailadres in dat je bij registratie gebruikte, dan sturen we de verificatiemail opnieuw.",
+    "resentNotice": "We hebben de e-mail opnieuw verzonden. Controleer je inbox.",
+    "resendCountdown": "E-mail opnieuw versturen ({{seconds}}s)",
+    "sending": "Bezig met verzenden…",
+    "resend": "E-mail opnieuw versturen",
+    "backToLogin": "← Terug naar inloggen"
+  },
+  "lobby": {
+    "tagline": "Ontwijk monsters en beantwoord quizzen om sterker te worden",
+    "loading": "Laden…",
+    "noSets": "Geen woordensets",
+    "footnote": "Tijdelijke lobby van stap 3 · Setselectie/geschiedenis volgt in een latere stap"
+  },
+  "placeholder": {
+    "desc": "Binnenkort beschikbaar. We zijn ermee bezig."
+  },
+  "result": {
+    "title": "Game Over",
+    "killsLabel": "Verslagen",
+    "killsValue": "{{kills}} vijanden",
+    "quizLabel": "Quiz",
+    "savedNotice": "✔ Opgeslagen · Tot de volgende keer!",
+    "wrongTitle": "Foute woorden",
+    "toLobby": "Naar de lobby",
+    "retry": "Opnieuw proberen",
+    "moreSuffix": " en meer",
+    "answer": "Antwoord: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Type",
+    "scopeOfficial": "Officieel",
+    "scopeMine": "Mijn sets",
+    "uploadButton": "+ Uploaden",
+    "emptyTitle": "Nog geen woordensets",
+    "emptyDescMine": "Tik op + Uploaden om je eerste set te maken",
+    "emptyDescOther": "Bekijk ook andere taal- of typetabbladen",
+    "uploadSheetTitle": "Woordenset uploaden"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Terug",
+    "notFound": "Deze woordenset is niet gevonden.",
+    "backToList": "Terug naar woordensets",
+    "learnedProgress": "Geleerd {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Vaak foute woorden",
+    "wrongCount_one": "{{count}} fout antwoord",
+    "wrongCount_other": "{{count}} foute antwoorden",
+    "allWordsTitle": "Alle woorden",
+    "emptyItems": "Nog geen woorden toegevoegd.",
+    "headerWord": "Woord",
+    "headerMeaning": "Betekenis",
+    "headerStatus": "Status",
+    "frontPlaceholder": "Woord (front)",
+    "backPlaceholder": "Betekenis (back) · gebruik ';' voor meerdere betekenissen",
+    "examplePlaceholder": "Voorbeeld (optioneel)",
+    "removeItemAria": "Dit woord verwijderen",
+    "addItemButton": "+ Woord toevoegen",
+    "emptyFieldsError": "Vul het woord en de betekenis in om op te slaan."
+  },
+  "ranking": {
+    "title": "Ranglijst",
+    "tabsAriaLabel": "Type ranglijst",
+    "tabBySet": "Per set",
+    "tabOverall": "Algemeen",
+    "tabByCountry": "Per land",
+    "scopeLabel": "Bereik",
+    "scopeMine": "Mijn land",
+    "myRankLabel": "Mijn positie",
+    "myRankEmpty": "Nog niet gerangschikt",
+    "loadError": "Kon de ranglijst niet laden. Probeer het over een moment opnieuw.",
+    "byCountryEmptyDesc": "Speel officiële sets om de landenranglijst op te bouwen",
+    "bySetEmptyDesc": "Speel deze set om op de ranglijst te komen",
+    "overallEmptyDesc": "Speel officiële sets om op de ranglijst te komen",
+    "noOfficialSetsTitle": "Nog geen officiële sets",
+    "noOfficialSetsDesc": "Zodra er officiële sets zijn toegevoegd, zie je hier de ranglijst",
+    "headerRank": "Positie",
+    "headerAvgScore": "Gem. score",
+    "headerParticipants": "Deelnemers",
+    "headerSetsPlayed": "Gespeelde sets",
+    "playersCount_one": "{{count}} speler",
+    "playersCount_other": "{{count}} spelers",
+    "playersJoined_one": "{{count}} speler deed mee",
+    "playersJoined_other": "{{count}} spelers deden mee",
+    "setsPlayedCount_one": "{{count}} set",
+    "setsPlayedCount_other": "{{count}} sets",
+    "setsPlayedJoined_one": "{{count}} set gespeeld",
+    "setsPlayedJoined_other": "{{count}} sets gespeeld",
+    "selectAriaLabel": "Woordenset selecteren",
+    "myRankByCountry": "Jouw land {{country}} #{{rank}} · {{score}} punten",
+    "myRankGeneric": "#{{rank}} · {{score}} punten"
+  },
+  "history": {
+    "title": "Geschiedenis",
+    "loadError": "Kon je geschiedenis niet laden. Probeer het over een moment opnieuw.",
+    "emptyDesc": "Speel een woordenset en het verschijnt hier",
+    "headerDate": "Datum",
+    "headerSet": "Set",
+    "headerCorrect": "Correct",
+    "headerAccuracy": "Nauwkeurigheid",
+    "deletedSet": "Verwijderde set",
+    "deletedWord": "Verwijderd woord",
+    "cardAccuracyLine": "Correct {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "Woordensets beheren",
+    "uploadLink": "+ Officiële set uploaden",
+    "tabOfficial": "Officiële sets",
+    "tabPromote": "Persoonlijke sets promoveren",
+    "loading": "Bezig met laden…",
+    "loadError": "Kon de lijst niet laden. Probeer het over een moment opnieuw.",
+    "countryCommon": "Algemeen",
+    "emptyFilteredTitle": "Geen officiële sets komen overeen met dit filter",
+    "emptyFilteredDesc": "Probeer een ander land- of taalfilter",
+    "deleting": "Bezig met verwijderen…",
+    "deleteConfirm": "Verwijderen",
+    "emptyPromoteTitle": "Geen persoonlijke sets om te promoveren",
+    "emptyPromoteDesc": "Wanneer gebruikers persoonlijke sets uploaden, zie je ze hier",
+    "personalSetBadge": "Persoonlijke set",
+    "promoteButton": "Promoveren",
+    "editSheetTitle": "Officiële set bewerken",
+    "titleFieldLabel": "Titel",
+    "titleRequiredError": "Voer een titel in om op te slaan.",
+    "promoteSheetTitle": "Promoveren tot officiële set",
+    "promoteError": "Promoveren is niet gelukt. Probeer het over een moment opnieuw.",
+    "promoteNoticeSuffix": " wordt een officiële set die elke gebruiker in het geselecteerde land kan spelen.",
+    "promoting": "Bezig met promoveren…",
+    "promoteSubmit": "Promoveren",
+    "countryCommonOption": "Algemeen (alle landen)",
+    "countrySpecificOption": "Specifiek land"
+  },
+  "adminUpload": {
+    "backLink": "← Terug naar beheer",
+    "title": "Officiële set uploaden",
+    "desc": "Als je een land opgeeft, wordt dit een officiële set die elke gebruiker in dat land kan spelen.",
+    "loadingUser": "Gebruikersinformatie wordt geladen…"
+  },
+  "header": {
+    "appName": "Aardbeioverleving",
+    "mainNav": "Hoofdmenu",
+    "sets": "Sets",
+    "ranking": "Ranglijst",
+    "history": "Geschiedenis",
+    "admin": "Beheer"
+  },
+  "tabbar": {
+    "home": "Home",
+    "sets": "Sets",
+    "ranking": "Ranglijst",
+    "history": "Geschiedenis",
+    "nav": "Onderste menu"
+  },
+  "profileSheet": {
+    "title": "Profiel",
+    "nicknameLabel": "Bijnaam",
+    "change": "Wijzigen",
+    "countryLabel": "Land",
+    "emailLabel": "E-mail",
+    "loggingOut": "Bezig met uitloggen…",
+    "logout": "Uitloggen",
+    "nicknameSaveError": "Kon de bijnaam niet opslaan. Probeer het opnieuw.",
+    "countrySaveError": "Kon het land niet opslaan. Probeer het opnieuw.",
+    "language": "Taal"
+  },
+  "pauseMenu": {
+    "pause": "Pauze",
+    "title": "Gepauzeerd",
+    "resume": "Hervatten",
+    "quit": "Stoppen",
+    "quitHint": "Je huidige score wordt opgeslagen"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " — wat betekent dit?",
+    "inputHint_one": "※ Voer {{count}} betekenis in",
+    "inputHint_other": "※ Voer {{count}} betekenissen in",
+    "answerPlaceholder": "Antwoord {{index}}",
+    "submit": "Verzenden",
+    "missed": "Gemiste betekenissen: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} woord",
+    "wordCount_other": "{{count}} woorden",
+    "learnProgress": "Geleerd {{learned}}/{{total}}",
+    "viewSet": "Set bekijken",
+    "start": "Start",
+    "confirmDelete": "Dit verwijderen?",
+    "deleting": "Bezig met verwijderen…",
+    "deleteConfirm": "Verwijderen",
+    "delete": "Verwijderen"
+  },
+  "directionSheet": {
+    "title": "In welke richting?",
+    "startGame": "Spel starten",
+    "frontToBack": {
+      "title": "{{short}} zien en de betekenis raden",
+      "hint": "Woord → Betekenis"
+    },
+    "backToFront": {
+      "title": "De betekenis zien en {{short}} raden",
+      "hint": "Betekenis → Woord"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,een ronde rode vrucht,I ate an apple.\nrun,rennen;joggen,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"een ronde rode vrucht\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"rennen;joggen\" }\n]",
+    "titleLabel": "Titel",
+    "titlePlaceholder": "bijv. Woordenschat groep 7",
+    "countryLabel": "Land",
+    "languageLabel": "Taal",
+    "wordsInputLabel": "Woorden invoeren",
+    "loadFromFile": "Laden vanuit bestand",
+    "confirmColumn": "Controleren",
+    "normal": "Geldig",
+    "uploading": "Bezig met uploaden…",
+    "upload": "Uploaden",
+    "titleRequired": "Voer een titel in om te uploaden.",
+    "fixErrorsRequired": "Corrigeer alle rijen met fouten om te uploaden.",
+    "minOneWordRequired": "Voer minstens 1 woord in om te uploaden.",
+    "uploadFailed": "Uploaden is niet gelukt. Probeer het over een moment opnieuw.",
+    "previewSummary_one": "Voorbeeld · {{count}} geldige rij",
+    "previewSummary_other": "Voorbeeld · {{count}} geldige rijen",
+    "previewError_one": " · {{count}} rij met fout",
+    "previewError_other": " · {{count}} rijen met fouten",
+    "missingBoth": "Vul front (woord) en back (betekenis) in om toe te voegen.",
+    "missingFront": "Vul front (woord) in om toe te voegen.",
+    "missingBack": "Vul back (betekenis) in om toe te voegen.",
+    "jsonSyntaxError": "Controleer het JSON-formaat. (Syntaxisfout)",
+    "jsonMustBeArray": "Het hoogste niveau moet een array zijn om te uploaden. Bijv.: [{\"front\":\"apple\",\"back\":\"een ronde rode vrucht\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Dit e-mailadres is al geregistreerd. Log in.",
+    "weakPassword": "Dit wachtwoord is te eenvoudig. Gebruik minstens 6 tekens met een andere combinatie.",
+    "invalidCredentials": "E-mailadres of wachtwoord is onjuist. Controleer opnieuw.",
+    "invalidEmail": "Controleer het formaat van je e-mailadres.",
+    "emailRateLimit": "Je hebt te vaak om e-mails gevraagd. Probeer het over een moment opnieuw.",
+    "requestRateLimit": "Er zijn te veel verzoeken. Probeer het over een moment opnieuw.",
+    "signupDisabled": "Registreren is momenteel niet mogelijk. Probeer het later opnieuw.",
+    "genericError": "We hebben momenteel verbindingsproblemen. Probeer het straks opnieuw."
+  },
+  "countrySelect": {
+    "placeholder": "Selecteer een land",
+    "title": "Land selecteren",
+    "searchPlaceholder": "Land zoeken...",
+    "empty": "Geen resultaten gevonden. Wil je een ander land zoeken?"
+  },
+  "languages": {
+    "en": {
+      "label": "Engelse woorden",
+      "short": "Engels"
+    },
+    "ja": {
+      "label": "Japanse woorden",
+      "short": "Japans"
+    },
+    "zh": {
+      "label": "Chinese woorden",
+      "short": "Chinees"
+    },
+    "general": "Algemeen"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Niet geleerd",
+      "learning": "Bezig met leren",
+      "review_one": "Herhaling over {{count}} dag",
+      "review_other": "Herhaling over {{count}} dagen"
+    }
+  },
+  "game": {
+    "instructions": "Bewegen: Pijltjestoetsen / Tik op het scherm (richting ten opzichte van het personage)   ·   Je wapen verlost vijanden automatisch",
+    "redeemed": "Verlost",
+    "goldQuiz": "Goud verdiend! Quiz",
+    "blessingGained": "Zegen verkregen",
+    "blessingsTitle": "Verkregen zegens",
+    "blessingsEmpty": "Nog geen zegens verkregen",
+    "close": "Sluiten",
+    "hudTime": "Tijd",
+    "hudRedeemed": "Verlost",
+    "hudNextQuiz": "Volgende quiz",
+    "hudPierce": "Doorboring",
+    "hudQuiz": "Quiz",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Meervoudige pijl",
+        "desc": "+1 pijl"
+      },
+      "arrow_rate": {
+        "name": "Snelle handen",
+        "desc": "Verhoogt de schietsnelheid van pijlen"
+      },
+      "arrow_pierce": {
+        "name": "Doorboring",
+        "desc": "+10% kans op doorboring"
+      }
+    }
+  }
+}

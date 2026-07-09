@@ -1,0 +1,367 @@
+{
+  "common": {
+    "loading": "Načítání…",
+    "country": "Země",
+    "language": "Jazyk",
+    "email": "E-mail",
+    "password": "Heslo",
+    "nickname": "Přezdívka",
+    "scoreLabel": "Skóre",
+    "scoreValue": "{{value}} b.",
+    "save": "Uložit",
+    "saving": "Ukládání…",
+    "saveError": "Nepodařilo se uložit. Zkuste to prosím za chvíli znovu.",
+    "close": "Zavřít",
+    "edit": "Upravit",
+    "delete": "Smazat",
+    "all": "Vše",
+    "goBack": "Zpět",
+    "noAnswer": "(Bez odpovědi)",
+    "allCorrectNotice": "😄 Všechno správně! Žádná chybná slova",
+    "noRecordsTitle": "Zatím žádné záznamy",
+    "gameTitle": "🍓 Strawberry Survival",
+    "startGame": "Spustit hru",
+    "quizSetLoadError": "Sadu slovíček se nepodařilo načíst. Zkuste to prosím za chvíli znovu.",
+    "loadingQuizSet": "Načítání sady slovíček…",
+    "wordCount_one": "{{count}} slovo",
+    "wordCount_few": "{{count}} slova",
+    "wordCount_many": "{{count}} slova",
+    "wordCount_other": "{{count}} slov",
+    "loginRequired": "Pro pokračování se přihlaste."
+  },
+  "login": {
+    "tagline": "Přežij chytáním slov",
+    "submitting": "Přihlašování…",
+    "submit": "Přihlásit se",
+    "noAccount": "Nemáte účet?",
+    "signupLink": "Zaregistrovat se →"
+  },
+  "signup": {
+    "title": "Registrace",
+    "passwordConfirmLabel": "Potvrzení hesla",
+    "submitting": "Registrace probíhá…",
+    "submit": "Zaregistrovat se",
+    "errorNicknameRequired": "Zadejte přezdívku.",
+    "errorPasswordTooShort": "Heslo musí mít alespoň {{minLength}} znaků.",
+    "errorPasswordMismatch": "Hesla se neshodují. Zkontrolujte je znovu.",
+    "errorAlreadyRegistered": "Tento e-mail je již zaregistrován. Přihlaste se prosím."
+  },
+  "verifyEmail": {
+    "title": "Zkontrolujte si e-mail",
+    "sentDescSuffix": " je adresa, na kterou jsme odeslali ověřovací e-mail.",
+    "sentDescLine2": "Registraci dokončíte kliknutím na odkaz v e-mailu.",
+    "descNoEmail": "Zadejte e-mail, který jste použili při registraci, a my vám ověřovací e-mail znovu odešleme.",
+    "resentNotice": "E-mail jsme odeslali znovu. Zkontrolujte si schránku.",
+    "resendCountdown": "Odeslat znovu ({{seconds}} s)",
+    "sending": "Odesílání…",
+    "resend": "Odeslat znovu",
+    "backToLogin": "← Zpět na přihlášení"
+  },
+  "lobby": {
+    "tagline": "Vyhýbej se příšerám a odpovídej na kvízy, ať jsi silnější",
+    "loading": "Načítání…",
+    "noSets": "Žádné sady slovíček",
+    "footnote": "Dočasné lobby (krok 3) · výběr sady/historie přijdou v dalším kroku"
+  },
+  "placeholder": {
+    "desc": "Už brzy. Pracujeme na tom."
+  },
+  "result": {
+    "title": "Konec hry",
+    "killsLabel": "Poražení",
+    "killsValue": "{{kills}} nepřátel",
+    "quizLabel": "Kvíz",
+    "savedNotice": "✔ Uloženo · Uvidíme se příště",
+    "wrongTitle": "Chybná slova",
+    "toLobby": "Do lobby",
+    "retry": "Zkusit znovu",
+    "moreSuffix": " a další",
+    "answer": "Odpověď: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Typ",
+    "scopeOfficial": "Oficiální",
+    "scopeMine": "Moje sady",
+    "uploadButton": "+ Nahrát",
+    "emptyTitle": "Zatím žádné sady slovíček",
+    "emptyDescMine": "Klepnutím na + Nahrát vytvořte první sadu",
+    "emptyDescOther": "Zkontrolujte i ostatní záložky jazyka nebo typu",
+    "uploadSheetTitle": "Nahrát sadu slovíček"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Zpět",
+    "notFound": "Tuto sadu slovíček se nepodařilo najít.",
+    "backToList": "Zpět na seznam sad",
+    "learnedProgress": "Naučeno {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Často chybovaná slova",
+    "wrongCount_one": "{{count}} chybná odpověď",
+    "wrongCount_few": "{{count}} chybné odpovědi",
+    "wrongCount_many": "{{count}} chybné odpovědi",
+    "wrongCount_other": "{{count}} chybných odpovědí",
+    "allWordsTitle": "Všechna slova",
+    "emptyItems": "Zatím nejsou přidána žádná slova.",
+    "headerWord": "Slovo",
+    "headerMeaning": "Význam",
+    "headerStatus": "Stav",
+    "frontPlaceholder": "Slovo (front)",
+    "backPlaceholder": "Význam (back) · pro více významů použijte ';'",
+    "examplePlaceholder": "Příklad (volitelné)",
+    "removeItemAria": "Odebrat toto slovo",
+    "addItemButton": "+ Přidat slovo",
+    "emptyFieldsError": "Vyplňte slovo a význam, abyste mohli uložit."
+  },
+  "ranking": {
+    "title": "Žebříček",
+    "tabsAriaLabel": "Typ žebříčku",
+    "tabBySet": "Podle sady",
+    "tabOverall": "Celkový",
+    "tabByCountry": "Podle země",
+    "scopeLabel": "Rozsah",
+    "scopeMine": "Moje země",
+    "myRankLabel": "Moje pořadí",
+    "myRankEmpty": "Zatím bez umístění",
+    "loadError": "Žebříček se nepodařilo načíst. Zkuste to prosím za chvíli znovu.",
+    "byCountryEmptyDesc": "Hraj oficiální sady a buduj žebříček své země",
+    "bySetEmptyDesc": "Zahraj si tuto sadu a dostaň se do žebříčku",
+    "overallEmptyDesc": "Hraj oficiální sady a dostaň se do žebříčku",
+    "noOfficialSetsTitle": "Zatím žádné oficiální sady",
+    "noOfficialSetsDesc": "Jakmile přibudou oficiální sady, uvidíš tu žebříčky",
+    "headerRank": "Pořadí",
+    "headerAvgScore": "Průměr",
+    "headerParticipants": "Účastníci",
+    "headerSetsPlayed": "Odehrané sady",
+    "playersCount_one": "{{count}} hráč",
+    "playersCount_few": "{{count}} hráči",
+    "playersCount_many": "{{count}} hráče",
+    "playersCount_other": "{{count}} hráčů",
+    "playersJoined_one": "{{count}} hráč se připojil",
+    "playersJoined_few": "{{count}} hráči se připojili",
+    "playersJoined_many": "{{count}} hráče se připojilo",
+    "playersJoined_other": "{{count}} hráčů se připojilo",
+    "setsPlayedCount_one": "{{count}} sada",
+    "setsPlayedCount_few": "{{count}} sady",
+    "setsPlayedCount_many": "{{count}} sady",
+    "setsPlayedCount_other": "{{count}} sad",
+    "setsPlayedJoined_one": "{{count}} odehraná sada",
+    "setsPlayedJoined_few": "{{count}} odehrané sady",
+    "setsPlayedJoined_many": "{{count}} odehrané sady",
+    "setsPlayedJoined_other": "{{count}} odehraných sad",
+    "selectAriaLabel": "Vybrat sadu slovíček",
+    "myRankByCountry": "Tvoje země {{country}} #{{rank}} · {{score}} b.",
+    "myRankGeneric": "#{{rank}} · {{score}} b."
+  },
+  "history": {
+    "title": "Historie",
+    "loadError": "Historii se nepodařilo načíst. Zkuste to prosím za chvíli znovu.",
+    "emptyDesc": "Zahraj si sadu slovíček a objeví se tady",
+    "headerDate": "Datum",
+    "headerSet": "Sada",
+    "headerCorrect": "Správně",
+    "headerAccuracy": "Úspěšnost",
+    "deletedSet": "Smazaná sada",
+    "deletedWord": "Smazané slovo",
+    "cardAccuracyLine": "Správně {{correct}}/{{total}} ({{accuracy}} %)"
+  },
+  "adminSets": {
+    "title": "Správa sad",
+    "uploadLink": "+ Nahrát oficiální sadu",
+    "tabOfficial": "Oficiální sady",
+    "tabPromote": "Povýšit osobní sady",
+    "loading": "Načítání…",
+    "loadError": "Seznam se nepodařilo načíst. Zkuste to prosím za chvíli znovu.",
+    "countryCommon": "Společné",
+    "emptyFilteredTitle": "Žádná oficiální sada neodpovídá filtru",
+    "emptyFilteredDesc": "Zkuste jiný filtr země nebo jazyka",
+    "deleting": "Mazání…",
+    "deleteConfirm": "Smazat",
+    "emptyPromoteTitle": "Žádné osobní sady k povýšení",
+    "emptyPromoteDesc": "Jakmile uživatelé nahrají osobní sady, uvidíte je tady",
+    "personalSetBadge": "Osobní sada",
+    "promoteButton": "Povýšit",
+    "editSheetTitle": "Upravit oficiální sadu",
+    "titleFieldLabel": "Název",
+    "titleRequiredError": "Zadejte název, abyste mohli uložit.",
+    "promoteSheetTitle": "Povýšit na oficiální sadu",
+    "promoteError": "Povýšení se nezdařilo. Zkuste to prosím za chvíli znovu.",
+    "promoteNoticeSuffix": " se stane oficiální sadou, kterou si budou moct zahrát všichni uživatelé ve vybrané zemi.",
+    "promoting": "Povyšování…",
+    "promoteSubmit": "Povýšit",
+    "countryCommonOption": "Společné (všechny země)",
+    "countrySpecificOption": "Konkrétní země"
+  },
+  "adminUpload": {
+    "backLink": "← Zpět na správu",
+    "title": "Nahrát oficiální sadu",
+    "desc": "Zvolte zemi, aby se tato sada stala oficiální sadou, kterou si tam budou moct zahrát všichni uživatelé.",
+    "loadingUser": "Načítání údajů o uživateli…"
+  },
+  "header": {
+    "appName": "Strawberry Survival",
+    "mainNav": "Hlavní nabídka",
+    "sets": "Sady",
+    "ranking": "Žebříček",
+    "history": "Historie",
+    "admin": "Správa"
+  },
+  "tabbar": {
+    "home": "Domů",
+    "sets": "Sady",
+    "ranking": "Žebříček",
+    "history": "Historie",
+    "nav": "Spodní nabídka"
+  },
+  "profileSheet": {
+    "title": "Profil",
+    "nicknameLabel": "Přezdívka",
+    "change": "Změnit",
+    "countryLabel": "Země",
+    "emailLabel": "E-mail",
+    "loggingOut": "Odhlašování…",
+    "logout": "Odhlásit se",
+    "nicknameSaveError": "Přezdívku se nepodařilo uložit. Zkuste to znovu.",
+    "countrySaveError": "Zemi se nepodařilo uložit. Zkuste to znovu.",
+    "language": "Jazyk"
+  },
+  "pauseMenu": {
+    "pause": "Pauza",
+    "title": "Pozastaveno",
+    "resume": "Pokračovat",
+    "quit": "Ukončit",
+    "quitHint": "Tvé aktuální skóre bude uloženo"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " — jaký je význam?",
+    "inputHint_one": "※ Zadejte {{count}} význam",
+    "inputHint_few": "※ Zadejte {{count}} významy",
+    "inputHint_many": "※ Zadejte {{count}} významu",
+    "inputHint_other": "※ Zadejte {{count}} významů",
+    "answerPlaceholder": "Odpověď {{index}}",
+    "submit": "Odeslat",
+    "missed": "Nezodpovězené významy: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} slovo",
+    "wordCount_few": "{{count}} slova",
+    "wordCount_many": "{{count}} slova",
+    "wordCount_other": "{{count}} slov",
+    "learnProgress": "Naučeno {{learned}}/{{total}}",
+    "viewSet": "Zobrazit sadu",
+    "start": "Start",
+    "confirmDelete": "Opravdu smazat?",
+    "deleting": "Mazání…",
+    "deleteConfirm": "Smazat",
+    "delete": "Smazat"
+  },
+  "directionSheet": {
+    "title": "Kterým směrem?",
+    "startGame": "Spustit hru",
+    "frontToBack": {
+      "title": "Podívej se na {{short}} a hádej význam",
+      "hint": "Slovo → Význam"
+    },
+    "backToFront": {
+      "title": "Podívej se na význam a hádej {{short}}",
+      "hint": "Význam → Slovo"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,kulaté červené ovoce,I ate an apple.\nrun,běhat;běhat pomalým tempem,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"kulaté červené ovoce\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"běhat;běhat pomalým tempem\" }\n]",
+    "titleLabel": "Název",
+    "titlePlaceholder": "např. Slovíčka 7. třída",
+    "countryLabel": "Země",
+    "languageLabel": "Jazyk",
+    "wordsInputLabel": "Zadejte slova",
+    "loadFromFile": "Načíst ze souboru",
+    "confirmColumn": "Zkontrolovat",
+    "normal": "Platné",
+    "uploading": "Nahrávání…",
+    "upload": "Nahrát",
+    "titleRequired": "Zadejte název, abyste mohli nahrát.",
+    "fixErrorsRequired": "Opravte všechny řádky s chybami, abyste mohli nahrát.",
+    "minOneWordRequired": "Zadejte alespoň 1 slovo, abyste mohli nahrát.",
+    "uploadFailed": "Nahrání se nezdařilo. Zkuste to prosím za chvíli znovu.",
+    "previewSummary_one": "Náhled · {{count}} platný řádek",
+    "previewSummary_few": "Náhled · {{count}} platné řádky",
+    "previewSummary_many": "Náhled · {{count}} platného řádku",
+    "previewSummary_other": "Náhled · {{count}} platných řádků",
+    "previewError_one": " · {{count}} chybný řádek",
+    "previewError_few": " · {{count}} chybné řádky",
+    "previewError_many": " · {{count}} chybného řádku",
+    "previewError_other": " · {{count}} chybných řádků",
+    "missingBoth": "Vyplňte front (slovo) a back (význam), abyste mohli přidat.",
+    "missingFront": "Vyplňte front (slovo), abyste mohli přidat.",
+    "missingBack": "Vyplňte back (význam), abyste mohli přidat.",
+    "jsonSyntaxError": "Zkontrolujte prosím formát JSON. (Syntaktická chyba)",
+    "jsonMustBeArray": "Nejvyšší úroveň musí být pole, abyste mohli nahrát. Např.: [{\"front\":\"apple\",\"back\":\"kulaté červené ovoce\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Tento e-mail je již zaregistrován. Přihlaste se prosím.",
+    "weakPassword": "Toto heslo je příliš jednoduché. Použijte alespoň 6 znaků v jiné kombinaci.",
+    "invalidCredentials": "E-mail nebo heslo je nesprávné. Zkontrolujte to znovu.",
+    "invalidEmail": "Zkontrolujte prosím formát e-mailu.",
+    "emailRateLimit": "Žádali jste o e-maily příliš často. Zkuste to prosím za chvíli znovu.",
+    "requestRateLimit": "Příliš mnoho požadavků. Zkuste to prosím za chvíli znovu.",
+    "signupDisabled": "Registrace teď není otevřená. Zkuste to prosím později.",
+    "genericError": "Momentálně máme potíže s připojením. Zkuste to prosím za chvíli znovu."
+  },
+  "countrySelect": {
+    "placeholder": "Vyberte zemi",
+    "title": "Vybrat zemi",
+    "searchPlaceholder": "Hledat zemi...",
+    "empty": "Nenalezeny žádné výsledky. Zkusíte hledat jinou zemi?"
+  },
+  "languages": {
+    "en": {
+      "label": "Anglická slovíčka",
+      "short": "Angličtina"
+    },
+    "ja": {
+      "label": "Japonská slovíčka",
+      "short": "Japonština"
+    },
+    "zh": {
+      "label": "Čínská slovíčka",
+      "short": "Čínština"
+    },
+    "general": "Obecné"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Nenaučeno",
+      "learning": "Učí se",
+      "review_one": "Za {{count}} den",
+      "review_few": "Za {{count}} dny",
+      "review_many": "Za {{count}} dne",
+      "review_other": "Za {{count}} dní"
+    }
+  },
+  "game": {
+    "instructions": "Pohyb: šipky / klepnutí na obrazovku (směr vzhledem k postavě)   ·   Tvá zbraň automaticky vykupuje nepřátele",
+    "redeemed": "Vykoupen",
+    "goldQuiz": "Získáno zlato! Kvíz",
+    "blessingGained": "Získáno požehnání",
+    "blessingsTitle": "Získaná požehnání",
+    "blessingsEmpty": "Zatím žádná získaná požehnání",
+    "close": "Zavřít",
+    "hudTime": "Čas",
+    "hudRedeemed": "Vykoupeno",
+    "hudNextQuiz": "Další kvíz",
+    "hudPierce": "Průraz",
+    "hudQuiz": "Kvíz",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Vícenásobný šíp",
+        "desc": "+1 šíp"
+      },
+      "arrow_rate": {
+        "name": "Rychlé ruce",
+        "desc": "Zvyšuje rychlost střelby"
+      },
+      "arrow_pierce": {
+        "name": "Průraz",
+        "desc": "+10 % šance na průraz"
+      }
+    }
+  }
+}

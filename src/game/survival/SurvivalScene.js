@@ -2,6 +2,7 @@
 import Phaser from 'phaser';
 import { U, F } from '../assets-manifest';
 import { UPGRADES, getRandomUpgrade } from './upgrades';
+import { mergeSurvivalTexts } from './texts';
 
 
 export default class SurvivalScene extends Phaser.Scene {
@@ -88,6 +89,8 @@ export default class SurvivalScene extends Phaser.Scene {
         this.quizIndex = 0;
         this.quizStats = { correct: 0, total: 0 };
         this.quizBridge = this.game.registry.get('quizBridge') || null;
+        // 표시 문자열 사전 — 팩토리가 주입(번역본). 단독 실행 등 미주입이면 ko 기본값.
+        this.texts = mergeSurvivalTexts(this.game.registry.get('texts'));
         this.ended = false;
         // React(일시정지 메뉴) → 씬 제어 이벤트
         this.game.events.on('app:pause', this.appPause, this);
@@ -147,7 +150,7 @@ export default class SurvivalScene extends Phaser.Scene {
         this.hud = this.add.text(16, 14, '', {
             fontSize: '20px', color: '#ffffff', stroke: '#000000', strokeThickness: 4, lineSpacing: 4
         }).setScrollFactor(0).setDepth(20000);
-        this.instr = this.add.text(16, 148, '이동: 화살표 / 화면 터치(캐릭터 기준 누른 방향)   ·   무기가 자동으로 적을 구원합니다', {
+        this.instr = this.add.text(16, 148, this.texts.instructions, {
             fontSize: '14px', color: '#e8e8e8', stroke: '#000000', strokeThickness: 3
         }).setScrollFactor(0).setDepth(20000);
         this.updateHud();
@@ -587,7 +590,7 @@ export default class SurvivalScene extends Phaser.Scene {
             duration: 300, onComplete: () => enemy.destroy()
         });
         this.redeemParticles(x, y);
-        this.floatText(x, y - 40, '구원됨', '#ffd700');
+        this.floatText(x, y - 40, this.texts.redeemed, '#ffd700');
 
         // 구원 수 (더블 블레싱 확률로 2배)
         this.redeemedCount += (Math.random() < this.doubleBlessingChance ? 2 : 1);
@@ -636,7 +639,7 @@ export default class SurvivalScene extends Phaser.Scene {
     onGoldPickup(player, gold) {
         if (this.gamePaused || !gold.active) return;
         gold.destroy();
-        this.floatText(player.x, player.y - 40, '골드 획득! 퀴즈', '#ffd54a');
+        this.floatText(player.x, player.y - 40, this.texts.goldQuiz, '#ffd54a');
         this.showQuiz();   // 골드 먹으면 퀴즈 → 정답 시 업글
     }
 
@@ -681,17 +684,22 @@ export default class SurvivalScene extends Phaser.Scene {
                 const up = getRandomUpgrade();
                 up.apply(this);
                 this.upgradeCounts[up.id] = (this.upgradeCounts[up.id] || 0) + 1;
-                this.quizToast(up.name);
+                this.quizToast(this.upgradeText(up).name);
             }
             this.resumeGame();
             this.updateHud();
         });
     }
 
+    // 업그레이드 이름·설명 — 주입된 번역 사전 우선, 사전에 없는 id는 정의값(ko) 폴백
+    upgradeText(def) {
+        return this.texts.upgrades[def.id] || { name: def.name, desc: def.desc };
+    }
+
     // 업그레이드 획득 토스트
     quizToast(name) {
         const w = this.scale.width, h = this.scale.height;
-        const t = this.add.text(w / 2, h * 0.15, `축복 획득: ${name}`, {
+        const t = this.add.text(w / 2, h * 0.15, `${this.texts.blessingGained}: ${name}`, {
             fontSize: '24px', color: '#ffd700', stroke: '#000000', strokeThickness: 4, align: 'center'
         }).setOrigin(0.5).setScrollFactor(0).setDepth(45000);
         this.tweens.add({ targets: t, y: h * 0.11, alpha: 0, delay: 500, duration: 900, onComplete: () => t.destroy() });
@@ -703,13 +711,13 @@ export default class SurvivalScene extends Phaser.Scene {
         const w = this.scale.width, h = this.scale.height, D = 40000;
         const ui = [];
         ui.push(this.add.rectangle(w / 2, h / 2, w, h, 0x000000, 0.75).setScrollFactor(0).setDepth(D));
-        ui.push(this.add.text(w / 2, h * 0.12, '획득한 축복', {
+        ui.push(this.add.text(w / 2, h * 0.12, this.texts.blessingsTitle, {
             fontSize: '28px', color: '#ffd700', stroke: '#000000', strokeThickness: 4
         }).setOrigin(0.5).setScrollFactor(0).setDepth(D + 1));
 
         const entries = Object.entries(this.upgradeCounts);
         if (entries.length === 0) {
-            ui.push(this.add.text(w / 2, h * 0.3, '아직 획득한 축복이 없습니다', {
+            ui.push(this.add.text(w / 2, h * 0.3, this.texts.blessingsEmpty, {
                 fontSize: '20px', color: '#cccccc'
             }).setOrigin(0.5).setScrollFactor(0).setDepth(D + 1));
         } else {
@@ -717,7 +725,8 @@ export default class SurvivalScene extends Phaser.Scene {
             entries.forEach(([id, count], i) => {
                 const def = UPGRADES.find((u) => u.id === id);
                 if (!def) return;
-                ui.push(this.add.text(w / 2, startY + i * rowH, `${def.name} (${def.desc}) ×${count}`, {
+                const label = this.upgradeText(def);
+                ui.push(this.add.text(w / 2, startY + i * rowH, `${label.name} (${label.desc}) ×${count}`, {
                     fontSize: '19px', color: '#ffffff', stroke: '#000000', strokeThickness: 2, align: 'center',
                     wordWrap: { width: Math.min(700, w - 80) }
                 }).setOrigin(0.5).setScrollFactor(0).setDepth(D + 1));
@@ -727,7 +736,7 @@ export default class SurvivalScene extends Phaser.Scene {
         const by = h * 0.86;
         const closeBtn = this.add.rectangle(w / 2, by, 200, 58, 0x8e2b2b, 1).setScrollFactor(0)
             .setDepth(D + 1).setStrokeStyle(2, 0xffffff, 0.6).setInteractive({ useHandCursor: true });
-        const closeLabel = this.add.text(w / 2, by, '닫기', { fontSize: '22px', color: '#ffffff' })
+        const closeLabel = this.add.text(w / 2, by, this.texts.close, { fontSize: '22px', color: '#ffffff' })
             .setOrigin(0.5).setScrollFactor(0).setDepth(D + 2);
         ui.push(closeBtn, closeLabel);
         closeBtn.on('pointerdown', () => { ui.forEach((o) => o.destroy()); this.resumeGame(); });
@@ -768,11 +777,11 @@ export default class SurvivalScene extends Phaser.Scene {
     updateHud() {
         const need = Math.max(0, this.nextQuizThreshold(this.quizIndex + 1) - this.redeemedCount);
         this.hud.setText([
-            `시간 ${this.fmtTime(Math.floor(this.elapsedMs / 1000))}`,
-            `구원 ${this.redeemedCount}`,
-            `다음 퀴즈까지 ${need}`,
-            `🏹 ×${this.arrows.count}   관통 ${Math.round(this.arrows.pierceChance * 100)}%`,
-            `퀴즈 ${this.quizStats.correct}/${this.quizStats.total}`,
+            `${this.texts.hudTime} ${this.fmtTime(Math.floor(this.elapsedMs / 1000))}`,
+            `${this.texts.hudRedeemed} ${this.redeemedCount}`,
+            `${this.texts.hudNextQuiz} ${need}`,
+            `🏹 ×${this.arrows.count}   ${this.texts.hudPierce} ${Math.round(this.arrows.pierceChance * 100)}%`,
+            `${this.texts.hudQuiz} ${this.quizStats.correct}/${this.quizStats.total}`,
         ]);
     }
 }

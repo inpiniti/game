@@ -1,0 +1,367 @@
+{
+  "common": {
+    "loading": "Загрузка…",
+    "country": "Страна",
+    "language": "Язык",
+    "email": "Эл. почта",
+    "password": "Пароль",
+    "nickname": "Никнейм",
+    "scoreLabel": "Очки",
+    "scoreValue": "{{value}} очков",
+    "save": "Сохранить",
+    "saving": "Сохраняем…",
+    "saveError": "Не удалось сохранить. Попробуй ещё раз чуть позже.",
+    "close": "Закрыть",
+    "edit": "Изменить",
+    "delete": "Удалить",
+    "all": "Все",
+    "goBack": "Назад",
+    "noAnswer": "(Нет ответа)",
+    "allCorrectNotice": "😄 Все слова отгаданы! Ошибок нет",
+    "noRecordsTitle": "Пока нет записей",
+    "gameTitle": "🍓 Strawberry Survival",
+    "startGame": "Начать игру",
+    "quizSetLoadError": "Не удалось загрузить набор слов. Попробуй ещё раз чуть позже.",
+    "loadingQuizSet": "Загружаем набор слов…",
+    "wordCount_one": "{{count}} слово",
+    "wordCount_few": "{{count}} слова",
+    "wordCount_many": "{{count}} слов",
+    "wordCount_other": "{{count}} слова",
+    "loginRequired": "Нужно войти в аккаунт."
+  },
+  "login": {
+    "tagline": "Выживай, ловя слова",
+    "submitting": "Выполняем вход…",
+    "submit": "Войти",
+    "noAccount": "Нет аккаунта?",
+    "signupLink": "Зарегистрироваться →"
+  },
+  "signup": {
+    "title": "Регистрация",
+    "passwordConfirmLabel": "Подтверждение пароля",
+    "submitting": "Регистрируем…",
+    "submit": "Зарегистрироваться",
+    "errorNicknameRequired": "Введи никнейм.",
+    "errorPasswordTooShort": "Пароль должен содержать не менее {{minLength}} символов.",
+    "errorPasswordMismatch": "Пароли не совпадают. Проверь ещё раз.",
+    "errorAlreadyRegistered": "Эта почта уже зарегистрирована. Войди в аккаунт."
+  },
+  "verifyEmail": {
+    "title": "Проверь почту",
+    "sentDescSuffix": " — на этот адрес отправлено письмо для подтверждения.",
+    "sentDescLine2": "Перейди по ссылке в письме, чтобы завершить регистрацию.",
+    "descNoEmail": "Введи почту, указанную при регистрации, и мы отправим письмо ещё раз.",
+    "resentNotice": "Письмо отправлено повторно. Проверь почту.",
+    "resendCountdown": "Отправить письмо ещё раз ({{seconds}} с)",
+    "sending": "Отправляем…",
+    "resend": "Отправить письмо ещё раз",
+    "backToLogin": "← Назад ко входу"
+  },
+  "lobby": {
+    "tagline": "Уклоняйся от монстров и отвечай на вопросы, чтобы стать сильнее",
+    "loading": "Загрузка…",
+    "noSets": "Нет наборов слов",
+    "footnote": "Временное лобби шага 3 · выбор наборов/история появятся позже"
+  },
+  "placeholder": {
+    "desc": "Скоро появится. Мы уже работаем над этим."
+  },
+  "result": {
+    "title": "Игра окончена",
+    "killsLabel": "Побеждено",
+    "killsValue": "{{kills}} врагов",
+    "quizLabel": "Викторина",
+    "savedNotice": "✔ Результат сохранён · Увидимся в следующий раз",
+    "wrongTitle": "Слова с ошибками",
+    "toLobby": "В лобби",
+    "retry": "Заново",
+    "moreSuffix": " и ещё",
+    "answer": "Ответ: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Тип",
+    "scopeOfficial": "Официальные",
+    "scopeMine": "Мои наборы",
+    "uploadButton": "+ Загрузить",
+    "emptyTitle": "Пока нет наборов слов",
+    "emptyDescMine": "Нажми «+ Загрузить», чтобы создать первый набор",
+    "emptyDescOther": "Загляни на другие вкладки языка или типа",
+    "uploadSheetTitle": "Загрузка набора слов"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Назад",
+    "notFound": "Набор слов не найден.",
+    "backToList": "К списку наборов",
+    "learnedProgress": "Изучено {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Часто путаемые слова",
+    "wrongCount_one": "{{count}} ошибка",
+    "wrongCount_few": "{{count}} ошибки",
+    "wrongCount_many": "{{count}} ошибок",
+    "wrongCount_other": "{{count}} ошибки",
+    "allWordsTitle": "Все слова",
+    "emptyItems": "Пока нет добавленных слов.",
+    "headerWord": "Слово",
+    "headerMeaning": "Значение",
+    "headerStatus": "Статус",
+    "frontPlaceholder": "Слово (front)",
+    "backPlaceholder": "Значение (back) · несколько значений через ';'",
+    "examplePlaceholder": "Пример (необязательно)",
+    "removeItemAria": "Удалить это слово",
+    "addItemButton": "+ Добавить слово",
+    "emptyFieldsError": "Заполни слово и значение, чтобы сохранить."
+  },
+  "ranking": {
+    "title": "Рейтинг",
+    "tabsAriaLabel": "Тип рейтинга",
+    "tabBySet": "По наборам",
+    "tabOverall": "Общий",
+    "tabByCountry": "По странам",
+    "scopeLabel": "Область",
+    "scopeMine": "Моя страна",
+    "myRankLabel": "Моё место",
+    "myRankEmpty": "Пока нет в рейтинге",
+    "loadError": "Не удалось загрузить рейтинг. Попробуй ещё раз чуть позже.",
+    "byCountryEmptyDesc": "Играй в официальные наборы, чтобы пополнить рейтинг страны",
+    "bySetEmptyDesc": "Сыграй в этот набор, чтобы попасть в рейтинг",
+    "overallEmptyDesc": "Играй в официальные наборы, чтобы попасть в рейтинг",
+    "noOfficialSetsTitle": "Пока нет официальных наборов",
+    "noOfficialSetsDesc": "Когда появятся официальные наборы, здесь будет рейтинг",
+    "headerRank": "Место",
+    "headerAvgScore": "Средний балл",
+    "headerParticipants": "Участников",
+    "headerSetsPlayed": "Сыграно наборов",
+    "playersCount_one": "{{count}} игрок",
+    "playersCount_few": "{{count}} игрока",
+    "playersCount_many": "{{count}} игроков",
+    "playersCount_other": "{{count}} игрока",
+    "playersJoined_one": "{{count}} игрок участвует",
+    "playersJoined_few": "{{count}} игрока участвуют",
+    "playersJoined_many": "{{count}} игроков участвует",
+    "playersJoined_other": "{{count}} игрока участвует",
+    "setsPlayedCount_one": "{{count}} набор",
+    "setsPlayedCount_few": "{{count}} набора",
+    "setsPlayedCount_many": "{{count}} наборов",
+    "setsPlayedCount_other": "{{count}} набора",
+    "setsPlayedJoined_one": "{{count}} набор сыгран",
+    "setsPlayedJoined_few": "{{count}} набора сыграно",
+    "setsPlayedJoined_many": "{{count}} наборов сыграно",
+    "setsPlayedJoined_other": "{{count}} набора сыграно",
+    "selectAriaLabel": "Выбор набора слов",
+    "myRankByCountry": "Твоя страна {{country}} · {{rank}} место · {{score}} очков",
+    "myRankGeneric": "{{rank}} место · {{score}} очков"
+  },
+  "history": {
+    "title": "История",
+    "loadError": "Не удалось загрузить историю. Попробуй ещё раз чуть позже.",
+    "emptyDesc": "Сыграй в набор слов, и здесь появится история",
+    "headerDate": "Дата",
+    "headerSet": "Набор",
+    "headerCorrect": "Верно",
+    "headerAccuracy": "Точность",
+    "deletedSet": "Удалённый набор",
+    "deletedWord": "Удалённое слово",
+    "cardAccuracyLine": "Верно {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "Управление наборами",
+    "uploadLink": "+ Загрузить официальный набор",
+    "tabOfficial": "Официальные наборы",
+    "tabPromote": "Повышение личных наборов",
+    "loading": "Загрузка…",
+    "loadError": "Не удалось загрузить список. Попробуй ещё раз чуть позже.",
+    "countryCommon": "Общий",
+    "emptyFilteredTitle": "Нет официальных наборов по этим условиям",
+    "emptyFilteredDesc": "Попробуй другой фильтр страны или языка",
+    "deleting": "Удаляем…",
+    "deleteConfirm": "Удалить",
+    "emptyPromoteTitle": "Нет личных наборов для повышения",
+    "emptyPromoteDesc": "Когда пользователи загрузят личные наборы, они появятся здесь",
+    "personalSetBadge": "Личный набор",
+    "promoteButton": "Повысить",
+    "editSheetTitle": "Изменить официальный набор",
+    "titleFieldLabel": "Название",
+    "titleRequiredError": "Введи название, чтобы сохранить.",
+    "promoteSheetTitle": "Повышение до официального набора",
+    "promoteError": "Не удалось повысить. Попробуй ещё раз чуть позже.",
+    "promoteNoticeSuffix": " станет официальным набором, доступным всем пользователям выбранной страны.",
+    "promoting": "Повышаем…",
+    "promoteSubmit": "Повысить",
+    "countryCommonOption": "Общий (все страны)",
+    "countrySpecificOption": "Определённая страна"
+  },
+  "adminUpload": {
+    "backLink": "← Назад в управление",
+    "title": "Загрузка официального набора",
+    "desc": "Укажи страну, чтобы набор стал доступен всем пользователям этой страны.",
+    "loadingUser": "Загружаем данные пользователя…"
+  },
+  "header": {
+    "appName": "Strawberry Survival",
+    "mainNav": "Главное меню",
+    "sets": "Наборы",
+    "ranking": "Рейтинг",
+    "history": "История",
+    "admin": "Управление"
+  },
+  "tabbar": {
+    "home": "Главная",
+    "sets": "Наборы",
+    "ranking": "Рейтинг",
+    "history": "История",
+    "nav": "Нижнее меню"
+  },
+  "profileSheet": {
+    "title": "Профиль",
+    "nicknameLabel": "Никнейм",
+    "change": "Изменить",
+    "countryLabel": "Страна",
+    "emailLabel": "Эл. почта",
+    "loggingOut": "Выходим…",
+    "logout": "Выйти",
+    "nicknameSaveError": "Не удалось сохранить никнейм. Попробуй ещё раз.",
+    "countrySaveError": "Не удалось сохранить страну. Попробуй ещё раз.",
+    "language": "Язык"
+  },
+  "pauseMenu": {
+    "pause": "Пауза",
+    "title": "Пауза",
+    "resume": "Продолжить",
+    "quit": "Завершить",
+    "quitHint": "Текущий счёт будет сохранён"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " — что это значит?",
+    "inputHint_one": "※ Введи {{count}} значение",
+    "inputHint_few": "※ Введи {{count}} значения",
+    "inputHint_many": "※ Введи {{count}} значений",
+    "inputHint_other": "※ Введи {{count}} значения",
+    "answerPlaceholder": "Ответ {{index}}",
+    "submit": "Отправить",
+    "missed": "Пропущенные значения: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} слово",
+    "wordCount_few": "{{count}} слова",
+    "wordCount_many": "{{count}} слов",
+    "wordCount_other": "{{count}} слова",
+    "learnProgress": "Изучено {{learned}}/{{total}}",
+    "viewSet": "Открыть набор",
+    "start": "Начать",
+    "confirmDelete": "Удалить это?",
+    "deleting": "Удаляем…",
+    "deleteConfirm": "Удалить",
+    "delete": "Удалить"
+  },
+  "directionSheet": {
+    "title": "В каком направлении?",
+    "startGame": "Начать игру",
+    "frontToBack": {
+      "title": "Смотри на {{short}}, угадывай значение",
+      "hint": "Слово → Значение"
+    },
+    "backToFront": {
+      "title": "Смотри на значение, угадывай {{short}}",
+      "hint": "Значение → Слово"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,красное круглое яблоко,I ate an apple.\nrun,бежать;бег,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"красное круглое яблоко\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"бежать;бег\" }\n]",
+    "titleLabel": "Название",
+    "titlePlaceholder": "напр.: Английские слова 7 класс",
+    "countryLabel": "Страна",
+    "languageLabel": "Язык",
+    "wordsInputLabel": "Ввод слов",
+    "loadFromFile": "Загрузить из файла",
+    "confirmColumn": "Проверка",
+    "normal": "Корректно",
+    "uploading": "Загружаем…",
+    "upload": "Загрузить",
+    "titleRequired": "Введи название, чтобы загрузить.",
+    "fixErrorsRequired": "Исправь все строки с ошибками, чтобы загрузить.",
+    "minOneWordRequired": "Введи хотя бы 1 слово, чтобы загрузить.",
+    "uploadFailed": "Не удалось загрузить. Попробуй ещё раз чуть позже.",
+    "previewSummary_one": "Предпросмотр · {{count}} корректная строка",
+    "previewSummary_few": "Предпросмотр · {{count}} корректные строки",
+    "previewSummary_many": "Предпросмотр · {{count}} корректных строк",
+    "previewSummary_other": "Предпросмотр · {{count}} корректной строки",
+    "previewError_one": " · {{count}} строка с ошибкой",
+    "previewError_few": " · {{count}} строки с ошибкой",
+    "previewError_many": " · {{count}} строк с ошибкой",
+    "previewError_other": " · {{count}} строки с ошибкой",
+    "missingBoth": "Заполни front (слово) и back (значение), чтобы добавить.",
+    "missingFront": "Заполни front (слово), чтобы добавить.",
+    "missingBack": "Заполни back (значение), чтобы добавить.",
+    "jsonSyntaxError": "Проверь формат JSON. (Синтаксическая ошибка)",
+    "jsonMustBeArray": "Чтобы загрузить, верхний уровень должен быть массивом. Напр.: [{\"front\":\"apple\",\"back\":\"красное круглое яблоко\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Эта почта уже зарегистрирована. Войди в аккаунт.",
+    "weakPassword": "Пароль слишком простой. Используй не менее 6 символов в другой комбинации.",
+    "invalidCredentials": "Почта или пароль неверны. Проверь ещё раз.",
+    "invalidEmail": "Проверь формат почты.",
+    "emailRateLimit": "Слишком много запросов писем. Попробуй ещё раз чуть позже.",
+    "requestRateLimit": "Слишком много запросов. Попробуй ещё раз чуть позже.",
+    "signupDisabled": "Сейчас регистрация закрыта. Попробуй позже.",
+    "genericError": "Сейчас проблемы с подключением. Попробуй немного позже."
+  },
+  "countrySelect": {
+    "placeholder": "Выбери страну",
+    "title": "Выбор страны",
+    "searchPlaceholder": "Поиск страны...",
+    "empty": "Ничего не найдено. Попробуй другую страну?"
+  },
+  "languages": {
+    "en": {
+      "label": "Английские слова",
+      "short": "Английский"
+    },
+    "ja": {
+      "label": "Японские слова",
+      "short": "Японский"
+    },
+    "zh": {
+      "label": "Китайские слова",
+      "short": "Китайский"
+    },
+    "general": "Общее"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Не изучено",
+      "learning": "Изучается",
+      "review_one": "Повторение через {{count}} день",
+      "review_few": "Повторение через {{count}} дня",
+      "review_many": "Повторение через {{count}} дней",
+      "review_other": "Повторение через {{count}} дня"
+    }
+  },
+  "game": {
+    "instructions": "Движение: стрелки / касание экрана (направление относительно персонажа)   ·   Оружие автоматически спасает врагов",
+    "redeemed": "Спасён",
+    "goldQuiz": "Получено золото! Викторина",
+    "blessingGained": "Получено благословение",
+    "blessingsTitle": "Полученные благословения",
+    "blessingsEmpty": "Пока нет полученных благословений",
+    "close": "Закрыть",
+    "hudTime": "Время",
+    "hudRedeemed": "Спасено",
+    "hudNextQuiz": "До следующей викторины",
+    "hudPierce": "Пробитие",
+    "hudQuiz": "Викторина",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Множественные стрелы",
+        "desc": "+1 стрела"
+      },
+      "arrow_rate": {
+        "name": "Быстрые руки",
+        "desc": "Увеличивает скорострельность"
+      },
+      "arrow_pierce": {
+        "name": "Пробитие",
+        "desc": "+10% шанс пробития"
+      }
+    }
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "common": {
+    "loading": "Yükleniyor…",
+    "country": "Ülke",
+    "language": "Dil",
+    "email": "E-posta",
+    "password": "Şifre",
+    "nickname": "Takma ad",
+    "scoreLabel": "Puan",
+    "scoreValue": "{{value}} puan",
+    "save": "Kaydet",
+    "saving": "Kaydediliyor…",
+    "saveError": "Kaydedilemedi. Lütfen biraz sonra tekrar dene.",
+    "close": "Kapat",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "all": "Tümü",
+    "goBack": "Geri dön",
+    "noAnswer": "(Cevap yok)",
+    "allCorrectNotice": "😄 Hepsini doğru bildin! Yanlış kelime yok",
+    "noRecordsTitle": "Henüz kayıt yok",
+    "gameTitle": "🍓 Çilek Hayatta Kalma",
+    "startGame": "Oyunu başlat",
+    "quizSetLoadError": "Kelime seti yüklenemedi. Lütfen biraz sonra tekrar dene.",
+    "loadingQuizSet": "Kelime seti yükleniyor…",
+    "wordCount_one": "{{count}} kelime",
+    "wordCount_other": "{{count}} kelime",
+    "loginRequired": "Giriş yapman gerekiyor."
+  },
+  "login": {
+    "tagline": "Kelimeleri yakalayarak hayatta kal",
+    "submitting": "Giriş yapılıyor…",
+    "submit": "Giriş yap",
+    "noAccount": "Hesabın yok mu?",
+    "signupLink": "Kayıt ol →"
+  },
+  "signup": {
+    "title": "Kayıt ol",
+    "passwordConfirmLabel": "Şifre onayı",
+    "submitting": "Kayıt yapılıyor…",
+    "submit": "Kayıt ol",
+    "errorNicknameRequired": "Lütfen bir takma ad gir.",
+    "errorPasswordTooShort": "Şifre en az {{minLength}} karakter olmalı.",
+    "errorPasswordMismatch": "Şifreler eşleşmiyor. Lütfen tekrar kontrol et.",
+    "errorAlreadyRegistered": "Bu e-posta zaten kayıtlı. Lütfen giriş yap."
+  },
+  "verifyEmail": {
+    "title": "Gelen kutunu kontrol et",
+    "sentDescSuffix": " adresine doğrulama e-postası gönderdik.",
+    "sentDescLine2": "Kaydını tamamlamak için e-postadaki bağlantıya dokun.",
+    "descNoEmail": "Kayıt olurken kullandığın e-postayı girersen doğrulama e-postasını tekrar göndeririz.",
+    "resentNotice": "E-postayı tekrar gönderdik. Gelen kutunu kontrol et.",
+    "resendCountdown": "E-postayı tekrar gönder ({{seconds}} sn)",
+    "sending": "Gönderiliyor…",
+    "resend": "E-postayı tekrar gönder",
+    "backToLogin": "← Girişe dön"
+  },
+  "lobby": {
+    "tagline": "Canavarlardan kaç, quizleri bil ve güçlen",
+    "loading": "Yükleniyor…",
+    "noSets": "Kelime seti yok",
+    "footnote": "3. adım geçici lobi · set seçimi/geçmiş sonraki adımlarda"
+  },
+  "placeholder": {
+    "desc": "Yakında geliyor. Üzerinde çalışıyoruz."
+  },
+  "result": {
+    "title": "Oyun Bitti",
+    "killsLabel": "Yenilen",
+    "killsValue": "{{kills}} düşman",
+    "quizLabel": "Quiz",
+    "savedNotice": "✔ Kaydedildi · Bir dahaki sefere görüşürüz",
+    "wrongTitle": "Yanlış kelimeler",
+    "toLobby": "Lobiye dön",
+    "retry": "Tekrar dene",
+    "moreSuffix": " ve daha fazlası",
+    "answer": "Cevap: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Tür",
+    "scopeOfficial": "Resmî",
+    "scopeMine": "Setlerim",
+    "uploadButton": "+ Yükle",
+    "emptyTitle": "Henüz kelime seti yok",
+    "emptyDescMine": "İlk setini oluşturmak için + Yükle'ye dokun",
+    "emptyDescOther": "Diğer dil veya tür sekmelerine göz at",
+    "uploadSheetTitle": "Kelime seti yükle"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Geri",
+    "notFound": "Kelime seti bulunamadı.",
+    "backToList": "Kelime setlerine dön",
+    "learnedProgress": "Öğrenilen {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Sık yanlış yaptığın kelimeler",
+    "wrongCount_one": "{{count}} yanlış cevap",
+    "wrongCount_other": "{{count}} yanlış cevap",
+    "allWordsTitle": "Tüm kelimeler",
+    "emptyItems": "Henüz eklenmiş kelime yok.",
+    "headerWord": "Kelime",
+    "headerMeaning": "Anlam",
+    "headerStatus": "Durum",
+    "frontPlaceholder": "Kelime (front)",
+    "backPlaceholder": "Anlam (back) · birden fazla anlam için ';' kullan",
+    "examplePlaceholder": "Örnek (isteğe bağlı)",
+    "removeItemAria": "Bu kelimeyi kaldır",
+    "addItemButton": "+ Kelime ekle",
+    "emptyFieldsError": "Kaydetmek için kelime ve anlamı doldur."
+  },
+  "ranking": {
+    "title": "Sıralama",
+    "tabsAriaLabel": "Sıralama türü",
+    "tabBySet": "Sete göre",
+    "tabOverall": "Genel",
+    "tabByCountry": "Ülkeye göre",
+    "scopeLabel": "Kapsam",
+    "scopeMine": "Ülkem",
+    "myRankLabel": "Sıram",
+    "myRankEmpty": "Henüz sıralamada değilsin",
+    "loadError": "Sıralama yüklenemedi. Lütfen biraz sonra tekrar dene.",
+    "byCountryEmptyDesc": "Resmî setler oynayarak ülke sıralamasını oluştur",
+    "bySetEmptyDesc": "Bu seti oynayarak sıralamaya gir",
+    "overallEmptyDesc": "Resmî setler oynayarak sıralamaya gir",
+    "noOfficialSetsTitle": "Henüz resmî set yok",
+    "noOfficialSetsDesc": "Resmî setler eklendiğinde sıralamayı burada görebilirsin",
+    "headerRank": "Sıra",
+    "headerAvgScore": "Ort. puan",
+    "headerParticipants": "Katılımcı",
+    "headerSetsPlayed": "Oynanan set",
+    "playersCount_one": "{{count}} oyuncu",
+    "playersCount_other": "{{count}} oyuncu",
+    "playersJoined_one": "{{count}} oyuncu katıldı",
+    "playersJoined_other": "{{count}} oyuncu katıldı",
+    "setsPlayedCount_one": "{{count}} set",
+    "setsPlayedCount_other": "{{count}} set",
+    "setsPlayedJoined_one": "{{count}} set oynandı",
+    "setsPlayedJoined_other": "{{count}} set oynandı",
+    "selectAriaLabel": "Kelime seti seç",
+    "myRankByCountry": "Ülken {{country}} · {{rank}}. sıra · {{score}} puan",
+    "myRankGeneric": "{{rank}}. sıra · {{score}} puan"
+  },
+  "history": {
+    "title": "Geçmiş",
+    "loadError": "Geçmiş yüklenemedi. Lütfen biraz sonra tekrar dene.",
+    "emptyDesc": "Bir kelime seti oynadığında burada birikir",
+    "headerDate": "Tarih",
+    "headerSet": "Set",
+    "headerCorrect": "Doğru",
+    "headerAccuracy": "Doğruluk",
+    "deletedSet": "Silinmiş set",
+    "deletedWord": "Silinmiş kelime",
+    "cardAccuracyLine": "Doğru {{correct}}/{{total}} (%{{accuracy}})"
+  },
+  "adminSets": {
+    "title": "Kelime setlerini yönet",
+    "uploadLink": "+ Resmî set yükle",
+    "tabOfficial": "Resmî setler",
+    "tabPromote": "Kişisel setleri yükselt",
+    "loading": "Yükleniyor…",
+    "loadError": "Liste yüklenemedi. Lütfen biraz sonra tekrar dene.",
+    "countryCommon": "Ortak",
+    "emptyFilteredTitle": "Bu koşullara uyan resmî set yok",
+    "emptyFilteredDesc": "Farklı bir ülke veya dil filtresi dene",
+    "deleting": "Siliniyor…",
+    "deleteConfirm": "Sil",
+    "emptyPromoteTitle": "Yükseltilecek kişisel set yok",
+    "emptyPromoteDesc": "Kullanıcılar kişisel set yüklediğinde burada görünür",
+    "personalSetBadge": "Kişisel set",
+    "promoteButton": "Yükselt",
+    "editSheetTitle": "Resmî seti düzenle",
+    "titleFieldLabel": "Başlık",
+    "titleRequiredError": "Kaydetmek için bir başlık gir.",
+    "promoteSheetTitle": "Resmî sete yükselt",
+    "promoteError": "Yükseltilemedi. Lütfen biraz sonra tekrar dene.",
+    "promoteNoticeSuffix": " seçilen ülkedeki tüm kullanıcıların oynayabileceği resmî bir set olacak.",
+    "promoting": "Yükseltiliyor…",
+    "promoteSubmit": "Yükselt",
+    "countryCommonOption": "Ortak (tüm ülkeler)",
+    "countrySpecificOption": "Belirli ülke"
+  },
+  "adminUpload": {
+    "backLink": "← Yönetime dön",
+    "title": "Resmî set yükle",
+    "desc": "Bir ülke belirtirsen o ülkedeki tüm kullanıcıların oynayabileceği resmî bir set olur.",
+    "loadingUser": "Kullanıcı bilgisi yükleniyor…"
+  },
+  "header": {
+    "appName": "Çilek Hayatta Kalma",
+    "mainNav": "Ana menü",
+    "sets": "Setler",
+    "ranking": "Sıralama",
+    "history": "Geçmiş",
+    "admin": "Yönetim"
+  },
+  "tabbar": {
+    "home": "Ana sayfa",
+    "sets": "Setler",
+    "ranking": "Sıralama",
+    "history": "Geçmiş",
+    "nav": "Alt menü"
+  },
+  "profileSheet": {
+    "title": "Profil",
+    "nicknameLabel": "Takma ad",
+    "change": "Değiştir",
+    "countryLabel": "Ülke",
+    "emailLabel": "E-posta",
+    "loggingOut": "Çıkış yapılıyor…",
+    "logout": "Çıkış yap",
+    "nicknameSaveError": "Takma ad kaydedilemedi. Lütfen tekrar dene.",
+    "countrySaveError": "Ülke kaydedilemedi. Lütfen tekrar dene.",
+    "language": "Dil"
+  },
+  "pauseMenu": {
+    "pause": "Duraklat",
+    "title": "Duraklatıldı",
+    "resume": "Devam et",
+    "quit": "Çık",
+    "quitHint": "Şu anki puanın kaydedilecek"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " ne anlama geliyor?",
+    "inputHint_one": "※ {{count}} anlam gir",
+    "inputHint_other": "※ {{count}} anlam gir",
+    "answerPlaceholder": "Cevap {{index}}",
+    "submit": "Gönder",
+    "missed": "Kaçırdığın anlamlar: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} kelime",
+    "wordCount_other": "{{count}} kelime",
+    "learnProgress": "Öğrenilen {{learned}}/{{total}}",
+    "viewSet": "Seti görüntüle",
+    "start": "Başla",
+    "confirmDelete": "Bu silinsin mi?",
+    "deleting": "Siliniyor…",
+    "deleteConfirm": "Sil",
+    "delete": "Sil"
+  },
+  "directionSheet": {
+    "title": "Hangi yönde?",
+    "startGame": "Oyunu başlat",
+    "frontToBack": {
+      "title": "{{short}} gör, anlamını bil",
+      "hint": "Kelime → Anlam"
+    },
+    "backToFront": {
+      "title": "Anlamı gör, {{short}} bil",
+      "hint": "Anlam → Kelime"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,kırmızı yuvarlak meyve,I ate an apple.\nrun,koşmak;koşu,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"kırmızı yuvarlak meyve\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"koşmak;koşu\" }\n]",
+    "titleLabel": "Başlık",
+    "titlePlaceholder": "örn: 7. sınıf kelimeleri",
+    "countryLabel": "Ülke",
+    "languageLabel": "Dil",
+    "wordsInputLabel": "Kelime girişi",
+    "loadFromFile": "Dosyadan yükle",
+    "confirmColumn": "Kontrol",
+    "normal": "Geçerli",
+    "uploading": "Yükleniyor…",
+    "upload": "Yükle",
+    "titleRequired": "Yüklemek için bir başlık gir.",
+    "fixErrorsRequired": "Yüklemek için hatalı satırların hepsini düzelt.",
+    "minOneWordRequired": "Yüklemek için en az 1 kelime gir.",
+    "uploadFailed": "Yüklenemedi. Lütfen biraz sonra tekrar dene.",
+    "previewSummary_one": "Önizleme · {{count}} geçerli satır",
+    "previewSummary_other": "Önizleme · {{count}} geçerli satır",
+    "previewError_one": " · {{count}} hatalı satır",
+    "previewError_other": " · {{count}} hatalı satır",
+    "missingBoth": "Eklemek için front (kelime) ve back (anlam) alanlarını doldur.",
+    "missingFront": "Eklemek için front (kelime) alanını doldur.",
+    "missingBack": "Eklemek için back (anlam) alanını doldur.",
+    "jsonSyntaxError": "JSON biçimini kontrol et. (Sözdizimi hatası)",
+    "jsonMustBeArray": "Yüklemek için en üst düzey bir dizi olmalı. Örn: [{\"front\":\"apple\",\"back\":\"kırmızı yuvarlak meyve\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Bu e-posta zaten kayıtlı. Lütfen giriş yap.",
+    "weakPassword": "Bu şifre çok basit. Lütfen en az 6 karakter ve farklı bir kombinasyon kullan.",
+    "invalidCredentials": "E-posta veya şifre yanlış. Lütfen tekrar kontrol et.",
+    "invalidEmail": "Lütfen e-posta biçimini kontrol et.",
+    "emailRateLimit": "Çok sık e-posta istedin. Lütfen biraz sonra tekrar dene.",
+    "requestRateLimit": "Çok fazla istek. Lütfen biraz sonra tekrar dene.",
+    "signupDisabled": "Şu anda kayıtlar kapalı. Lütfen daha sonra tekrar dene.",
+    "genericError": "Şu anda bağlantı sorunu yaşıyoruz. Lütfen biraz sonra tekrar dene."
+  },
+  "countrySelect": {
+    "placeholder": "Lütfen bir ülke seç",
+    "title": "Ülke seç",
+    "searchPlaceholder": "Ülke ara...",
+    "empty": "Sonuç bulunamadı. Farklı bir ülke aramayı dener misin?"
+  },
+  "languages": {
+    "en": {
+      "label": "İngilizce kelimeler",
+      "short": "İngilizce"
+    },
+    "ja": {
+      "label": "Japonca kelimeler",
+      "short": "Japonca"
+    },
+    "zh": {
+      "label": "Çince kelimeler",
+      "short": "Çince"
+    },
+    "general": "Genel"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Öğrenilmedi",
+      "learning": "Öğreniliyor",
+      "review_one": "{{count}} gün sonra tekrar",
+      "review_other": "{{count}} gün sonra tekrar"
+    }
+  },
+  "game": {
+    "instructions": "Hareket: Ok tuşları / Ekrana dokun (karaktere göre yön)   ·   Silahın düşmanları otomatik olarak kurtarır",
+    "redeemed": "Kurtarıldı",
+    "goldQuiz": "Altın kazanıldı! Quiz",
+    "blessingGained": "Kutsama kazanıldı",
+    "blessingsTitle": "Kazanılan kutsamalar",
+    "blessingsEmpty": "Henüz kazanılan kutsama yok",
+    "close": "Kapat",
+    "hudTime": "Süre",
+    "hudRedeemed": "Kurtarılan",
+    "hudNextQuiz": "Sıradaki quize",
+    "hudPierce": "Delme",
+    "hudQuiz": "Quiz",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Çoklu ok",
+        "desc": "+1 ok"
+      },
+      "arrow_rate": {
+        "name": "Hızlı eller",
+        "desc": "Ok atış hızını artırır"
+      },
+      "arrow_pierce": {
+        "name": "Delme",
+        "desc": "%10 delme şansı"
+      }
+    }
+  }
+}

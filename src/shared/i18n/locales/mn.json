@@ -1,0 +1,345 @@
+{
+  "common": {
+    "loading": "Ачаалж байна…",
+    "country": "Улс",
+    "language": "Хэл",
+    "email": "Имэйл",
+    "password": "Нууц үг",
+    "nickname": "Хоч нэр",
+    "scoreLabel": "Оноо",
+    "scoreValue": "{{value}} оноо",
+    "save": "Хадгалах",
+    "saving": "Хадгалж байна…",
+    "saveError": "Хадгалж чадсангүй. Түр хүлээгээд дахин оролдоно уу.",
+    "close": "Хаах",
+    "edit": "Засах",
+    "delete": "Устгах",
+    "all": "Бүгд",
+    "goBack": "Буцах",
+    "noAnswer": "(Хариулаагүй)",
+    "allCorrectNotice": "😄 Бүгдийг зөв гүйцэтгэлээ! Буруу үг алга байна",
+    "noRecordsTitle": "Одоогоор түүх алга байна",
+    "gameTitle": "🍓 Strawberry Survival",
+    "startGame": "Тоглоом эхлэх",
+    "quizSetLoadError": "Үгийн багцыг ачаалж чадсангүй. Түр хүлээгээд дахин оролдоно уу.",
+    "loadingQuizSet": "Үгийн багцыг ачаалж байна…",
+    "wordCount_one": "{{count}} үг",
+    "wordCount_other": "{{count}} үг",
+    "loginRequired": "Нэвтрэх шаардлагатай."
+  },
+  "login": {
+    "tagline": "Үг барьж амьд үлдэх аялал",
+    "submitting": "Нэвтэрч байна…",
+    "submit": "Нэвтрэх",
+    "noAccount": "Бүртгэл байхгүй юу?",
+    "signupLink": "Бүртгүүлэх →"
+  },
+  "signup": {
+    "title": "Бүртгүүлэх",
+    "passwordConfirmLabel": "Нууц үг баталгаажуулах",
+    "submitting": "Бүртгүүлж байна…",
+    "submit": "Бүртгүүлэх",
+    "errorNicknameRequired": "Хоч нэрээ оруулна уу.",
+    "errorPasswordTooShort": "Нууц үг {{minLength}} тэмдэгтээс дээш байх ёстой.",
+    "errorPasswordMismatch": "Нууц үг таарахгүй байна. Дахин шалгана уу.",
+    "errorAlreadyRegistered": "Энэ имэйл аль хэдийн бүртгэгдсэн байна. Нэвтэрнэ үү."
+  },
+  "verifyEmail": {
+    "title": "Шуудангаа шалгана уу",
+    "sentDescSuffix": " хаяг руу баталгаажуулах имэйл илгээлээ.",
+    "sentDescLine2": "Имэйл доторх холбоос дээр дарж бүртгэлээ дуусгана уу.",
+    "descNoEmail": "Бүртгүүлэхдээ ашигласан имэйлээ оруулбал баталгаажуулах имэйлийг дахин илгээнэ.",
+    "resentNotice": "Имэйлийг дахин илгээлээ. Шуудангаа шалгана уу.",
+    "resendCountdown": "Имэйл дахин илгээх ({{seconds}}с)",
+    "sending": "Илгээж байна…",
+    "resend": "Имэйл дахин илгээх",
+    "backToLogin": "← Нэвтрэх хуудас руу буцах"
+  },
+  "lobby": {
+    "tagline": "Мангасаас зайлсхийж, асуултад хариулж хүчирхэг болоорой",
+    "loading": "Ачаалж байна…",
+    "noSets": "Үгийн багц алга байна",
+    "footnote": "3-р шатны түр танхим · Багц сонголт/түүх дараагийн шатанд нэмэгдэнэ"
+  },
+  "placeholder": {
+    "desc": "Тун удахгүй. Бэлдэж байна."
+  },
+  "result": {
+    "title": "Тоглоом Дууслаа",
+    "killsLabel": "Устгасан",
+    "killsValue": "{{kills}} ширхэг",
+    "quizLabel": "Асуулт",
+    "savedNotice": "✔ Хадгалагдлаа · Дараа дахин уулзая",
+    "wrongTitle": "Буруу хариулсан үг",
+    "toLobby": "Танхим руу",
+    "retry": "Дахин тоглох",
+    "moreSuffix": " гэх мэт",
+    "answer": "Хариулт: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Ангилал",
+    "scopeOfficial": "Албан ёсны",
+    "scopeMine": "Миний багц",
+    "uploadButton": "+ Байршуулах",
+    "emptyTitle": "Одоогоор үгийн багц алга байна",
+    "emptyDescMine": "+ Байршуулах товч дарж эхний багцаа үүсгээрэй",
+    "emptyDescOther": "Бусад хэл, ангиллын таб-ыг шалгаарай",
+    "uploadSheetTitle": "Үгийн багц байршуулах"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Буцах",
+    "notFound": "Энэ үгийн багц олдсонгүй.",
+    "backToList": "Үгийн багцын жагсаалт руу буцах",
+    "learnedProgress": "Сурсан {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Байнга буруу хариулдаг үг",
+    "wrongCount_one": "Буруу {{count}} удаа",
+    "wrongCount_other": "Буруу {{count}} удаа",
+    "allWordsTitle": "Бүх үг",
+    "emptyItems": "Одоогоор нэмэгдсэн үг алга байна.",
+    "headerWord": "Үг",
+    "headerMeaning": "Утга",
+    "headerStatus": "Төлөв",
+    "frontPlaceholder": "Үг (front)",
+    "backPlaceholder": "Утга (back) · олон утгыг ';'-ээр тусгаарлана",
+    "examplePlaceholder": "Жишээ өгүүлбэр (сонголтоор)",
+    "removeItemAria": "Энэ үгийг устгах",
+    "addItemButton": "+ Үг нэмэх",
+    "emptyFieldsError": "Үг болон утгыг бөглөвөл хадгалах боломжтой."
+  },
+  "ranking": {
+    "title": "Чансаа",
+    "tabsAriaLabel": "Чансааны төрөл",
+    "tabBySet": "Багцаар",
+    "tabOverall": "Нийт",
+    "tabByCountry": "Улс хоорондын",
+    "scopeLabel": "Хамрах хүрээ",
+    "scopeMine": "Миний улс",
+    "myRankLabel": "Миний байр",
+    "myRankEmpty": "Одоогоор чансаанд ороогүй байна",
+    "loadError": "Чансааг ачаалж чадсангүй. Түр хүлээгээд дахин оролдоно уу.",
+    "byCountryEmptyDesc": "Албан ёсны багц тогловол улсын чансаа нэмэгдэнэ",
+    "bySetEmptyDesc": "Энэ багцыг тогловол чансаанд орно",
+    "overallEmptyDesc": "Албан ёсны багц тогловол чансаанд орно",
+    "noOfficialSetsTitle": "Одоогоор албан ёсны багц алга байна",
+    "noOfficialSetsDesc": "Албан ёсны багц нэмэгдмэгц энд чансааг харах боломжтой",
+    "headerRank": "Байр",
+    "headerAvgScore": "Дундаж оноо",
+    "headerParticipants": "Оролцогч",
+    "headerSetsPlayed": "Тоглосон багц",
+    "playersCount_one": "{{count}} хүн",
+    "playersCount_other": "{{count}} хүн",
+    "playersJoined_one": "{{count}} хүн оролцов",
+    "playersJoined_other": "{{count}} хүн оролцов",
+    "setsPlayedCount_one": "{{count}} багц",
+    "setsPlayedCount_other": "{{count}} багц",
+    "setsPlayedJoined_one": "{{count}} багц тогложээ",
+    "setsPlayedJoined_other": "{{count}} багц тогложээ",
+    "selectAriaLabel": "Үгийн багц сонгох",
+    "myRankByCountry": "Миний улс {{country}} {{rank}}-р байр · {{score}} оноо",
+    "myRankGeneric": "{{rank}}-р байр · {{score}} оноо"
+  },
+  "history": {
+    "title": "Түүх",
+    "loadError": "Түүхийг ачаалж чадсангүй. Түр хүлээгээд дахин оролдоно уу.",
+    "emptyDesc": "Үгийн багц тоглоход энд бүртгэгдэнэ",
+    "headerDate": "Огноо",
+    "headerSet": "Багц",
+    "headerCorrect": "Зөв",
+    "headerAccuracy": "Зөв хувь",
+    "deletedSet": "Устгасан багц",
+    "deletedWord": "Устгасан үг",
+    "cardAccuracyLine": "Зөв {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "Үгийн Багц Удирдах",
+    "uploadLink": "+ Албан ёсны багц байршуулах",
+    "tabOfficial": "Албан ёсны багц",
+    "tabPromote": "Хувийн багц дэвшүүлэх",
+    "loading": "Ачаалж байна…",
+    "loadError": "Жагсаалтыг ачаалж чадсангүй. Түр хүлээгээд дахин оролдоно уу.",
+    "countryCommon": "Нийтлэг",
+    "emptyFilteredTitle": "Тохирох албан ёсны багц алга байна",
+    "emptyFilteredDesc": "Өөр улс, хэлний шүүлтүүр сонгож үзнэ үү",
+    "deleting": "Устгаж байна…",
+    "deleteConfirm": "Устгах",
+    "emptyPromoteTitle": "Дэвшүүлэх хувийн багц алга байна",
+    "emptyPromoteDesc": "Хэрэглэгч хувийн багц байршуулбал энд харагдана",
+    "personalSetBadge": "Хувийн багц",
+    "promoteButton": "Дэвшүүлэх",
+    "editSheetTitle": "Албан ёсны багц засах",
+    "titleFieldLabel": "Гарчиг",
+    "titleRequiredError": "Гарчиг оруулбал хадгалах боломжтой.",
+    "promoteSheetTitle": "Албан ёсны багц болгож дэвшүүлэх",
+    "promoteError": "Дэвшүүлж чадсангүй. Түр хүлээгээд дахин оролдоно уу.",
+    "promoteNoticeSuffix": " нь сонгосон улсын бүх хэрэглэгчийн тоглох боломжтой албан ёсны багц болно.",
+    "promoting": "Дэвшүүлж байна…",
+    "promoteSubmit": "Дэвшүүлэх",
+    "countryCommonOption": "Нийтлэг (бүх улс)",
+    "countrySpecificOption": "Улс тодорхойлох"
+  },
+  "adminUpload": {
+    "backLink": "← Удирдлага руу буцах",
+    "title": "Албан ёсны багц байршуулах",
+    "desc": "Улсыг тодорхойлбол тухайн улсын бүх хэрэглэгч энэ албан ёсны багцыг тоглох боломжтой болно.",
+    "loadingUser": "Хэрэглэгчийн мэдээллийг ачаалж байна…"
+  },
+  "header": {
+    "appName": "Strawberry Survival",
+    "mainNav": "Үндсэн цэс",
+    "sets": "Багц",
+    "ranking": "Чансаа",
+    "history": "Түүх",
+    "admin": "Удирдлага"
+  },
+  "tabbar": {
+    "home": "Нүүр",
+    "sets": "Багц",
+    "ranking": "Чансаа",
+    "history": "Түүх",
+    "nav": "Доод цэс"
+  },
+  "profileSheet": {
+    "title": "Профайл",
+    "nicknameLabel": "Хоч нэр",
+    "change": "Солих",
+    "countryLabel": "Улс",
+    "emailLabel": "Имэйл",
+    "loggingOut": "Гарч байна…",
+    "logout": "Гарах",
+    "nicknameSaveError": "Хоч нэрийг хадгалж чадсангүй. Дахин оролдоно уу.",
+    "countrySaveError": "Улсыг хадгалж чадсангүй. Дахин оролдоно уу.",
+    "language": "Хэл"
+  },
+  "pauseMenu": {
+    "pause": "Түр зогсоох",
+    "title": "Түр Зогсоолоо",
+    "resume": "Үргэлжлүүлэх",
+    "quit": "Гарах",
+    "quitHint": "Одоогийн оноо хадгалагдана"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " гэдэг нь ямар утгатай вэ?",
+    "inputHint_one": "※ {{count}} утга оруулна",
+    "inputHint_other": "※ {{count}} утга оруулна",
+    "answerPlaceholder": "Хариулт {{index}}",
+    "submit": "Илгээх",
+    "missed": "Олдоогүй утга: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} үг",
+    "wordCount_other": "{{count}} үг",
+    "learnProgress": "Сурсан {{learned}}/{{total}}",
+    "viewSet": "Багц харах",
+    "start": "Эхлэх",
+    "confirmDelete": "Устгах уу?",
+    "deleting": "Устгаж байна…",
+    "deleteConfirm": "Устгах",
+    "delete": "Устгах"
+  },
+  "directionSheet": {
+    "title": "Ямар чиглэлээр тоглох вэ?",
+    "startGame": "Тоглоом эхлэх",
+    "frontToBack": {
+      "title": "{{short}}-г хараад утгыг тааварлах",
+      "hint": "Үг → Утга"
+    },
+    "backToFront": {
+      "title": "Утгыг хараад {{short}}-г тааварлах",
+      "hint": "Утга → Үг"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,алим,I ate an apple.\nrun,гүйх;гүйлт хийх,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"алим\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"гүйх;гүйлт хийх\" }\n]",
+    "titleLabel": "Гарчиг",
+    "titlePlaceholder": "жишээ нь: 7-р ангийн үг хэллэг",
+    "countryLabel": "Улс",
+    "languageLabel": "Хэл",
+    "wordsInputLabel": "Үг оруулах",
+    "loadFromFile": "Файлаас ачаалах",
+    "confirmColumn": "Шалгах",
+    "normal": "Зөв",
+    "uploading": "Байршуулж байна…",
+    "upload": "Байршуулах",
+    "titleRequired": "Гарчиг оруулбал байршуулах боломжтой.",
+    "fixErrorsRequired": "Алдаатай бүх мөрийг засбал байршуулах боломжтой.",
+    "minOneWordRequired": "Дор хаяж 1 үг оруулбал байршуулах боломжтой.",
+    "uploadFailed": "Байршуулж чадсангүй. Түр хүлээгээд дахин оролдоно уу.",
+    "previewSummary_one": "Урьдчилан харах · Зөв {{count}} мөр",
+    "previewSummary_other": "Урьдчилан харах · Зөв {{count}} мөр",
+    "previewError_one": " · Алдаатай {{count}} мөр",
+    "previewError_other": " · Алдаатай {{count}} мөр",
+    "missingBoth": "front (үг) болон back (утга)-ыг бөглөвөл нэмэх боломжтой.",
+    "missingFront": "front (үг)-ийг бөглөвөл нэмэх боломжтой.",
+    "missingBack": "back (утга)-ыг бөглөвөл нэмэх боломжтой.",
+    "jsonSyntaxError": "JSON форматаа шалгана уу. (Синтакс алдаа)",
+    "jsonMustBeArray": "Хамгийн дээд түвшин массив байвал байршуулах боломжтой. жишээ нь: [{\"front\":\"apple\",\"back\":\"алим\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Энэ имэйл аль хэдийн бүртгэгдсэн байна. Нэвтэрнэ үү.",
+    "weakPassword": "Энэ нууц үг хэтэрхий энгийн байна. Дор хаяж 6 тэмдэгттэй өөр хослол ашиглана уу.",
+    "invalidCredentials": "Имэйл эсвэл нууц үг буруу байна. Дахин шалгана уу.",
+    "invalidEmail": "Имэйлийн форматаа дахин шалгана уу.",
+    "emailRateLimit": "Та имэйлийг хэт олон удаа хүссэн байна. Түр хүлээгээд дахин оролдоно уу.",
+    "requestRateLimit": "Хүсэлт хэт олон байна. Түр хүлээгээд дахин оролдоно уу.",
+    "signupDisabled": "Одоогоор шинэ бүртгэл авахгүй байна. Дараа дахин оролдоно уу.",
+    "genericError": "Холболт түр саатаж байна. Түр хүлээгээд дахин оролдоно уу."
+  },
+  "countrySelect": {
+    "placeholder": "Улсаа сонгоно уу",
+    "title": "Улс сонгох",
+    "searchPlaceholder": "Улс хайх...",
+    "empty": "Хайлтын үр дүн олдсонгүй. Өөр улс хайж үзэх үү?"
+  },
+  "languages": {
+    "en": {
+      "label": "Англи үг",
+      "short": "Англи"
+    },
+    "ja": {
+      "label": "Япон үг",
+      "short": "Япон"
+    },
+    "zh": {
+      "label": "Хятад үг",
+      "short": "Хятад"
+    },
+    "general": "Ерөнхий"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Сураагүй",
+      "learning": "Сурч байгаа",
+      "review_one": "{{count}} өдрийн дараа давтах",
+      "review_other": "{{count}} өдрийн дараа давтах"
+    }
+  },
+  "game": {
+    "instructions": "Хөдлөх: Сумны товч / Дэлгэц дарах (дүрд харьцангуй чиглэл)   ·   Зэвсэг автоматаар дайсныг гэтэлгэнэ",
+    "redeemed": "Гэтэлгэгдлээ",
+    "goldQuiz": "Алт олж авлаа! Асуулт",
+    "blessingGained": "Адис хүлээн авлаа",
+    "blessingsTitle": "Хүлээн авсан адис",
+    "blessingsEmpty": "Одоогоор адис хүлээж аваагүй байна",
+    "close": "Хаах",
+    "hudTime": "Хугацаа",
+    "hudRedeemed": "Гэтэлгэсэн",
+    "hudNextQuiz": "Дараагийн асуулт хүртэл",
+    "hudPierce": "Цоолол",
+    "hudQuiz": "Асуулт",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Олон сум",
+        "desc": "Сум +1"
+      },
+      "arrow_rate": {
+        "name": "Хурдан гар",
+        "desc": "Сум харвах хурд нэмэгдэнэ"
+      },
+      "arrow_pierce": {
+        "name": "Цоолол",
+        "desc": "Цооллын магадлал +10%"
+      }
+    }
+  }
+}

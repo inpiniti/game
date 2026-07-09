@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { supabase } from '../../shared/api/supabase'
 
 // 단계 3 임시 로비 — 첫 문제집으로 바로 플레이(퀴즈 브리지 검증용).
@@ -22,6 +23,7 @@ function useFirstSet() {
 }
 
 export function LobbyPage() {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const { data: set, isLoading } = useFirstSet()
 
@@ -37,8 +39,8 @@ export function LobbyPage() {
         padding: 24,
       }}
     >
-      <h1 style={{ fontSize: 40, margin: 0 }}>🍓 딸기 서바이벌</h1>
-      <p style={{ color: 'var(--muted)', margin: 0 }}>몬스터를 피하고 퀴즈를 맞혀 강해지세요</p>
+      <h1 style={{ fontSize: 40, margin: 0 }}>{t('common.gameTitle')}</h1>
+      <p style={{ color: 'var(--muted)', margin: 0 }}>{t('lobby.tagline')}</p>
 
       <button
         type="button"
@@ -55,11 +57,11 @@ export function LobbyPage() {
           cursor: set ? 'pointer' : 'default',
         }}
       >
-        {isLoading ? '불러오는 중…' : set ? `게임 시작 · ${set.title}` : '문제집이 없어요'}
+        {isLoading ? t('lobby.loading') : set ? `${t('common.startGame')} · ${set.title}` : t('lobby.noSets')}
       </button>
 
       <small style={{ color: 'var(--muted)' }}>
-        단계 3 임시 로비 · 문제집 선택/기록은 이후 단계에서
+        {t('lobby.footnote')}
       </small>
     </div>
   )

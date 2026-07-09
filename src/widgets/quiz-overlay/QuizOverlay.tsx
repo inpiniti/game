@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import type { QuizQuestion } from '../../features/play-quiz'
 import { gradeInput, normalize } from '../../shared/lib/answer'
 import styles from './QuizOverlay.module.css'
@@ -27,10 +28,11 @@ export function QuizOverlay({ question, onAnswer }: Props) {
 }
 
 function Prompt({ question }: { question: QuizQuestion }) {
+  const { t } = useTranslation()
   return (
     <p className={styles.prompt}>
       <b>{question.prompt}</b>
-      <span className={styles.hint}> 의 뜻은?</span>
+      <span className={styles.hint}>{t('quizOverlay.meaningSuffix')}</span>
     </p>
   )
 }
@@ -81,6 +83,7 @@ function ChoiceView({ question, onAnswer }: Props) {
 
 // 익은 단어(repetition≥2, 자동 승급): 직접입력. 복수 뜻이면 입력창 N개.
 function InputView({ question, onAnswer }: Props) {
+  const { t } = useTranslation()
   const n = Math.max(1, question.answers.length)
   const [values, setValues] = useState<string[]>(() => Array(n).fill(''))
   const [submitted, setSubmitted] = useState(false)
@@ -111,7 +114,7 @@ function InputView({ question, onAnswer }: Props) {
   return (
     <>
       <Prompt question={question} />
-      {n > 1 && <p className={styles.subhint}>※ 뜻 {n}개를 입력해요</p>}
+      {n > 1 && <p className={styles.subhint}>{t('quizOverlay.inputHint', { count: n })}</p>}
       <div className={styles.inputs}>
         {values.map((v, i) => (
           <div key={i} className={styles.inputRow}>
@@ -123,7 +126,7 @@ function InputView({ question, onAnswer }: Props) {
               value={v}
               disabled={submitted}
               autoFocus={i === 0}
-              placeholder={`답 ${i + 1}`}
+              placeholder={t('quizOverlay.answerPlaceholder', { index: i + 1 })}
               onChange={(e) =>
                 setValues((prev) => prev.map((x, j) => (j === i ? e.target.value : x)))
               }
@@ -139,11 +142,11 @@ function InputView({ question, onAnswer }: Props) {
       </div>
       {!submitted && (
         <button type="button" className={styles.submit} onClick={submit}>
-          제출
+          {t('quizOverlay.submit')}
         </button>
       )}
       {submitted && missed.length > 0 && (
-        <p className={styles.missed}>못 맞힌 뜻: {missed.join(', ')}</p>
+        <p className={styles.missed}>{t('quizOverlay.missed', { items: missed.join(', ') })}</p>
       )}
       {submitted && question.example && <p className={styles.example}>💬 {question.example}</p>}
     </>

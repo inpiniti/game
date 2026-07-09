@@ -1,0 +1,334 @@
+{
+  "common": {
+    "loading": "正在加载…",
+    "country": "国家",
+    "language": "语言",
+    "email": "邮箱",
+    "password": "密码",
+    "nickname": "昵称",
+    "scoreLabel": "分数",
+    "scoreValue": "{{value}}分",
+    "save": "保存",
+    "saving": "正在保存…",
+    "saveError": "保存失败，请稍后重试。",
+    "close": "关闭",
+    "edit": "编辑",
+    "delete": "删除",
+    "all": "全部",
+    "goBack": "返回",
+    "noAnswer": "（未作答）",
+    "allCorrectNotice": "😄 全部答对啦！没有答错的单词",
+    "noRecordsTitle": "还没有记录",
+    "gameTitle": "🍓 草莓生存",
+    "startGame": "开始游戏",
+    "quizSetLoadError": "单词本加载失败，请稍后重试。",
+    "loadingQuizSet": "正在加载单词本…",
+    "wordCount_other": "{{count}} 个单词",
+    "loginRequired": "需要先登录。"
+  },
+  "login": {
+    "tagline": "捕捉单词的生存游戏",
+    "submitting": "正在登录…",
+    "submit": "登录",
+    "noAccount": "还没有账号？",
+    "signupLink": "注册 →"
+  },
+  "signup": {
+    "title": "注册",
+    "passwordConfirmLabel": "确认密码",
+    "submitting": "正在注册…",
+    "submit": "注册",
+    "errorNicknameRequired": "请输入昵称。",
+    "errorPasswordTooShort": "密码请输入 {{minLength}} 位以上。",
+    "errorPasswordMismatch": "两次密码不一致，请重新确认。",
+    "errorAlreadyRegistered": "该邮箱已注册，请直接登录。"
+  },
+  "verifyEmail": {
+    "title": "请查收邮箱",
+    "sentDescSuffix": "，我们已发送验证邮件。",
+    "sentDescLine2": "点击邮件中的链接即可完成注册。",
+    "descNoEmail": "请输入注册时使用的邮箱，我们会重新发送验证邮件。",
+    "resentNotice": "已重新发送邮件，请查收邮箱。",
+    "resendCountdown": "重新发送邮件（{{seconds}}秒）",
+    "sending": "正在发送…",
+    "resend": "重新发送邮件",
+    "backToLogin": "← 返回登录"
+  },
+  "lobby": {
+    "tagline": "躲避怪物，答对题目变强吧",
+    "loading": "加载中…",
+    "noSets": "还没有单词本",
+    "footnote": "步骤 3 临时大厅 · 单词本选择/记录将在后续步骤中提供"
+  },
+  "placeholder": {
+    "desc": "即将上线，敬请期待。"
+  },
+  "result": {
+    "title": "游戏结束",
+    "killsLabel": "击败",
+    "killsValue": "{{kills}} 只",
+    "quizLabel": "测验",
+    "savedNotice": "✔ 记录已保存 · 下次再见",
+    "wrongTitle": "答错的单词",
+    "toLobby": "返回大厅",
+    "retry": "重新开始",
+    "moreSuffix": " 等",
+    "answer": "正确答案：{{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "分类",
+    "scopeOfficial": "官方",
+    "scopeMine": "我的单词本",
+    "uploadButton": "+ 上传",
+    "emptyTitle": "还没有单词本",
+    "emptyDescMine": "点击 + 上传，创建你的第一个单词本吧",
+    "emptyDescOther": "试试看其他语言或分类标签吧",
+    "uploadSheetTitle": "上传单词本"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← 返回",
+    "notFound": "找不到该单词本。",
+    "backToList": "返回单词本列表",
+    "learnedProgress": "学习 {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ 常错单词",
+    "wrongCount_other": "答错 {{count}} 次",
+    "allWordsTitle": "全部单词",
+    "emptyItems": "还没有添加单词。",
+    "headerWord": "单词",
+    "headerMeaning": "意思",
+    "headerStatus": "状态",
+    "frontPlaceholder": "单词（front）",
+    "backPlaceholder": "意思（back）· 用 ';' 分隔多个意思",
+    "examplePlaceholder": "例句（选填）",
+    "removeItemAria": "删除该单词",
+    "addItemButton": "+ 添加单词",
+    "emptyFieldsError": "填写单词和意思后即可保存。"
+  },
+  "ranking": {
+    "title": "排行榜",
+    "tabsAriaLabel": "排行榜类型",
+    "tabBySet": "按单词本",
+    "tabOverall": "总排行",
+    "tabByCountry": "国家对抗",
+    "scopeLabel": "范围",
+    "scopeMine": "我的国家",
+    "myRankLabel": "我的排名",
+    "myRankEmpty": "还没有上榜",
+    "loadError": "排行榜加载失败，请稍后重试。",
+    "byCountryEmptyDesc": "游玩官方单词本即可累积国家排名",
+    "bySetEmptyDesc": "游玩这个单词本即可上榜",
+    "overallEmptyDesc": "游玩官方单词本即可上榜",
+    "noOfficialSetsTitle": "还没有官方单词本",
+    "noOfficialSetsDesc": "官方单词本上线后即可在这里查看排名",
+    "headerRank": "排名",
+    "headerAvgScore": "平均分",
+    "headerParticipants": "参与人数",
+    "headerSetsPlayed": "参与单词本",
+    "playersCount_other": "{{count}} 人",
+    "playersJoined_other": "{{count}} 人参与",
+    "setsPlayedCount_other": "{{count}} 本",
+    "setsPlayedJoined_other": "{{count}} 本参与",
+    "selectAriaLabel": "选择单词本",
+    "myRankByCountry": "我的国家 {{country}} 第 {{rank}} 名 · {{score}} 分",
+    "myRankGeneric": "第 {{rank}} 名 · {{score}} 分"
+  },
+  "history": {
+    "title": "记录",
+    "loadError": "记录加载失败，请稍后重试。",
+    "emptyDesc": "游玩单词本后记录会显示在这里",
+    "headerDate": "日期",
+    "headerSet": "单词本",
+    "headerCorrect": "正确",
+    "headerAccuracy": "正确率",
+    "deletedSet": "已删除的单词本",
+    "deletedWord": "已删除的单词",
+    "cardAccuracyLine": "正确 {{correct}}/{{total}}（{{accuracy}}%）"
+  },
+  "adminSets": {
+    "title": "单词本管理",
+    "uploadLink": "+ 上传官方单词本",
+    "tabOfficial": "官方单词本",
+    "tabPromote": "个人单词本升级",
+    "loading": "正在加载…",
+    "loadError": "列表加载失败，请稍后重试。",
+    "countryCommon": "通用",
+    "emptyFilteredTitle": "没有符合条件的官方单词本",
+    "emptyFilteredDesc": "试试其他国家或语言筛选条件吧",
+    "deleting": "正在删除…",
+    "deleteConfirm": "删除",
+    "emptyPromoteTitle": "没有可升级的个人单词本",
+    "emptyPromoteDesc": "用户上传个人单词本后可在这里查看",
+    "personalSetBadge": "个人单词本",
+    "promoteButton": "升级",
+    "editSheetTitle": "编辑官方单词本",
+    "titleFieldLabel": "标题",
+    "titleRequiredError": "填写标题后即可保存。",
+    "promoteSheetTitle": "升级为官方单词本",
+    "promoteError": "升级失败，请稍后重试。",
+    "promoteNoticeSuffix": "将变为指定国家所有用户都可游玩的官方单词本。",
+    "promoting": "正在升级…",
+    "promoteSubmit": "升级",
+    "countryCommonOption": "通用（全部国家）",
+    "countrySpecificOption": "指定国家"
+  },
+  "adminUpload": {
+    "backLink": "← 返回管理",
+    "title": "上传官方单词本",
+    "desc": "指定国家后，该国的所有用户都能游玩这个官方单词本。",
+    "loadingUser": "正在加载用户信息…"
+  },
+  "header": {
+    "appName": "草莓生存",
+    "mainNav": "主菜单",
+    "sets": "单词本",
+    "ranking": "排行榜",
+    "history": "记录",
+    "admin": "管理"
+  },
+  "tabbar": {
+    "home": "首页",
+    "sets": "单词本",
+    "ranking": "排行榜",
+    "history": "记录",
+    "nav": "底部菜单"
+  },
+  "profileSheet": {
+    "title": "个人资料",
+    "nicknameLabel": "昵称",
+    "change": "修改",
+    "countryLabel": "国家",
+    "emailLabel": "邮箱",
+    "loggingOut": "正在退出登录…",
+    "logout": "退出登录",
+    "nicknameSaveError": "昵称保存失败，请重试。",
+    "countrySaveError": "国家保存失败，请重试。",
+    "language": "语言"
+  },
+  "pauseMenu": {
+    "pause": "暂停",
+    "title": "暂停",
+    "resume": "继续",
+    "quit": "结束游戏",
+    "quitHint": "将保存目前为止的分数"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " 是什么意思？",
+    "inputHint_other": "※ 请输入 {{count}} 个意思",
+    "answerPlaceholder": "答案 {{index}}",
+    "submit": "提交",
+    "missed": "未答对的意思：{{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_other": "{{count}} 个单词",
+    "learnProgress": "学习 {{learned}}/{{total}}",
+    "viewSet": "查看单词本",
+    "start": "开始",
+    "confirmDelete": "要删除吗？",
+    "deleting": "正在删除…",
+    "deleteConfirm": "删除",
+    "delete": "删除"
+  },
+  "directionSheet": {
+    "title": "选择练习方向",
+    "startGame": "开始游戏",
+    "frontToBack": {
+      "title": "看{{short}}猜意思",
+      "hint": "单词 → 意思"
+    },
+    "backToFront": {
+      "title": "看意思猜{{short}}",
+      "hint": "意思 → 单词"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,苹果,I ate an apple.\nrun,跑;奔跑,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"苹果\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"跑;奔跑\" }\n]",
+    "titleLabel": "标题",
+    "titlePlaceholder": "例：初一英语单词",
+    "countryLabel": "国家",
+    "languageLabel": "语言",
+    "wordsInputLabel": "输入单词",
+    "loadFromFile": "从文件导入",
+    "confirmColumn": "确认",
+    "normal": "正常",
+    "uploading": "正在上传…",
+    "upload": "上传",
+    "titleRequired": "填写标题后即可上传。",
+    "fixErrorsRequired": "修正所有有误的行后即可上传。",
+    "minOneWordRequired": "至少输入 1 个单词后即可上传。",
+    "uploadFailed": "上传失败，请稍后重试。",
+    "previewSummary_other": "预览 · 正常 {{count}} 行",
+    "previewError_other": " · 错误 {{count}} 行",
+    "missingBoth": "填写 front（单词）和 back（意思）后即可添加。",
+    "missingFront": "填写 front（单词）后即可添加。",
+    "missingBack": "填写 back（意思）后即可添加。",
+    "jsonSyntaxError": "请检查 JSON 格式。（语法错误）",
+    "jsonMustBeArray": "最上层需为数组才能上传。例：[{\"front\":\"apple\",\"back\":\"苹果\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "该邮箱已注册，请直接登录。",
+    "weakPassword": "密码过于简单，请输入 6 位以上且更复杂的组合。",
+    "invalidCredentials": "邮箱或密码不正确，请重新确认。",
+    "invalidEmail": "请重新确认邮箱格式。",
+    "emailRateLimit": "邮件请求过于频繁，请稍后重试。",
+    "requestRateLimit": "请求过多，请稍后重试。",
+    "signupDisabled": "目前暂不开放注册，请稍后再试。",
+    "genericError": "网络连接暂时不稳定，请稍后重试。"
+  },
+  "countrySelect": {
+    "placeholder": "请选择国家",
+    "title": "选择国家",
+    "searchPlaceholder": "搜索国家…",
+    "empty": "没有找到结果，试试其他国家吧？"
+  },
+  "languages": {
+    "en": {
+      "label": "英语单词",
+      "short": "英语"
+    },
+    "ja": {
+      "label": "日语单词",
+      "short": "日语"
+    },
+    "zh": {
+      "label": "中文单词",
+      "short": "中文"
+    },
+    "general": "通用"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "未学习",
+      "learning": "学习中",
+      "review_other": "{{count}} 天后复习"
+    }
+  },
+  "game": {
+    "instructions": "移动：方向键 / 点击屏幕（以角色为基准的方向）　·　武器会自动救赎敌人",
+    "redeemed": "已救赎",
+    "goldQuiz": "获得金币！测验",
+    "blessingGained": "获得祝福",
+    "blessingsTitle": "获得的祝福",
+    "blessingsEmpty": "还没有获得祝福",
+    "close": "关闭",
+    "hudTime": "时间",
+    "hudRedeemed": "救赎",
+    "hudNextQuiz": "距下次测验",
+    "hudPierce": "穿透",
+    "hudQuiz": "测验",
+    "upgrades": {
+      "arrow_count": {
+        "name": "多重箭矢",
+        "desc": "箭矢数量 +1"
+      },
+      "arrow_rate": {
+        "name": "快速射击",
+        "desc": "提升箭矢发射速度"
+      },
+      "arrow_pierce": {
+        "name": "穿透",
+        "desc": "穿透概率 +10%"
+      }
+    }
+  }
+}

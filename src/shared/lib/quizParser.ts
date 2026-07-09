@@ -1,6 +1,8 @@
 // 문제집 업로드 파서 — CSV/JSON → front/back/example 행. 업로드 폼(features/upload-quiz-set)의
 // 미리보기 + 행 단위 오류 표시가 이 결과를 그대로 렌더링한다. ';' 복수 표기는 그대로 보존(파싱하지 않는다).
 
+import { i18n } from '../i18n'
+
 export interface ParsedQuizRow {
   /** 사람이 읽는 행 번호(1부터) — CSV는 헤더를 건너뛴 만큼 보정된다. */
   row: number
@@ -18,9 +20,9 @@ export interface ParseQuizResult {
 }
 
 function validate(front: string, back: string): string | null {
-  if (!front && !back) return 'front(단어)와 back(뜻)을 채우면 추가할 수 있어요.'
-  if (!front) return 'front(단어)를 채우면 추가할 수 있어요.'
-  if (!back) return 'back(뜻)을 채우면 추가할 수 있어요.'
+  if (!front && !back) return i18n.t('uploadForm.missingBoth')
+  if (!front) return i18n.t('uploadForm.missingFront')
+  if (!back) return i18n.t('uploadForm.missingBack')
   return null
 }
 
@@ -138,7 +140,7 @@ export function parseQuizJson(text: string): ParseQuizResult {
     data = JSON.parse(trimmed)
   } catch {
     return summarize([
-      { row: 1, front: '', back: '', example: null, error: 'JSON 형식을 확인해 주세요. (문법 오류)' },
+      { row: 1, front: '', back: '', example: null, error: i18n.t('uploadForm.jsonSyntaxError') },
     ])
   }
 
@@ -149,7 +151,7 @@ export function parseQuizJson(text: string): ParseQuizResult {
         front: '',
         back: '',
         example: null,
-        error: '최상위가 배열이면 업로드할 수 있어요. 예: [{"front":"apple","back":"사과"}]',
+        error: i18n.t('uploadForm.jsonMustBeArray'),
       },
     ])
   }

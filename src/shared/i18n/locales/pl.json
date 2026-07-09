@@ -1,0 +1,367 @@
+{
+  "common": {
+    "loading": "Ładowanie…",
+    "country": "Kraj",
+    "language": "Język",
+    "email": "E-mail",
+    "password": "Hasło",
+    "nickname": "Pseudonim",
+    "scoreLabel": "Wynik",
+    "scoreValue": "{{value}} pkt",
+    "save": "Zapisz",
+    "saving": "Zapisywanie…",
+    "saveError": "Nie udało się zapisać. Spróbuj ponownie za chwilę.",
+    "close": "Zamknij",
+    "edit": "Edytuj",
+    "delete": "Usuń",
+    "all": "Wszystkie",
+    "goBack": "Wróć",
+    "noAnswer": "(Brak odpowiedzi)",
+    "allCorrectNotice": "😄 Wszystko dobrze! Żadnych błędnych słów",
+    "noRecordsTitle": "Brak wyników",
+    "gameTitle": "🍓 Strawberry Survival",
+    "startGame": "Rozpocznij grę",
+    "quizSetLoadError": "Nie udało się wczytać zestawu słówek. Spróbuj ponownie za chwilę.",
+    "loadingQuizSet": "Wczytywanie zestawu słówek…",
+    "wordCount_one": "{{count}} słowo",
+    "wordCount_few": "{{count}} słowa",
+    "wordCount_many": "{{count}} słów",
+    "wordCount_other": "{{count}} słowa",
+    "loginRequired": "Zaloguj się, aby kontynuować."
+  },
+  "login": {
+    "tagline": "Przetrwaj, łapiąc słowa",
+    "submitting": "Logowanie…",
+    "submit": "Zaloguj się",
+    "noAccount": "Nie masz konta?",
+    "signupLink": "Zarejestruj się →"
+  },
+  "signup": {
+    "title": "Rejestracja",
+    "passwordConfirmLabel": "Potwierdź hasło",
+    "submitting": "Rejestrowanie…",
+    "submit": "Zarejestruj się",
+    "errorNicknameRequired": "Podaj pseudonim.",
+    "errorPasswordTooShort": "Hasło musi mieć co najmniej {{minLength}} znaków.",
+    "errorPasswordMismatch": "Hasła się nie zgadzają. Sprawdź jeszcze raz.",
+    "errorAlreadyRegistered": "Ten e-mail jest już zarejestrowany. Zaloguj się."
+  },
+  "verifyEmail": {
+    "title": "Sprawdź swoją skrzynkę",
+    "sentDescSuffix": " to adres, na który wysłaliśmy e-mail weryfikacyjny.",
+    "sentDescLine2": "Kliknij link w wiadomości, aby dokończyć rejestrację.",
+    "descNoEmail": "Podaj e-mail, którego użyto przy rejestracji, a wyślemy wiadomość weryfikacyjną ponownie.",
+    "resentNotice": "Wysłaliśmy wiadomość ponownie. Sprawdź swoją skrzynkę.",
+    "resendCountdown": "Wyślij ponownie ({{seconds}} s)",
+    "sending": "Wysyłanie…",
+    "resend": "Wyślij ponownie",
+    "backToLogin": "← Wróć do logowania"
+  },
+  "lobby": {
+    "tagline": "Unikaj potworów i odpowiadaj na quizy, aby stać się silniejszym",
+    "loading": "Ładowanie…",
+    "noSets": "Brak zestawów słówek",
+    "footnote": "Tymczasowe lobby (krok 3) · wybór zestawu/historia pojawią się w kolejnym kroku"
+  },
+  "placeholder": {
+    "desc": "Już wkrótce. Pracujemy nad tym."
+  },
+  "result": {
+    "title": "Koniec gry",
+    "killsLabel": "Pokonani",
+    "killsValue": "{{kills}} wrogów",
+    "quizLabel": "Quiz",
+    "savedNotice": "✔ Zapisano · Do zobaczenia następnym razem",
+    "wrongTitle": "Błędne słowa",
+    "toLobby": "Do lobby",
+    "retry": "Spróbuj ponownie",
+    "moreSuffix": " i inne",
+    "answer": "Odpowiedź: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Rodzaj",
+    "scopeOfficial": "Oficjalne",
+    "scopeMine": "Moje zestawy",
+    "uploadButton": "+ Prześlij",
+    "emptyTitle": "Brak zestawów słówek",
+    "emptyDescMine": "Naciśnij + Prześlij, aby stworzyć pierwszy zestaw",
+    "emptyDescOther": "Sprawdź inne zakładki języka lub rodzaju",
+    "uploadSheetTitle": "Prześlij zestaw słówek"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Wstecz",
+    "notFound": "Nie znaleziono tego zestawu słówek.",
+    "backToList": "Wróć do listy zestawów",
+    "learnedProgress": "Nauczono {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Często mylone słowa",
+    "wrongCount_one": "{{count}} błędna odpowiedź",
+    "wrongCount_few": "{{count}} błędne odpowiedzi",
+    "wrongCount_many": "{{count}} błędnych odpowiedzi",
+    "wrongCount_other": "{{count}} błędnej odpowiedzi",
+    "allWordsTitle": "Wszystkie słowa",
+    "emptyItems": "Nie dodano jeszcze żadnych słów.",
+    "headerWord": "Słowo",
+    "headerMeaning": "Znaczenie",
+    "headerStatus": "Status",
+    "frontPlaceholder": "Słowo (front)",
+    "backPlaceholder": "Znaczenie (back) · użyj ';' dla kilku znaczeń",
+    "examplePlaceholder": "Przykład (opcjonalnie)",
+    "removeItemAria": "Usuń to słowo",
+    "addItemButton": "+ Dodaj słowo",
+    "emptyFieldsError": "Uzupełnij słowo i znaczenie, aby zapisać."
+  },
+  "ranking": {
+    "title": "Ranking",
+    "tabsAriaLabel": "Rodzaj rankingu",
+    "tabBySet": "Wg zestawu",
+    "tabOverall": "Ogólny",
+    "tabByCountry": "Wg kraju",
+    "scopeLabel": "Zakres",
+    "scopeMine": "Mój kraj",
+    "myRankLabel": "Moja pozycja",
+    "myRankEmpty": "Jeszcze bez rankingu",
+    "loadError": "Nie udało się wczytać rankingu. Spróbuj ponownie za chwilę.",
+    "byCountryEmptyDesc": "Zagraj w oficjalne zestawy, aby budować ranking swojego kraju",
+    "bySetEmptyDesc": "Zagraj w ten zestaw, aby pojawić się w rankingu",
+    "overallEmptyDesc": "Zagraj w oficjalne zestawy, aby pojawić się w rankingu",
+    "noOfficialSetsTitle": "Brak oficjalnych zestawów",
+    "noOfficialSetsDesc": "Gdy pojawią się oficjalne zestawy, zobaczysz tu rankingi",
+    "headerRank": "Pozycja",
+    "headerAvgScore": "Śr. wynik",
+    "headerParticipants": "Uczestnicy",
+    "headerSetsPlayed": "Rozegrane zestawy",
+    "playersCount_one": "{{count}} gracz",
+    "playersCount_few": "{{count}} graczy",
+    "playersCount_many": "{{count}} graczy",
+    "playersCount_other": "{{count}} gracza",
+    "playersJoined_one": "{{count}} gracz dołączył",
+    "playersJoined_few": "{{count}} graczy dołączyło",
+    "playersJoined_many": "{{count}} graczy dołączyło",
+    "playersJoined_other": "{{count}} gracza dołączyło",
+    "setsPlayedCount_one": "{{count}} zestaw",
+    "setsPlayedCount_few": "{{count}} zestawy",
+    "setsPlayedCount_many": "{{count}} zestawów",
+    "setsPlayedCount_other": "{{count}} zestawu",
+    "setsPlayedJoined_one": "{{count}} rozegrany zestaw",
+    "setsPlayedJoined_few": "{{count}} rozegrane zestawy",
+    "setsPlayedJoined_many": "{{count}} rozegranych zestawów",
+    "setsPlayedJoined_other": "{{count}} rozegranego zestawu",
+    "selectAriaLabel": "Wybierz zestaw słówek",
+    "myRankByCountry": "Twój kraj {{country}} #{{rank}} · {{score}} pkt",
+    "myRankGeneric": "#{{rank}} · {{score}} pkt"
+  },
+  "history": {
+    "title": "Historia",
+    "loadError": "Nie udało się wczytać historii. Spróbuj ponownie za chwilę.",
+    "emptyDesc": "Zagraj w zestaw słówek, a pojawi się tutaj",
+    "headerDate": "Data",
+    "headerSet": "Zestaw",
+    "headerCorrect": "Poprawne",
+    "headerAccuracy": "Skuteczność",
+    "deletedSet": "Usunięty zestaw",
+    "deletedWord": "Usunięte słowo",
+    "cardAccuracyLine": "Poprawne {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "Zarządzanie zestawami",
+    "uploadLink": "+ Prześlij oficjalny zestaw",
+    "tabOfficial": "Oficjalne zestawy",
+    "tabPromote": "Awansuj zestawy osobiste",
+    "loading": "Ładowanie…",
+    "loadError": "Nie udało się wczytać listy. Spróbuj ponownie za chwilę.",
+    "countryCommon": "Wspólne",
+    "emptyFilteredTitle": "Żaden oficjalny zestaw nie pasuje do filtra",
+    "emptyFilteredDesc": "Spróbuj innego filtra kraju lub języka",
+    "deleting": "Usuwanie…",
+    "deleteConfirm": "Usuń",
+    "emptyPromoteTitle": "Brak zestawów osobistych do awansu",
+    "emptyPromoteDesc": "Gdy użytkownicy prześlą zestawy osobiste, zobaczysz je tutaj",
+    "personalSetBadge": "Zestaw osobisty",
+    "promoteButton": "Awansuj",
+    "editSheetTitle": "Edytuj oficjalny zestaw",
+    "titleFieldLabel": "Tytuł",
+    "titleRequiredError": "Podaj tytuł, aby zapisać.",
+    "promoteSheetTitle": "Awansuj do oficjalnego zestawu",
+    "promoteError": "Nie udało się awansować. Spróbuj ponownie za chwilę.",
+    "promoteNoticeSuffix": " stanie się oficjalnym zestawem, w który będą mogli grać wszyscy użytkownicy z wybranego kraju.",
+    "promoting": "Awansowanie…",
+    "promoteSubmit": "Awansuj",
+    "countryCommonOption": "Wspólne (wszystkie kraje)",
+    "countrySpecificOption": "Konkretny kraj"
+  },
+  "adminUpload": {
+    "backLink": "← Wróć do panelu administratora",
+    "title": "Prześlij oficjalny zestaw",
+    "desc": "Wskaż kraj, aby ten zestaw stał się oficjalnym zestawem, w który mogą grać wszyscy użytkownicy z tego kraju.",
+    "loadingUser": "Wczytywanie danych użytkownika…"
+  },
+  "header": {
+    "appName": "Strawberry Survival",
+    "mainNav": "Menu główne",
+    "sets": "Zestawy",
+    "ranking": "Ranking",
+    "history": "Historia",
+    "admin": "Administracja"
+  },
+  "tabbar": {
+    "home": "Start",
+    "sets": "Zestawy",
+    "ranking": "Ranking",
+    "history": "Historia",
+    "nav": "Menu dolne"
+  },
+  "profileSheet": {
+    "title": "Profil",
+    "nicknameLabel": "Pseudonim",
+    "change": "Zmień",
+    "countryLabel": "Kraj",
+    "emailLabel": "E-mail",
+    "loggingOut": "Wylogowywanie…",
+    "logout": "Wyloguj się",
+    "nicknameSaveError": "Nie udało się zapisać pseudonimu. Spróbuj ponownie.",
+    "countrySaveError": "Nie udało się zapisać kraju. Spróbuj ponownie.",
+    "language": "Język"
+  },
+  "pauseMenu": {
+    "pause": "Pauza",
+    "title": "Wstrzymano",
+    "resume": "Wznów",
+    "quit": "Zakończ",
+    "quitHint": "Twój aktualny wynik zostanie zapisany"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " — jakie to znaczenie?",
+    "inputHint_one": "※ Wpisz {{count}} znaczenie",
+    "inputHint_few": "※ Wpisz {{count}} znaczenia",
+    "inputHint_many": "※ Wpisz {{count}} znaczeń",
+    "inputHint_other": "※ Wpisz {{count}} znaczenia",
+    "answerPlaceholder": "Odpowiedź {{index}}",
+    "submit": "Wyślij",
+    "missed": "Pominięte znaczenia: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} słowo",
+    "wordCount_few": "{{count}} słowa",
+    "wordCount_many": "{{count}} słów",
+    "wordCount_other": "{{count}} słowa",
+    "learnProgress": "Nauczono {{learned}}/{{total}}",
+    "viewSet": "Zobacz zestaw",
+    "start": "Start",
+    "confirmDelete": "Usunąć to?",
+    "deleting": "Usuwanie…",
+    "deleteConfirm": "Usuń",
+    "delete": "Usuń"
+  },
+  "directionSheet": {
+    "title": "W którą stronę?",
+    "startGame": "Rozpocznij grę",
+    "frontToBack": {
+      "title": "Zobacz {{short}}, odgadnij znaczenie",
+      "hint": "Słowo → Znaczenie"
+    },
+    "backToFront": {
+      "title": "Zobacz znaczenie, odgadnij {{short}}",
+      "hint": "Znaczenie → Słowo"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,okrągły czerwony owoc,I ate an apple.\nrun,biegać;biegać truchtem,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"okrągły czerwony owoc\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"biegać;biegać truchtem\" }\n]",
+    "titleLabel": "Tytuł",
+    "titlePlaceholder": "np. Słówka klasa 7",
+    "countryLabel": "Kraj",
+    "languageLabel": "Język",
+    "wordsInputLabel": "Wpisz słowa",
+    "loadFromFile": "Wczytaj z pliku",
+    "confirmColumn": "Sprawdź",
+    "normal": "Poprawny",
+    "uploading": "Przesyłanie…",
+    "upload": "Prześlij",
+    "titleRequired": "Podaj tytuł, aby przesłać.",
+    "fixErrorsRequired": "Popraw wszystkie błędne wiersze, aby przesłać.",
+    "minOneWordRequired": "Wpisz co najmniej 1 słowo, aby przesłać.",
+    "uploadFailed": "Nie udało się przesłać. Spróbuj ponownie za chwilę.",
+    "previewSummary_one": "Podgląd · {{count}} poprawny wiersz",
+    "previewSummary_few": "Podgląd · {{count}} poprawne wiersze",
+    "previewSummary_many": "Podgląd · {{count}} poprawnych wierszy",
+    "previewSummary_other": "Podgląd · {{count}} poprawnego wiersza",
+    "previewError_one": " · {{count}} błędny wiersz",
+    "previewError_few": " · {{count}} błędne wiersze",
+    "previewError_many": " · {{count}} błędnych wierszy",
+    "previewError_other": " · {{count}} błędnego wiersza",
+    "missingBoth": "Uzupełnij front (słowo) i back (znaczenie), aby dodać.",
+    "missingFront": "Uzupełnij front (słowo), aby dodać.",
+    "missingBack": "Uzupełnij back (znaczenie), aby dodać.",
+    "jsonSyntaxError": "Sprawdź format JSON. (Błąd składni)",
+    "jsonMustBeArray": "Najwyższy poziom musi być tablicą, aby przesłać. Np.: [{\"front\":\"apple\",\"back\":\"okrągły czerwony owoc\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Ten e-mail jest już zarejestrowany. Zaloguj się.",
+    "weakPassword": "To hasło jest zbyt proste. Użyj co najmniej 6 znaków w innej kombinacji.",
+    "invalidCredentials": "Nieprawidłowy e-mail lub hasło. Sprawdź jeszcze raz.",
+    "invalidEmail": "Sprawdź format swojego adresu e-mail.",
+    "emailRateLimit": "Zbyt często prosisz o wiadomości. Spróbuj ponownie za chwilę.",
+    "requestRateLimit": "Zbyt wiele żądań. Spróbuj ponownie za chwilę.",
+    "signupDisabled": "Rejestracja jest teraz niedostępna. Spróbuj ponownie później.",
+    "genericError": "Mamy chwilowe problemy z połączeniem. Spróbuj ponownie za chwilę."
+  },
+  "countrySelect": {
+    "placeholder": "Wybierz kraj",
+    "title": "Wybierz kraj",
+    "searchPlaceholder": "Szukaj kraju...",
+    "empty": "Brak wyników. Spróbuj wyszukać inny kraj?"
+  },
+  "languages": {
+    "en": {
+      "label": "Słówka angielskie",
+      "short": "Angielski"
+    },
+    "ja": {
+      "label": "Słówka japońskie",
+      "short": "Japoński"
+    },
+    "zh": {
+      "label": "Słówka chińskie",
+      "short": "Chiński"
+    },
+    "general": "Ogólne"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Nienauczone",
+      "learning": "W trakcie nauki",
+      "review_one": "Powtórka za {{count}} dzień",
+      "review_few": "Powtórka za {{count}} dni",
+      "review_many": "Powtórka za {{count}} dni",
+      "review_other": "Powtórka za {{count}} dnia"
+    }
+  },
+  "game": {
+    "instructions": "Ruch: strzałki / dotknij ekranu (kierunek względem postaci)   ·   Twoja broń automatycznie odkupuje wrogów",
+    "redeemed": "Odkupiony",
+    "goldQuiz": "Zdobyto złoto! Quiz",
+    "blessingGained": "Zdobyto błogosławieństwo",
+    "blessingsTitle": "Zdobyte błogosławieństwa",
+    "blessingsEmpty": "Brak zdobytych błogosławieństw",
+    "close": "Zamknij",
+    "hudTime": "Czas",
+    "hudRedeemed": "Odkupieni",
+    "hudNextQuiz": "Następny quiz",
+    "hudPierce": "Przebicie",
+    "hudQuiz": "Quiz",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Wielostrzał",
+        "desc": "+1 strzała"
+      },
+      "arrow_rate": {
+        "name": "Szybkie dłonie",
+        "desc": "Zwiększa szybkostrzelność"
+      },
+      "arrow_pierce": {
+        "name": "Przebicie",
+        "desc": "+10% szansy na przebicie"
+      }
+    }
+  }
+}

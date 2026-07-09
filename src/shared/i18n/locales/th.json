@@ -1,0 +1,334 @@
+{
+  "common": {
+    "loading": "กำลังโหลดอยู่…",
+    "country": "ประเทศ",
+    "language": "ภาษา",
+    "email": "อีเมล",
+    "password": "รหัสผ่าน",
+    "nickname": "ชื่อเล่น",
+    "scoreLabel": "คะแนน",
+    "scoreValue": "{{value}} คะแนน",
+    "save": "บันทึก",
+    "saving": "กำลังบันทึกอยู่…",
+    "saveError": "บันทึกไม่สำเร็จ กรุณาลองใหม่อีกครั้งในภายหลัง",
+    "close": "ปิด",
+    "edit": "แก้ไข",
+    "delete": "ลบ",
+    "all": "ทั้งหมด",
+    "goBack": "ย้อนกลับ",
+    "noAnswer": "(ไม่ได้ตอบ)",
+    "allCorrectNotice": "😄 ถูกหมดเลย! ไม่มีคำที่ตอบผิด",
+    "noRecordsTitle": "ยังไม่มีประวัติ",
+    "gameTitle": "🍓 Strawberry Survival",
+    "startGame": "เริ่มเกม",
+    "quizSetLoadError": "โหลดชุดคำศัพท์ไม่สำเร็จ กรุณาลองใหม่อีกครั้งในภายหลัง",
+    "loadingQuizSet": "กำลังโหลดชุดคำศัพท์อยู่…",
+    "wordCount_other": "คำศัพท์ {{count}} คำ",
+    "loginRequired": "กรุณาเข้าสู่ระบบ"
+  },
+  "login": {
+    "tagline": "เอาชีวิตรอดด้วยการจับคำศัพท์",
+    "submitting": "กำลังเข้าสู่ระบบอยู่…",
+    "submit": "เข้าสู่ระบบ",
+    "noAccount": "ยังไม่มีบัญชี?",
+    "signupLink": "สมัครสมาชิก →"
+  },
+  "signup": {
+    "title": "สมัครสมาชิก",
+    "passwordConfirmLabel": "ยืนยันรหัสผ่าน",
+    "submitting": "กำลังสมัครสมาชิกอยู่…",
+    "submit": "สมัครสมาชิก",
+    "errorNicknameRequired": "กรุณากรอกชื่อเล่น",
+    "errorPasswordTooShort": "กรุณากรอกรหัสผ่านอย่างน้อย {{minLength}} ตัวอักษร",
+    "errorPasswordMismatch": "รหัสผ่านไม่ตรงกัน กรุณาตรวจสอบอีกครั้ง",
+    "errorAlreadyRegistered": "อีเมลนี้ถูกสมัครไว้แล้ว กรุณาเข้าสู่ระบบ"
+  },
+  "verifyEmail": {
+    "title": "กรุณาตรวจสอบกล่องข้อความ",
+    "sentDescSuffix": " คือที่อยู่ที่เราส่งอีเมลยืนยันไปให้",
+    "sentDescLine2": "กดลิงก์ในอีเมลเพื่อดำเนินการสมัครให้เสร็จสมบูรณ์",
+    "descNoEmail": "กรอกอีเมลที่ใช้สมัครเพื่อรับอีเมลยืนยันอีกครั้ง",
+    "resentNotice": "ส่งอีเมลอีกครั้งแล้ว กรุณาตรวจสอบกล่องข้อความ",
+    "resendCountdown": "ส่งอีเมลอีกครั้ง ({{seconds}}วินาที)",
+    "sending": "กำลังส่งอยู่…",
+    "resend": "ส่งอีเมลอีกครั้ง",
+    "backToLogin": "← กลับไปเข้าสู่ระบบ"
+  },
+  "lobby": {
+    "tagline": "หลบมอนสเตอร์และตอบคำถามเพื่อแข็งแกร่งขึ้น",
+    "loading": "กำลังโหลด…",
+    "noSets": "ไม่มีชุดคำศัพท์",
+    "footnote": "ล็อบบี้ชั่วคราวขั้นตอนที่ 3 · การเลือกชุดคำศัพท์/ประวัติจะมาในขั้นตอนถัดไป"
+  },
+  "placeholder": {
+    "desc": "เร็วๆ นี้ กำลังเตรียมอยู่"
+  },
+  "result": {
+    "title": "จบเกม",
+    "killsLabel": "กำจัด",
+    "killsValue": "{{kills}} ตัว",
+    "quizLabel": "คำถาม",
+    "savedNotice": "✔ บันทึกผลแล้ว · แล้วเจอกันใหม่",
+    "wrongTitle": "คำที่ตอบผิด",
+    "toLobby": "กลับล็อบบี้",
+    "retry": "เล่นอีกครั้ง",
+    "moreSuffix": " และอื่นๆ",
+    "answer": "เฉลย: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "ประเภท",
+    "scopeOfficial": "ทางการ",
+    "scopeMine": "ชุดของฉัน",
+    "uploadButton": "+ อัปโหลด",
+    "emptyTitle": "ยังไม่มีชุดคำศัพท์",
+    "emptyDescMine": "กด + อัปโหลดเพื่อสร้างชุดคำศัพท์แรกของคุณ",
+    "emptyDescOther": "ลองดูภาษาหรือประเภทอื่น",
+    "uploadSheetTitle": "อัปโหลดชุดคำศัพท์"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← ย้อนกลับ",
+    "notFound": "ไม่พบชุดคำศัพท์นี้",
+    "backToList": "กลับไปที่รายการชุดคำศัพท์",
+    "learnedProgress": "เรียนแล้ว {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ คำที่มักตอบผิดบ่อย",
+    "wrongCount_other": "ตอบผิด {{count}} ครั้ง",
+    "allWordsTitle": "คำศัพท์ทั้งหมด",
+    "emptyItems": "ยังไม่มีคำศัพท์ที่เพิ่มไว้",
+    "headerWord": "คำศัพท์",
+    "headerMeaning": "ความหมาย",
+    "headerStatus": "สถานะ",
+    "frontPlaceholder": "คำศัพท์ (front)",
+    "backPlaceholder": "ความหมาย (back) · ใช้ ';' คั่นหลายความหมาย",
+    "examplePlaceholder": "ตัวอย่างประโยค (ไม่บังคับ)",
+    "removeItemAria": "ลบคำศัพท์นี้",
+    "addItemButton": "+ เพิ่มคำศัพท์",
+    "emptyFieldsError": "กรอกคำศัพท์และความหมายให้ครบเพื่อบันทึก"
+  },
+  "ranking": {
+    "title": "อันดับ",
+    "tabsAriaLabel": "ประเภทอันดับ",
+    "tabBySet": "ตามชุดคำศัพท์",
+    "tabOverall": "โดยรวม",
+    "tabByCountry": "แข่งขันระหว่างประเทศ",
+    "scopeLabel": "ขอบเขต",
+    "scopeMine": "ประเทศของฉัน",
+    "myRankLabel": "อันดับของฉัน",
+    "myRankEmpty": "ยังไม่ติดอันดับ",
+    "loadError": "โหลดอันดับไม่สำเร็จ กรุณาลองใหม่อีกครั้งในภายหลัง",
+    "byCountryEmptyDesc": "เล่นชุดคำศัพท์ทางการเพื่อสะสมอันดับของประเทศ",
+    "bySetEmptyDesc": "เล่นชุดคำศัพท์นี้เพื่อขึ้นอันดับ",
+    "overallEmptyDesc": "เล่นชุดคำศัพท์ทางการเพื่อขึ้นอันดับ",
+    "noOfficialSetsTitle": "ยังไม่มีชุดคำศัพท์ทางการ",
+    "noOfficialSetsDesc": "เมื่อมีชุดคำศัพท์ทางการ คุณจะเห็นอันดับที่นี่",
+    "headerRank": "อันดับ",
+    "headerAvgScore": "คะแนนเฉลี่ย",
+    "headerParticipants": "ผู้เข้าร่วม",
+    "headerSetsPlayed": "ชุดที่เล่น",
+    "playersCount_other": "{{count}} คน",
+    "playersJoined_other": "{{count}} คนเข้าร่วม",
+    "setsPlayedCount_other": "{{count}} ชุด",
+    "setsPlayedJoined_other": "{{count}} ชุดที่เล่น",
+    "selectAriaLabel": "เลือกชุดคำศัพท์",
+    "myRankByCountry": "ประเทศของฉัน {{country}} อันดับ {{rank}} · {{score}} คะแนน",
+    "myRankGeneric": "อันดับ {{rank}} · {{score}} คะแนน"
+  },
+  "history": {
+    "title": "ประวัติ",
+    "loadError": "โหลดประวัติไม่สำเร็จ กรุณาลองใหม่อีกครั้งในภายหลัง",
+    "emptyDesc": "เล่นชุดคำศัพท์แล้วจะปรากฏที่นี่",
+    "headerDate": "วันที่",
+    "headerSet": "ชุดคำศัพท์",
+    "headerCorrect": "ถูก",
+    "headerAccuracy": "ความแม่นยำ",
+    "deletedSet": "ชุดคำศัพท์ที่ถูกลบ",
+    "deletedWord": "คำศัพท์ที่ถูกลบ",
+    "cardAccuracyLine": "ถูก {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "จัดการชุดคำศัพท์",
+    "uploadLink": "+ อัปโหลดชุดคำศัพท์ทางการ",
+    "tabOfficial": "ชุดคำศัพท์ทางการ",
+    "tabPromote": "เลื่อนขั้นชุดคำศัพท์ส่วนตัว",
+    "loading": "กำลังโหลดอยู่…",
+    "loadError": "โหลดรายการไม่สำเร็จ กรุณาลองใหม่อีกครั้งในภายหลัง",
+    "countryCommon": "ทั่วไป",
+    "emptyFilteredTitle": "ไม่มีชุดคำศัพท์ทางการที่ตรงเงื่อนไข",
+    "emptyFilteredDesc": "ลองเปลี่ยนตัวกรองประเทศหรือภาษาดู",
+    "deleting": "กำลังลบอยู่…",
+    "deleteConfirm": "ลบ",
+    "emptyPromoteTitle": "ไม่มีชุดคำศัพท์ส่วนตัวให้เลื่อนขั้น",
+    "emptyPromoteDesc": "เมื่อผู้ใช้อัปโหลดชุดคำศัพท์ส่วนตัว คุณจะเห็นที่นี่",
+    "personalSetBadge": "ชุดคำศัพท์ส่วนตัว",
+    "promoteButton": "เลื่อนขั้น",
+    "editSheetTitle": "แก้ไขชุดคำศัพท์ทางการ",
+    "titleFieldLabel": "ชื่อเรื่อง",
+    "titleRequiredError": "กรอกชื่อเรื่องเพื่อบันทึก",
+    "promoteSheetTitle": "เลื่อนขั้นเป็นชุดคำศัพท์ทางการ",
+    "promoteError": "เลื่อนขั้นไม่สำเร็จ กรุณาลองใหม่อีกครั้งในภายหลัง",
+    "promoteNoticeSuffix": " จะกลายเป็นชุดคำศัพท์ทางการที่ผู้ใช้ทุกคนในประเทศที่กำหนดสามารถเล่นได้",
+    "promoting": "กำลังเลื่อนขั้นอยู่…",
+    "promoteSubmit": "เลื่อนขั้น",
+    "countryCommonOption": "ทั่วไป (ทุกประเทศ)",
+    "countrySpecificOption": "กำหนดประเทศ"
+  },
+  "adminUpload": {
+    "backLink": "← กลับไปหน้าจัดการ",
+    "title": "อัปโหลดชุดคำศัพท์ทางการ",
+    "desc": "หากกำหนดประเทศ ผู้ใช้ทุกคนในประเทศนั้นจะเล่นชุดคำศัพท์ทางการนี้ได้",
+    "loadingUser": "กำลังโหลดข้อมูลผู้ใช้อยู่…"
+  },
+  "header": {
+    "appName": "Strawberry Survival",
+    "mainNav": "เมนูหลัก",
+    "sets": "ชุดคำศัพท์",
+    "ranking": "อันดับ",
+    "history": "ประวัติ",
+    "admin": "จัดการ"
+  },
+  "tabbar": {
+    "home": "หน้าแรก",
+    "sets": "ชุดคำศัพท์",
+    "ranking": "อันดับ",
+    "history": "ประวัติ",
+    "nav": "เมนูด้านล่าง"
+  },
+  "profileSheet": {
+    "title": "โปรไฟล์",
+    "nicknameLabel": "ชื่อเล่น",
+    "change": "เปลี่ยน",
+    "countryLabel": "ประเทศ",
+    "emailLabel": "อีเมล",
+    "loggingOut": "กำลังออกจากระบบอยู่…",
+    "logout": "ออกจากระบบ",
+    "nicknameSaveError": "บันทึกชื่อเล่นไม่สำเร็จ กรุณาลองใหม่อีกครั้ง",
+    "countrySaveError": "บันทึกประเทศไม่สำเร็จ กรุณาลองใหม่อีกครั้ง",
+    "language": "ภาษา"
+  },
+  "pauseMenu": {
+    "pause": "หยุดชั่วคราว",
+    "title": "หยุดชั่วคราว",
+    "resume": "เล่นต่อ",
+    "quit": "เลิกเล่น",
+    "quitHint": "คะแนนถึงตอนนี้จะถูกบันทึกไว้"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " แปลว่าอะไร?",
+    "inputHint_other": "※ กรอกความหมาย {{count}} ข้อ",
+    "answerPlaceholder": "คำตอบ {{index}}",
+    "submit": "ส่งคำตอบ",
+    "missed": "ความหมายที่ตอบผิด: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_other": "คำศัพท์ {{count}} คำ",
+    "learnProgress": "เรียนแล้ว {{learned}}/{{total}}",
+    "viewSet": "ดูชุดคำศัพท์",
+    "start": "เริ่ม",
+    "confirmDelete": "ลบเลยไหม?",
+    "deleting": "กำลังลบอยู่…",
+    "deleteConfirm": "ลบ",
+    "delete": "ลบ"
+  },
+  "directionSheet": {
+    "title": "จะเล่นทิศทางไหน?",
+    "startGame": "เริ่มเกม",
+    "frontToBack": {
+      "title": "ดู{{short}}แล้วทายความหมาย",
+      "hint": "คำศัพท์ → ความหมาย"
+    },
+    "backToFront": {
+      "title": "ดูความหมายแล้วทาย{{short}}",
+      "hint": "ความหมาย → คำศัพท์"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,แอปเปิล,I ate an apple.\nrun,วิ่ง;ออกวิ่ง,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"แอปเปิล\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"วิ่ง;ออกวิ่ง\" }\n]",
+    "titleLabel": "ชื่อเรื่อง",
+    "titlePlaceholder": "เช่น: คำศัพท์ ม.1",
+    "countryLabel": "ประเทศ",
+    "languageLabel": "ภาษา",
+    "wordsInputLabel": "กรอกคำศัพท์",
+    "loadFromFile": "โหลดจากไฟล์",
+    "confirmColumn": "ตรวจสอบ",
+    "normal": "ปกติ",
+    "uploading": "กำลังอัปโหลดอยู่…",
+    "upload": "อัปโหลด",
+    "titleRequired": "กรอกชื่อเรื่องเพื่ออัปโหลด",
+    "fixErrorsRequired": "แก้ไขทุกแถวที่มีข้อผิดพลาดเพื่ออัปโหลด",
+    "minOneWordRequired": "กรอกคำศัพท์อย่างน้อย 1 คำเพื่ออัปโหลด",
+    "uploadFailed": "อัปโหลดไม่สำเร็จ กรุณาลองใหม่อีกครั้งในภายหลัง",
+    "previewSummary_other": "ตัวอย่าง · ปกติ {{count}} แถว",
+    "previewError_other": " · ผิดพลาด {{count}} แถว",
+    "missingBoth": "กรอก front (คำศัพท์) และ back (ความหมาย) เพื่อเพิ่ม",
+    "missingFront": "กรอก front (คำศัพท์) เพื่อเพิ่ม",
+    "missingBack": "กรอก back (ความหมาย) เพื่อเพิ่ม",
+    "jsonSyntaxError": "กรุณาตรวจสอบรูปแบบ JSON (ข้อผิดพลาดด้านไวยากรณ์)",
+    "jsonMustBeArray": "ระดับบนสุดต้องเป็นอาร์เรย์เพื่ออัปโหลด เช่น [{\"front\":\"apple\",\"back\":\"แอปเปิล\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "อีเมลนี้ถูกสมัครไว้แล้ว กรุณาเข้าสู่ระบบ",
+    "weakPassword": "รหัสผ่านนี้ง่ายเกินไป กรุณาใช้อย่างน้อย 6 ตัวอักษรและผสมแบบอื่น",
+    "invalidCredentials": "อีเมลหรือรหัสผ่านไม่ถูกต้อง กรุณาตรวจสอบอีกครั้ง",
+    "invalidEmail": "กรุณาตรวจสอบรูปแบบอีเมลอีกครั้ง",
+    "emailRateLimit": "คุณขอรับอีเมลบ่อยเกินไป กรุณาลองใหม่อีกครั้งในภายหลัง",
+    "requestRateLimit": "มีการร้องขอมากเกินไป กรุณาลองใหม่อีกครั้งในภายหลัง",
+    "signupDisabled": "ขณะนี้ยังไม่เปิดรับสมัคร กรุณาลองใหม่ภายหลัง",
+    "genericError": "การเชื่อมต่อขัดข้องชั่วคราว กรุณาลองใหม่อีกครั้งในอีกสักครู่"
+  },
+  "countrySelect": {
+    "placeholder": "กรุณาเลือกประเทศ",
+    "title": "เลือกประเทศ",
+    "searchPlaceholder": "ค้นหาประเทศ...",
+    "empty": "ไม่พบผลการค้นหา ลองค้นหาประเทศอื่นดูไหม?"
+  },
+  "languages": {
+    "en": {
+      "label": "คำศัพท์ภาษาอังกฤษ",
+      "short": "อังกฤษ"
+    },
+    "ja": {
+      "label": "คำศัพท์ภาษาญี่ปุ่น",
+      "short": "ญี่ปุ่น"
+    },
+    "zh": {
+      "label": "คำศัพท์ภาษาจีน",
+      "short": "จีน"
+    },
+    "general": "ทั่วไป"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "ยังไม่เรียน",
+      "learning": "กำลังเรียน",
+      "review_other": "ทบทวนอีก {{count}} วัน"
+    }
+  },
+  "game": {
+    "instructions": "เคลื่อนที่: ปุ่มลูกศร / แตะหน้าจอ (ทิศทางอ้างอิงจากตัวละคร)   ·   อาวุธจะไถ่ศัตรูให้โดยอัตโนมัติ",
+    "redeemed": "ไถ่แล้ว",
+    "goldQuiz": "ได้ทอง! คำถาม",
+    "blessingGained": "ได้รับพร",
+    "blessingsTitle": "พรที่ได้รับ",
+    "blessingsEmpty": "ยังไม่ได้รับพร",
+    "close": "ปิด",
+    "hudTime": "เวลา",
+    "hudRedeemed": "ไถ่แล้ว",
+    "hudNextQuiz": "คำถามถัดไปใน",
+    "hudPierce": "ทะลุ",
+    "hudQuiz": "คำถาม",
+    "upgrades": {
+      "arrow_count": {
+        "name": "ลูกศรทวีคูณ",
+        "desc": "ลูกศร +1"
+      },
+      "arrow_rate": {
+        "name": "มือไว",
+        "desc": "ยิงลูกศรเร็วขึ้น"
+      },
+      "arrow_pierce": {
+        "name": "ทะลุ",
+        "desc": "โอกาสทะลุ +10%"
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { Fragment, useMemo, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { usePlayHistories, type PlayHistoryWithSet, type WrongItem } from '../../entities/history'
 import { useQuizItems } from '../../entities/quiz-item'
 import { splitVariants } from '../../shared/lib/answer'
@@ -23,6 +24,7 @@ function accuracyOf(h: PlayHistoryWithSet): number {
 // 영속되지 않음 — features/save-session/model/useSaveSession.ts 참고). 스키마·게임 코드를
 // 건드리지 않기로 했으므로 "처치" 대신 실제로 저장되는 "정답(correct/total)"을 보여준다.
 export function HistoryPage() {
+  const { t, i18n } = useTranslation()
   const { data: histories, isLoading, isError } = usePlayHistories()
   const [expandedId, setExpandedId] = useState<string | null>(null)
 
@@ -30,7 +32,7 @@ export function HistoryPage() {
 
   return (
     <div className={styles.page}>
-      <h1 className={styles.title}>기록</h1>
+      <h1 className={styles.title}>{t('history.title')}</h1>
 
       {isLoading && (
         <div className={styles.skeletonList}>
@@ -41,14 +43,14 @@ export function HistoryPage() {
       )}
 
       {!isLoading && isError && (
-        <p className={styles.errorNotice}>기록을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.</p>
+        <p className={styles.errorNotice}>{t('history.loadError')}</p>
       )}
 
       {!isLoading && !isError && (histories?.length ?? 0) === 0 && (
         <div className={styles.empty}>
           <p className={styles.emptyEmoji}>📭</p>
-          <p className={styles.emptyTitle}>아직 기록이 없어요</p>
-          <p className={styles.emptyDesc}>문제집으로 플레이하면 여기에 쌓여요</p>
+          <p className={styles.emptyTitle}>{t('common.noRecordsTitle')}</p>
+          <p className={styles.emptyDesc}>{t('history.emptyDesc')}</p>
         </div>
       )}
 
@@ -57,11 +59,11 @@ export function HistoryPage() {
           <table className={styles.table}>
             <thead>
               <tr>
-                <th>날짜</th>
-                <th>문제집</th>
-                <th>점수</th>
-                <th>정답</th>
-                <th>정답률</th>
+                <th>{t('history.headerDate')}</th>
+                <th>{t('history.headerSet')}</th>
+                <th>{t('common.scoreLabel')}</th>
+                <th>{t('history.headerCorrect')}</th>
+                <th>{t('history.headerAccuracy')}</th>
               </tr>
             </thead>
             <tbody>
@@ -75,8 +77,8 @@ export function HistoryPage() {
                       aria-expanded={expanded}
                     >
                       <td>{formatDate(h.played_at)}</td>
-                      <td>{h.setTitle ?? '삭제된 문제집'}</td>
-                      <td>{h.score.toLocaleString()}</td>
+                      <td>{h.setTitle ?? t('history.deletedSet')}</td>
+                      <td>{h.score.toLocaleString(i18n.language)}</td>
                       <td>
                         {h.correct_count}/{h.total_count}
                       </td>
@@ -107,13 +109,17 @@ export function HistoryPage() {
                     aria-expanded={expanded}
                   >
                     <div className={styles.cardTop}>
-                      <span className={styles.cardSetTitle}>{h.setTitle ?? '삭제된 문제집'}</span>
-                      <span className={styles.cardScore}>{h.score.toLocaleString()}점</span>
+                      <span className={styles.cardSetTitle}>{h.setTitle ?? t('history.deletedSet')}</span>
+                      <span className={styles.cardScore}>{t('common.scoreValue', { value: h.score.toLocaleString(i18n.language) })}</span>
                     </div>
                     <div className={styles.cardBottom}>
                       <span>{formatDate(h.played_at)}</span>
                       <span>
-                        정답 {h.correct_count}/{h.total_count} ({accuracyOf(h)}%)
+                        {t('history.cardAccuracyLine', {
+                          correct: h.correct_count,
+                          total: h.total_count,
+                          accuracy: accuracyOf(h),
+                        })}
                       </span>
                     </div>
                   </button>
@@ -140,12 +146,13 @@ interface WrongItemsPanelProps {
 // 틀린 단어 펼침 — quiz_items(front/back)를 조인해 item_id를 실제 단어로 풀어 보여준다.
 // 문제집이 삭제됐거나(quiz_set_id null) 단어가 그새 삭제됐으면 "삭제된 단어"로 대체 표기.
 function WrongItemsPanel({ quizSetId, wrongItems }: WrongItemsPanelProps) {
+  const { t } = useTranslation()
   const { data: items } = useQuizItems(quizSetId ?? undefined)
 
   const itemsById = useMemo(() => new Map((items ?? []).map((item) => [item.id, item])), [items])
 
   if (wrongItems.length === 0) {
-    return <p className={styles.wrongEmpty}>😄 전부 맞혔어요! 틀린 단어가 없어요</p>
+    return <p className={styles.wrongEmpty}>{t('common.allCorrectNotice')}</p>
   }
 
   return (
@@ -155,8 +162,8 @@ function WrongItemsPanel({ quizSetId, wrongItems }: WrongItemsPanelProps) {
         const back = item ? splitVariants(item.back)[0] ?? item.back : null
         return (
           <li key={`${w.item_id}-${i}`} className={styles.wrongRow}>
-            <span className={styles.wrongFront}>{item?.front ?? '삭제된 단어'}</span>
-            <span className={styles.wrongGiven}>{w.given || '(무응답)'}</span>
+            <span className={styles.wrongFront}>{item?.front ?? t('history.deletedWord')}</span>
+            <span className={styles.wrongGiven}>{w.given || t('common.noAnswer')}</span>
             <span className={styles.wrongBack}>{back ?? '-'}</span>
           </li>
         )

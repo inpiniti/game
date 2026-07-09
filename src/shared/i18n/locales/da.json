@@ -1,0 +1,345 @@
+{
+  "common": {
+    "loading": "Indlæser…",
+    "country": "Land",
+    "language": "Sprog",
+    "email": "E-mail",
+    "password": "Adgangskode",
+    "nickname": "Kaldenavn",
+    "scoreLabel": "Point",
+    "scoreValue": "{{value}} point",
+    "save": "Gem",
+    "saving": "Gemmer…",
+    "saveError": "Kunne ikke gemme. Prøv igen om lidt.",
+    "close": "Luk",
+    "edit": "Rediger",
+    "delete": "Slet",
+    "all": "Alle",
+    "goBack": "Gå tilbage",
+    "noAnswer": "(Intet svar)",
+    "allCorrectNotice": "😄 Du fik dem alle rigtige! Ingen forkerte ord",
+    "noRecordsTitle": "Ingen resultater endnu",
+    "gameTitle": "🍓 Strawberry Survival",
+    "startGame": "Start spil",
+    "quizSetLoadError": "Kunne ikke indlæse ordsættet. Prøv igen om lidt.",
+    "loadingQuizSet": "Indlæser ordsættet…",
+    "wordCount_one": "{{count}} ord",
+    "wordCount_other": "{{count}} ord",
+    "loginRequired": "Du skal logge ind."
+  },
+  "login": {
+    "tagline": "Overlev ved at fange ord",
+    "submitting": "Logger ind…",
+    "submit": "Log ind",
+    "noAccount": "Har du ikke en konto?",
+    "signupLink": "Opret konto →"
+  },
+  "signup": {
+    "title": "Opret konto",
+    "passwordConfirmLabel": "Bekræft adgangskode",
+    "submitting": "Opretter konto…",
+    "submit": "Opret konto",
+    "errorNicknameRequired": "Indtast et kaldenavn.",
+    "errorPasswordTooShort": "Adgangskoden skal være mindst {{minLength}} tegn.",
+    "errorPasswordMismatch": "Adgangskoderne matcher ikke. Tjek dem igen.",
+    "errorAlreadyRegistered": "Denne e-mail er allerede registreret. Log ind i stedet."
+  },
+  "verifyEmail": {
+    "title": "Tjek din indbakke",
+    "sentDescSuffix": " er hvor vi sendte bekræftelsesmailen hen.",
+    "sentDescLine2": "Tryk på linket i mailen for at fuldføre oprettelsen.",
+    "descNoEmail": "Indtast den e-mail, du oprettede kontoen med, så sender vi bekræftelsesmailen igen.",
+    "resentNotice": "Vi har sendt mailen igen. Tjek din indbakke.",
+    "resendCountdown": "Send mail igen ({{seconds}} sek.)",
+    "sending": "Sender…",
+    "resend": "Send mail igen",
+    "backToLogin": "← Tilbage til login"
+  },
+  "lobby": {
+    "tagline": "Undgå monstre og svar på quizzer for at blive stærkere",
+    "loading": "Indlæser…",
+    "noSets": "Ingen ordsæt",
+    "footnote": "Trin 3 midlertidigt lobby · valg af ordsæt/historik kommer i et senere trin"
+  },
+  "placeholder": {
+    "desc": "Kommer snart. Vi arbejder på det."
+  },
+  "result": {
+    "title": "Game Over",
+    "killsLabel": "Nedkæmpet",
+    "killsValue": "{{kills}} fjender",
+    "quizLabel": "Quiz",
+    "savedNotice": "✔ Gemt · Vi ses næste gang",
+    "wrongTitle": "Forkerte ord",
+    "toLobby": "Til lobby",
+    "retry": "Prøv igen",
+    "moreSuffix": " og flere",
+    "answer": "Svar: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Type",
+    "scopeOfficial": "Officiel",
+    "scopeMine": "Mine ordsæt",
+    "uploadButton": "+ Upload",
+    "emptyTitle": "Ingen ordsæt endnu",
+    "emptyDescMine": "Tryk på + Upload for at lave dit første ordsæt",
+    "emptyDescOther": "Tjek andre sprog- eller typefaner",
+    "uploadSheetTitle": "Upload ordsæt"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Tilbage",
+    "notFound": "Kunne ikke finde dette ordsæt.",
+    "backToList": "Tilbage til ordsæt",
+    "learnedProgress": "Lært {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Ord du ofte tager fejl af",
+    "wrongCount_one": "{{count}} forkert svar",
+    "wrongCount_other": "{{count}} forkerte svar",
+    "allWordsTitle": "Alle ord",
+    "emptyItems": "Ingen ord tilføjet endnu.",
+    "headerWord": "Ord",
+    "headerMeaning": "Betydning",
+    "headerStatus": "Status",
+    "frontPlaceholder": "Ord (front)",
+    "backPlaceholder": "Betydning (back) · brug ';' til flere betydninger",
+    "examplePlaceholder": "Eksempel (valgfrit)",
+    "removeItemAria": "Fjern dette ord",
+    "addItemButton": "+ Tilføj ord",
+    "emptyFieldsError": "Udfyld ord og betydning for at gemme."
+  },
+  "ranking": {
+    "title": "Rangliste",
+    "tabsAriaLabel": "Ranglistetype",
+    "tabBySet": "Efter ordsæt",
+    "tabOverall": "Samlet",
+    "tabByCountry": "Efter land",
+    "scopeLabel": "Omfang",
+    "scopeMine": "Mit land",
+    "myRankLabel": "Min placering",
+    "myRankEmpty": "Ikke rangeret endnu",
+    "loadError": "Kunne ikke indlæse ranglisten. Prøv igen om lidt.",
+    "byCountryEmptyDesc": "Spil officielle ordsæt for at opbygge dit lands rangliste",
+    "bySetEmptyDesc": "Spil dette ordsæt for at komme på ranglisten",
+    "overallEmptyDesc": "Spil officielle ordsæt for at komme på ranglisten",
+    "noOfficialSetsTitle": "Ingen officielle ordsæt endnu",
+    "noOfficialSetsDesc": "Når officielle ordsæt tilføjes, kan du se ranglister her",
+    "headerRank": "Placering",
+    "headerAvgScore": "Gns. point",
+    "headerParticipants": "Deltagere",
+    "headerSetsPlayed": "Spillede ordsæt",
+    "playersCount_one": "{{count}} spiller",
+    "playersCount_other": "{{count}} spillere",
+    "playersJoined_one": "{{count}} spiller deltog",
+    "playersJoined_other": "{{count}} spillere deltog",
+    "setsPlayedCount_one": "{{count}} ordsæt",
+    "setsPlayedCount_other": "{{count}} ordsæt",
+    "setsPlayedJoined_one": "{{count}} ordsæt spillet",
+    "setsPlayedJoined_other": "{{count}} ordsæt spillet",
+    "selectAriaLabel": "Vælg ordsæt",
+    "myRankByCountry": "Dit land {{country}} #{{rank}} · {{score}} point",
+    "myRankGeneric": "#{{rank}} · {{score}} point"
+  },
+  "history": {
+    "title": "Historik",
+    "loadError": "Kunne ikke indlæse din historik. Prøv igen om lidt.",
+    "emptyDesc": "Spil et ordsæt, så dukker det op her",
+    "headerDate": "Dato",
+    "headerSet": "Ordsæt",
+    "headerCorrect": "Korrekt",
+    "headerAccuracy": "Nøjagtighed",
+    "deletedSet": "Slettet ordsæt",
+    "deletedWord": "Slettet ord",
+    "cardAccuracyLine": "Korrekt {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "Administrer ordsæt",
+    "uploadLink": "+ Upload officielt ordsæt",
+    "tabOfficial": "Officielle ordsæt",
+    "tabPromote": "Forfrem personlige ordsæt",
+    "loading": "Indlæser…",
+    "loadError": "Kunne ikke indlæse listen. Prøv igen om lidt.",
+    "countryCommon": "Fælles",
+    "emptyFilteredTitle": "Ingen officielle ordsæt matcher dette filter",
+    "emptyFilteredDesc": "Prøv et andet land- eller sprogfilter",
+    "deleting": "Sletter…",
+    "deleteConfirm": "Slet",
+    "emptyPromoteTitle": "Ingen personlige ordsæt at forfremme",
+    "emptyPromoteDesc": "Når brugere uploader personlige ordsæt, kan du se dem her",
+    "personalSetBadge": "Personligt ordsæt",
+    "promoteButton": "Forfrem",
+    "editSheetTitle": "Rediger officielt ordsæt",
+    "titleFieldLabel": "Titel",
+    "titleRequiredError": "Indtast en titel for at gemme.",
+    "promoteSheetTitle": "Forfrem til officielt ordsæt",
+    "promoteError": "Kunne ikke forfremme. Prøv igen om lidt.",
+    "promoteNoticeSuffix": " bliver et officielt ordsæt, som alle brugere i det valgte land kan spille.",
+    "promoting": "Forfremmer…",
+    "promoteSubmit": "Forfrem",
+    "countryCommonOption": "Fælles (alle lande)",
+    "countrySpecificOption": "Specifikt land"
+  },
+  "adminUpload": {
+    "backLink": "← Tilbage til administration",
+    "title": "Upload officielt ordsæt",
+    "desc": "Angiv et land for at gøre dette til et officielt ordsæt, som alle brugere der kan spille.",
+    "loadingUser": "Indlæser brugeroplysninger…"
+  },
+  "header": {
+    "appName": "Strawberry Survival",
+    "mainNav": "Hovedmenu",
+    "sets": "Ordsæt",
+    "ranking": "Rangliste",
+    "history": "Historik",
+    "admin": "Admin"
+  },
+  "tabbar": {
+    "home": "Hjem",
+    "sets": "Ordsæt",
+    "ranking": "Rangliste",
+    "history": "Historik",
+    "nav": "Bundmenu"
+  },
+  "profileSheet": {
+    "title": "Profil",
+    "nicknameLabel": "Kaldenavn",
+    "change": "Skift",
+    "countryLabel": "Land",
+    "emailLabel": "E-mail",
+    "loggingOut": "Logger ud…",
+    "logout": "Log ud",
+    "nicknameSaveError": "Kunne ikke gemme kaldenavn. Prøv igen.",
+    "countrySaveError": "Kunne ikke gemme land. Prøv igen.",
+    "language": "Sprog"
+  },
+  "pauseMenu": {
+    "pause": "Pause",
+    "title": "På pause",
+    "resume": "Fortsæt",
+    "quit": "Afslut",
+    "quitHint": "Din nuværende score bliver gemt"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " — hvad betyder det?",
+    "inputHint_one": "※ Indtast {{count}} betydning",
+    "inputHint_other": "※ Indtast {{count}} betydninger",
+    "answerPlaceholder": "Svar {{index}}",
+    "submit": "Send",
+    "missed": "Betydninger du ikke fik: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} ord",
+    "wordCount_other": "{{count}} ord",
+    "learnProgress": "Lært {{learned}}/{{total}}",
+    "viewSet": "Se ordsæt",
+    "start": "Start",
+    "confirmDelete": "Slet denne?",
+    "deleting": "Sletter…",
+    "deleteConfirm": "Slet",
+    "delete": "Slet"
+  },
+  "directionSheet": {
+    "title": "Hvilken retning?",
+    "startGame": "Start spil",
+    "frontToBack": {
+      "title": "Se {{short}}, gæt betydningen",
+      "hint": "Ord → Betydning"
+    },
+    "backToFront": {
+      "title": "Se betydningen, gæt {{short}}",
+      "hint": "Betydning → Ord"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,en rund rød frugt,I ate an apple.\nrun,løbe hurtigt til fods;jogge,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"en rund rød frugt\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"løbe hurtigt til fods;jogge\" }\n]",
+    "titleLabel": "Titel",
+    "titlePlaceholder": "f.eks. 7. klasses ordforråd",
+    "countryLabel": "Land",
+    "languageLabel": "Sprog",
+    "wordsInputLabel": "Indtast ord",
+    "loadFromFile": "Indlæs fra fil",
+    "confirmColumn": "Tjek",
+    "normal": "Gyldig",
+    "uploading": "Uploader…",
+    "upload": "Upload",
+    "titleRequired": "Indtast en titel for at uploade.",
+    "fixErrorsRequired": "Ret alle rækker med fejl for at uploade.",
+    "minOneWordRequired": "Indtast mindst 1 ord for at uploade.",
+    "uploadFailed": "Kunne ikke uploade. Prøv igen om lidt.",
+    "previewSummary_one": "Forhåndsvisning · {{count}} gyldig række",
+    "previewSummary_other": "Forhåndsvisning · {{count}} gyldige rækker",
+    "previewError_one": " · {{count}} fejlrække",
+    "previewError_other": " · {{count}} fejlrækker",
+    "missingBoth": "Udfyld front (ord) og back (betydning) for at tilføje.",
+    "missingFront": "Udfyld front (ord) for at tilføje.",
+    "missingBack": "Udfyld back (betydning) for at tilføje.",
+    "jsonSyntaxError": "Tjek venligst JSON-formatet. (Syntaksfejl)",
+    "jsonMustBeArray": "Øverste niveau skal være et array for at uploade. F.eks.: [{\"front\":\"apple\",\"back\":\"en rund rød frugt\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Denne e-mail er allerede registreret. Log ind i stedet.",
+    "weakPassword": "Denne adgangskode er for simpel. Brug mindst 6 tegn med en anden kombination.",
+    "invalidCredentials": "E-mail eller adgangskode er forkert. Tjek igen.",
+    "invalidEmail": "Tjek venligst dit e-mailformat.",
+    "emailRateLimit": "Du har anmodet om mails for ofte. Prøv igen om lidt.",
+    "requestRateLimit": "For mange anmodninger. Prøv igen om lidt.",
+    "signupDisabled": "Der er ikke åbent for tilmelding lige nu. Prøv igen senere.",
+    "genericError": "Vi har forbindelsesproblemer lige nu. Prøv igen om lidt."
+  },
+  "countrySelect": {
+    "placeholder": "Vælg venligst et land",
+    "title": "Vælg land",
+    "searchPlaceholder": "Søg efter land...",
+    "empty": "Ingen resultater fundet. Prøv at søge efter et andet land?"
+  },
+  "languages": {
+    "en": {
+      "label": "Engelske ord",
+      "short": "Engelsk"
+    },
+    "ja": {
+      "label": "Japanske ord",
+      "short": "Japansk"
+    },
+    "zh": {
+      "label": "Kinesiske ord",
+      "short": "Kinesisk"
+    },
+    "general": "Generelt"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Ikke lært",
+      "learning": "Lærer",
+      "review_one": "Gennemgang om {{count}} dag",
+      "review_other": "Gennemgang om {{count}} dage"
+    }
+  },
+  "game": {
+    "instructions": "Bevæg dig: Piletaster / Tryk på skærmen (retning i forhold til karakteren)   ·   Dit våben forløser automatisk fjender",
+    "redeemed": "Forløst",
+    "goldQuiz": "Guld optjent! Quiz",
+    "blessingGained": "Velsignelse opnået",
+    "blessingsTitle": "Opnåede velsignelser",
+    "blessingsEmpty": "Ingen velsignelser opnået endnu",
+    "close": "Luk",
+    "hudTime": "Tid",
+    "hudRedeemed": "Forløst",
+    "hudNextQuiz": "Næste quiz",
+    "hudPierce": "Gennembor",
+    "hudQuiz": "Quiz",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Multipil",
+        "desc": "+1 pil"
+      },
+      "arrow_rate": {
+        "name": "Hurtige hænder",
+        "desc": "Øger pilens affyringshastighed"
+      },
+      "arrow_pierce": {
+        "name": "Gennembor",
+        "desc": "+10% chance for gennembor"
+      }
+    }
+  }
+}

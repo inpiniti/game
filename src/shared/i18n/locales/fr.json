@@ -1,0 +1,345 @@
+{
+  "common": {
+    "loading": "Chargement…",
+    "country": "Pays",
+    "language": "Langue",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "nickname": "Pseudo",
+    "scoreLabel": "Score",
+    "scoreValue": "{{value}} pts",
+    "save": "Enregistrer",
+    "saving": "Enregistrement…",
+    "saveError": "Impossible d'enregistrer. Réessaie dans un instant.",
+    "close": "Fermer",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "all": "Tout",
+    "goBack": "Retour",
+    "noAnswer": "(Pas de réponse)",
+    "allCorrectNotice": "😄 Tout juste ! Aucun mot manqué",
+    "noRecordsTitle": "Pas encore d'historique",
+    "gameTitle": "🍓 Strawberry Survival",
+    "startGame": "Démarrer la partie",
+    "quizSetLoadError": "Impossible de charger la liste de mots. Réessaie dans un instant.",
+    "loadingQuizSet": "Chargement de la liste de mots…",
+    "wordCount_one": "{{count}} mot",
+    "wordCount_other": "{{count}} mots",
+    "loginRequired": "Connecte-toi pour continuer."
+  },
+  "login": {
+    "tagline": "Survis en attrapant des mots",
+    "submitting": "Connexion…",
+    "submit": "Se connecter",
+    "noAccount": "Pas encore de compte ?",
+    "signupLink": "S'inscrire →"
+  },
+  "signup": {
+    "title": "Inscription",
+    "passwordConfirmLabel": "Confirmer le mot de passe",
+    "submitting": "Inscription…",
+    "submit": "S'inscrire",
+    "errorNicknameRequired": "Merci d'indiquer un pseudo.",
+    "errorPasswordTooShort": "Le mot de passe doit contenir au moins {{minLength}} caractères.",
+    "errorPasswordMismatch": "Les mots de passe ne correspondent pas. Vérifie à nouveau.",
+    "errorAlreadyRegistered": "Cet e-mail est déjà utilisé. Connecte-toi plutôt."
+  },
+  "verifyEmail": {
+    "title": "Vérifie ta boîte mail",
+    "sentDescSuffix": " : c'est là que nous avons envoyé l'e-mail de confirmation.",
+    "sentDescLine2": "Clique sur le lien dans l'e-mail pour terminer ton inscription.",
+    "descNoEmail": "Indique l'e-mail utilisé lors de ton inscription et nous te renverrons l'e-mail de confirmation.",
+    "resentNotice": "L'e-mail a été renvoyé. Vérifie ta boîte mail.",
+    "resendCountdown": "Renvoyer l'e-mail ({{seconds}} s)",
+    "sending": "Envoi…",
+    "resend": "Renvoyer l'e-mail",
+    "backToLogin": "← Retour à la connexion"
+  },
+  "lobby": {
+    "tagline": "Évite les monstres et réponds aux quiz pour devenir plus fort",
+    "loading": "Chargement…",
+    "noSets": "Aucune liste de mots",
+    "footnote": "Lobby temporaire (étape 3) · la sélection de liste et l'historique arrivent bientôt"
+  },
+  "placeholder": {
+    "desc": "Bientôt disponible. On y travaille."
+  },
+  "result": {
+    "title": "Partie terminée",
+    "killsLabel": "Éliminés",
+    "killsValue": "{{kills}} ennemis",
+    "quizLabel": "Quiz",
+    "savedNotice": "✔ Enregistré · À bientôt",
+    "wrongTitle": "Mots ratés",
+    "toLobby": "Vers le lobby",
+    "retry": "Réessayer",
+    "moreSuffix": " et plus",
+    "answer": "Réponse : {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Type",
+    "scopeOfficial": "Officielles",
+    "scopeMine": "Mes listes",
+    "uploadButton": "+ Importer",
+    "emptyTitle": "Pas encore de liste de mots",
+    "emptyDescMine": "Appuie sur + Importer pour créer ta première liste",
+    "emptyDescOther": "Regarde aussi les autres onglets de langue ou de type",
+    "uploadSheetTitle": "Importer une liste de mots"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Retour",
+    "notFound": "Liste de mots introuvable.",
+    "backToList": "Retour aux listes de mots",
+    "learnedProgress": "Appris {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Mots souvent ratés",
+    "wrongCount_one": "{{count}} erreur",
+    "wrongCount_other": "{{count}} erreurs",
+    "allWordsTitle": "Tous les mots",
+    "emptyItems": "Aucun mot ajouté pour l'instant.",
+    "headerWord": "Mot",
+    "headerMeaning": "Sens",
+    "headerStatus": "Statut",
+    "frontPlaceholder": "Mot (front)",
+    "backPlaceholder": "Sens (back) · sépare plusieurs sens avec ';'",
+    "examplePlaceholder": "Exemple (facultatif)",
+    "removeItemAria": "Supprimer ce mot",
+    "addItemButton": "+ Ajouter un mot",
+    "emptyFieldsError": "Remplis le mot et le sens pour enregistrer."
+  },
+  "ranking": {
+    "title": "Classement",
+    "tabsAriaLabel": "Type de classement",
+    "tabBySet": "Par liste",
+    "tabOverall": "Général",
+    "tabByCountry": "Par pays",
+    "scopeLabel": "Portée",
+    "scopeMine": "Mon pays",
+    "myRankLabel": "Mon rang",
+    "myRankEmpty": "Pas encore classé",
+    "loadError": "Impossible de charger le classement. Réessaie dans un instant.",
+    "byCountryEmptyDesc": "Joue à des listes officielles pour alimenter le classement de ton pays",
+    "bySetEmptyDesc": "Joue à cette liste pour apparaître dans le classement",
+    "overallEmptyDesc": "Joue à des listes officielles pour apparaître dans le classement",
+    "noOfficialSetsTitle": "Pas encore de liste officielle",
+    "noOfficialSetsDesc": "Une fois des listes officielles ajoutées, tu verras le classement ici",
+    "headerRank": "Rang",
+    "headerAvgScore": "Score moyen",
+    "headerParticipants": "Participants",
+    "headerSetsPlayed": "Listes jouées",
+    "playersCount_one": "{{count}} joueur",
+    "playersCount_other": "{{count}} joueurs",
+    "playersJoined_one": "{{count}} joueur inscrit",
+    "playersJoined_other": "{{count}} joueurs inscrits",
+    "setsPlayedCount_one": "{{count}} liste",
+    "setsPlayedCount_other": "{{count}} listes",
+    "setsPlayedJoined_one": "{{count}} liste jouée",
+    "setsPlayedJoined_other": "{{count}} listes jouées",
+    "selectAriaLabel": "Choisir une liste de mots",
+    "myRankByCountry": "Ton pays {{country}} #{{rank}} · {{score}} pts",
+    "myRankGeneric": "#{{rank}} · {{score}} pts"
+  },
+  "history": {
+    "title": "Historique",
+    "loadError": "Impossible de charger ton historique. Réessaie dans un instant.",
+    "emptyDesc": "Joue à une liste de mots et elle apparaîtra ici",
+    "headerDate": "Date",
+    "headerSet": "Liste",
+    "headerCorrect": "Correct",
+    "headerAccuracy": "Précision",
+    "deletedSet": "Liste supprimée",
+    "deletedWord": "Mot supprimé",
+    "cardAccuracyLine": "Correct {{correct}}/{{total}} ({{accuracy}} %)"
+  },
+  "adminSets": {
+    "title": "Gérer les listes de mots",
+    "uploadLink": "+ Importer une liste officielle",
+    "tabOfficial": "Listes officielles",
+    "tabPromote": "Promouvoir des listes personnelles",
+    "loading": "Chargement…",
+    "loadError": "Impossible de charger la liste. Réessaie dans un instant.",
+    "countryCommon": "Commun",
+    "emptyFilteredTitle": "Aucune liste officielle ne correspond",
+    "emptyFilteredDesc": "Essaie un autre filtre de pays ou de langue",
+    "deleting": "Suppression…",
+    "deleteConfirm": "Supprimer",
+    "emptyPromoteTitle": "Aucune liste personnelle à promouvoir",
+    "emptyPromoteDesc": "Quand des utilisateurs importent des listes personnelles, elles apparaissent ici",
+    "personalSetBadge": "Liste personnelle",
+    "promoteButton": "Promouvoir",
+    "editSheetTitle": "Modifier la liste officielle",
+    "titleFieldLabel": "Titre",
+    "titleRequiredError": "Indique un titre pour enregistrer.",
+    "promoteSheetTitle": "Promouvoir en liste officielle",
+    "promoteError": "Impossible de promouvoir cette liste. Réessaie dans un instant.",
+    "promoteNoticeSuffix": " deviendra une liste officielle jouable par tous les utilisateurs du pays choisi.",
+    "promoting": "Promotion…",
+    "promoteSubmit": "Promouvoir",
+    "countryCommonOption": "Commun (tous pays)",
+    "countrySpecificOption": "Pays spécifique"
+  },
+  "adminUpload": {
+    "backLink": "← Retour à l'administration",
+    "title": "Importer une liste officielle",
+    "desc": "Indique un pays pour que tous ses utilisateurs puissent jouer à cette liste officielle.",
+    "loadingUser": "Chargement des infos utilisateur…"
+  },
+  "header": {
+    "appName": "Strawberry Survival",
+    "mainNav": "Menu principal",
+    "sets": "Listes",
+    "ranking": "Classement",
+    "history": "Historique",
+    "admin": "Administration"
+  },
+  "tabbar": {
+    "home": "Accueil",
+    "sets": "Listes",
+    "ranking": "Classement",
+    "history": "Historique",
+    "nav": "Menu inférieur"
+  },
+  "profileSheet": {
+    "title": "Profil",
+    "nicknameLabel": "Pseudo",
+    "change": "Modifier",
+    "countryLabel": "Pays",
+    "emailLabel": "E-mail",
+    "loggingOut": "Déconnexion…",
+    "logout": "Se déconnecter",
+    "nicknameSaveError": "Impossible d'enregistrer le pseudo. Réessaie.",
+    "countrySaveError": "Impossible d'enregistrer le pays. Réessaie.",
+    "language": "Langue"
+  },
+  "pauseMenu": {
+    "pause": "Pause",
+    "title": "En pause",
+    "resume": "Reprendre",
+    "quit": "Quitter",
+    "quitHint": "Ton score actuel sera enregistré"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " — quel est le sens ?",
+    "inputHint_one": "※ Indique {{count}} sens",
+    "inputHint_other": "※ Indique {{count}} sens",
+    "answerPlaceholder": "Réponse {{index}}",
+    "submit": "Valider",
+    "missed": "Sens manqués : {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} mot",
+    "wordCount_other": "{{count}} mots",
+    "learnProgress": "Appris {{learned}}/{{total}}",
+    "viewSet": "Voir la liste",
+    "start": "Démarrer",
+    "confirmDelete": "Supprimer ?",
+    "deleting": "Suppression…",
+    "deleteConfirm": "Supprimer",
+    "delete": "Supprimer"
+  },
+  "directionSheet": {
+    "title": "Dans quel sens veux-tu jouer ?",
+    "startGame": "Démarrer la partie",
+    "frontToBack": {
+      "title": "Voir {{short}}, deviner le sens",
+      "hint": "Mot → Sens"
+    },
+    "backToFront": {
+      "title": "Voir le sens, deviner {{short}}",
+      "hint": "Sens → Mot"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,pomme,I ate an apple.\nrun,courir;foncer,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"pomme\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"courir;foncer\" }\n]",
+    "titleLabel": "Titre",
+    "titlePlaceholder": "ex. Vocabulaire 5e",
+    "countryLabel": "Pays",
+    "languageLabel": "Langue",
+    "wordsInputLabel": "Saisir les mots",
+    "loadFromFile": "Charger depuis un fichier",
+    "confirmColumn": "Vérifier",
+    "normal": "Valide",
+    "uploading": "Import…",
+    "upload": "Importer",
+    "titleRequired": "Indique un titre pour importer.",
+    "fixErrorsRequired": "Corrige toutes les lignes en erreur pour importer.",
+    "minOneWordRequired": "Ajoute au moins 1 mot pour importer.",
+    "uploadFailed": "Impossible d'importer. Réessaie dans un instant.",
+    "previewSummary_one": "Aperçu · {{count}} ligne valide",
+    "previewSummary_other": "Aperçu · {{count}} lignes valides",
+    "previewError_one": " · {{count}} ligne en erreur",
+    "previewError_other": " · {{count}} lignes en erreur",
+    "missingBoth": "Remplis front (mot) et back (sens) pour ajouter.",
+    "missingFront": "Remplis front (mot) pour ajouter.",
+    "missingBack": "Remplis back (sens) pour ajouter.",
+    "jsonSyntaxError": "Vérifie le format JSON. (erreur de syntaxe)",
+    "jsonMustBeArray": "Le niveau racine doit être un tableau pour importer. Ex. : [{\"front\":\"apple\",\"back\":\"pomme\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Cet e-mail est déjà utilisé. Connecte-toi plutôt.",
+    "weakPassword": "Ce mot de passe est trop simple. Utilise au moins 6 caractères avec une combinaison différente.",
+    "invalidCredentials": "E-mail ou mot de passe incorrect. Vérifie à nouveau.",
+    "invalidEmail": "Vérifie le format de ton e-mail.",
+    "emailRateLimit": "Trop de demandes d'e-mail. Réessaie dans un instant.",
+    "requestRateLimit": "Trop de requêtes. Réessaie dans un instant.",
+    "signupDisabled": "Les inscriptions ne sont pas ouvertes pour le moment. Réessaie plus tard.",
+    "genericError": "La connexion est instable pour le moment. Réessaie dans un instant."
+  },
+  "countrySelect": {
+    "placeholder": "Sélectionne un pays",
+    "title": "Choisir un pays",
+    "searchPlaceholder": "Rechercher un pays…",
+    "empty": "Aucun résultat. Essaie un autre pays ?"
+  },
+  "languages": {
+    "en": {
+      "label": "Mots d'anglais",
+      "short": "Anglais"
+    },
+    "ja": {
+      "label": "Mots de japonais",
+      "short": "Japonais"
+    },
+    "zh": {
+      "label": "Mots de chinois",
+      "short": "Chinois"
+    },
+    "general": "Général"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Non appris",
+      "learning": "En apprentissage",
+      "review_one": "À réviser dans {{count}} jour",
+      "review_other": "À réviser dans {{count}} jours"
+    }
+  },
+  "game": {
+    "instructions": "Déplacement : flèches / toucher l'écran (direction relative au personnage)   ·   Ton arme rachète automatiquement les ennemis",
+    "redeemed": "Racheté",
+    "goldQuiz": "Or obtenu ! Quiz",
+    "blessingGained": "Bénédiction obtenue",
+    "blessingsTitle": "Bénédictions obtenues",
+    "blessingsEmpty": "Aucune bénédiction obtenue pour l'instant",
+    "close": "Fermer",
+    "hudTime": "Temps",
+    "hudRedeemed": "Rachetés",
+    "hudNextQuiz": "Prochain quiz",
+    "hudPierce": "Perforation",
+    "hudQuiz": "Quiz",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Flèches multiples",
+        "desc": "+1 flèche"
+      },
+      "arrow_rate": {
+        "name": "Mains rapides",
+        "desc": "Augmente la cadence de tir des flèches"
+      },
+      "arrow_pierce": {
+        "name": "Perforation",
+        "desc": "+10 % de chance de perforation"
+      }
+    }
+  }
+}

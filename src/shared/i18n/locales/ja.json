@@ -1,0 +1,334 @@
+{
+  "common": {
+    "loading": "読み込んでいます…",
+    "country": "国",
+    "language": "言語",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "nickname": "ニックネーム",
+    "scoreLabel": "スコア",
+    "scoreValue": "{{value}}点",
+    "save": "保存する",
+    "saving": "保存しています…",
+    "saveError": "保存できませんでした。しばらくしてからもう一度お試しください。",
+    "close": "閉じる",
+    "edit": "編集",
+    "delete": "削除",
+    "all": "すべて",
+    "goBack": "戻る",
+    "noAnswer": "（未回答）",
+    "allCorrectNotice": "😄 全問正解です！間違えた単語はありません",
+    "noRecordsTitle": "まだ記録がありません",
+    "gameTitle": "🍓 いちごサバイバル",
+    "startGame": "ゲームスタート",
+    "quizSetLoadError": "単語帳を読み込めませんでした。しばらくしてからもう一度お試しください。",
+    "loadingQuizSet": "単語帳を読み込んでいます…",
+    "wordCount_other": "単語{{count}}個",
+    "loginRequired": "ログインが必要です。"
+  },
+  "login": {
+    "tagline": "単語を捕まえるサバイバル",
+    "submitting": "ログインしています…",
+    "submit": "ログイン",
+    "noAccount": "アカウントをお持ちでないですか？",
+    "signupLink": "会員登録 →"
+  },
+  "signup": {
+    "title": "会員登録",
+    "passwordConfirmLabel": "パスワード確認",
+    "submitting": "登録しています…",
+    "submit": "登録する",
+    "errorNicknameRequired": "ニックネームを入力してください。",
+    "errorPasswordTooShort": "パスワードは{{minLength}}文字以上で入力してください。",
+    "errorPasswordMismatch": "パスワードが一致しません。もう一度確認してください。",
+    "errorAlreadyRegistered": "すでに登録されているメールアドレスです。ログインしてください。"
+  },
+  "verifyEmail": {
+    "title": "メールをご確認ください",
+    "sentDescSuffix": "宛てに確認メールを送りました。",
+    "sentDescLine2": "メール内のリンクをタップすると登録が完了します。",
+    "descNoEmail": "登録時に使用したメールアドレスを入力すると、確認メールを再送します。",
+    "resentNotice": "メールを再送しました。メールをご確認ください。",
+    "resendCountdown": "メール再送信（{{seconds}}秒）",
+    "sending": "送信しています…",
+    "resend": "メールを再送信",
+    "backToLogin": "← ログインに戻る"
+  },
+  "lobby": {
+    "tagline": "モンスターを避けてクイズに答え、強くなろう",
+    "loading": "読み込み中…",
+    "noSets": "単語帳がありません",
+    "footnote": "ステップ3 仮ロビー · 単語帳選択・記録は後のステップで"
+  },
+  "placeholder": {
+    "desc": "近日公開予定です。準備中です。"
+  },
+  "result": {
+    "title": "ゲームオーバー",
+    "killsLabel": "撃退",
+    "killsValue": "{{kills}}体",
+    "quizLabel": "クイズ",
+    "savedNotice": "✔ 記録を保存しました · また遊びに来てください",
+    "wrongTitle": "間違えた単語",
+    "toLobby": "ロビーへ",
+    "retry": "もう一度",
+    "moreSuffix": " など",
+    "answer": "正解：{{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "区分",
+    "scopeOfficial": "公式",
+    "scopeMine": "マイ単語帳",
+    "uploadButton": "+ アップロード",
+    "emptyTitle": "まだ単語帳がありません",
+    "emptyDescMine": "+ アップロードで最初の単語帳を作ってみましょう",
+    "emptyDescOther": "他の言語・区分タブも確認してみてください",
+    "uploadSheetTitle": "単語帳アップロード"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← 戻る",
+    "notFound": "単語帳が見つかりません。",
+    "backToList": "単語帳一覧へ",
+    "learnedProgress": "学習 {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ よく間違える単語",
+    "wrongCount_other": "誤答{{count}}回",
+    "allWordsTitle": "全単語",
+    "emptyItems": "まだ単語が登録されていません。",
+    "headerWord": "単語",
+    "headerMeaning": "意味",
+    "headerStatus": "状態",
+    "frontPlaceholder": "単語（front）",
+    "backPlaceholder": "意味（back）・複数の意味は「;」で区切る",
+    "examplePlaceholder": "例文（任意）",
+    "removeItemAria": "この単語を削除",
+    "addItemButton": "+ 単語を追加",
+    "emptyFieldsError": "単語と意味を入力すると保存できます。"
+  },
+  "ranking": {
+    "title": "ランキング",
+    "tabsAriaLabel": "ランキングの種類",
+    "tabBySet": "単語帳別",
+    "tabOverall": "総合",
+    "tabByCountry": "国別対抗",
+    "scopeLabel": "範囲",
+    "scopeMine": "自国",
+    "myRankLabel": "自分の順位",
+    "myRankEmpty": "まだ順位がありません",
+    "loadError": "ランキングを読み込めませんでした。しばらくしてからもう一度お試しください。",
+    "byCountryEmptyDesc": "公式単語帳をプレイすると国別ランキングが貯まります",
+    "bySetEmptyDesc": "この単語帳をプレイすると順位に入れます",
+    "overallEmptyDesc": "公式単語帳をプレイすると順位に入れます",
+    "noOfficialSetsTitle": "まだ公式単語帳がありません",
+    "noOfficialSetsDesc": "公式単語帳が登録されると、ここで順位が見られます",
+    "headerRank": "順位",
+    "headerAvgScore": "平均点",
+    "headerParticipants": "参加人数",
+    "headerSetsPlayed": "参加した単語帳",
+    "playersCount_other": "{{count}}人",
+    "playersJoined_other": "{{count}}人参加",
+    "setsPlayedCount_other": "{{count}}個",
+    "setsPlayedJoined_other": "{{count}}個参加",
+    "selectAriaLabel": "単語帳を選択",
+    "myRankByCountry": "自国 {{country}} {{rank}}位 · {{score}}点",
+    "myRankGeneric": "{{rank}}位 · {{score}}点"
+  },
+  "history": {
+    "title": "プレイ記録",
+    "loadError": "記録を読み込めませんでした。しばらくしてからもう一度お試しください。",
+    "emptyDesc": "単語帳でプレイすると、ここに記録が貯まります",
+    "headerDate": "日付",
+    "headerSet": "単語帳",
+    "headerCorrect": "正解",
+    "headerAccuracy": "正解率",
+    "deletedSet": "削除された単語帳",
+    "deletedWord": "削除された単語",
+    "cardAccuracyLine": "正解 {{correct}}/{{total}}（{{accuracy}}%）"
+  },
+  "adminSets": {
+    "title": "単語帳管理",
+    "uploadLink": "+ 公式単語帳アップロード",
+    "tabOfficial": "公式単語帳",
+    "tabPromote": "個人単語帳の昇格",
+    "loading": "読み込んでいます…",
+    "loadError": "一覧を読み込めませんでした。しばらくしてからもう一度お試しください。",
+    "countryCommon": "共通",
+    "emptyFilteredTitle": "条件に合う公式単語帳がありません",
+    "emptyFilteredDesc": "他の国・言語フィルターも確認してみてください",
+    "deleting": "削除しています…",
+    "deleteConfirm": "削除する",
+    "emptyPromoteTitle": "昇格できる個人単語帳がありません",
+    "emptyPromoteDesc": "ユーザーが個人単語帳をアップロードすると、ここで確認できます",
+    "personalSetBadge": "個人単語帳",
+    "promoteButton": "昇格",
+    "editSheetTitle": "公式単語帳を編集",
+    "titleFieldLabel": "タイトル",
+    "titleRequiredError": "タイトルを入力すると保存できます。",
+    "promoteSheetTitle": "公式単語帳に昇格",
+    "promoteError": "昇格できませんでした。しばらくしてからもう一度お試しください。",
+    "promoteNoticeSuffix": "を選択した国のすべてのユーザーがプレイできる公式単語帳にします。",
+    "promoting": "昇格しています…",
+    "promoteSubmit": "昇格する",
+    "countryCommonOption": "共通（すべての国）",
+    "countrySpecificOption": "国を指定"
+  },
+  "adminUpload": {
+    "backLink": "← 管理に戻る",
+    "title": "公式単語帳アップロード",
+    "desc": "国を指定すると、その国のすべてのユーザーがプレイできる公式単語帳になります。",
+    "loadingUser": "ユーザー情報を読み込んでいます…"
+  },
+  "header": {
+    "appName": "いちごサバイバル",
+    "mainNav": "メインメニュー",
+    "sets": "単語帳",
+    "ranking": "ランキング",
+    "history": "プレイ記録",
+    "admin": "管理"
+  },
+  "tabbar": {
+    "home": "ホーム",
+    "sets": "単語帳",
+    "ranking": "ランキング",
+    "history": "プレイ記録",
+    "nav": "下部メニュー"
+  },
+  "profileSheet": {
+    "title": "プロフィール",
+    "nicknameLabel": "ニックネーム",
+    "change": "変更",
+    "countryLabel": "国",
+    "emailLabel": "メールアドレス",
+    "loggingOut": "ログアウトしています…",
+    "logout": "ログアウト",
+    "nicknameSaveError": "ニックネームを保存できませんでした。もう一度お試しください。",
+    "countrySaveError": "国を保存できませんでした。もう一度お試しください。",
+    "language": "言語"
+  },
+  "pauseMenu": {
+    "pause": "一時停止",
+    "title": "一時停止",
+    "resume": "再開する",
+    "quit": "やめる",
+    "quitHint": "ここまでのスコアが記録されます"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " の意味は？",
+    "inputHint_other": "※ 意味を{{count}}個入力します",
+    "answerPlaceholder": "解答{{index}}",
+    "submit": "送信",
+    "missed": "正解できなかった意味：{{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_other": "単語{{count}}個",
+    "learnProgress": "学習 {{learned}}/{{total}}",
+    "viewSet": "単語帳を見る",
+    "start": "スタート",
+    "confirmDelete": "削除しますか？",
+    "deleting": "削除しています…",
+    "deleteConfirm": "削除する",
+    "delete": "削除"
+  },
+  "directionSheet": {
+    "title": "どちらの方向にしますか？",
+    "startGame": "ゲームスタート",
+    "frontToBack": {
+      "title": "{{short}}を見て意味を当てる",
+      "hint": "単語 → 意味"
+    },
+    "backToFront": {
+      "title": "意味を見て{{short}}を当てる",
+      "hint": "意味 → 単語"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,りんご,I ate an apple.\nrun,走る;駆ける,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"りんご\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"走る;駆ける\" }\n]",
+    "titleLabel": "タイトル",
+    "titlePlaceholder": "例：中1英単語",
+    "countryLabel": "国",
+    "languageLabel": "言語",
+    "wordsInputLabel": "単語入力",
+    "loadFromFile": "ファイルから読み込む",
+    "confirmColumn": "確認",
+    "normal": "正常",
+    "uploading": "アップロードしています…",
+    "upload": "アップロードする",
+    "titleRequired": "タイトルを入力するとアップロードできます。",
+    "fixErrorsRequired": "エラーのある行をすべて修正するとアップロードできます。",
+    "minOneWordRequired": "単語を1つ以上入力するとアップロードできます。",
+    "uploadFailed": "アップロードできませんでした。しばらくしてからもう一度お試しください。",
+    "previewSummary_other": "プレビュー · 正常{{count}}行",
+    "previewError_other": " · エラー{{count}}行",
+    "missingBoth": "front（単語）とback（意味）を入力すると追加できます。",
+    "missingFront": "front（単語）を入力すると追加できます。",
+    "missingBack": "back（意味）を入力すると追加できます。",
+    "jsonSyntaxError": "JSON形式をご確認ください。（構文エラー）",
+    "jsonMustBeArray": "最上位が配列であればアップロードできます。例：[{\"front\":\"apple\",\"back\":\"りんご\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "すでに登録されているメールアドレスです。ログインしてください。",
+    "weakPassword": "パスワードが簡単すぎます。6文字以上で別の組み合わせを入力してください。",
+    "invalidCredentials": "メールアドレスまたはパスワードが正しくありません。もう一度確認してください。",
+    "invalidEmail": "メールアドレスの形式をご確認ください。",
+    "emailRateLimit": "メールのリクエストが多すぎます。しばらくしてからもう一度お試しください。",
+    "requestRateLimit": "リクエストが多すぎます。しばらくしてからもう一度お試しください。",
+    "signupDisabled": "現在、新規登録を受け付けていません。後でもう一度お試しください。",
+    "genericError": "接続が不安定です。しばらくしてからもう一度お試しください。"
+  },
+  "countrySelect": {
+    "placeholder": "国を選択してください",
+    "title": "国を選択",
+    "searchPlaceholder": "国を検索...",
+    "empty": "検索結果がありません。別の国で探してみますか？"
+  },
+  "languages": {
+    "en": {
+      "label": "英単語",
+      "short": "英語"
+    },
+    "ja": {
+      "label": "日本語単語",
+      "short": "日本語"
+    },
+    "zh": {
+      "label": "中国語単語",
+      "short": "中国語"
+    },
+    "general": "一般"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "未学習",
+      "learning": "学習中",
+      "review_other": "{{count}}日後に復習"
+    }
+  },
+  "game": {
+    "instructions": "移動：矢印キー／画面タップ（キャラクター基準の押した方向）　・　武器が自動で敵を救済します",
+    "redeemed": "救済",
+    "goldQuiz": "ゴールド獲得！クイズ",
+    "blessingGained": "祝福を獲得",
+    "blessingsTitle": "獲得した祝福",
+    "blessingsEmpty": "まだ獲得した祝福がありません",
+    "close": "閉じる",
+    "hudTime": "時間",
+    "hudRedeemed": "救済",
+    "hudNextQuiz": "次のクイズまで",
+    "hudPierce": "貫通",
+    "hudQuiz": "クイズ",
+    "upgrades": {
+      "arrow_count": {
+        "name": "マルチアロー",
+        "desc": "矢の数+1"
+      },
+      "arrow_rate": {
+        "name": "素早い手さばき",
+        "desc": "矢の発射速度上昇"
+      },
+      "arrow_pierce": {
+        "name": "貫通",
+        "desc": "貫通確率+10%"
+      }
+    }
+  }
+}

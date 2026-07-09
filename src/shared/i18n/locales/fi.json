@@ -1,0 +1,345 @@
+{
+  "common": {
+    "loading": "Ladataan…",
+    "country": "Maa",
+    "language": "Kieli",
+    "email": "Sähköposti",
+    "password": "Salasana",
+    "nickname": "Nimimerkki",
+    "scoreLabel": "Pisteet",
+    "scoreValue": "{{value}} pistettä",
+    "save": "Tallenna",
+    "saving": "Tallennetaan…",
+    "saveError": "Tallennus epäonnistui. Yritä hetken kuluttua uudelleen.",
+    "close": "Sulje",
+    "edit": "Muokkaa",
+    "delete": "Poista",
+    "all": "Kaikki",
+    "goBack": "Takaisin",
+    "noAnswer": "(Ei vastausta)",
+    "allCorrectNotice": "😄 Sait kaikki oikein! Ei yhtään väärää sanaa",
+    "noRecordsTitle": "Ei vielä tuloksia",
+    "gameTitle": "🍓 Strawberry Survival",
+    "startGame": "Aloita peli",
+    "quizSetLoadError": "Sanastoa ei voitu ladata. Yritä hetken kuluttua uudelleen.",
+    "loadingQuizSet": "Ladataan sanastoa…",
+    "wordCount_one": "{{count}} sana",
+    "wordCount_other": "{{count}} sanaa",
+    "loginRequired": "Kirjaudu sisään jatkaaksesi."
+  },
+  "login": {
+    "tagline": "Selviydy nappaamalla sanoja",
+    "submitting": "Kirjaudutaan sisään…",
+    "submit": "Kirjaudu sisään",
+    "noAccount": "Eikö sinulla ole tiliä?",
+    "signupLink": "Luo tili →"
+  },
+  "signup": {
+    "title": "Luo tili",
+    "passwordConfirmLabel": "Vahvista salasana",
+    "submitting": "Luodaan tiliä…",
+    "submit": "Luo tili",
+    "errorNicknameRequired": "Anna nimimerkki.",
+    "errorPasswordTooShort": "Salasanan on oltava vähintään {{minLength}} merkkiä pitkä.",
+    "errorPasswordMismatch": "Salasanat eivät täsmää. Tarkista uudelleen.",
+    "errorAlreadyRegistered": "Tämä sähköposti on jo rekisteröity. Kirjaudu sisään."
+  },
+  "verifyEmail": {
+    "title": "Tarkista sähköpostisi",
+    "sentDescSuffix": " on osoite, johon lähetimme vahvistusviestin.",
+    "sentDescLine2": "Viimeistele rekisteröityminen napauttamalla viestin linkkiä.",
+    "descNoEmail": "Anna sähköposti, jolla rekisteröidyit, niin lähetämme vahvistusviestin uudelleen.",
+    "resentNotice": "Lähetimme viestin uudelleen. Tarkista sähköpostisi.",
+    "resendCountdown": "Lähetä uudelleen ({{seconds}} s)",
+    "sending": "Lähetetään…",
+    "resend": "Lähetä uudelleen",
+    "backToLogin": "← Takaisin kirjautumiseen"
+  },
+  "lobby": {
+    "tagline": "Väistele hirviöitä ja vastaa tietovisoihin tullaksesi vahvemmaksi",
+    "loading": "Ladataan…",
+    "noSets": "Ei sanastoja",
+    "footnote": "Vaiheen 3 väliaikainen aula · sanaston valinta/historia tulevat myöhemmin"
+  },
+  "placeholder": {
+    "desc": "Tulossa pian. Työstämme tätä."
+  },
+  "result": {
+    "title": "Peli päättyi",
+    "killsLabel": "Kaadot",
+    "killsValue": "{{kills}} vihollista",
+    "quizLabel": "Tietovisa",
+    "savedNotice": "✔ Tallennettu · Nähdään ensi kerralla",
+    "wrongTitle": "Väärät sanat",
+    "toLobby": "Aulaan",
+    "retry": "Yritä uudelleen",
+    "moreSuffix": " ja muita",
+    "answer": "Vastaus: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Tyyppi",
+    "scopeOfficial": "Viralliset",
+    "scopeMine": "Omat sanastot",
+    "uploadButton": "+ Lataa",
+    "emptyTitle": "Ei vielä sanastoja",
+    "emptyDescMine": "Napauta + Lataa luodaksesi ensimmäisen sanastosi",
+    "emptyDescOther": "Katso muita kieli- tai tyyppivälilehtiä",
+    "uploadSheetTitle": "Lataa sanasto"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Takaisin",
+    "notFound": "Sanastoa ei löytynyt.",
+    "backToList": "Takaisin sanastoihin",
+    "learnedProgress": "Opittu {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Usein väärin menevät sanat",
+    "wrongCount_one": "{{count}} väärä vastaus",
+    "wrongCount_other": "{{count}} väärää vastausta",
+    "allWordsTitle": "Kaikki sanat",
+    "emptyItems": "Sanoja ei ole vielä lisätty.",
+    "headerWord": "Sana",
+    "headerMeaning": "Merkitys",
+    "headerStatus": "Tila",
+    "frontPlaceholder": "Sana (front)",
+    "backPlaceholder": "Merkitys (back) · käytä ';' useille merkityksille",
+    "examplePlaceholder": "Esimerkki (valinnainen)",
+    "removeItemAria": "Poista tämä sana",
+    "addItemButton": "+ Lisää sana",
+    "emptyFieldsError": "Täytä sana ja merkitys tallentaaksesi."
+  },
+  "ranking": {
+    "title": "Tulostaulu",
+    "tabsAriaLabel": "Tulostaulun tyyppi",
+    "tabBySet": "Sanastoittain",
+    "tabOverall": "Kaikki",
+    "tabByCountry": "Maittain",
+    "scopeLabel": "Näkymä",
+    "scopeMine": "Oma maa",
+    "myRankLabel": "Oma sijoitus",
+    "myRankEmpty": "Ei vielä sijoitusta",
+    "loadError": "Tulostaulua ei voitu ladata. Yritä hetken kuluttua uudelleen.",
+    "byCountryEmptyDesc": "Pelaa virallisia sanastoja kartuttaaksesi maasi tulostaulua",
+    "bySetEmptyDesc": "Pelaa tätä sanastoa päästäksesi tulostauluun",
+    "overallEmptyDesc": "Pelaa virallisia sanastoja päästäksesi tulostauluun",
+    "noOfficialSetsTitle": "Ei vielä virallisia sanastoja",
+    "noOfficialSetsDesc": "Kun virallisia sanastoja lisätään, näet tulostaulut täällä",
+    "headerRank": "Sija",
+    "headerAvgScore": "Keskiarvo",
+    "headerParticipants": "Osallistujat",
+    "headerSetsPlayed": "Pelatut sanastot",
+    "playersCount_one": "{{count}} pelaaja",
+    "playersCount_other": "{{count}} pelaajaa",
+    "playersJoined_one": "{{count}} pelaaja liittyi",
+    "playersJoined_other": "{{count}} pelaajaa liittyi",
+    "setsPlayedCount_one": "{{count}} sanasto",
+    "setsPlayedCount_other": "{{count}} sanastoa",
+    "setsPlayedJoined_one": "{{count}} sanasto pelattu",
+    "setsPlayedJoined_other": "{{count}} sanastoa pelattu",
+    "selectAriaLabel": "Valitse sanasto",
+    "myRankByCountry": "Maasi {{country}} #{{rank}} · {{score}} pistettä",
+    "myRankGeneric": "#{{rank}} · {{score}} pistettä"
+  },
+  "history": {
+    "title": "Historia",
+    "loadError": "Historiaa ei voitu ladata. Yritä hetken kuluttua uudelleen.",
+    "emptyDesc": "Pelaa sanasto, niin se näkyy täällä",
+    "headerDate": "Päivämäärä",
+    "headerSet": "Sanasto",
+    "headerCorrect": "Oikein",
+    "headerAccuracy": "Tarkkuus",
+    "deletedSet": "Poistettu sanasto",
+    "deletedWord": "Poistettu sana",
+    "cardAccuracyLine": "Oikein {{correct}}/{{total}} ({{accuracy}} %)"
+  },
+  "adminSets": {
+    "title": "Hallinnoi sanastoja",
+    "uploadLink": "+ Lataa virallinen sanasto",
+    "tabOfficial": "Viralliset sanastot",
+    "tabPromote": "Ylennä henkilökohtaisia sanastoja",
+    "loading": "Ladataan…",
+    "loadError": "Luetteloa ei voitu ladata. Yritä hetken kuluttua uudelleen.",
+    "countryCommon": "Yhteinen",
+    "emptyFilteredTitle": "Yksikään virallinen sanasto ei vastaa tätä suodatinta",
+    "emptyFilteredDesc": "Kokeile toista maa- tai kielisuodatinta",
+    "deleting": "Poistetaan…",
+    "deleteConfirm": "Poista",
+    "emptyPromoteTitle": "Ei ylennettäviä henkilökohtaisia sanastoja",
+    "emptyPromoteDesc": "Kun käyttäjät lataavat henkilökohtaisia sanastoja, näet ne täällä",
+    "personalSetBadge": "Henkilökohtainen sanasto",
+    "promoteButton": "Ylennä",
+    "editSheetTitle": "Muokkaa virallista sanastoa",
+    "titleFieldLabel": "Otsikko",
+    "titleRequiredError": "Anna otsikko tallentaaksesi.",
+    "promoteSheetTitle": "Ylennä viralliseksi sanastoksi",
+    "promoteError": "Ylennys epäonnistui. Yritä hetken kuluttua uudelleen.",
+    "promoteNoticeSuffix": " tulee viralliseksi sanastoksi, jota kaikki valitun maan käyttäjät voivat pelata.",
+    "promoting": "Ylennetään…",
+    "promoteSubmit": "Ylennä",
+    "countryCommonOption": "Yhteinen (kaikki maat)",
+    "countrySpecificOption": "Tietty maa"
+  },
+  "adminUpload": {
+    "backLink": "← Takaisin hallintaan",
+    "title": "Lataa virallinen sanasto",
+    "desc": "Määritä maa, jotta tästä tulee virallinen sanasto, jota kaikki kyseisen maan käyttäjät voivat pelata.",
+    "loadingUser": "Ladataan käyttäjätietoja…"
+  },
+  "header": {
+    "appName": "Strawberry Survival",
+    "mainNav": "Päävalikko",
+    "sets": "Sanastot",
+    "ranking": "Tulostaulu",
+    "history": "Historia",
+    "admin": "Hallinta"
+  },
+  "tabbar": {
+    "home": "Koti",
+    "sets": "Sanastot",
+    "ranking": "Tulostaulu",
+    "history": "Historia",
+    "nav": "Alavalikko"
+  },
+  "profileSheet": {
+    "title": "Profiili",
+    "nicknameLabel": "Nimimerkki",
+    "change": "Muuta",
+    "countryLabel": "Maa",
+    "emailLabel": "Sähköposti",
+    "loggingOut": "Kirjaudutaan ulos…",
+    "logout": "Kirjaudu ulos",
+    "nicknameSaveError": "Nimimerkin tallennus epäonnistui. Yritä uudelleen.",
+    "countrySaveError": "Maan tallennus epäonnistui. Yritä uudelleen.",
+    "language": "Kieli"
+  },
+  "pauseMenu": {
+    "pause": "Tauko",
+    "title": "Pysäytetty",
+    "resume": "Jatka",
+    "quit": "Lopeta",
+    "quitHint": "Nykyinen pisteesi tallennetaan"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " — mikä on merkitys?",
+    "inputHint_one": "※ Syötä {{count}} merkitys",
+    "inputHint_other": "※ Syötä {{count}} merkitystä",
+    "answerPlaceholder": "Vastaus {{index}}",
+    "submit": "Lähetä",
+    "missed": "Väärin menneet merkitykset: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} sana",
+    "wordCount_other": "{{count}} sanaa",
+    "learnProgress": "Opittu {{learned}}/{{total}}",
+    "viewSet": "Näytä sanasto",
+    "start": "Aloita",
+    "confirmDelete": "Poistetaanko tämä?",
+    "deleting": "Poistetaan…",
+    "deleteConfirm": "Poista",
+    "delete": "Poista"
+  },
+  "directionSheet": {
+    "title": "Kumpi suunta?",
+    "startGame": "Aloita peli",
+    "frontToBack": {
+      "title": "Katso {{short}}, arvaa merkitys",
+      "hint": "Sana → Merkitys"
+    },
+    "backToFront": {
+      "title": "Katso merkitys, arvaa {{short}}",
+      "hint": "Merkitys → Sana"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,pyöreä punainen hedelmä,I ate an apple.\nrun,juosta;lenkkeillä,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"pyöreä punainen hedelmä\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"juosta;lenkkeillä\" }\n]",
+    "titleLabel": "Otsikko",
+    "titlePlaceholder": "esim. 7. luokan sanasto",
+    "countryLabel": "Maa",
+    "languageLabel": "Kieli",
+    "wordsInputLabel": "Syötä sanat",
+    "loadFromFile": "Lataa tiedostosta",
+    "confirmColumn": "Tarkista",
+    "normal": "Kelvollinen",
+    "uploading": "Ladataan…",
+    "upload": "Lataa",
+    "titleRequired": "Anna otsikko ladataksesi.",
+    "fixErrorsRequired": "Korjaa kaikki virheelliset rivit ladataksesi.",
+    "minOneWordRequired": "Syötä vähintään 1 sana ladataksesi.",
+    "uploadFailed": "Lataus epäonnistui. Yritä hetken kuluttua uudelleen.",
+    "previewSummary_one": "Esikatselu · {{count}} kelvollinen rivi",
+    "previewSummary_other": "Esikatselu · {{count}} kelvollista riviä",
+    "previewError_one": " · {{count}} virheellinen rivi",
+    "previewError_other": " · {{count}} virheellistä riviä",
+    "missingBoth": "Täytä front (sana) ja back (merkitys) lisätäksesi.",
+    "missingFront": "Täytä front (sana) lisätäksesi.",
+    "missingBack": "Täytä back (merkitys) lisätäksesi.",
+    "jsonSyntaxError": "Tarkista JSON-muoto. (Syntaksivirhe)",
+    "jsonMustBeArray": "Ylimmän tason on oltava taulukko ladataksesi. Esim.: [{\"front\":\"apple\",\"back\":\"pyöreä punainen hedelmä\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Tämä sähköposti on jo rekisteröity. Kirjaudu sisään.",
+    "weakPassword": "Tämä salasana on liian yksinkertainen. Käytä vähintään 6 merkkiä eri yhdistelmällä.",
+    "invalidCredentials": "Sähköposti tai salasana on väärin. Tarkista uudelleen.",
+    "invalidEmail": "Tarkista sähköpostisi muoto.",
+    "emailRateLimit": "Olet pyytänyt viestejä liian usein. Yritä hetken kuluttua uudelleen.",
+    "requestRateLimit": "Liikaa pyyntöjä. Yritä hetken kuluttua uudelleen.",
+    "signupDisabled": "Rekisteröityminen ei ole juuri nyt avoinna. Yritä myöhemmin uudelleen.",
+    "genericError": "Yhteydessä on juuri nyt ongelmia. Yritä hetken kuluttua uudelleen."
+  },
+  "countrySelect": {
+    "placeholder": "Valitse maa",
+    "title": "Valitse maa",
+    "searchPlaceholder": "Hae maata...",
+    "empty": "Tuloksia ei löytynyt. Kokeile hakea toista maata?"
+  },
+  "languages": {
+    "en": {
+      "label": "Englannin sanat",
+      "short": "Englanti"
+    },
+    "ja": {
+      "label": "Japanin sanat",
+      "short": "Japani"
+    },
+    "zh": {
+      "label": "Kiinan sanat",
+      "short": "Kiina"
+    },
+    "general": "Yleinen"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Ei opittu",
+      "learning": "Opitaan",
+      "review_one": "Kertaus {{count}} päivän kuluttua",
+      "review_other": "Kertaus {{count}} päivän kuluttua"
+    }
+  },
+  "game": {
+    "instructions": "Liiku: Nuolinäppäimet / Napauta ruutua (suunta hahmoon nähden)   ·   Aseesi lunastaa viholliset automaattisesti",
+    "redeemed": "Lunastettu",
+    "goldQuiz": "Kultaa ansaittu! Tietovisa",
+    "blessingGained": "Siunaus saatu",
+    "blessingsTitle": "Saadut siunaukset",
+    "blessingsEmpty": "Ei vielä saatuja siunauksia",
+    "close": "Sulje",
+    "hudTime": "Aika",
+    "hudRedeemed": "Lunastettu",
+    "hudNextQuiz": "Seuraava tietovisa",
+    "hudPierce": "Lävistys",
+    "hudQuiz": "Tietovisa",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Moninuoli",
+        "desc": "+1 nuoli"
+      },
+      "arrow_rate": {
+        "name": "Nopeat kädet",
+        "desc": "Lisää nuolen ampumisnopeutta"
+      },
+      "arrow_pierce": {
+        "name": "Lävistys",
+        "desc": "+10 % lävistysmahdollisuus"
+      }
+    }
+  }
+}

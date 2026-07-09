@@ -1,0 +1,345 @@
+{
+  "common": {
+    "loading": "Жүктелуде…",
+    "country": "Ел",
+    "language": "Тіл",
+    "email": "Электрондық пошта",
+    "password": "Құпия сөз",
+    "nickname": "Лақап ат",
+    "scoreLabel": "Ұпай",
+    "scoreValue": "{{value}} ұпай",
+    "save": "Сақтау",
+    "saving": "Сақталуда…",
+    "saveError": "Сақталмады. Сәл кейінірек қайталап көріңіз.",
+    "close": "Жабу",
+    "edit": "Өңдеу",
+    "delete": "Жою",
+    "all": "Барлығы",
+    "goBack": "Артқа",
+    "noAnswer": "(Жауап жоқ)",
+    "allCorrectNotice": "😄 Барлығын дұрыс таптыңыз! Қате сөз жоқ",
+    "noRecordsTitle": "Әзірге жазба жоқ",
+    "gameTitle": "🍓 Strawberry Survival",
+    "startGame": "Ойынды бастау",
+    "quizSetLoadError": "Сөздер жинағын жүктей алмадық. Сәл кейінірек қайталап көріңіз.",
+    "loadingQuizSet": "Сөздер жинағы жүктелуде…",
+    "wordCount_one": "{{count}} сөз",
+    "wordCount_other": "{{count}} сөз",
+    "loginRequired": "Жүйеге кіру қажет."
+  },
+  "login": {
+    "tagline": "Сөздерді ұстап, аман қал",
+    "submitting": "Жүйеге кірілуде…",
+    "submit": "Кіру",
+    "noAccount": "Аккаунтыңыз жоқ па?",
+    "signupLink": "Тіркелу →"
+  },
+  "signup": {
+    "title": "Тіркелу",
+    "passwordConfirmLabel": "Құпия сөзді растау",
+    "submitting": "Тіркелуде…",
+    "submit": "Тіркелу",
+    "errorNicknameRequired": "Лақап атыңызды енгізіңіз.",
+    "errorPasswordTooShort": "Құпия сөз кемінде {{minLength}} таңбадан тұруы керек.",
+    "errorPasswordMismatch": "Құпия сөздер сәйкес келмейді. Қайта тексеріңіз.",
+    "errorAlreadyRegistered": "Бұл электрондық пошта бұрын тіркелген. Жүйеге кіріңіз."
+  },
+  "verifyEmail": {
+    "title": "Поштаңызды тексеріңіз",
+    "sentDescSuffix": " мекенжайына растау хатын жібердік.",
+    "sentDescLine2": "Тіркелуді аяқтау үшін хаттағы сілтемені басыңыз.",
+    "descNoEmail": "Тіркелген кездегі поштаңызды енгізіңіз, растау хатын қайта жібереміз.",
+    "resentNotice": "Хат қайта жіберілді. Поштаңызды тексеріңіз.",
+    "resendCountdown": "Хатты қайта жіберу ({{seconds}}с)",
+    "sending": "Жіберілуде…",
+    "resend": "Хатты қайта жіберу",
+    "backToLogin": "← Кіру бетіне оралу"
+  },
+  "lobby": {
+    "tagline": "Құбыжықтардан қашып, сұрақтарға жауап беріп күшейіңіз",
+    "loading": "Жүктелуде…",
+    "noSets": "Сөздер жинағы жоқ",
+    "footnote": "3-қадамдағы уақытша лобби · Жинақ таңдау/тарих келесі қадамда қосылады"
+  },
+  "placeholder": {
+    "desc": "Жақында келеді. Дайындап жатырмыз."
+  },
+  "result": {
+    "title": "Ойын Аяқталды",
+    "killsLabel": "Жойылған",
+    "killsValue": "{{kills}} дана",
+    "quizLabel": "Сұрақ",
+    "savedNotice": "✔ Сақталды · Келесіде тағы кездесейік",
+    "wrongTitle": "Қате жауап берген сөздер",
+    "toLobby": "Лоббиге",
+    "retry": "Қайта ойнау",
+    "moreSuffix": " және т.б.",
+    "answer": "Жауабы: {{list}}"
+  },
+  "quizSetList": {
+    "scopeLabel": "Түрі",
+    "scopeOfficial": "Ресми",
+    "scopeMine": "Менің жинағым",
+    "uploadButton": "+ Жүктеу",
+    "emptyTitle": "Әзірге сөздер жинағы жоқ",
+    "emptyDescMine": "Алғашқы жинағыңызды жасау үшін + Жүктеу түймесін басыңыз",
+    "emptyDescOther": "Басқа тіл немесе түр қойындыларын қарап көріңіз",
+    "uploadSheetTitle": "Сөздер жинағын жүктеу"
+  },
+  "quizSetDetail": {
+    "backLinkText": "← Артқа",
+    "notFound": "Бұл сөздер жинағы табылмады.",
+    "backToList": "Сөздер жинағы тізіміне оралу",
+    "learnedProgress": "Үйренген {{learned}}/{{total}}",
+    "weakSectionTitle": "⚠ Жиі қателесетін сөздер",
+    "wrongCount_one": "{{count}} рет қате",
+    "wrongCount_other": "{{count}} рет қате",
+    "allWordsTitle": "Барлық сөздер",
+    "emptyItems": "Әзірге қосылған сөз жоқ.",
+    "headerWord": "Сөз",
+    "headerMeaning": "Мағынасы",
+    "headerStatus": "Күйі",
+    "frontPlaceholder": "Сөз (front)",
+    "backPlaceholder": "Мағынасы (back) · бірнеше мағына үшін ';' қолданыңыз",
+    "examplePlaceholder": "Мысал сөйлем (міндетті емес)",
+    "removeItemAria": "Бұл сөзді жою",
+    "addItemButton": "+ Сөз қосу",
+    "emptyFieldsError": "Сақтау үшін сөз бен мағынасын толтырыңыз."
+  },
+  "ranking": {
+    "title": "Рейтинг",
+    "tabsAriaLabel": "Рейтинг түрі",
+    "tabBySet": "Жинақ бойынша",
+    "tabOverall": "Жалпы",
+    "tabByCountry": "Елдер бойынша",
+    "scopeLabel": "Ауқым",
+    "scopeMine": "Менің елім",
+    "myRankLabel": "Менің орным",
+    "myRankEmpty": "Әлі рейтингте жоқсыз",
+    "loadError": "Рейтингті жүктей алмадық. Сәл кейінірек қайталап көріңіз.",
+    "byCountryEmptyDesc": "Ресми жинақтарды ойнап, еліңіздің рейтингін жинаңыз",
+    "bySetEmptyDesc": "Рейтингке ілігу үшін осы жинақты ойнаңыз",
+    "overallEmptyDesc": "Рейтингке ілігу үшін ресми жинақтарды ойнаңыз",
+    "noOfficialSetsTitle": "Әзірге ресми жинақ жоқ",
+    "noOfficialSetsDesc": "Ресми жинақтар қосылған кезде рейтингті осында көресіз",
+    "headerRank": "Орын",
+    "headerAvgScore": "Орт. ұпай",
+    "headerParticipants": "Қатысушылар",
+    "headerSetsPlayed": "Ойналған жинақ",
+    "playersCount_one": "{{count}} адам",
+    "playersCount_other": "{{count}} адам",
+    "playersJoined_one": "{{count}} адам қатысты",
+    "playersJoined_other": "{{count}} адам қатысты",
+    "setsPlayedCount_one": "{{count}} жинақ",
+    "setsPlayedCount_other": "{{count}} жинақ",
+    "setsPlayedJoined_one": "{{count}} жинақ ойналды",
+    "setsPlayedJoined_other": "{{count}} жинақ ойналды",
+    "selectAriaLabel": "Сөздер жинағын таңдау",
+    "myRankByCountry": "Менің елім {{country}} {{rank}}-орын · {{score}} ұпай",
+    "myRankGeneric": "{{rank}}-орын · {{score}} ұпай"
+  },
+  "history": {
+    "title": "Тарих",
+    "loadError": "Тарихты жүктей алмадық. Сәл кейінірек қайталап көріңіз.",
+    "emptyDesc": "Сөздер жинағын ойнасаңыз, осында жиналады",
+    "headerDate": "Күні",
+    "headerSet": "Жинақ",
+    "headerCorrect": "Дұрыс",
+    "headerAccuracy": "Дәлдік",
+    "deletedSet": "Жойылған жинақ",
+    "deletedWord": "Жойылған сөз",
+    "cardAccuracyLine": "Дұрыс {{correct}}/{{total}} ({{accuracy}}%)"
+  },
+  "adminSets": {
+    "title": "Сөздер Жинақтарын Басқару",
+    "uploadLink": "+ Ресми жинақ жүктеу",
+    "tabOfficial": "Ресми жинақтар",
+    "tabPromote": "Жеке жинақты жоғарылату",
+    "loading": "Жүктелуде…",
+    "loadError": "Тізімді жүктей алмадық. Сәл кейінірек қайталап көріңіз.",
+    "countryCommon": "Ортақ",
+    "emptyFilteredTitle": "Бұл сүзгіге сай ресми жинақ жоқ",
+    "emptyFilteredDesc": "Басқа ел немесе тіл сүзгісін қолданып көріңіз",
+    "deleting": "Жойылуда…",
+    "deleteConfirm": "Жою",
+    "emptyPromoteTitle": "Жоғарылатуға жеке жинақ жоқ",
+    "emptyPromoteDesc": "Пайдаланушылар жеке жинақ жүктегенде, осында көресіз",
+    "personalSetBadge": "Жеке жинақ",
+    "promoteButton": "Жоғарылату",
+    "editSheetTitle": "Ресми жинақты өңдеу",
+    "titleFieldLabel": "Тақырып",
+    "titleRequiredError": "Сақтау үшін тақырыпты енгізіңіз.",
+    "promoteSheetTitle": "Ресми жинаққа жоғарылату",
+    "promoteError": "Жоғарылата алмадық. Сәл кейінірек қайталап көріңіз.",
+    "promoteNoticeSuffix": " таңдалған елдегі барлық пайдаланушы ойнай алатын ресми жинаққа айналады.",
+    "promoting": "Жоғарылатылуда…",
+    "promoteSubmit": "Жоғарылату",
+    "countryCommonOption": "Ортақ (барлық ел)",
+    "countrySpecificOption": "Белгілі бір ел"
+  },
+  "adminUpload": {
+    "backLink": "← Басқаруға оралу",
+    "title": "Ресми жинақ жүктеу",
+    "desc": "Елді көрсетсеңіз, сол елдегі барлық пайдаланушы бұл ресми жинақты ойнай алады.",
+    "loadingUser": "Пайдаланушы деректері жүктелуде…"
+  },
+  "header": {
+    "appName": "Strawberry Survival",
+    "mainNav": "Негізгі мәзір",
+    "sets": "Жинақтар",
+    "ranking": "Рейтинг",
+    "history": "Тарих",
+    "admin": "Басқару"
+  },
+  "tabbar": {
+    "home": "Басты бет",
+    "sets": "Жинақтар",
+    "ranking": "Рейтинг",
+    "history": "Тарих",
+    "nav": "Төменгі мәзір"
+  },
+  "profileSheet": {
+    "title": "Профиль",
+    "nicknameLabel": "Лақап ат",
+    "change": "Өзгерту",
+    "countryLabel": "Ел",
+    "emailLabel": "Электрондық пошта",
+    "loggingOut": "Шығуда…",
+    "logout": "Шығу",
+    "nicknameSaveError": "Лақап атты сақтай алмадық. Қайталап көріңіз.",
+    "countrySaveError": "Елді сақтай алмадық. Қайталап көріңіз.",
+    "language": "Тіл"
+  },
+  "pauseMenu": {
+    "pause": "Кідірту",
+    "title": "Кідіртілді",
+    "resume": "Жалғастыру",
+    "quit": "Шығу",
+    "quitHint": "Қазіргі ұпайыңыз сақталады"
+  },
+  "quizOverlay": {
+    "meaningSuffix": " дегеніміз не?",
+    "inputHint_one": "※ {{count}} мағына енгізіңіз",
+    "inputHint_other": "※ {{count}} мағына енгізіңіз",
+    "answerPlaceholder": "Жауап {{index}}",
+    "submit": "Жіберу",
+    "missed": "Табылмаған мағыналар: {{items}}"
+  },
+  "quizSetGrid": {
+    "wordCount_one": "{{count}} сөз",
+    "wordCount_other": "{{count}} сөз",
+    "learnProgress": "Үйренген {{learned}}/{{total}}",
+    "viewSet": "Жинақты көру",
+    "start": "Бастау",
+    "confirmDelete": "Жойылсын ба?",
+    "deleting": "Жойылуда…",
+    "deleteConfirm": "Жою",
+    "delete": "Жою"
+  },
+  "directionSheet": {
+    "title": "Қай бағытта ойнайсыз?",
+    "startGame": "Ойынды бастау",
+    "frontToBack": {
+      "title": "{{short}} көріп, мағынасын табу",
+      "hint": "Сөз → Мағына"
+    },
+    "backToFront": {
+      "title": "Мағынасын көріп, {{short}} табу",
+      "hint": "Мағына → Сөз"
+    }
+  },
+  "uploadForm": {
+    "csvPlaceholder": "front,back,example\napple,алма,I ate an apple.\nrun,жүгіру;жүгіріп кету,",
+    "jsonPlaceholder": "[\n  { \"front\": \"apple\", \"back\": \"алма\", \"example\": \"I ate an apple.\" },\n  { \"front\": \"run\", \"back\": \"жүгіру;жүгіріп кету\" }\n]",
+    "titleLabel": "Тақырып",
+    "titlePlaceholder": "мысалы: 7-сынып сөздігі",
+    "countryLabel": "Ел",
+    "languageLabel": "Тіл",
+    "wordsInputLabel": "Сөздерді енгізу",
+    "loadFromFile": "Файлдан жүктеу",
+    "confirmColumn": "Тексеру",
+    "normal": "Дұрыс",
+    "uploading": "Жүктелуде…",
+    "upload": "Жүктеу",
+    "titleRequired": "Жүктеу үшін тақырыпты енгізіңіз.",
+    "fixErrorsRequired": "Жүктеу үшін қате жолдардың барлығын түзетіңіз.",
+    "minOneWordRequired": "Жүктеу үшін кемінде 1 сөз енгізіңіз.",
+    "uploadFailed": "Жүктелмеді. Сәл кейінірек қайталап көріңіз.",
+    "previewSummary_one": "Алдын ала қарау · Дұрыс {{count}} жол",
+    "previewSummary_other": "Алдын ала қарау · Дұрыс {{count}} жол",
+    "previewError_one": " · Қате {{count}} жол",
+    "previewError_other": " · Қате {{count}} жол",
+    "missingBoth": "Қосу үшін front (сөз) және back (мағына) толтырыңыз.",
+    "missingFront": "Қосу үшін front (сөз) толтырыңыз.",
+    "missingBack": "Қосу үшін back (мағына) толтырыңыз.",
+    "jsonSyntaxError": "JSON форматын тексеріңіз. (Синтаксис қатесі)",
+    "jsonMustBeArray": "Жүктеу үшін ең жоғарғы деңгей массив болуы керек. мысалы: [{\"front\":\"apple\",\"back\":\"алма\"}]"
+  },
+  "auth": {
+    "emailAlreadyRegistered": "Бұл электрондық пошта бұрын тіркелген. Жүйеге кіріңіз.",
+    "weakPassword": "Бұл құпия сөз тым қарапайым. Кемінде 6 таңбадан тұратын басқа комбинация қолданыңыз.",
+    "invalidCredentials": "Электрондық пошта немесе құпия сөз қате. Қайта тексеріңіз.",
+    "invalidEmail": "Электрондық пошта форматын қайта тексеріңіз.",
+    "emailRateLimit": "Хатты тым жиі сұрадыңыз. Сәл кейінірек қайталап көріңіз.",
+    "requestRateLimit": "Сұрау тым көп. Сәл кейінірек қайталап көріңіз.",
+    "signupDisabled": "Қазір тіркелу қабылданбайды. Кейінірек қайталап көріңіз.",
+    "genericError": "Байланыс уақытша қиындап тұр. Сәл кейінірек қайталап көріңіз."
+  },
+  "countrySelect": {
+    "placeholder": "Елді таңдаңыз",
+    "title": "Ел таңдау",
+    "searchPlaceholder": "Елді іздеу...",
+    "empty": "Нәтиже табылмады. Басқа елді іздеп көресіз бе?"
+  },
+  "languages": {
+    "en": {
+      "label": "Ағылшын сөздері",
+      "short": "Ағылшын"
+    },
+    "ja": {
+      "label": "Жапон сөздері",
+      "short": "Жапон"
+    },
+    "zh": {
+      "label": "Қытай сөздері",
+      "short": "Қытай"
+    },
+    "general": "Жалпы"
+  },
+  "srsProgress": {
+    "status": {
+      "new": "Үйренілмеген",
+      "learning": "Үйренуде",
+      "review_one": "{{count}} күннен кейін қайталау",
+      "review_other": "{{count}} күннен кейін қайталау"
+    }
+  },
+  "game": {
+    "instructions": "Жүру: Көрсеткі пернелер / Экранды түрту (кейіпкерге қатысты бағыт)   ·   Қаруыңыз дұшпанды автоматты түрде құтқарады",
+    "redeemed": "Құтқарылды",
+    "goldQuiz": "Алтын алдыңыз! Сұрақ",
+    "blessingGained": "Бата алынды",
+    "blessingsTitle": "Алынған баталар",
+    "blessingsEmpty": "Әзірге бата алынған жоқ",
+    "close": "Жабу",
+    "hudTime": "Уақыт",
+    "hudRedeemed": "Құтқарылған",
+    "hudNextQuiz": "Келесі сұраққа дейін",
+    "hudPierce": "Тесу",
+    "hudQuiz": "Сұрақ",
+    "upgrades": {
+      "arrow_count": {
+        "name": "Көп жебе",
+        "desc": "Жебе +1"
+      },
+      "arrow_rate": {
+        "name": "Жылдам қол",
+        "desc": "Жебе ату жылдамдығын арттырады"
+      },
+      "arrow_pierce": {
+        "name": "Тесу",
+        "desc": "Тесу мүмкіндігі +10%"
+      }
+    }
+  }
+}

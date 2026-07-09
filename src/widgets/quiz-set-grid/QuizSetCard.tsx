@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import type { QuizSetWithCount } from '../../entities/quiz-set'
 import { useSetLearnCount } from '../../entities/srs-progress'
 import { learnLangLabel } from '../../shared/config/languages'
@@ -15,6 +16,7 @@ interface QuizSetCardProps {
 
 // 문제집 선택(screens-v3 §6) 카드 — 제목 · 단어 수 · 학습 n/N · [문제집 보기]/[시작], [내 문제집] 탭엔 [삭제] 추가.
 export function QuizSetCard({ set, showDelete, onDelete, deleting }: QuizSetCardProps) {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const { data: learnedCount } = useSetLearnCount(set.id)
   const [confirmingDelete, setConfirmingDelete] = useState(false)
@@ -30,24 +32,24 @@ export function QuizSetCard({ set, showDelete, onDelete, deleting }: QuizSetCard
         <span className={styles.langBadge}>{learnLangLabel(set.learn_lang)}</span>
       </div>
 
-      <p className={styles.meta}>단어 {set.itemCount}개</p>
+      <p className={styles.meta}>{t('quizSetGrid.wordCount', { count: set.itemCount })}</p>
       <p className={styles.meta}>
-        학습 {learnedCount ?? '…'}/{set.itemCount}
+        {t('quizSetGrid.learnProgress', { learned: learnedCount ?? '…', total: set.itemCount })}
       </p>
 
       <div className={styles.actions}>
         <button type="button" className={styles.secondaryButton} onClick={() => navigate(`/sets/${set.id}`)}>
-          문제집 보기
+          {t('quizSetGrid.viewSet')}
         </button>
         <button type="button" className={styles.primaryButton} onClick={requestStart}>
-          시작
+          {t('quizSetGrid.start')}
         </button>
       </div>
 
       {showDelete &&
         (confirmingDelete ? (
           <div className={styles.confirmRow}>
-            <span className={styles.confirmText}>삭제할까요?</span>
+            <span className={styles.confirmText}>{t('quizSetGrid.confirmDelete')}</span>
             <button
               type="button"
               className={styles.dangerButton}
@@ -55,15 +57,15 @@ export function QuizSetCard({ set, showDelete, onDelete, deleting }: QuizSetCard
               disabled={deleting}
               aria-busy={deleting}
             >
-              {deleting ? '삭제하고 있어요…' : '삭제하기'}
+              {deleting ? t('quizSetGrid.deleting') : t('quizSetGrid.deleteConfirm')}
             </button>
             <button type="button" className={styles.ghostButton} onClick={() => setConfirmingDelete(false)}>
-              닫기
+              {t('common.close')}
             </button>
           </div>
         ) : (
           <button type="button" className={styles.deleteButton} onClick={() => setConfirmingDelete(true)}>
-            삭제
+            {t('quizSetGrid.delete')}
           </button>
         ))}
 
