@@ -29,7 +29,7 @@ export function Header() {
       <header className={styles.header}>
         <div className={styles.logoGroup}>
           <Link to="/" className={styles.logo}>
-            🍓 {t('header.appName')}
+            {t('header.appName')}
           </Link>
           <button
             type="button"
