@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ddalki-survival.vercel.app/sitemap.xml
