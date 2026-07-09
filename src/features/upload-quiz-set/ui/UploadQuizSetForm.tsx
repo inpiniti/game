@@ -1,6 +1,7 @@
 import { useMemo, useRef, useState, type ChangeEvent } from 'react'
 import { useTranslation } from 'react-i18next'
 import { LEARN_LANGS, GENERAL_LABEL } from '../../../shared/config/languages'
+import { CATEGORIES, type CategoryCode } from '../../../shared/config/categories'
 import { DEFAULT_COUNTRY_CODE } from '../../../shared/config/countries'
 import { CountrySelect } from '../../../shared/ui/country-select/CountrySelect'
 import { parseQuizCsv, parseQuizJson } from '../../../shared/lib/quizParser'
@@ -30,6 +31,7 @@ export function UploadQuizSetForm({ userId, onSuccess, official = false }: Uploa
   const [title, setTitle] = useState('')
   const [country, setCountry] = useState(DEFAULT_COUNTRY_CODE)
   const [learnLang, setLearnLang] = useState<string | null>(LEARN_LANGS[0]?.code ?? null)
+  const [category, setCategory] = useState<CategoryCode | null>(null)
   const [format, setFormat] = useState<Format>('csv')
   const [text, setText] = useState('')
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
@@ -73,6 +75,7 @@ export function UploadQuizSetForm({ userId, onSuccess, official = false }: Uploa
         learnLang,
         userId,
         rows: parsed.rows,
+        category,
         ...(official ? { isOfficial: true, country } : {}),
       })
       onSuccess(newSetId)
@@ -121,6 +124,29 @@ export function UploadQuizSetForm({ userId, onSuccess, official = false }: Uploa
             onClick={() => setLearnLang(null)}
           >
             {GENERAL_LABEL}
+          </button>
+        </div>
+      </div>
+
+      <div className={form.field}>
+        <span className={form.label}>{t('common.category')}</span>
+        <div className={styles.chipRow}>
+          {CATEGORIES.map((c) => (
+            <button
+              key={c.code}
+              type="button"
+              className={category === c.code ? `${styles.chip} ${styles.chipActive}` : styles.chip}
+              onClick={() => setCategory(c.code)}
+            >
+              {c.label}
+            </button>
+          ))}
+          <button
+            type="button"
+            className={category === null ? `${styles.chip} ${styles.chipActive}` : styles.chip}
+            onClick={() => setCategory(null)}
+          >
+            {t('common.categoryNone')}
           </button>
         </div>
       </div>

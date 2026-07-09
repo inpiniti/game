@@ -9,7 +9,7 @@ export function useQuizSet(setId: string | undefined) {
     queryFn: async (): Promise<QuizSet | null> => {
       const { data, error } = await supabase
         .from('quiz_sets')
-        .select('id, title, user_id, is_official, country, learn_lang, created_at')
+        .select('id, title, user_id, is_official, country, learn_lang, category, created_at')
         .eq('id', setId!)
         .maybeSingle()
       if (error) throw error

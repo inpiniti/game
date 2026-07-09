@@ -15,6 +15,9 @@
     "edit": "수정",
     "delete": "삭제",
     "all": "전체",
+    "category": "대상",
+    "categoryAll": "전체",
+    "categoryNone": "미분류",
     "goBack": "뒤로 가기",
     "noAnswer": "(무응답)",
     "allCorrectNotice": "😄 전부 맞혔어요! 틀린 단어가 없어요",
@@ -295,6 +298,12 @@
       "short": "중국어"
     },
     "general": "일반"
+  },
+  "categories": {
+    "elementary": "초등",
+    "middle": "중등",
+    "high": "고등",
+    "general": "일반인"
   },
   "srsProgress": {
     "status": {

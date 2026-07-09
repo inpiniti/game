@@ -1,6 +1,7 @@
 import { useCreateQuizSet } from '../../../entities/quiz-set'
 import { useUpsertQuizItems } from '../../../entities/quiz-item'
 import type { ParsedQuizRow } from '../../../shared/lib/quizParser'
+import type { CategoryCode } from '../../../shared/config/categories'
 
 export interface UploadQuizSetInput {
   title: string
@@ -11,6 +12,7 @@ export interface UploadQuizSetInput {
   /** 관리자 공식 업로드(UploadQuizSetForm의 official 모드)에서만 true + country를 함께 넘긴다. */
   isOfficial?: boolean
   country?: string | null
+  category?: CategoryCode | null
 }
 
 // 업로드 폼 제출 1회 = quiz_sets insert + quiz_items bulk insert.
@@ -26,6 +28,7 @@ export function useUploadQuizSet() {
       userId: input.userId,
       isOfficial: input.isOfficial,
       country: input.country,
+      category: input.category,
     })
 
     const items = input.rows.map((row, idx) => ({

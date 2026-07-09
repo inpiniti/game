@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { useCurrentUser } from '../../entities/user'
 import { useDeleteQuizSet, useQuizSets, type QuizSetWithCount } from '../../entities/quiz-set'
 import { learnLangLabel } from '../../shared/config/languages'
+import { CATEGORIES, type CategoryCode } from '../../shared/config/categories'
 import { BottomSheet } from '../../shared/ui/bottom-sheet/BottomSheet'
 import { UploadQuizSetForm } from '../../features/upload-quiz-set'
 import { QuizSetGrid } from '../../widgets/quiz-set-grid'
@@ -32,6 +33,7 @@ export function QuizSetListPage() {
 
   const [scope, setScope] = useState<Scope>('official')
   const [lang, setLang] = useState<string | null | undefined>(undefined)
+  const [category, setCategory] = useState<CategoryCode | 'all'>('all')
   const [uploadOpen, setUploadOpen] = useState(false)
 
   const availableLangs = useMemo(() => sortLangs([...new Set((sets ?? []).map((s) => s.learn_lang))]), [sets])
@@ -45,9 +47,10 @@ export function QuizSetListPage() {
     if (lang === undefined) return []
     return (sets ?? []).filter((set) => {
       const inScope = scope === 'official' ? set.is_official : !set.is_official && set.user_id === userId
-      return inScope && set.learn_lang === lang
+      const inCategory = category === 'all' || set.category === category
+      return inScope && set.learn_lang === lang && inCategory
     })
-  }, [sets, scope, lang, userId])
+  }, [sets, scope, lang, category, userId])
 
   const handleDelete = (set: QuizSetWithCount) => {
     deleteSet.mutate(set.id)
@@ -78,6 +81,29 @@ export function QuizSetListPage() {
             </div>
           </div>
         )}
+
+        <div className={styles.tabRow}>
+          <span className={styles.tabRowLabel}>{t('common.category')}</span>
+          <div className={styles.tabs}>
+            <button
+              type="button"
+              className={category === 'all' ? `${styles.tab} ${styles.tabActive}` : styles.tab}
+              onClick={() => setCategory('all')}
+            >
+              {t('common.categoryAll')}
+            </button>
+            {CATEGORIES.map((c) => (
+              <button
+                key={c.code}
+                type="button"
+                className={category === c.code ? `${styles.tab} ${styles.tabActive}` : styles.tab}
+                onClick={() => setCategory(c.code)}
+              >
+                {c.label}
+              </button>
+            ))}
+          </div>
+        </div>
 
         <div className={styles.tabRow}>
           <span className={styles.tabRowLabel}>{t('quizSetList.scopeLabel')}</span>

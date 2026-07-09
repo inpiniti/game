@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useUpdateQuizSet, type QuizSetWithCount } from '../../entities/quiz-set'
 import { DEFAULT_COUNTRY_CODE } from '../../shared/config/countries'
+import type { CategoryCode } from '../../shared/config/categories'
 import { BottomSheet } from '../../shared/ui/bottom-sheet/BottomSheet'
 import form from '../../shared/ui/form.module.css'
 import { CountryLangFields, type CountryMode } from './CountryLangFields'
@@ -21,6 +22,7 @@ export function PromoteSetSheet({ set, onClose }: PromoteSetSheetProps) {
   const [countryMode, setCountryMode] = useState<CountryMode>('specific')
   const [country, setCountry] = useState(DEFAULT_COUNTRY_CODE)
   const [learnLang, setLearnLang] = useState<string | null>(null)
+  const [category, setCategory] = useState<CategoryCode | null>(null)
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
 
   useEffect(() => {
@@ -28,6 +30,7 @@ export function PromoteSetSheet({ set, onClose }: PromoteSetSheetProps) {
     setCountryMode('specific')
     setCountry(DEFAULT_COUNTRY_CODE)
     setLearnLang(set.learn_lang)
+    setCategory(set.category)
     setErrorMessage(null)
   }, [set])
 
@@ -39,6 +42,7 @@ export function PromoteSetSheet({ set, onClose }: PromoteSetSheetProps) {
         isOfficial: true,
         country: countryMode === 'common' ? null : country,
         learnLang,
+        category,
       })
       onClose()
     } catch {
@@ -61,6 +65,8 @@ export function PromoteSetSheet({ set, onClose }: PromoteSetSheetProps) {
         onCountryChange={setCountry}
         learnLang={learnLang}
         onLearnLangChange={setLearnLang}
+        category={category}
+        onCategoryChange={setCategory}
       />
 
       {errorMessage && <p className={form.error}>{errorMessage}</p>}

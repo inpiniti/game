@@ -11,6 +11,7 @@ import {
   type SrsProgress,
 } from '../../entities/srs-progress'
 import { learnLangLabel } from '../../shared/config/languages'
+import { categoryLabel } from '../../shared/config/categories'
 import { DirectionSheet, useStartPlay } from '../../widgets/direction-sheet'
 import { QuizItemsEditor } from './QuizItemsEditor'
 import styles from './QuizSetDetailPage.module.css'
@@ -80,7 +81,14 @@ export function QuizSetDetailPage() {
         </div>
         <h1 className={styles.title}>{set.title}</h1>
         <p className={styles.subtitle}>
-          {learnLangLabel(set.learn_lang)} · {t('common.wordCount', { count: totalCount })} ·{' '}
+          {learnLangLabel(set.learn_lang)}
+          {set.category && (
+            <>
+              {' '}·{' '}
+              <span className={styles.categoryBadge}>{categoryLabel(set.category)}</span>
+            </>
+          )}
+          {' '}· {t('common.wordCount', { count: totalCount })} ·{' '}
           {t('quizSetDetail.learnedProgress', { learned: learnedCount, total: totalCount })}
         </p>
       </header>

@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { LEARN_LANGS, GENERAL_LABEL } from '../../shared/config/languages'
+import { CATEGORIES, type CategoryCode } from '../../shared/config/categories'
 import { CountrySelect } from '../../shared/ui/country-select/CountrySelect'
 import form from '../../shared/ui/form.module.css'
 import styles from './AdminSetsPage.module.css'
@@ -13,6 +14,8 @@ interface CountryLangFieldsProps {
   onCountryChange: (code: string) => void
   learnLang: string | null
   onLearnLangChange: (code: string | null) => void
+  category: CategoryCode | null
+  onCategoryChange: (c: CategoryCode | null) => void
 }
 
 // 공식 문제집 수정(EditSetSheet)·개인→공식 승격(PromoteSetSheet)이 함께 쓰는 국가·언어 입력 필드.
@@ -25,6 +28,8 @@ export function CountryLangFields({
   onCountryChange,
   learnLang,
   onLearnLangChange,
+  category,
+  onCategoryChange,
 }: CountryLangFieldsProps) {
   const { t } = useTranslation()
   return (
@@ -73,6 +78,29 @@ export function CountryLangFields({
             onClick={() => onLearnLangChange(null)}
           >
             {GENERAL_LABEL}
+          </button>
+        </div>
+      </div>
+
+      <div className={form.field}>
+        <span className={form.label}>{t('common.category')}</span>
+        <div className={styles.chipRow}>
+          {CATEGORIES.map((c) => (
+            <button
+              key={c.code}
+              type="button"
+              className={category === c.code ? `${styles.chip} ${styles.chipActive}` : styles.chip}
+              onClick={() => onCategoryChange(c.code)}
+            >
+              {c.label}
+            </button>
+          ))}
+          <button
+            type="button"
+            className={category === null ? `${styles.chip} ${styles.chipActive}` : styles.chip}
+            onClick={() => onCategoryChange(null)}
+          >
+            {t('common.categoryNone')}
           </button>
         </div>
       </div>

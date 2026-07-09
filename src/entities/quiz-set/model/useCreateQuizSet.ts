@@ -1,5 +1,6 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { supabase } from '../../../shared/api/supabase'
+import type { CategoryCode } from '../../../shared/config/categories'
 import { quizSetsQueryKey } from './useQuizSets'
 import { adminQuizSetsQueryKey } from './useAdminQuizSets'
 
@@ -10,6 +11,7 @@ export interface CreateQuizSetInput {
   /** 관리자 공식 업로드(features/upload-quiz-set의 official 모드)에서만 true + country를 함께 넘긴다. */
   isOfficial?: boolean
   country?: string | null
+  category?: CategoryCode | null
 }
 
 // 개인 문제집 생성 시 기본값은 is_official=false·country=null 고정(RLS "write own personal sets"가
@@ -28,6 +30,7 @@ export function useCreateQuizSet() {
           is_official: input.isOfficial ?? false,
           country: input.country ?? null,
           learn_lang: input.learnLang,
+          category: input.category ?? null,
         })
         .select('id')
         .single()

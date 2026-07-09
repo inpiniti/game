@@ -7,8 +7,8 @@
 -- ============================================================================
 
 with s as (
-  insert into quiz_sets (title, user_id, is_official, country, learn_lang)
-  values ('기초 영단어', null, true, 'KR', 'en')
+  insert into quiz_sets (title, user_id, is_official, country, learn_lang, category)
+  values ('기초 영단어', null, true, 'KR', 'en', 'elementary')
   returning id
 )
 insert into quiz_items (quiz_set_id, position, front, back, example)

@@ -1,5 +1,6 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { supabase } from '../../../shared/api/supabase'
+import type { CategoryCode } from '../../../shared/config/categories'
 import { quizSetsQueryKey } from './useQuizSets'
 import { adminQuizSetsQueryKey } from './useAdminQuizSets'
 
@@ -14,6 +15,7 @@ export interface UpdateQuizSetInput {
   country?: string | null
   learnLang?: string | null
   isOfficial?: boolean
+  category?: CategoryCode | null
 }
 
 export function useUpdateQuizSet() {
@@ -26,6 +28,7 @@ export function useUpdateQuizSet() {
       if (input.country !== undefined) patch.country = input.country
       if (input.learnLang !== undefined) patch.learn_lang = input.learnLang
       if (input.isOfficial !== undefined) patch.is_official = input.isOfficial
+      if (input.category !== undefined) patch.category = input.category
 
       const { error } = await supabase.from('quiz_sets').update(patch).eq('id', input.id)
       if (error) throw error

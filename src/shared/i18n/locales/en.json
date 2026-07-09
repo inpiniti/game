@@ -15,6 +15,9 @@
     "edit": "Edit",
     "delete": "Delete",
     "all": "All",
+    "category": "Level",
+    "categoryAll": "All",
+    "categoryNone": "Unclassified",
     "goBack": "Go back",
     "noAnswer": "(No answer)",
     "allCorrectNotice": "😄 You got them all right! No wrong words",
@@ -305,6 +308,12 @@
       "short": "Chinese"
     },
     "general": "General"
+  },
+  "categories": {
+    "elementary": "Elementary",
+    "middle": "Middle",
+    "high": "High",
+    "general": "Adult"
   },
   "srsProgress": {
     "status": {
