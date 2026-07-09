@@ -34,6 +34,9 @@ function shuffle<T>(arr: T[]): T[] {
   }
   return a
 }
+function wordCount(s: string): number {
+  return s.trim().split(/\s+/).length
+}
 
 // 단계 7 출제 엔진 — SRS 우선순위 + 배치 실시간 해제 + 오답 쿨다운 + 자동 승급(설계 §7).
 //  · 우선순위: (0)오답 쿨다운 만료 → (1)복습 예정(due≤now, 오래된 순) → (2)현재 배치 미학습 신규 → (3)나머지 due 임박순
@@ -50,7 +53,7 @@ export function createSrsQuizSource(
   const sideOf = (it: QuizItem) => (direction === 'front-back' ? it.back : it.front)
   const promptOf = (it: QuizItem) => (direction === 'front-back' ? it.front : it.back)
 
-  const order = items.map((i) => i.id) // position 순 (useQuizItems가 position 정렬)
+  const order = shuffle(items.map((i) => i.id)) // position 순서 그대로면 신규 단어가 매번 순차 출제되어 랜덤 셔플
   const itemById = new Map(items.map((i) => [i.id, i]))
   const snapById = new Map(snapshot.map((r) => [r.quiz_item_id, r]))
 
@@ -154,7 +157,16 @@ export function createSrsQuizSource(
           .filter((d): d is string => !!d && !correctVariants.includes(d)),
       ),
     ]
-    const distractors = shuffle(distractPool).slice(0, 2)
+    // 오답을 정답과 형태(길이·단어 수)가 비슷한 후보 중에서 뽑는다 — 길이만 봐도 정답이 티나는 것 방지.
+    const NEEDED = 2
+    const windowSize = Math.max(6, NEEDED * 3)
+    const rankedPool = [...distractPool].sort(
+      (a, b) =>
+        Math.abs(a.length - correct.length) +
+        Math.abs(wordCount(a) - wordCount(correct)) * 2 -
+        (Math.abs(b.length - correct.length) + Math.abs(wordCount(b) - wordCount(correct)) * 2),
+    )
+    const distractors = shuffle(rankedPool.slice(0, windowSize)).slice(0, NEEDED)
     const choices = shuffle([correct, ...distractors])
     const correctIndices = choices.map((c, i) => (correctVariants.includes(c) ? i : -1)).filter((i) => i >= 0)
 
