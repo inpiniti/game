@@ -71,6 +71,9 @@
     "killsLabel": "처치",
     "killsValue": "{{kills}}마리",
     "quizLabel": "퀴즈",
+    "levelUpTitle": "레벨 업!",
+    "levelUpChange": "Lv.{{before}} → Lv.{{after}}",
+    "expGained": "+{{exp}} EXP",
     "savedNotice": "✔ 기록 저장 · 다음에 또 나와요",
     "wrongTitle": "틀린 단어",
     "toLobby": "로비로",
@@ -186,7 +189,8 @@
     "sets": "문제집",
     "ranking": "랭킹",
     "history": "기록",
-    "admin": "관리"
+    "admin": "관리",
+    "levelBadge": "Lv.{{level}}"
   },
   "tabbar": {
     "home": "홈",
@@ -205,7 +209,14 @@
     "logout": "로그아웃",
     "nicknameSaveError": "닉네임을 저장하지 못했어요. 다시 시도해 주세요.",
     "countrySaveError": "국가를 저장하지 못했어요. 다시 시도해 주세요.",
-    "language": "언어"
+    "language": "언어",
+    "levelLabel": "레벨",
+    "expLabel": "경험치",
+    "statsLabel": "스탯",
+    "strLabel": "힘",
+    "agiLabel": "민첩",
+    "staLabel": "체력",
+    "unspentHint_other": "배분 가능 {{count}}"
   },
   "pauseMenu": {
     "pause": "일시정지",
@@ -315,6 +326,8 @@
   "game": {
     "instructions": "이동: 화살표 / 화면 터치(캐릭터 기준 누른 방향)   ·   무기가 자동으로 적을 구원합니다",
     "redeemed": "구원됨",
+    "dodge": "회피!",
+    "miss": "빗나감",
     "goldQuiz": "골드 획득! 퀴즈",
     "blessingGained": "축복 획득",
     "blessingsTitle": "획득한 축복",
@@ -337,6 +350,24 @@
       "arrow_pierce": {
         "name": "관통",
         "desc": "관통 확률 +10%"
+      }
+    },
+    "levelUp": {
+      "title": "레벨 업! 스탯을 선택해요",
+      "picked": "스탯 선택"
+    },
+    "stat": {
+      "str": {
+        "name": "힘",
+        "desc": "공격력이 올라가요"
+      },
+      "agi": {
+        "name": "민첩",
+        "desc": "명중과 회피 확률이 올라가요"
+      },
+      "sta": {
+        "name": "체력",
+        "desc": "최대 체력이 늘고 지금 바로 회복돼요"
       }
     }
   }

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useCurrentUser } from '../../entities/user'
+import { useUserStats } from '../../entities/player-stats'
 import { ProfileSheet } from '../profile-sheet/ProfileSheet'
 import styles from './Header.module.css'
 
@@ -21,6 +22,7 @@ const SIBLING_PROJECTS = [
 export function Header() {
   const { t } = useTranslation()
   const { profile } = useCurrentUser()
+  const { stats } = useUserStats()
   const [sheetOpen, setSheetOpen] = useState(false)
   const [projectMenuOpen, setProjectMenuOpen] = useState(false)
 
@@ -83,6 +85,9 @@ export function Header() {
         <button type="button" className={styles.profileButton} onClick={() => setSheetOpen(true)}>
           {profile && <span className={styles.country}>{profile.country}</span>}
           <span className={styles.nickname}>{profile?.nickname ?? '...'}</span>
+          {profile && (
+            <span className={styles.levelBadge}>{t('header.levelBadge', { level: stats.level })}</span>
+          )}
           <span aria-hidden>▾</span>
         </button>
       </header>

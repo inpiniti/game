@@ -5,6 +5,8 @@ import { BottomSheet } from '../../shared/ui/bottom-sheet/BottomSheet'
 import { CountrySelect } from '../../shared/ui/country-select/CountrySelect'
 import { DEFAULT_COUNTRY_CODE } from '../../shared/config/countries'
 import { useCurrentUser, useUpdateProfile } from '../../entities/user'
+import { useUserStats } from '../../entities/player-stats'
+import { levelForExp } from '../../shared/lib/growth'
 import { useLogout } from '../../features/auth/model/useLogout'
 import { SUPPORTED_LANGS, LANG_LABELS, changeUiLang, saveStoredLang, isUiLang } from '../../shared/i18n'
 import styles from './ProfileSheet.module.css'
@@ -18,6 +20,9 @@ interface ProfileSheetProps {
 export function ProfileSheet({ open, onClose }: ProfileSheetProps) {
   const { t, i18n } = useTranslation()
   const { session, profile } = useCurrentUser()
+  const { stats } = useUserStats()
+  const { expIntoLevel, expForNext } = levelForExp(stats.exp)
+  const expPercent = Math.min(100, Math.round((expIntoLevel / expForNext) * 100))
   const updateProfile = useUpdateProfile()
   const logout = useLogout()
   const navigate = useNavigate()
@@ -114,6 +119,46 @@ export function ProfileSheet({ open, onClose }: ProfileSheetProps) {
       <div className={styles.row}>
         <span className={styles.rowLabel}>{t('profileSheet.countryLabel')}</span>
         <CountrySelect value={profile?.country ?? DEFAULT_COUNTRY_CODE} onChange={handleCountryChange} />
+      </div>
+
+      <div className={styles.row}>
+        <span className={styles.rowLabel}>{t('profileSheet.levelLabel')}</span>
+        <div className={styles.levelRow}>
+          <span className={styles.levelValue}>Lv.{stats.level}</span>
+          {stats.unspent > 0 && (
+            <span className={styles.unspentBadge}>
+              {t('profileSheet.unspentHint', { count: stats.unspent })}
+            </span>
+          )}
+        </div>
+      </div>
+
+      <div className={styles.row}>
+        <span className={styles.rowLabel}>{t('profileSheet.expLabel')}</span>
+        <div className={styles.expTrack}>
+          <div className={styles.expFill} style={{ width: `${expPercent}%` }} />
+        </div>
+        <span className={styles.expValue}>
+          {expIntoLevel}/{expForNext}
+        </span>
+      </div>
+
+      <div className={styles.row}>
+        <span className={styles.rowLabel}>{t('profileSheet.statsLabel')}</span>
+        <div className={styles.statsGrid}>
+          <div className={styles.statItem}>
+            <span className={styles.statName}>{t('profileSheet.strLabel')}</span>
+            <span className={styles.statValue}>{stats.str}</span>
+          </div>
+          <div className={styles.statItem}>
+            <span className={styles.statName}>{t('profileSheet.agiLabel')}</span>
+            <span className={styles.statValue}>{stats.agi}</span>
+          </div>
+          <div className={styles.statItem}>
+            <span className={styles.statName}>{t('profileSheet.staLabel')}</span>
+            <span className={styles.statValue}>{stats.sta}</span>
+          </div>
+        </div>
       </div>
 
       <div className={styles.row}>

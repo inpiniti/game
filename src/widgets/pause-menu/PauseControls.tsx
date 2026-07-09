@@ -8,7 +8,8 @@ interface PauseControlsProps {
   // 게임 인스턴스는 React state가 아니라 ref로 들고 있다 — PlayPage가 game.events.emit(...)을
   // 호출할 수 있게 인스턴스를 그대로 넘겨준다 (씬이 'app:pause'/'app:resume'/'app:quit'을 구독).
   gameRef: RefObject<Phaser.Game | null>
-  // 퀴즈 오버레이가 떠 있는 동안(current 존재)엔 true — 중복 일시정지 방지를 위해 버튼을 숨긴다.
+  // 다른 오버레이(퀴즈, 캔버스 레벨업 배분 패널 등)가 떠 있는 동안엔 true —
+  // 중복 일시정지·유령 버튼 방지를 위해 버튼을 숨긴다. 판단은 호출부(PlayPage)가 합성해서 넘긴다.
   hidden: boolean
 }
 

@@ -20,6 +20,13 @@ export interface ResultState {
   setId: string
   setTitle?: string
   wrongWords: WrongWord[]
+  // 성장(레벨·경험치) — apply_game_result RPC 성공 시에만 채워진다(설계 v10 §17-3).
+  // RPC 실패해도 결과 화면 진입은 막지 않으므로(save-session 기존 정책) 전부 옵셔널 —
+  // 값이 없으면 레벨업 표시를 생략한다. 비주얼 폴리시는 5단계.
+  levelBefore?: number
+  levelAfter?: number
+  expGained?: number
+  leveledUp?: boolean
 }
 
 function isResultState(state: unknown): state is ResultState {
@@ -67,6 +74,24 @@ export function ResultPage() {
             </dd>
           </div>
         </dl>
+
+        {/* 성장(레벨·경험치) 표시 — apply_game_result RPC 성공 시에만 expGained가 채워진다(설계 v10 §17-3).
+            RPC 실패 등으로 undefined면 블록 자체를 생략한다(옵셔널 분기). */}
+        {typeof state.expGained === 'number' && (
+          <div className={styles.levelUpCard}>
+            {state.leveledUp && state.levelBefore !== undefined && state.levelAfter !== undefined && (
+              <>
+                <p className={styles.levelUpTitle}>{t('result.levelUpTitle')}</p>
+                <p className={styles.levelUpChange}>
+                  {t('result.levelUpChange', { before: state.levelBefore, after: state.levelAfter })}
+                </p>
+              </>
+            )}
+            <p className={styles.expGained}>
+              {t('result.expGained', { exp: state.expGained.toLocaleString(i18n.language) })}
+            </p>
+          </div>
+        )}
 
         <p className={styles.savedNotice}>{t('result.savedNotice')}</p>
       </div>

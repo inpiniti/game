@@ -3,6 +3,8 @@ import Phaser from 'phaser';
 import { U, F } from '../assets-manifest';
 import { UPGRADES, getRandomUpgrade } from './upgrades';
 import { mergeSurvivalTexts } from './texts';
+// 성장 상수·공식은 앱과 공유하는 단일 소스에서 직접 가져온다(설계 v10 §16-2). 소비(전투)는 2단계.
+import { maxHp, dmgMul, hitChance, dodgeChance, CONTACT_DAMAGE, IFRAME_MS, levelForExp, expForKills, POINTS_PER_LEVEL } from '../../shared/lib/growth';
 
 
 export default class SurvivalScene extends Phaser.Scene {
@@ -91,6 +93,28 @@ export default class SurvivalScene extends Phaser.Scene {
         this.quizBridge = this.game.registry.get('quizBridge') || null;
         // 표시 문자열 사전 — 팩토리가 주입(번역본). 단독 실행 등 미주입이면 ko 기본값.
         this.texts = mergeSurvivalTexts(this.game.registry.get('texts'));
+        // 영구 성장 스탯 — 팩토리가 registry.set('stats')로 주입. 미주입이면 기본값(레벨1/전부0).
+        this.stats = this.game.registry.get('stats') || { level: 1, exp: 0, str: 0, agi: 0, sta: 0, unspent: 0 };
+        this.contactDamage = CONTACT_DAMAGE;   // 적 접촉 시 플랫 데미지(§15-1)
+        this.iframeMs = IFRAME_MS;             // 피격 후 무적 시간(ms)
+        this.invulnUntil = 0;                  // 무적(iframe) 만료 시각 — this.time.now 와 비교(피격/충돌에서 체크)
+        // 파생 전투 스탯(HP·명중·회피·힘 배수)을 stats에서 산출. init=true → 풀피로 시작(§15-1).
+        // 레벨업 배분(str/agi/sta 변경) 후 이 함수를 재호출하면 파생값 갱신 + maxHp 증가분만큼 현재 HP 회복.
+        this.recomputeDerivedStats(true);
+        // 결과 반출용 누적치 — redeemEnemy 티어 분기·레벨업 배분에서 채운다(§17-2).
+        this.killsByTier = { weak: 0, mid: 0, strong: 0 };
+        this.allocations = { str: 0, agi: 0, sta: 0 };
+        // 레벨업 감지 — exp(주입 스탯) + 이번 판 킬 경험치로 현재 레벨을 매번 재산출(§14-3, growth.levelForExp).
+        // stats.level을 그대로 신뢰하지 않고 exp에서 다시 계산해, 값이 어긋나도 항상 자기 일관적이다.
+        this.currentLevel = levelForExp(this.stats.exp).level;
+        // 아직 배분 안 한 레벨업 수 — 전부 "스탯 1개 선택"으로 동일해 큐 대신 개수만 센다.
+        // 이월된 미배분 포인트(this.stats.unspent, 서버가 이전 판에서 넘겨준 값)로 초기화해야
+        // ProfileSheet가 보여주는 "N포인트 배분 가능"을 이번 판에서 실제로 소진할 수 있다.
+        // 서버 apply_game_result는 (이월 unspent + 이번 판 신규 레벨포인트) 예산으로 배분 합을 검증하므로
+        // (05-stats.sql v_row.unspent = 기존 unspent + v_points), 여기서 이월분을 pendingLevelUps에
+        // 실어도 이중 카운트가 아니다 — checkLevelUp이 더하는 신규 레벨포인트와 겹치지 않는 별도 항이다.
+        this.pendingLevelUps = this.stats.unspent || 0;
+        this.levelUpPanelOpen = false; // 레벨업 배분 오버레이 표시 중 여부(퀴즈·축복목록 오버레이와 겹침 방지)
         this.ended = false;
         // React(일시정지 메뉴) → 씬 제어 이벤트
         this.game.events.on('app:pause', this.appPause, this);
@@ -147,10 +171,26 @@ export default class SurvivalScene extends Phaser.Scene {
         this.createTouchControls();
 
         // --- HUD (화면 고정) ---
-        this.hud = this.add.text(16, 14, '', {
+        // HP 바 — 배경(어둡게) + 채움(비율만큼 scaleX, 원점 0,0 → 왼쪽부터 줄어듦, 기존 적 체력바 패턴과 동일)
+        this.hpBarBg = this.add.rectangle(16, 14, 200, 16, 0x000000, 0.55).setOrigin(0, 0)
+            .setScrollFactor(0).setDepth(20000).setStrokeStyle(1, 0xffffff, 0.35);
+        this.hpBarFill = this.add.rectangle(18, 16, 196, 12, 0x03b26c, 1).setOrigin(0, 0)
+            .setScrollFactor(0).setDepth(20001);
+        this.hpBarLabel = this.add.text(20, 15, '', {
+            fontSize: '12px', color: '#ffffff', stroke: '#000000', strokeThickness: 3
+        }).setOrigin(0, 0).setScrollFactor(0).setDepth(20002);
+        // 레벨/경험치 바 — HP 바 바로 아래, 같은 패턴
+        this.expBarBg = this.add.rectangle(16, 34, 200, 12, 0x000000, 0.55).setOrigin(0, 0)
+            .setScrollFactor(0).setDepth(20000).setStrokeStyle(1, 0xffffff, 0.35);
+        this.expBarFill = this.add.rectangle(18, 36, 196, 8, 0x3182f6, 1).setOrigin(0, 0)
+            .setScrollFactor(0).setDepth(20001);
+        this.expBarLabel = this.add.text(20, 33, '', {
+            fontSize: '12px', color: '#ffffff', stroke: '#000000', strokeThickness: 3
+        }).setOrigin(0, 0).setScrollFactor(0).setDepth(20002);
+        this.hud = this.add.text(16, 54, '', {
             fontSize: '20px', color: '#ffffff', stroke: '#000000', strokeThickness: 4, lineSpacing: 4
         }).setScrollFactor(0).setDepth(20000);
-        this.instr = this.add.text(16, 148, this.texts.instructions, {
+        this.instr = this.add.text(16, 188, this.texts.instructions, {
             fontSize: '14px', color: '#e8e8e8', stroke: '#000000', strokeThickness: 3
         }).setScrollFactor(0).setDepth(20000);
         this.updateHud();
@@ -164,6 +204,10 @@ export default class SurvivalScene extends Phaser.Scene {
 
         this.layoutUI();
         this.scale.on('resize', this.layoutUI, this);
+
+        // 게임 준비 완료 직후 1회 — 이월된 미배분 포인트(pendingLevelUps)가 있으면 배분 패널을 띄운다.
+        // tryShowLevelUp의 기존 가드(퀴즈 등 다른 오버레이 없음 · 미일시정지)를 그대로 재사용.
+        this.tryShowLevelUp();
     }
 
     // ---------- 배경 장식 분산 (충돌 없음) ----------
@@ -322,9 +366,10 @@ export default class SurvivalScene extends Phaser.Scene {
     // ---------- 적 스폰 ----------
     spawnEnemy(t) {
         // 티어 해금: 약함 t>=0, 중간 t>=60, 강함 t>=150 (체력 증가는 각 티어 "등장 시점부터" 누적 — 등장 직후 과도하게 세지는 것 방지)
-        const tiers = [{ key: 'e_weak', hp: 10, speedMul: 1, unlock: 0 }];
-        if (t >= 60) tiers.push({ key: 'e_mid', hp: 24, speedMul: 1, unlock: 60 });
-        if (t >= 150) tiers.push({ key: 'e_strong', hp: 60, speedMul: 0.5, unlock: 150 });
+        // tier: growth.EXP_BY_TIER 키(weak/mid/strong)와 일치 — 경험치 계산·킬 카운트가 이 값으로 분기한다(§14-2).
+        const tiers = [{ key: 'e_weak', tier: 'weak', hp: 10, speedMul: 1, unlock: 0 }];
+        if (t >= 60) tiers.push({ key: 'e_mid', tier: 'mid', hp: 24, speedMul: 1, unlock: 60 });
+        if (t >= 150) tiers.push({ key: 'e_strong', tier: 'strong', hp: 60, speedMul: 0.5, unlock: 150 });
         const tier = Phaser.Utils.Array.GetRandom(tiers);
 
         // 스폰 위치: 카메라 뷰 바깥 원주상의 무작위 각도
@@ -345,6 +390,7 @@ export default class SurvivalScene extends Phaser.Scene {
         const e = this.enemies.create(x, y, tier.key).play(tier.key + '_idle');
         e.setScale(0.6);
         e.body.setSize(56, 60).setOffset(68, 84);
+        e.tier = tier.tier;   // 'weak'|'mid'|'strong' — redeemEnemy가 이 값으로 killsByTier를 센다
         e.hp = Math.floor(tier.hp * (1 + (t - tier.unlock) / 60));
         e.maxHp = e.hp;
         e.moveSpeed = 90 * tier.speedMul * (1 + Math.min(0.5, t / 300));   // 시간 경과에 따라 이동속도도 최대 +50%까지 증가
@@ -401,7 +447,9 @@ export default class SurvivalScene extends Phaser.Scene {
             const dist = Phaser.Math.Distance.Between(ring.x, ring.y, e.x, e.y);
             if (dist <= ring.radius && dist > ring.prevRadius) {
                 ring.hitEnemies.add(e);
-                e.hp -= this.aura.damage;
+                // 힘 배수만 적용. 명중 롤은 화살(투사체)에만 — 노바는 지속 근접 오라라 매 틱 MISS 스팸/
+                //  저민첩 근접빌드 이중 페널티를 피하려 항상 명중(설계 §15-2 "플레이어 공격=화살" 해석).
+                e.hp -= Math.round(this.aura.damage * this.playerDmgMul);
                 if (e.hp <= 0) { this.redeemEnemy(e); continue; }
                 this.tweens.add({ targets: e, alpha: 0.35, duration: 90, yoyo: true });   // 피격 시 깜빡임
             }
@@ -431,7 +479,7 @@ export default class SurvivalScene extends Phaser.Scene {
                 for (const e of [...this.enemies.getChildren()]) {
                     if (!e.active || e.redeeming) continue;
                     if (Phaser.Math.Distance.Between(s.x, s.y, e.x, e.y) <= 40) {
-                        e.hp -= this.orbiters.damage;
+                        e.hp -= Math.round(this.orbiters.damage * this.playerDmgMul);   // 힘 배수. 오비터도 지속 근접이라 명중 롤 제외(노바와 동일 기준)
                         if (e.hp <= 0) { this.redeemEnemy(e); continue; }
                         this.tweens.add({ targets: e, alpha: 0.35, duration: 90, yoyo: true });
                     }
@@ -473,7 +521,13 @@ export default class SurvivalScene extends Phaser.Scene {
         if (!arrow.active || !enemy.active || enemy.redeeming) return;
         if (arrow.hitSet && arrow.hitSet.has(enemy)) return;   // 관통 중 이미 맞힌 적은 통과
         if (arrow.hitSet) arrow.hitSet.add(enemy);
-        enemy.hp -= arrow.damage;
+        // 확률 명중(민첩, §15-2) — 화살(투사체)에만 적용. 빗나가면 MISS 후 데미지·관통 소모 없이
+        //  이 적을 통과시킨다(hitSet에 이미 등록 → 중복 판정 없이 다음 적에게 자연스럽게 재시도).
+        if (Math.random() >= this.playerHit) {
+            this.floatText(enemy.x, enemy.y - 40, this.texts.miss, '#cccccc');
+            return;
+        }
+        enemy.hp -= Math.round(arrow.damage * this.playerDmgMul);   // 힘 배수(§14-4) — 축복(개수/연사)과 곱연산 공존
         if (enemy.hp <= 0) this.redeemEnemy(enemy);
         else this.tweens.add({ targets: enemy, alpha: 0.35, duration: 90, yoyo: true });
         // 관통: 명중할 때마다 낮은 확률로만 통과, 대부분은 여기서 소멸(한 명만 처치)
@@ -595,12 +649,18 @@ export default class SurvivalScene extends Phaser.Scene {
         // 구원 수 (더블 블레싱 확률로 2배)
         this.redeemedCount += (Math.random() < this.doubleBlessingChance ? 2 : 1);
 
+        // 티어별 킬 카운트(§17-2, 종료 payload용) + 경험치 반영 → 레벨업 감지(§14-2/14-3).
+        // 연쇄 구원으로 죽는 적도 tier가 있으면 그대로 집계된다(재귀 호출도 이 지점을 통과).
+        const tierKey = (enemy.tier === 'mid' || enemy.tier === 'strong') ? enemy.tier : 'weak';
+        this.killsByTier[tierKey] = (this.killsByTier[tierKey] || 0) + 1;
+        this.checkLevelUp();
+
         // 연쇄 구원 (반경 내 다른 적에게 데미지, redeeming 플래그로 중복 방지)
         if (this.chainRedeem.active) {
             for (const e of [...this.enemies.getChildren()]) {
                 if (e === enemy || !e.active || e.redeeming) continue;
                 if (Phaser.Math.Distance.Between(x, y, e.x, e.y) <= this.chainRedeem.radius) {
-                    e.hp -= this.chainRedeem.damage;
+                    e.hp -= Math.round(this.chainRedeem.damage * this.playerDmgMul);   // 힘 배수(연쇄구원도 무기 데미지, §14-4)
                     if (e.hp <= 0) this.redeemEnemy(e);
                 }
             }
@@ -623,6 +683,94 @@ export default class SurvivalScene extends Phaser.Scene {
                 targets: p, y: p.y - Phaser.Math.Between(40, 80), alpha: 0,
                 duration: Phaser.Math.Between(400, 700), ease: 'Sine.Out', onComplete: () => p.destroy()
             });
+        }
+    }
+
+    // ---------- 레벨업 감지 + 배분 오버레이 (§14-3, §18-1) ----------
+    // exp(주입 스탯) + 이번 판 킬 경험치를 growth.levelForExp로 다시 계산 → currentLevel을 넘은 만큼
+    // pendingLevelUps를 쌓는다. 안전할 때(퀴즈·다른 오버레이 없음)만 즉시 배분 패널을 띄운다.
+    checkLevelUp() {
+        const totalExp = this.stats.exp + expForKills(this.killsByTier);
+        const newLevel = levelForExp(totalExp).level;
+        while (newLevel > this.currentLevel) {
+            this.currentLevel++;
+            this.pendingLevelUps += POINTS_PER_LEVEL;
+        }
+        this.tryShowLevelUp();
+    }
+
+    // 대기 중인 레벨업이 있고, 지금 다른 오버레이(퀴즈 등)가 열려 있지 않을 때만 배분 패널을 띄운다.
+    // gamePaused는 이미 다른 오버레이가 게임을 멈춘 상태를 포함하므로, 이 가드 하나로 겹침을 막는다.
+    tryShowLevelUp() {
+        if (this.pendingLevelUps <= 0 || this.levelUpPanelOpen || this.gamePaused) return;
+        this.showLevelUpPanel();
+    }
+
+    // 퀴즈 등 다른 오버레이가 닫히며 재개를 시도하는 지점에서 이 함수를 대신 호출한다.
+    // 대기 중인 레벨업이 있으면 진짜 재개 대신 배분 패널을 먼저 띄우고, 없으면 그대로 재개한다.
+    resumeGameOrLevelUp() {
+        if (this.pendingLevelUps > 0 && !this.levelUpPanelOpen) this.showLevelUpPanel();
+        else this.resumeGame();
+    }
+
+    // 스탯별 표시 텍스트(이름·설명) — 주입된 번역 사전 우선, texts.ts의 ko 기본값 폴백(기존 upgradeText와 동일 패턴)
+    statText(key) {
+        return this.texts[`stat${key.charAt(0).toUpperCase()}${key.slice(1)}`] || { name: key, desc: '' };
+    }
+
+    // 레벨업 배분 오버레이 — showUpgradePanel과 같은 전체화면 패턴(depth 40000대). [힘][민첩][체력] 중 1개 선택.
+    showLevelUpPanel() {
+        if (this.levelUpPanelOpen) return;
+        this.levelUpPanelOpen = true;
+        this.pauseGame();
+        // React(PauseControls)에 캔버스 레벨업 패널이 떠 있음을 알려 ⏸ 버튼을 가리게 한다.
+        // 'app:pause/resume/quit'과 같은 game.events 버스를 반대 방향(씬→React)으로 사용.
+        this.game.events.emit('app:levelup-open');
+        const w = this.scale.width, h = this.scale.height, D = 40000;
+        const ui = [];
+        ui.push(this.add.rectangle(w / 2, h / 2, w, h, 0x000000, 0.78).setScrollFactor(0).setDepth(D));
+        ui.push(this.add.text(w / 2, h * 0.14, this.texts.levelUpTitle, {
+            fontSize: '28px', color: '#ffd700', stroke: '#000000', strokeThickness: 4
+        }).setOrigin(0.5).setScrollFactor(0).setDepth(D + 1));
+
+        const rows = [
+            { key: 'str', value: this.stats.str },
+            { key: 'agi', value: this.stats.agi },
+            { key: 'sta', value: this.stats.sta },
+        ];
+        const startY = h * 0.34, gapY = Math.min(120, h * 0.16), boxW = Math.min(360, w - 80);
+        rows.forEach((row, i) => {
+            const label = this.statText(row.key);
+            const by = startY + i * gapY;
+            const btn = this.add.rectangle(w / 2, by, boxW, 84, 0x2b3a55, 0.92).setScrollFactor(0)
+                .setDepth(D + 1).setStrokeStyle(2, 0xffe066, 0.6).setInteractive({ useHandCursor: true });
+            const nameLabel = this.add.text(w / 2, by - 16, `${label.name}  (${row.value})`, {
+                fontSize: '22px', color: '#ffffff', stroke: '#000000', strokeThickness: 2
+            }).setOrigin(0.5).setScrollFactor(0).setDepth(D + 2);
+            const descLabel = this.add.text(w / 2, by + 16, label.desc, {
+                fontSize: '15px', color: '#cfe0f5'
+            }).setOrigin(0.5).setScrollFactor(0).setDepth(D + 2);
+            ui.push(btn, nameLabel, descLabel);
+            btn.on('pointerdown', () => this.allocateLevelUp(row.key, ui));
+        });
+    }
+
+    // 스탯 1개 배분 → 즉시 파생값 재계산(recomputeDerivedStats)으로 곧바로 강해진다. 남은 레벨업이 있으면 다음 패널, 없으면 재개.
+    allocateLevelUp(key, ui) {
+        this.stats[key] = (this.stats[key] || 0) + 1;
+        this.allocations[key] = (this.allocations[key] || 0) + 1;
+        this.recomputeDerivedStats(false);
+        const label = this.statText(key);
+        this.floatText(this.player.x, this.player.y - 60, `${this.texts.statPicked}: ${label.name}`, '#7ed6ff');
+        ui.forEach((o) => o.destroy());
+        this.levelUpPanelOpen = false;
+        this.pendingLevelUps = Math.max(0, this.pendingLevelUps - POINTS_PER_LEVEL);
+        this.updateHud();
+        if (this.pendingLevelUps > 0) {
+            this.showLevelUpPanel();   // 남은 레벨업이 있으면 곧장 다음 패널 — React 쪽엔 계속 open 상태(재emit은 무해)
+        } else {
+            this.game.events.emit('app:levelup-close');   // 패널이 완전히 닫힐 때만 close — 유령 ⏸ 버튼 방지
+            this.resumeGame();
         }
     }
 
@@ -651,17 +799,52 @@ export default class SurvivalScene extends Phaser.Scene {
         this.tweens.add({ targets: t, y: y - 34, alpha: 0, duration: 700, onComplete: () => t.destroy() });
     }
 
+    // ---------- 파생 전투 스탯 재계산 (성장 공식 단일 소스 growth.ts 소비) ----------
+    //  str/agi/sta → playerDmgMul/playerHit/playerDodge/playerMaxHp. stats 변경 시마다 호출한다.
+    //  init=true(create 초기화): 풀피로 세팅. init=false(2b 레벨업 배분 후 재호출): maxHp 증가분만큼
+    //  현재 HP도 회복(§15-1의 즉시 보상감) — 감소는 하지 않는다(스탯은 오르기만 하므로).
+    recomputeDerivedStats(init = false) {
+        const s = this.stats;
+        const prevMax = this.playerMaxHp || 0;
+        this.playerMaxHp = maxHp(s.sta);      // 최대 HP (스탯 0 → 3)
+        this.playerDmgMul = dmgMul(s.str);    // 힘: 발당 데미지 배수 (스탯 0 → ×1.0)
+        this.playerHit = hitChance(s.agi);    // 민첩: 명중률 (기본 0.85, 상한 0.99)
+        this.playerDodge = dodgeChance(s.agi); // 민첩: 회피율 (기본 0, 상한 0.6)
+        if (init) {
+            this.playerHp = this.playerMaxHp;                                   // 초기화: 풀피
+        } else {
+            const gain = this.playerMaxHp - prevMax;                            // 배분으로 늘어난 최대 HP
+            if (gain > 0) this.playerHp = Math.min(this.playerMaxHp, this.playerHp + gain);
+        }
+    }
+
+    // 피격/회피/방어막 흡수 후 짧은 무적(iframe) 부여 + 깜빡임 연출(기존 shield 무적 패턴 재사용).
+    startInvuln(ms) {
+        this.invulnUntil = this.time.now + ms;
+        const repeat = Math.max(1, Math.round(ms / 180) - 1);   // 무적 길이에 맞춰 깜빡임 횟수 조절
+        this.tweens.add({ targets: this.player, alpha: 0.3, duration: 90, yoyo: true, repeat,
+            onComplete: () => this.player.setAlpha(1) });
+    }
+
     // ---------- 충돌: 적이 플레이어에 스침 ----------
+    //  1히트 즉사 폐지(§15-1~3): 무적 중이면 무시 → shield 흡수 → 회피 롤 → 접촉 데미지(+iframe).
     onPlayerHit(player, enemy) {
         if (this.gamePaused || enemy.redeeming) return;
+        if (this.time.now < this.invulnUntil) return;   // 무적(iframe) 중 — 접촉 무시
         if (this.shieldCharges > 0) {
-            this.shieldCharges--;      // 보호막 소모 → 그 적을 구원하고 잠깐 무적 깜빡임
+            this.shieldCharges--;               // 보호막 소모 → 그 적을 구원하고 무적 깜빡임(HP 소모 없음)
             this.redeemEnemy(enemy);
-            this.tweens.add({ targets: this.player, alpha: 0.3, duration: 90, yoyo: true, repeat: 4,
-                onComplete: () => this.player.setAlpha(1) });
-        } else {
-            this.endGame('death');       // 1히트 사망
+            this.startInvuln(this.iframeMs);
+            return;
         }
+        if (Math.random() < this.playerDodge) {   // 회피 성공 → 무피해 + 짧은 무적(§15-3)
+            this.floatText(this.player.x, this.player.y - 40, this.texts.dodge, '#66ccff');
+            this.startInvuln(300);
+            return;
+        }
+        this.playerHp -= this.contactDamage;      // 접촉 데미지 → HP 감소 후 iframe(§15-1)
+        this.startInvuln(this.iframeMs);
+        if (this.playerHp <= 0) this.endGame('death');
     }
 
     // ---------- 퀴즈 임계값 (n = 1부터 시작하는 회차) ----------
@@ -675,7 +858,7 @@ export default class SurvivalScene extends Phaser.Scene {
         this.pauseGame();
 
         const bridge = this.quizBridge;
-        if (!bridge) { this.resumeGame(); return; }   // 브리지 없으면(단독 실행) 스킵
+        if (!bridge) { this.resumeGameOrLevelUp(); return; }   // 브리지 없으면(단독 실행) 스킵
 
         bridge.requestQuiz().then(({ correct }) => {
             this.quizStats.total++;
@@ -686,7 +869,8 @@ export default class SurvivalScene extends Phaser.Scene {
                 this.upgradeCounts[up.id] = (this.upgradeCounts[up.id] || 0) + 1;
                 this.quizToast(this.upgradeText(up).name);
             }
-            this.resumeGame();
+            // 퀴즈 종료 시점에 대기 중인 레벨업이 있으면 곧장 재개하지 않고 배분 패널을 먼저 띄운다(오버레이 겹침 방지).
+            this.resumeGameOrLevelUp();
             this.updateHud();
         });
     }
@@ -739,7 +923,7 @@ export default class SurvivalScene extends Phaser.Scene {
         const closeLabel = this.add.text(w / 2, by, this.texts.close, { fontSize: '22px', color: '#ffffff' })
             .setOrigin(0.5).setScrollFactor(0).setDepth(D + 2);
         ui.push(closeBtn, closeLabel);
-        closeBtn.on('pointerdown', () => { ui.forEach((o) => o.destroy()); this.resumeGame(); });
+        closeBtn.on('pointerdown', () => { ui.forEach((o) => o.destroy()); this.resumeGameOrLevelUp(); });
     }
 
     // ---------- 게임 종료 → 앱에 결과 전달 (저장·결과화면은 React가 담당) ----------
@@ -753,13 +937,18 @@ export default class SurvivalScene extends Phaser.Scene {
         const score = kills * 10 + sec;                 // 처치 가중 + 생존 시간
         const bridge = this.quizBridge;
         if (bridge && bridge.onGameOver) {
-            bridge.onGameOver({ score, kills, seconds: sec, reason: reason || 'death' });
+            // killsByTier(redeemEnemy가 티어별로 누적)·allocations(레벨업 배분에서 누적) 실제 값을 그대로 반출한다(§17-2).
+            bridge.onGameOver({
+                score, kills, seconds: sec, reason: reason || 'death',
+                killsByTier: this.killsByTier || { weak: 0, mid: 0, strong: 0 },
+                allocations: this.allocations || { str: 0, agi: 0, sta: 0 },
+            });
         }
     }
 
     // React 일시정지 메뉴 제어
     appPause() { if (!this.ended && !this.gamePaused) this.pauseGame(); }
-    appResume() { if (!this.ended && this.gamePaused) this.resumeGame(); }
+    appResume() { if (!this.ended && this.gamePaused) this.resumeGameOrLevelUp(); }
     appQuit() { this.endGame('quit'); }
 
     // ---------- 일시정지 / 재개 ----------
@@ -775,6 +964,19 @@ export default class SurvivalScene extends Phaser.Scene {
     }
 
     updateHud() {
+        // --- HP 바 (§15-4) — 비율에 따라 색이 변해 위험도를 즉시 알린다(초록→주의→위험) ---
+        const hpRatio = this.playerMaxHp > 0 ? Phaser.Math.Clamp(this.playerHp / this.playerMaxHp, 0, 1) : 0;
+        this.hpBarFill.setScale(Math.max(0.001, hpRatio), 1)
+            .setFillStyle(hpRatio > 0.5 ? 0x03b26c : hpRatio > 0.25 ? 0xff9500 : 0xf04452);
+        this.hpBarLabel.setText(`❤ ${Math.max(0, Math.ceil(this.playerHp))}/${this.playerMaxHp}`);
+
+        // --- 레벨/경험치 진행바 (§15-4) — exp(주입 스탯) + 이번 판 킬 경험치를 growth.levelForExp로 매번 재계산 ---
+        const totalExp = this.stats.exp + expForKills(this.killsByTier);
+        const prog = levelForExp(totalExp);
+        const expRatio = prog.expForNext > 0 ? Phaser.Math.Clamp(prog.expIntoLevel / prog.expForNext, 0, 1) : 0;
+        this.expBarFill.setScale(Math.max(0.001, expRatio), 1);
+        this.expBarLabel.setText(`Lv.${prog.level}  ${prog.expIntoLevel}/${prog.expForNext}`);
+
         const need = Math.max(0, this.nextQuizThreshold(this.quizIndex + 1) - this.redeemedCount);
         this.hud.setText([
             `${this.texts.hudTime} ${this.fmtTime(Math.floor(this.elapsedMs / 1000))}`,

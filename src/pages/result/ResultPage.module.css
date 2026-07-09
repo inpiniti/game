@@ -47,6 +47,39 @@
   font-weight: 700;
 }
 
+.levelUpCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin: 0 0 20px;
+  padding: 16px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.levelUpTitle {
+  margin: 0;
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.levelUpChange {
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.expGained {
+  margin: 0;
+  color: var(--success);
+  font-size: 15px;
+  font-weight: 700;
+}
+
 .savedNotice {
   margin: 0;
   color: var(--success);

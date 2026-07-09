@@ -72,6 +72,9 @@
     "killsLabel": "Kills",
     "killsValue": "{{kills}} enemies",
     "quizLabel": "Quiz",
+    "levelUpTitle": "Level up!",
+    "levelUpChange": "Lv.{{before}} → Lv.{{after}}",
+    "expGained": "+{{exp}} EXP",
     "savedNotice": "✔ Saved · See you next time",
     "wrongTitle": "Wrong words",
     "toLobby": "To lobby",
@@ -192,7 +195,8 @@
     "sets": "Sets",
     "ranking": "Ranking",
     "history": "History",
-    "admin": "Admin"
+    "admin": "Admin",
+    "levelBadge": "Lv.{{level}}"
   },
   "tabbar": {
     "home": "Home",
@@ -211,7 +215,15 @@
     "logout": "Log out",
     "nicknameSaveError": "Couldn't save nickname. Please try again.",
     "countrySaveError": "Couldn't save country. Please try again.",
-    "language": "Language"
+    "language": "Language",
+    "levelLabel": "Level",
+    "expLabel": "Experience",
+    "statsLabel": "Stats",
+    "strLabel": "STR",
+    "agiLabel": "AGI",
+    "staLabel": "STA",
+    "unspentHint_one": "{{count}} point to allocate",
+    "unspentHint_other": "{{count}} points to allocate"
   },
   "pauseMenu": {
     "pause": "Pause",
@@ -326,6 +338,8 @@
   "game": {
     "instructions": "Move: Arrow keys / Tap screen (direction relative to character)   ·   Your weapon automatically redeems enemies",
     "redeemed": "Redeemed",
+    "dodge": "Dodge!",
+    "miss": "Miss",
     "goldQuiz": "Gold earned! Quiz",
     "blessingGained": "Blessing gained",
     "blessingsTitle": "Blessings gained",
@@ -348,6 +362,24 @@
       "arrow_pierce": {
         "name": "Pierce",
         "desc": "+10% pierce chance"
+      }
+    },
+    "levelUp": {
+      "title": "Level up! Choose a stat",
+      "picked": "Stat picked"
+    },
+    "stat": {
+      "str": {
+        "name": "STR",
+        "desc": "Increases attack power"
+      },
+      "agi": {
+        "name": "AGI",
+        "desc": "Increases accuracy and dodge chance"
+      },
+      "sta": {
+        "name": "STA",
+        "desc": "Increases max HP and heals you now"
       }
     }
   }

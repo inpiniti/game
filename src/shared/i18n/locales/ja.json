@@ -68,6 +68,9 @@
     "killsLabel": "撃退",
     "killsValue": "{{kills}}体",
     "quizLabel": "クイズ",
+    "levelUpTitle": "レベルアップ!",
+    "levelUpChange": "Lv.{{before}} → Lv.{{after}}",
+    "expGained": "+{{exp}} EXP",
     "savedNotice": "✔ 記録を保存しました · また遊びに来てください",
     "wrongTitle": "間違えた単語",
     "toLobby": "ロビーへ",
@@ -183,7 +186,8 @@
     "sets": "単語帳",
     "ranking": "ランキング",
     "history": "プレイ記録",
-    "admin": "管理"
+    "admin": "管理",
+    "levelBadge": "Lv.{{level}}"
   },
   "tabbar": {
     "home": "ホーム",
@@ -202,7 +206,14 @@
     "logout": "ログアウト",
     "nicknameSaveError": "ニックネームを保存できませんでした。もう一度お試しください。",
     "countrySaveError": "国を保存できませんでした。もう一度お試しください。",
-    "language": "言語"
+    "language": "言語",
+    "levelLabel": "レベル",
+    "expLabel": "経験値",
+    "statsLabel": "ステータス",
+    "strLabel": "力",
+    "agiLabel": "敏捷",
+    "staLabel": "体力",
+    "unspentHint_other": "配分可能 {{count}}"
   },
   "pauseMenu": {
     "pause": "一時停止",
@@ -306,6 +317,8 @@
   "game": {
     "instructions": "移動：矢印キー／画面タップ（キャラクター基準の押した方向）　・　武器が自動で敵を救済します",
     "redeemed": "救済",
+    "dodge": "回避！",
+    "miss": "はずれ",
     "goldQuiz": "ゴールド獲得！クイズ",
     "blessingGained": "祝福を獲得",
     "blessingsTitle": "獲得した祝福",
@@ -328,6 +341,24 @@
       "arrow_pierce": {
         "name": "貫通",
         "desc": "貫通確率+10%"
+      }
+    },
+    "levelUp": {
+      "title": "レベルアップ！ステータスを選んでください",
+      "picked": "ステータス選択"
+    },
+    "stat": {
+      "str": {
+        "name": "力",
+        "desc": "攻撃力が上がります"
+      },
+      "agi": {
+        "name": "敏捷",
+        "desc": "命中と回避率が上がります"
+      },
+      "sta": {
+        "name": "体力",
+        "desc": "最大体力が増え、今すぐ回復します"
       }
     }
   }

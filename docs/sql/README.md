@@ -11,6 +11,8 @@
 | 1 | [01-init.sql](./01-init.sql) | 전체 스키마 + RLS + 랭킹 함수 | 프로젝트 생성 직후 **1회** |
 | 2 | [02-seed.sql](./02-seed.sql) | 기초 영단어 공식 문제집 시드 | 01 직후 **1회** |
 | 3 | [03-admin-setup.md](./03-admin-setup.md) | 관리자(1명) 등록 절차 | 관리자로 쓸 계정을 앱에서 가입한 뒤 |
+| 4 | [04-category.sql](./04-category.sql) | quiz_sets 대상 카테고리 컬럼 추가 | 01 적용된 DB에 **1회** (재실행 금지) |
+| 5 | [05-stats.sql](./05-stats.sql) | user_stats(레벨·경험치·스탯) + 서버검증 RPC apply_game_result | 01 적용된 DB에 **1회** (멱등 안전) |
 
 ## 주의
 
