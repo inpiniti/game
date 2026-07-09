@@ -12,6 +12,14 @@
   border-bottom: 1px solid var(--border);
 }
 
+.logoGroup {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+}
+
 .logo {
   font-size: 18px;
   font-weight: 700;
@@ -22,6 +30,56 @@
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.projectSwitch {
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.projectSwitch:hover {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.projectMenu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 6px);
+  z-index: 50;
+  min-width: 176px;
+  padding: 6px 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.projectMenuItem {
+  display: block;
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.projectMenuItem:hover {
+  background: var(--surface-2);
+}
+
+.projectMenuItemActive {
+  color: var(--accent, #f43f5e);
+  background: var(--surface-2);
+  cursor: default;
 }
 
 .nav {
